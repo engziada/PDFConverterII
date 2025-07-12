@@ -25,7 +25,7 @@
 </head>
 <body>
 <div id="app-container">
-    <div id="resume-banner" class="resume-banner">
+    <div id="resume-banner" class="resume-banner" role="alert" aria-live="assertive">
         <span>Welcome back! Would you like to resume from where you left off?</span>
         <div class="resume-buttons">
             <button id="resume-yes">Yes</button>
@@ -34,23 +34,32 @@
     </div>
     <div class="sidebar">
         <div class="sidebar-header">
-            <div class="logo">شعار</div>
+            <div class="logo" aria-hidden="true"></div>
             <h2 id="course-title-sidebar"></h2>
+            <div class="theme-switcher">
+                <span aria-hidden="true">☀️</span>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <span class="slider"></span>
+                </label>
+                <span aria-hidden="true">🌙</span>
+            </div>
+            <button id="print-btn" class="print-button" aria-label="Print Slideshow">🖨️ Print</button>
         </div>
         <div class="search-container">
-            <input type="search" id="search-bar" placeholder="ابحث عن درس...">
+            <input type="search" id="search-bar" placeholder="ابحث عن درس..." aria-label="Search for a lesson">
         </div>
-        <nav class="units-nav"></nav>
+        <nav class="units-nav" aria-label="Course Navigation"></nav>
     </div>
 
-    <div class="main-content">
-        <div id="slide-container" class="slide-container"><h1>Loading...</h1></div>
+    <main class="main-content">
+        <div id="slide-container" class="slide-container" role="main" aria-live="polite"><h1>Loading...</h1></div>
         <div class="footer">
             <div class="footer-buttons"><button id="finish-btn">إنهاء</button></div>
-            <div class="progress-container">
-                <div class="progress-bar"><div id="progress-bar-inner" class="progress-bar-inner"></div></div>
+            <div class="progress-container" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                <div id="progress-bar-inner" class="progress-bar-inner"></div>
             </div>
-            <div class="slide-counter">
+            <div class="slide-counter" aria-live="polite">
                 <span id="current-slide-num">0</span> / <span id="total-slides-num">0</span>
             </div>
             <div class="footer-buttons">
@@ -58,7 +67,7 @@
                 <button id="prev-btn">السابق</button>
             </div>
         </div>
-    </div>
+    </main>
 </div>
 <script src="script.js"></script>
 </body>

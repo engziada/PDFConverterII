@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #3B82F6;
+    --primary-color: #3B82F6; /* Adjusted for better contrast */
     --primary-hover: #2563EB;
     --light-gray: #F3F4F6;
     --medium-gray: #D1D5DB;
@@ -11,6 +11,7 @@
     --correct-answer: #10B981;
     --incorrect-answer: #EF4444;
     --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --focus-ring: 0 0 0 3px rgba(59, 130, 246, 0.5);
     --font-sans: 'Inter', sans-serif;
     --font-arabic: 'Noto Kufi Arabic', sans-serif;
 }
@@ -186,7 +187,7 @@ input:checked + .slider:before {
     margin-bottom: 5px;
     transition: background-color 0.2s, color 0.2s;
 }
-.units-nav li a:hover, .units-nav li a.active, .units-nav li a:focus {
+.units-nav li a:hover, .units-nav li a.active, .units-nav li a:focus-visible {
     background-color: var(--hover-bg);
     color: var(--primary-hover);
     outline: none;
@@ -282,6 +283,10 @@ input:checked + .slider:before {
     background-color: #9CA3AF;
     cursor: not-allowed;
 }
+.footer-buttons button:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring);
+}
 .progress-container {
     flex-grow: 1;
     margin: 0 20px;
@@ -319,6 +324,10 @@ input:checked + .slider:before {
 .interactive-element button:hover {
     background-color: var(--primary-hover);
 }
+.interactive-element button:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring);
+}
 .answer-container, .step {
     margin-top: 15px;
     padding: 15px;
@@ -342,6 +351,11 @@ input:checked + .slider:before {
 .mcq-options li:hover {
     background-color: var(--hover-bg);
     transform: translateY(-2px);
+}
+.mcq-options li:focus-visible {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px var(--primary-color);
 }
 .mcq-options li.correct {
     background-color: var(--correct-answer);
@@ -419,7 +433,7 @@ body.dark-mode .mcq-options li.correct { color: #fff; }
 body.dark-mode .mcq-options li.incorrect { color: #fff; }
 body.dark-mode .resume-banner { background-color: var(--primary-hover); }
 body.dark-mode mark { background-color: #FBBF24; color: #1F2937; }
-body.dark-mode .units-nav li a:hover, body.dark-mode .units-nav li a.active, body.dark-mode .units-nav li a:focus {
+body.dark-mode .units-nav li a:hover, body.dark-mode .units-nav li a.active, body.dark-mode .units-nav li a:focus-visible {
     color: var(--white);
 }
 body.dark-mode .special-page h2 { color: var(--dark-gray); }
@@ -438,6 +452,28 @@ body.dark-mode .special-page .logo-placeholder { background-color: #374151; colo
 body.dark-mode .theme-switcher span { color: #9CA3AF; }
 body.dark-mode .slider { background-color: #4B5563; }
 body.dark-mode input:checked + .slider { background-color: var(--primary-color); }
-body.dark-mode .units-nav li a:focus { box-shadow: 0 0 0 2px var(--primary-hover); }
-body.dark-mode .interactive-element button:focus, body.dark-mode .resume-buttons button:focus { box-shadow: 0 0 0 3px var(--primary-hover); }
-body.dark-mode .mcq-options li:focus { box-shadow: 0 0 0 2px var(--primary-color); }
+body.dark-mode .units-nav li a:focus-visible { box-shadow: 0 0 0 3px var(--primary-hover); }
+body.dark-mode .interactive-element button:focus-visible, body.dark-mode .resume-buttons button:focus-visible { box-shadow: 0 0 0 3px var(--primary-hover); }
+body.dark-mode .mcq-options li:focus-visible { box-shadow: 0 0 0 2px var(--primary-color); }
+.print-button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.print-button:hover {
+    background-color: #6B7280;
+}
+mark {
+    background-color: #ffec99;
+    padding: 0 2px;
+    border-radius: 3px;
+    color: #333;
+}
+body.dark-mode mark {
+    background-color: #FBBF24;
+    color: #1F2937;
+}
