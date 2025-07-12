@@ -1,0 +1,32 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">
+    <title id="title">Area of a Shaded Region Between Two Circles</title>
+    <desc id="desc">Two concentric circles. The area between the outer circle (radius 6 cm) and the inner circle (radius 4 cm) is shaded.</desc>
+    <style>
+        .outer-circle { fill: #007bff; fill-opacity: 0.3; stroke: #0056b3; stroke-width: 2; }
+        .inner-circle { fill: white; stroke: #dc3545; stroke-width: 2; }
+        .center-dot { fill: #333; }
+        .radius-line { stroke: #333; stroke-width: 1.5; marker-end: url(#arrowhead); }
+        .radius-text { font-family: Arial, sans-serif; font-size: 16px; }
+    </style>
+    <defs>
+        <marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#333" />
+        </marker>
+    </defs>
+
+    <!-- Shaded Area (Outer Circle) -->
+    <circle cx="150" cy="150" r="120" class="outer-circle"/>
+
+    <!-- Inner Circle (to create the hole) -->
+    <circle cx="150" cy="150" r="80" class="inner-circle"/>
+
+    <!-- Center Dot -->
+    <circle cx="150" cy="150" r="3" class="center-dot"/>
+
+    <!-- Radius Lines and Text -->
+    <line x1="150" y1="150" x2="270" y2="150" class="radius-line"/>
+    <text x="200" y="145" class="radius-text">R = 6 cm</text>
+
+    <line x1="150" y1="150" x2="150" y2="70" class="radius-line"/>
+    <text x="155" y="115" class="radius-text">r = 4 cm</text>
+</svg>
