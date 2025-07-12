@@ -477,3 +477,65 @@ body.dark-mode mark {
     background-color: #FBBF24;
     color: #1F2937;
 }
+
+/* --- Block Styles for Notes, Examples, Reminders --- */
+.note-block, .example-block, .reminder-block {
+    padding: 20px;
+    margin: 20px 0;
+    border-right: 5px solid;
+    border-radius: 8px;
+    position: relative;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+.note-block::before, .example-block::before, .reminder-block::before {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--white);
+}
+
+/* Note Block - Blue */
+.note-block {
+    border-color: #3B82F6;
+}
+.note-block::before {
+    content: 'ملاحظة 💡';
+    background-color: #3B82F6;
+}
+
+/* Example Block - Green */
+.example-block {
+    border-color: #10B981;
+    background-color: #F0FDF4; /* Light green background */
+}
+.example-block::before {
+    content: 'مثال 🔍';
+    background-color: #10B981;
+}
+body.dark-mode .example-block {
+    background-color: #162a22;
+}
+
+
+/* Reminder Block - Yellow */
+.reminder-block {
+    border-color: #F59E0B;
+}
+.reminder-block::before {
+    content: 'تذكير 📌';
+    background-color: #F59E0B;
+}
+
+body.dark-mode .note-block, 
+body.dark-mode .example-block, 
+body.dark-mode .reminder-block {
+    background-color: #1F2937; /* Darker background for dark mode */
+    border-right-width: 5px;
+}

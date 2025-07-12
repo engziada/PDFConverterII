@@ -156,8 +156,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (!slide) return;
                 let mainContentHtml = '';
                 if(slide.content) mainContentHtml += this.parseContent(slide.content);
-                if(slide.example) mainContentHtml += `<h4>مثال:</h4><div class="example-block">${this.parseContent(slide.example)}</div>`;
-                if(slide.note) mainContentHtml += `<div class="interactive-element"><p><strong>ملاحظة:</strong> ${this.parseContent(slide.note)}</p></div>`;
+                if(slide.example) mainContentHtml += `<div class="example-block">${this.parseContent(slide.example)}</div>`;
+                if(slide.note) mainContentHtml += `<div class="note-block">${this.parseContent(slide.note)}</div>`;
+                if(slide.reminder) mainContentHtml += `<div class="reminder-block">${this.parseContent(slide.reminder)}</div>`;
                 
                 if (slide['step-by-step']) {
                     mainContentHtml += this.renderStepByStep(slide['step-by-step'], slide.questions?.[0]?.question);
@@ -189,15 +190,26 @@ document.addEventListener('DOMContentLoaded', () => {
             const questionHtml = this.parseContent(q.question);
             const answerHtml = this.parseContent(q.answer);
             const mcqRegex = /<p>a\)/;
+            const tfRegex = /صواب أم خطأ/i;
+            const completeRegex = /أكمل الفراغ/i;
+
             if (mcqRegex.test(questionHtml)) {
                 return this.renderMCQ(questionHtml, answerHtml, index);
             }
+            if (tfRegex.test(questionHtml)) {
+                return this.renderTrueFalse(questionHtml, answerHtml, index);
+            }
+            if (completeRegex.test(questionHtml)) {
+                return this.renderFillInTheBlank(questionHtml, answerHtml, index);
+            }
+
+            // Fallback for standard questions
             return `
                 <div class="interactive-element">
                     <h4>سؤال:</h4>
                     <div>${questionHtml}</div>
-                    <button onclick="App.toggleAnswer(this)">عرض الإجابة</button>
-                    <div class="answer-container">${answerHtml}</div>
+                    <button class="show-answer-btn" onclick="App.toggleAnswer(this)">عرض الإجابة</button>
+                    <div class="answer-container" style="display: none;">${answerHtml}</div>
                 </div>
             `;
         },
@@ -209,13 +221,60 @@ document.addEventListener('DOMContentLoaded', () => {
             const answerKeyMatch = answerHtml.match(/\w\)/);
             if (!answerKeyMatch) return `<div>Error: Could not find answer key for MCQ.</div>`;
             const answerKey = answerKeyMatch[0].replace(')','');
+            
+            const options = optionsHtml.split(/<p>(?=\w\))/g).map(opt => {
+                const match = opt.match(/<p>(\w\))/);
+                if (!match) return '';
+                const key = match[1];
+                const text = opt.replace(/<p>\w\)/, '').trim();
+                return `<li tabindex="0" role="button" data-option="${key}" onclick="App.checkMCQAnswer(this)">
+                          <span class="option-key">${key}</span>
+                          <span class="option-text">${text}</span>
+                        </li>`;
+            }).join('');
+
             return `
-                <div class="interactive-element">
+                <div class="interactive-element mcq-container" id="mcq-${qIndex}" data-answer-key="${answerKey}">
                     <h4>اختر الإجابة الصحيحة:</h4>
-                    <div>${questionText}</div>
-                    <ul class="mcq-options" id="mcq-${qIndex}" data-answer="${answerKey}">
-                        ${optionsHtml.replace(/<p>(\w\))/g, '<li tabindex="0" data-option="$1" onclick="App.checkAnswer(this)" onkeydown="if(event.key===\'Enter\' || event.key===\' \') App.checkAnswer(this)">$1')}
-                    </ul>
+                    <div class="question-text">${questionText}</div>
+                    <ul class="mcq-options">${options}</ul>
+                    <div class="feedback-container"></div>
+                </div>
+            `;
+        },
+
+        renderTrueFalse(questionHtml, answerHtml, qIndex) {
+            const questionText = questionHtml.replace(/<h3>.*<\/h3>/, '').replace(/<p>صواب أم خطأ<\/p>/i, '').trim();
+            const correctAnswer = /صواب/i.test(answerHtml); // true for "صواب", false for "خطأ"
+            return `
+                <div class="interactive-element tf-container" id="tf-${qIndex}" data-answer="${correctAnswer}">
+                    <h4>صواب أم خطأ:</h4>
+                    <div class="question-text">${questionText}</div>
+                    <div class="tf-buttons">
+                        <button data-choice="true" onclick="App.checkTFAnswer(this)">صواب</button>
+                        <button data-choice="false" onclick="App.checkTFAnswer(this)">خطأ</button>
+                    </div>
+                    <div class="feedback-container"></div>
+                </div>
+            `;
+        },
+
+        renderFillInTheBlank(questionHtml, answerHtml, qIndex) {
+            const questionText = questionHtml.replace(/<h3>.*<\/h3>/, '').replace(/<p>أكمل الفراغ:<\/p>/i, '').trim();
+            const answers = answerHtml.replace(/<p>/g, '').replace(/<\/p>/g, '').split(',').map(a => a.trim());
+            
+            let blankIndex = 0;
+            const processedQuestion = questionText.replace(/_{3,}/g, () => {
+                blankIndex++;
+                return `<input type="text" class="blank-input" id="blank-${qIndex}-${blankIndex}" data-blank-index="${blankIndex}">`;
+            });
+
+            return `
+                <div class="interactive-element fitb-container" id="fitb-${qIndex}" data-answers='${JSON.stringify(answers)}'>
+                    <h4>أكمل الفراغ:</h4>
+                    <div class="question-text">${processedQuestion}</div>
+                    <button onclick="App.checkFillBlankAnswer(this)">تحقق من الإجابة</button>
+                    <div class="feedback-container"></div>
                 </div>
             `;
         },
@@ -265,19 +324,94 @@ document.addEventListener('DOMContentLoaded', () => {
             button.style.display = 'none';
         },
 
-        checkAnswer(optionElement) {
-            const list = optionElement.parentElement;
-            if (list.classList.contains('answered')) return;
-            const chosen = optionElement.dataset.option.replace(')','');
-            const correct = list.dataset.answer;
-            if (chosen === correct) {
+        checkMCQAnswer(optionElement) {
+            const container = optionElement.closest('.mcq-container');
+            if (container.classList.contains('answered')) return;
+
+            const chosenKey = optionElement.dataset.option;
+            const correctKey = container.dataset.answerKey;
+            const feedbackContainer = container.querySelector('.feedback-container');
+
+            optionElement.classList.add('selected');
+
+            if (chosenKey === correctKey) {
                 optionElement.classList.add('correct');
+                feedbackContainer.textContent = 'إجابة صحيحة!';
+                feedbackContainer.className = 'feedback-container correct';
             } else {
                 optionElement.classList.add('incorrect');
-                const correctLi = list.querySelector(`[data-option="${correct})"]`);
-                if (correctLi) correctLi.classList.add('correct');
+                const correctLi = container.querySelector(`[data-option="${correctKey}"]`);
+                if (correctLi) correctLi.classList.add('correct-highlight');
+                feedbackContainer.textContent = `إجابة خاطئة. الصحيح هو ${correctKey}.`;
+                feedbackContainer.className = 'feedback-container incorrect';
             }
-            list.classList.add('answered');
+            container.classList.add('answered');
+        },
+
+        checkTFAnswer(button) {
+            const container = button.closest('.tf-container');
+            if (container.classList.contains('answered')) return;
+
+            const choice = button.dataset.choice === 'true';
+            const correctAnswer = container.dataset.answer === 'true';
+            const feedbackContainer = container.querySelector('.feedback-container');
+
+            if (choice === correctAnswer) {
+                button.classList.add('correct');
+                feedbackContainer.textContent = 'إجابة صحيحة!';
+                feedbackContainer.className = 'feedback-container correct';
+            } else {
+                button.classList.add('incorrect');
+                feedbackContainer.textContent = `إجابة خاطئة.`;
+                feedbackContainer.className = 'feedback-container incorrect';
+            }
+            container.classList.add('answered');
+            // Disable both buttons
+            container.querySelectorAll('.tf-buttons button').forEach(btn => btn.disabled = true);
+        },
+
+        checkFillBlankAnswer(button) {
+            const container = button.closest('.fitb-container');
+            if (container.classList.contains('answered')) return;
+
+            const inputs = container.querySelectorAll('.blank-input');
+            const answers = JSON.parse(container.dataset.answers);
+            const feedbackContainer = container.querySelector('.feedback-container');
+            let allCorrect = true;
+
+            inputs.forEach((input, index) => {
+                const userAnswer = input.value.trim();
+                const correctAnswer = answers[index];
+                if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+                    input.classList.remove('incorrect');
+                    input.classList.add('correct');
+                } else {
+                    input.classList.remove('correct');
+                    input.classList.add('incorrect');
+                    allCorrect = false;
+                }
+                input.disabled = true; // Disable input after check
+            });
+
+            if (allCorrect) {
+                feedbackContainer.textContent = 'ممتاز، كل الإجابات صحيحة!';
+                feedbackContainer.className = 'feedback-container correct';
+            } else {
+                feedbackContainer.textContent = 'لديك بعض الأخطاء، الإجابات الصحيحة موضحة بالأخضر.';
+                feedbackContainer.className = 'feedback-container incorrect';
+                // Show correct answers for incorrect inputs
+                inputs.forEach((input, index) => {
+                    if (input.classList.contains('incorrect')) {
+                        const correctAnswer = answers[index];
+                        let tooltip = document.createElement('span');
+                        tooltip.className = 'correct-answer-tooltip';
+                        tooltip.textContent = correctAnswer;
+                        input.parentNode.insertBefore(tooltip, input.nextSibling);
+                    }
+                });
+            }
+            container.classList.add('answered');
+            button.style.display = 'none'; // Hide check button
         },
 
         toggleAnswer(button) {

@@ -1,0 +1,22 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">
+    <title id="title">Venn Diagram for Set Operations</title>
+    <desc id="desc">A Venn diagram showing two overlapping circles, labeled A and B, inside a rectangle representing the universal set U.</desc>
+    <style>
+        .universal-set { fill: #F3F4F6; stroke: #9CA3AF; stroke-width: 2; rx: 10; }
+        .set-circle { fill-opacity: 0.2; stroke: #1F2937; stroke-width: 2.5; }
+        .set-text { font-family: var(--font-sans, Arial, sans-serif); font-size: 24px; font-weight: bold; fill: #1F2937; }
+        .universal-text { font-family: var(--font-sans, Arial, sans-serif); font-size: 28px; font-weight: bold; fill: #6B7280; }
+    </style>
+    
+    <!-- Universal Set Rectangle -->
+    <rect x="5" y="5" width="390" height="240" class="universal-set" />
+    <text x="360" y="40" class="universal-text">U</text>
+
+    <!-- Circle A -->
+    <circle cx="150" cy="125" r="100" class="set-circle" fill="#3B82F6" />
+    <text x="140" y="130" class="set-text">A</text>
+
+    <!-- Circle B -->
+    <circle cx="250" cy="125" r="100" class="set-circle" fill="#10B981" />
+    <text x="240" y="130" class="set-text">B</text>
+</svg>

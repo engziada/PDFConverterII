@@ -1,0 +1,44 @@
+<svg viewBox="0 0 480 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .matrix-val { font: 16px sans-serif; text-anchor: middle; }
+    .op { font: bold 20px sans-serif; text-anchor: middle; }
+    .bracket { fill: none; stroke: black; stroke-width: 1; }
+  </style>
+
+  <!-- Main Matrix -->
+  <text x="10" y="55" class="op">det</text>
+  <path d="M 35 10 L 30 10 L 30 90 L 35 90" class="bracket" />
+  <path d="M 115 10 L 120 10 L 120 90 L 115 90" class="bracket" />
+  <text x="55" y="30" class="matrix-val">a</text>
+  <text x="80" y="30" class="matrix-val">b</text>
+  <text x="105" y="30" class="matrix-val">c</text>
+  <text x="55" y="55" class="matrix-val">d</text>
+  <text x="80" y="55" class="matrix-val">e</text>
+  <text x="105" y="55" class="matrix-val">f</text>
+  <text x="55" y="80" class="matrix-val">g</text>
+  <text x="80" y="80" class="matrix-val">h</text>
+  <text x="105" y="80" class="matrix-val">i</text>
+
+  <text x="135" y="55" class="op">=</text>
+
+  <!-- Expansion -->
+  <text x="155" y="55" class="matrix-val">a</text>
+  <path d="M 170 35 L 168 35 L 168 75 L 170 75" class="bracket" />
+  <path d="M 210 35 L 212 35 L 212 75 L 210 75" class="bracket" />
+  <text x="180" y="50" class="matrix-val">e</text><text x="200" y="50" class="matrix-val">f</text>
+  <text x="180" y="70" class="matrix-val">h</text><text x="200" y="70" class="matrix-val">i</text>
+
+  <text x="225" y="55" class="op">-</text>
+  <text x="240" y="55" class="matrix-val">b</text>
+  <path d="M 255 35 L 253 35 L 253 75 L 255 75" class="bracket" />
+  <path d="M 295 35 L 297 35 L 297 75 L 295 75" class="bracket" />
+  <text x="265" y="50" class="matrix-val">d</text><text x="285" y="50" class="matrix-val">f</text>
+  <text x="265" y="70" class="matrix-val">g</text><text x="285" y="70" class="matrix-val">i</text>
+
+  <text x="310" y="55" class="op">+</text>
+  <text x="325" y="55" class="matrix-val">c</text>
+  <path d="M 340 35 L 338 35 L 338 75 L 340 75" class="bracket" />
+  <path d="M 380 35 L 382 35 L 382 75 L 380 75" class="bracket" />
+  <text x="350" y="50" class="matrix-val">d</text><text x="370" y="50" class="matrix-val">e</text>
+  <text x="350" y="70" class="matrix-val">g</text><text x="370" y="70" class="matrix-val">h</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .set-fill { fill: #a0c4ff; } /* A light blue fill */
+    .outline { stroke: #333; stroke-width: 2; fill: none; }
+    .label { font: bold 24px sans-serif; text-anchor: middle; }
+    .title { font: bold 28px sans-serif; text-anchor: middle; }
+    .background { fill: white; } /* Assumes a white background */
+  </style>
+
+  <defs>
+    <!-- Define a clipping path using the shape of Circle A -->
+    <clipPath id="clip-circle-a">
+      <circle cx="150" cy="150" r="100" />
+    </clipPath>
+  </defs>
+
+  <!-- 1. Draw the combined shaded area (the union) -->
+  <g class="set-fill">
+    <circle cx="150" cy="150" r="100" />
+    <circle cx="250" cy="150" r="100" />
+  </g>
+
+  <!-- 2. "Erase" the intersection by drawing it in the background color -->
+  <!-- To get the intersection shape, we draw Circle B clipped by Circle A -->
+  <circle cx="250" cy="150" r="100" class="background" clip-path="url(#clip-circle-a)" />
+
+  <!-- 3. Draw the outlines on top for a clean look -->
+  <circle cx="150" cy="150" r="100" class="outline" />
+  <circle cx="250" cy="150" r="100" class="outline" />
+
+  <!-- 4. Add labels -->
+  <text x="110" y="155" class="label">A</text>
+  <text x="290" y="155" class="label">B</text>
+  <text x="200" y="40" class="title">A Δ B</text>
+
+</svg>

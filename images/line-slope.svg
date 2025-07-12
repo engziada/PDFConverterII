@@ -1,0 +1,36 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">
+    <title id="title">Illustration of Line Slope</title>
+    <desc id="desc">A line on a 2D coordinate system, showing the rise (delta y) and run (delta x) used to calculate the slope.</desc>
+    <style>
+        .axis { stroke: #6B7280; stroke-width: 2; }
+        .line { stroke: #3B82F6; stroke-width: 3; }
+        .point { fill: #EF4444; }
+        .label { font-family: var(--font-sans, Arial, sans-serif); font-size: 16px; }
+        .slope-line { stroke: #10B981; stroke-width: 2; stroke-dasharray: 4; }
+    </style>
+    
+    <!-- Axes -->
+    <g class="axis">
+        <line x1="30" y1="270" x2="270" y2="270" /> <!-- X-axis -->
+        <line x1="30" y1="30" x2="30" y2="270" /> <!-- Y-axis -->
+    </g>
+
+    <!-- Main Line -->
+    <line x1="50" y1="250" x2="250" y2="50" class="line"/>
+
+    <!-- Points -->
+    <circle cx="100" cy="200" r="5" class="point"/>
+    <text x="65" y="205" class="label">(x₁, y₁)</text>
+    <circle cx="200" cy="100" r="5" class="point"/>
+    <text x="205" y="95" class="label">(x₂, y₂)</text>
+
+    <!-- Slope Triangle -->
+    <g class="slope-line">
+        <line x1="100" y1="200" x2="200" y2="200" /> <!-- Run -->
+        <line x1="200" y1="200" x2="200" y2="100" /> <!-- Rise -->
+    </g>
+    
+    <!-- Slope Labels -->
+    <text x="140" y="220" class="label" fill="#10B981">Δx (run)</text>
+    <text x="205" y="150" class="label" fill="#10B981">Δy (rise)</text>
+</svg>

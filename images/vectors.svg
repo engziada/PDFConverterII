@@ -1,0 +1,35 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">
+    <title id="title">Parallel and Perpendicular Vectors</title>
+    <desc id="desc">Two diagrams. The left shows two parallel vectors. The right shows two perpendicular vectors meeting at a right angle.</desc>
+    <style>
+        .vector { stroke-width: 2.5; marker-end: url(#arrowhead); }
+        .v1 { stroke: #3B82F6; }
+        .v2 { stroke: #10B981; }
+        .label { font-family: var(--font-sans, Arial, sans-serif); font-size: 16px; }
+    </style>
+    <defs>
+        <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#333" />
+        </marker>
+    </defs>
+
+    <!-- Parallel Vectors -->
+    <g transform="translate(0, 20)">
+        <text x="70" y="20" class="label" font-weight="bold">Parallel</text>
+        <line x1="50" y1="50" x2="150" y2="50" class="vector v1"/>
+        <text x="90" y="45" class="label">u</text>
+        <line x1="50" y1="80" x2="180" y2="80" class="vector v2"/>
+        <text x="105" y="75" class="label">v = k * u</text>
+    </g>
+
+    <!-- Perpendicular Vectors -->
+    <g transform="translate(200, 20)">
+        <text x="50" y="20" class="label" font-weight="bold">Perpendicular</text>
+        <line x1="50" y1="150" x2="150" y2="150" class="vector v1"/>
+        <text x="95" y="170" class="label">u</text>
+        <line x1="50" y1="150" x2="50" y2="50" class="vector v2"/>
+        <text x="30" y="100" class="label">v</text>
+        <text x="60" y="145" class="label" font-size="12px">u · v = 0</text>
+        <rect x="50" y="135" width="15" height="15" fill="none" stroke="#6B7280" stroke-width="1"/>
+    </g>
+</svg>

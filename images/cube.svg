@@ -1,16 +1,24 @@
-<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <style>
-        .face { fill-opacity: 0.7; stroke: #333; stroke-width: 1.5; }
-        .front { fill: #e9ecef; }
-        .top { fill: #f8f9fa; }
-        .side { fill: #ced4da; }
-    </style>
-    <g transform="translate(50, 50) skewY='-15' skewX='25'">
-        <!-- Top Face -->
-        <rect x="20" y="0" width="80" height="80" class="face top" />
-        <!-- Side Face -->
-        <rect x="100" y="20" width="80" height="80" class="face side" transform="skewY(40)"/>
-        <!-- Front Face -->
-        <rect x="20" y="20" width="80" height="80" class="face front" />
-    </g>
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .edge { stroke: black; stroke-width: 2; }
+    .hidden-edge { stroke: #555; stroke-width: 1.5; stroke-dasharray: 4, 2; }
+  </style>
+
+  <!-- Back face lines -->
+  <line x1="20" y1="20" x2="80" y2="20" class="hidden-edge" />
+  <line x1="20" y1="20" x2="20" y2="80" class="hidden-edge" />
+  <line x1="80" y1="20" x2="80" y2="80" class="hidden-edge" />
+  <line x1="20" y1="80" x2="80" y2="80" class="hidden-edge" />
+
+  <!-- Front face lines -->
+  <line x1="40" y1="40" x2="100" y2="40" class="edge" />
+  <line x1="40" y1="40" x2="40" y2="100" class="edge" />
+  <line x1="100" y1="40" x2="100" y2="100" class="edge" />
+  <line x1="40" y1="100" x2="100" y2="100" class="edge" />
+
+  <!-- Connecting edges -->
+  <line x1="20" y1="20" x2="40" y2="40" class="hidden-edge" />
+  <line x1="80" y1="20" x2="100" y2="40" class="edge" />
+  <line x1="20" y1="80" x2="40" y2="100" class="edge" />
+  <line x1="80" y1="80" x2="100" y2="100" class="edge" />
 </svg>

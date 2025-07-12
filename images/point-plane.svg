@@ -1,0 +1,24 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">
+    <title id="title">Distance from a Point to a Plane</title>
+    <desc id="desc">A 3D perspective view of a plane with a point P above it. A dashed line shows the perpendicular distance from the point to the plane.</desc>
+    <style>
+        .plane { fill: #3B82F6; fill-opacity: 0.2; stroke: #2563EB; stroke-width: 1.5; }
+        .point { fill: #EF4444; }
+        .line { stroke: #1F2937; stroke-width: 2; stroke-dasharray: 5; }
+        .label { font-family: var(--font-sans, Arial, sans-serif); font-size: 18px; }
+    </style>
+    
+    <!-- Plane -->
+    <path d="M 20 150 L 120 250 L 280 200 L 180 100 Z" class="plane" />
+
+    <!-- Point P -->
+    <circle cx="160" cy="80" r="5" class="point" />
+    <text x="170" y="85" class="label">P(x₀, y₀, z₀)</text>
+
+    <!-- Point on Plane -->
+    <circle cx="150" cy="160" r="3" fill="#333" />
+    
+    <!-- Distance Line -->
+    <line x1="160" y1="80" x2="150" y2="160" class="line"/>
+    <text x="160" y="125" class="label">D</text>
+</svg>
