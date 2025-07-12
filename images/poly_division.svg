@@ -1,0 +1,31 @@
+<svg width="300" height="250" viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">
+    <title id="title">Polynomial Long Division</title>
+    <desc id="desc">An example of polynomial long division, showing 6x^2 + 8x + 2 divided by 2x + 2, which results in 3x + 1.</desc>
+    <style>
+        .mono { font-family: 'Courier New', Courier, monospace; font-size: 18px; }
+        .line { stroke: #000; stroke-width: 1.5; }
+    </style>
+    
+    <!-- Result -->
+    <text x="130" y="40" class="mono">3x + 1</text>
+    <line x1="120" y1="50" x2="280" y2="50" class="line" />
+
+    <!-- Divisor -->
+    <text x="20" y="70" class="mono">2x + 2</text>
+    <line x1="115" y1="20" x2="115" y2="80" class="line" />
+
+    <!-- Dividend -->
+    <text x="130" y="70" class="mono">6x² + 8x + 2</text>
+
+    <!-- Step 1 -->
+    <text x="120" y="100" class="mono">-(6x² + 6x)</text>
+    <line x1="120" y1="110" x2="260" y2="110" class="line" />
+
+    <!-- Step 2 -->
+    <text x="180" y="130" class="mono">2x + 2</text>
+    <text x="160" y="160" class="mono">-(2x + 2)</text>
+    <line x1="160" y1="170" x2="260" y2="170" class="line" />
+
+    <!-- Remainder -->
+    <text x="220" y="190" class="mono">0</text>
+</svg>

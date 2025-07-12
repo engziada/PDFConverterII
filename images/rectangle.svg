@@ -1,0 +1,5 @@
+<svg width="250" height="150" viewBox="0 0 250 150" xmlns="http://www.w3.org/2000/svg">
+    <rect x="25" y="25" width="200" height="100" fill="#e9ecef" stroke="#333" stroke-width="2"/>
+    <text x="120" y="20" font-family="Arial" font-size="18">L</text>
+    <text x="10" y="85" font-family="Arial" font-size="18">W</text>
+</svg>

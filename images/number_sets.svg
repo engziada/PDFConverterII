@@ -1,0 +1,28 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">
+    <title id="title">Hierarchy of Number Sets</title>
+    <desc id="desc">A diagram of nested ellipses representing the hierarchy of number sets, from Natural Numbers (N) inside Whole Numbers (W), inside Integers (Z), inside Rational Numbers (Q), all inside Real Numbers (R).</desc>
+    <style>
+        .set-ellipse { stroke-width: 2; stroke: #333; fill-opacity: 0.8; }
+        .set-text { font-family: "Times New Roman", serif; font-size: 28px; font-weight: bold; fill: #fff; }
+    </style>
+    
+    <!-- Real Numbers (R) -->
+    <ellipse cx="200" cy="150" rx="190" ry="140" class="set-ellipse" fill="#5c7cfa" />
+    <text x="30" y="250" class="set-text" fill="#fff">$\mathbb{R}$</text>
+
+    <!-- Rational Numbers (Q) -->
+    <ellipse cx="200" cy="150" rx="160" ry="115" class="set-ellipse" fill="#4dabf7" />
+    <text x="60" y="220" class="set-text">$\mathbb{Q}$</text>
+
+    <!-- Integers (Z) -->
+    <ellipse cx="200" cy="150" rx="130" ry="90" class="set-ellipse" fill="#63c9ff" />
+    <text x="90" y="190" class="set-text">$\mathbb{Z}$</text>
+
+    <!-- Whole Numbers (W) -->
+    <ellipse cx="200" cy="150" rx="100" ry="65" class="set-ellipse" fill="#83d9ff" />
+    <text x="120" y="160" class="set-text">$\mathbb{W}$</text>
+
+    <!-- Natural Numbers (N) -->
+    <ellipse cx="200" cy="150" rx="70" ry="40" class="set-ellipse" fill="#a1e4ff" />
+    <text x="185" y="155" class="set-text" fill="#333">$\mathbb{N}$</text>
+</svg>

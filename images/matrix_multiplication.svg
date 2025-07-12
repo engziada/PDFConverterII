@@ -1,0 +1,42 @@
+<svg width="500" height="250" viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">
+    <title id="title">Matrix Multiplication Dimensions</title>
+    <desc id="desc">A diagram showing that for matrix multiplication A * B, the inner dimensions (columns of A, rows of B) must match. The resulting matrix has the outer dimensions.</desc>
+    <style>
+        .matrix-box { fill: #e9ecef; stroke: #333; stroke-width: 2; rx: 5; }
+        .matrix-label { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; }
+        .dim-label { font-family: 'Courier New', Courier, monospace; font-size: 18px; }
+        .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrowhead); }
+        .highlight-match { fill: #28a745; color: white; font-weight: bold; }
+        .highlight-outer { fill: #007bff; color: white; font-weight: bold; }
+    </style>
+    <defs>
+        <marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#333" />
+        </marker>
+    </defs>
+
+    <!-- Matrix A -->
+    <rect x="20" y="80" width="100" height="60" class="matrix-box"/>
+    <text x="60" y="120" class="matrix-label">A</text>
+    <text x="45" y="170" class="dim-label">m x <tspan class="highlight-match">n</tspan></text>
+
+    <!-- Matrix B -->
+    <rect x="180" y="80" width="100" height="60" class="matrix-box"/>
+    <text x="220" y="120" class="matrix-label">B</text>
+    <text x="205" y="170" class="dim-label"><tspan class="highlight-match">n</tspan> x k</text>
+
+    <!-- Result Matrix AB -->
+    <rect x="380" y="80" width="100" height="60" class="matrix-box"/>
+    <text x="415" y="120" class="matrix-label">AB</text>
+    <text x="395" y="170" class="dim-label"><tspan class="highlight-outer">m</tspan> x <tspan class="highlight-outer">k</tspan></text>
+
+    <!-- Arrows and Labels -->
+    <text x="135" y="115" font-size="24px">×</text>
+    <text x="310" y="115" font-size="24px">=</text>
+    
+    <path d="M 100 60 C 150 30, 250 30, 300 60" fill="none" stroke="#28a745" stroke-width="2"/>
+    <text x="170" y="50" fill="#28a745" font-weight="bold">Must Match</text>
+    
+    <path d="M 50 185 C 50 220, 450 220, 450 185" fill="none" stroke="#007bff" stroke-width="2"/>
+    <text x="180" y="220" fill="#007bff" font-weight="bold">Resulting Dimensions</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">
+    <title id="title">Venn Diagram for Intersection</title>
+    <desc id="desc">A Venn diagram showing two overlapping circles, labeled A and B. The overlapping region, representing A intersect B, is colored in blue.</desc>
+    <style>
+        .set-circle { fill-opacity: 0.2; stroke: #333; stroke-width: 2.5; }
+        .set-text { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #000; }
+        .intersection-area { fill: #007bff; fill-opacity: 0.6; }
+    </style>
+    
+    <!-- Define a clip path for the intersection area -->
+    <defs>
+        <clipPath id="clip-intersect">
+            <circle cx="150" cy="125" r="100" />
+        </clipPath>
+    </defs>
+
+    <!-- Circle A -->
+    <circle cx="150" cy="125" r="100" class="set-circle" fill="#ff6b6b" />
+    <text x="70" y="125" class="set-text">A</text>
+
+    <!-- Circle B -->
+    <circle cx="250" cy="125" r="100" class="set-circle" fill="#4dabf7" />
+    <text x="310" y="125" class="set-text">B</text>
+
+    <!-- Intersection Area (Circle B clipped by Circle A's path) -->
+    <circle cx="250" cy="125" r="100" class="intersection-area" clip-path="url(#clip-intersect)" />
+
+    <!-- Label for Intersection -->
+    <text x="185" y="130" class="set-text" fill="#fff" font-size="22px">A∩B</text>
+</svg>

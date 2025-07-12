@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{SUBJECT_NAME}}</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 280px;
+            background-color: #ffffff;
+            border-left: 1px solid #dcdfe6;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar-header {
+            padding: 20px;
+            border-bottom: 1px solid #dcdfe6;
+            text-align: center;
+        }
+        .sidebar-header .logo {
+            width: 80px;
+            height: 80px;
+            background-color: #e9ecef;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #495057;
+        }
+        .sidebar-header h2 {
+            margin: 0;
+            font-size: 1.4em;
+            color: #343a40;
+        }
+        .units-nav {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 15px;
+        }
+        .units-nav h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .units-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .units-nav li a {
+            display: block;
+            padding: 12px 15px;
+            text-decoration: none;
+            color: #495057;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            transition: background-color 0.3s;
+        }
+        .units-nav li a:hover, .units-nav li a.active {
+            background-color: #e9ecef;
+            color: #0056b3;
+        }
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .slide-container {
+            flex-grow: 1;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .slide-header {
+            border-bottom: 1px solid #dcdfe6;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        .slide-header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #343a40;
+        }
+        .slide-header h2 {
+            margin: 5px 0 0;
+            font-size: 1.5em;
+            color: #6c757d;
+        }
+        .slide-body {
+            flex-grow: 1;
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+        .slide-content {
+            flex: 2;
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #343a40;
+        }
+        .slide-content h3 { color: #007bff; }
+        .slide-content pre {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .illustration {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .illustration img, .illustration svg {
+            max-width: 100%;
+            max-height: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .footer {
+            border-top: 1px solid #dcdfe6;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+        }
+        .footer-buttons button {
+            padding: 10px 25px;
+            font-size: 1em;
+            border: 1px solid #007bff;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 0 5px;
+        }
+        .footer-buttons button:hover {
+            background-color: #0056b3;
+        }
+        .footer-buttons button:disabled {
+            background-color: #a0a0a0;
+            border-color: #a0a0a0;
+            cursor: not-allowed;
+        }
+        .progress-container {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress-bar-inner {
+            height: 100%;
+            background-color: #007bff;
+            width: {{PROGRESS_PERCENT}}%;
+            transition: width 0.3s ease-in-out;
+        }
+        .slide-counter {
+            font-size: 1em;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">شعار</div>
+            <h2>{{SUBJECT_NAME}}</h2>
+        </div>
+        <nav class="units-nav">
+            {{UNITS_NAVIGATION}}
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div id="slide-container" class="slide-container">
+            <!-- Slide content will be injected here -->
+        </div>
+
+        <div class="footer">
+            <div class="footer-buttons">
+                <button id="finish-btn">إنهاء</button>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div id="progress-bar-inner" class="progress-bar-inner"></div>
+                </div>
+            </div>
+            <div class="slide-counter">
+                <span id="current-slide-num"></span> / <span id="total-slides-num"></span>
+            </div>
+            <div class="footer-buttons">
+                <button id="next-btn">التالي</button>
+                <button id="prev-btn">السابق</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const slides = [
+            // SLIDES_ARRAY will be injected by Python
+        ];
+
+        let currentSlide = 0;
+
+        const slideContainer = document.getElementById('slide-container');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const finishBtn = document.getElementById('finish-btn');
+        const progressBar = document.getElementById('progress-bar-inner');
+        const currentSlideNum = document.getElementById('current-slide-num');
+        const totalSlidesNum = document.getElementById('total-slides-num');
+        const unitsNav = document.querySelector('.units-nav');
+
+        function renderSlide() {
+            const slide = slides[currentSlide];
+            const slideHtml = `
+                <div class="slide-header">
+                    <h1>${slide.unit}</h1>
+                    <h2>${slide.lesson}</h2>
+                </div>
+                <div class="slide-body">
+                    <div class="slide-content">${slide.content}</div>
+                    ${slide.image ? `<div class="illustration"><img src="images/${slide.image}" alt="${slide.lesson}"></div>` : ''}
+                </div>
+            `;
+            slideContainer.innerHTML = slideHtml;
+            updateNavigation();
+        }
+
+        function updateNavigation() {
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === slides.length - 1;
+
+            const progressPercent = ((currentSlide + 1) / slides.length) * 100;
+            progressBar.style.width = `${progressPercent}%`;
+
+            currentSlideNum.textContent = currentSlide + 1;
+            totalSlidesNum.textContent = slides.length;
+            
+            // Update active link in sidebar
+            const currentSlideId = slides[currentSlide].id;
+            document.querySelectorAll('.units-nav a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#slide-${currentSlideId}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        function goToSlide(index) {
+            if (index >= 0 && index < slides.length) {
+                currentSlide = index;
+                renderSlide();
+            }
+        }
+
+        nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+        prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+        finishBtn.addEventListener('click', () => {
+            // You can define what "Finish" does, e.g., go to the last slide or show a summary.
+            goToSlide(slides.length - 1);
+        });
+        
+        unitsNav.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                e.preventDefault();
+                const slideId = e.target.getAttribute('href').replace('#slide-', '');
+                const slideIndex = slides.findIndex(s => s.id == slideId);
+                if(slideIndex !== -1) {
+                    goToSlide(slideIndex);
+                }
+            }
+        });
+
+        // Initial render
+        if(slides.length > 0) {
+            renderSlide();
+        } else {
+            slideContainer.innerHTML = "<h1>لا توجد شرائح لعرضها</h1>";
+            totalSlidesNum.textContent = 0;
+            currentSlideNum.textContent = 0;
+        }
+    </script>
+</body>
+</html>

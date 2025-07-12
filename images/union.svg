@@ -1,0 +1,24 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">
+    <title id="title">Venn Diagram for Union</title>
+    <desc id="desc">A Venn diagram showing two overlapping circles, labeled A and B. Both circles are fully colored in blue to represent A union B.</desc>
+    <style>
+        .set-circle { stroke: #333; stroke-width: 2.5; }
+        .set-text { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #000; }
+        .union-area { fill: #007bff; fill-opacity: 0.6; }
+    </style>
+    
+    <!-- Union Area (Both circles) -->
+    <g class="union-area">
+        <circle cx="150" cy="125" r="100" />
+        <circle cx="250" cy="125" r="100" />
+    </g>
+
+    <!-- Outlines for circles on top -->
+    <circle cx="150" cy="125" r="100" class="set-circle" fill="none" />
+    <circle cx="250" cy="125" r="100" class="set-circle" fill="none" />
+
+    <!-- Text labels -->
+    <text x="70" y="125" class="set-text">A</text>
+    <text x="310" y="125" class="set-text">B</text>
+    <text x="180" y="130" class="set-text" fill="#fff" font-size="22px">A∪B</text>
+</svg>

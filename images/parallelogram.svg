@@ -1,0 +1,6 @@
+<svg width="250" height="150" viewBox="0 0 250 150" xmlns="http://www.w3.org/2000/svg">
+    <path d="M 30 125 L 80 25 L 220 25 L 170 125 Z" fill="#e9ecef" stroke="#333" stroke-width="2"/>
+    <line x1="80" y1="25" x2="80" y2="125" stroke-dasharray="4" stroke="#333" stroke-width="1.5"/>
+    <text x="120" y="145" font-family="Arial" font-size="18">b</text>
+    <text x="60" y="80" font-family="Arial" font-size="18">h</text>
+</svg>

@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقرر الدراسات الإسلامية - أ.ندى الحربي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .slideshow-container {
+            width: 100%;
+            max-width: 1200px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            height: 90vh;
+        }
+        
+        .slide {
+            padding: 30px;
+            height: calc(100% - 80px);
+            overflow-y: auto;
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        .slide.active {
+            display: block;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #2c6e49;
+            margin-bottom: 25px;
+        }
+        
+        .logo-placeholder {
+            width: 80px;
+            height: 80px;
+            background: #2c6e49;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .title {
+            text-align: center;
+            flex-grow: 1;
+            color: #2c6e49;
+        }
+        
+        .title h1 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+        
+        .title h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #4a7c59;
+        }
+        
+        .content {
+            padding: 15px 0;
+        }
+        
+        .content h3 {
+            color: #2c6e49;
+            margin: 20px 0 15px;
+            font-size: 1.8rem;
+            border-bottom: 1px solid #e9ecef;
+            padding-bottom: 8px;
+        }
+        
+        .content h4 {
+            color: #4a7c59;
+            margin: 15px 0 10px;
+            font-size: 1.4rem;
+        }
+        
+        .content p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        
+        .content ul, .content ol {
+            padding-right: 25px;
+            margin: 15px 0;
+        }
+        
+        .content li {
+            margin-bottom: 10px;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #2c6e49;
+            color: white;
+            font-weight: 600;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        tr:hover {
+            background-color: #e9f5eb;
+        }
+        
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #2c6e49;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-btn {
+            background: white;
+            color: #2c6e49;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .nav-btn:hover {
+            background: #f8f9fa;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .nav-btn:active {
+            transform: translateY(0);
+        }
+        
+        .finish-btn {
+            background: #d32f2f;
+            color: white;
+        }
+        
+        .finish-btn:hover {
+            background: #c62828;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        
+        .progress {
+            height: 100%;
+            background: #2c6e49;
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+        
+        .quiz-container {
+            background: #e8f5e9;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 25px 0;
+            border-left: 5px solid #2c6e49;
+        }
+        
+        .quiz-question {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c6e49;
+        }
+        
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .quiz-option {
+            background: white;
+            padding: 12px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .quiz-option:hover {
+            background: #f1f8e9;
+            border-color: #a5d6a7;
+        }
+        
+        .quiz-option.selected {
+            background: #c8e6c9;
+            border-color: #2c6e49;
+            font-weight: 600;
+        }
+        
+        .feedback {
+            margin-top: 15px;
+            padding: 12px;
+            border-radius: 8px;
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .feedback.correct {
+            background: #e8f5e9;
+            border: 1px solid #4caf50;
+            color: #2e7d32;
+        }
+        
+        .feedback.incorrect {
+            background: #ffebee;
+            border: 1px solid #f44336;
+            color: #c62828;
+        }
+        
+        .goodbye-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+        }
+        
+        .goodbye-svg {
+            width: 200px;
+            height: 200px;
+            margin: 25px 0;
+        }
+        
+        .goodbye-message {
+            font-size: 2.2rem;
+            color: #2c6e49;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        
+        .restart-btn {
+            background: #2c6e49;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .restart-btn:hover {
+            background: #23523c;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .section-icon {
+            background: #2c6e49;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 15px;
+            font-size: 1.5rem;
+        }
+        
+        .value-card {
+            background: #f1f8e9;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #2c6e49;
+        }
+        
+        .value-title {
+            color: #2c6e49;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .slideshow-container {
+                height: 95vh;
+            }
+            
+            .slide {
+                padding: 20px;
+            }
+            
+            .title h1 {
+                font-size: 1.6rem;
+            }
+            
+            .title h2 {
+                font-size: 1.2rem;
+            }
+            
+            .content h3 {
+                font-size: 1.5rem;
+            }
+            
+            .nav-btn {
+                padding: 8px 15px;
+                font-size: 1rem;
+            }
+            
+            .goodbye-message {
+                font-size: 1.8rem;
+            }
+            
+            .logo-placeholder {
+                width: 60px;
+                height: 60px;
+                font-size: 12px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .nav-btn {
+                padding: 6px 12px;
+                font-size: 0.9rem;
+            }
+            
+            .title h1 {
+                font-size: 1.4rem;
+            }
+            
+            .content h3 {
+                font-size: 1.3rem;
+            }
+            
+            .value-card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <!-- Slide 1: Cover -->
+        <div class="slide active" id="slide1">
+            <div class="header">
+                <div class="logo-placeholder">
+                    <i class="fas fa-mosque"></i>
+                </div>
+                <div class="title">
+                    <h1>الدراسات الإسلامية</h1>
+                    <h2>أ.ندى الحربي</h2>
+                </div>
+                <div class="logo-placeholder">
+                    <i class="fas fa-book-open"></i>
+                </div>
+            </div>
+            <div class="content">
+                <div style="text-align: center; margin: 20px 0 30px;">
+                    <svg width="200" height="200" viewBox="0 0 200 200">
+                        <circle cx="100" cy="100" r="90" fill="#2c6e49" opacity="0.1" stroke="#2c6e49" stroke-width="2"/>
+                        <path d="M60,100 C60,70 90,70 100,90 C110,70 140,70 140,100 C140,130 100,150 100,150 C100,150 60,130 60,100 Z" fill="#2c6e49" opacity="0.3"/>
+                        <path d="M80,90 L85,75 L95,80 L100,65 L105,80 L115,75 L120,90 L110,95 L115,110 L105,105 L100,120 L95,105 L85,110 L90,95 Z" fill="#ffd54f"/>
+                        <text x="100" y="40" text-anchor="middle" font-size="20" fill="#2c6e49">الثقافة الإسلامية</text>
+                        <text x="100" y="180" text-anchor="middle" font-size="16" fill="#2c6e49">مقرر عام</text>
+                    </svg>
+                </div>
+                
+                <p>تسعى المؤسسة العامة للتدريب التقني والمهني لتأهيل الكوادر الوطنية المدربة القادرة على شغل الوظائف التقنية والفنية والمهنية المتوفرة في سوق العمل السعودي.</p>
+                <p>وتتناول هذه الحقيبة التدريبية "الدراسات الإسلامية" لتدريب مندوبي الكليات التقنية موضوعات حيوية تتناول كيفية اكتساب المهارات اللازمة لهذا التخصص.</p>
+                
+                <div class="progress-bar">
+                    <div class="progress" style="width: 5%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 2: Table of Contents -->
+        <div class="slide" id="slide2">
+            <div class="header">
+                <div class="logo-placeholder">
+                    <i class="fas fa-list"></i>
+                </div>
+                <div class="title">
+                    <h1>فهرس المحتويات</h1>
+                </div>
+                <div class="logo-placeholder">
+                    <i class="fas fa-book"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h3>وحدات المقرر</h3>
+                <ol>
+                    <li><strong>الوحدة الأولى: العقيدة الإسلامية</strong>
+                        <ul>
+                            <li>مفهوم العقيدة الإسلامية وأركانها</li>
+                            <li>الإيمان بالله تعالى</li>
+                            <li>الإيمان بالملائكة</li>
+                            <li>الإيمان بالكتب</li>
+                            <li>الإيمان بالرسل</li>
+                            <li>الإيمان باليوم الآخر</li>
+                            <li>الإيمان بالقدر</li>
+                            <li>خصائص العقيدة الإسلامية</li>
+                        </ul>
+                    </li>
+                    <li><strong>الوحدة الثانية: القيم الإسلامية</strong>
+                        <ul>
+                            <li>مفهوم القيم وأنواعها</li>
+                            <li>القيم العليا في الإسلام</li>
+                            <li>القيم الخلفية في الإسلام</li>
+                            <li>القيم الحضارية في الإسلام</li>
+                        </ul>
+                    </li>
+                    <li><strong>الوحدة الثالثة: قضايا فكرية معاصرة</strong>
+                        <ul>
+                            <li>حقوق الإنسان</li>
+                            <li>الاستشراق مفهومه وأهدافه</li>
+                            <li>العولمة وأهدافها</li>
+                        </ul>
+                    </li>
+                    <li><strong>الوحدة الرابعة: أخلاقيات المهنة</strong>
+                        <ul>
+                            <li>مفهوم أخلاقيات المهنة وأهميتها</li>
+                            <li>أثر أخلاقيات المهنة في تحقيق التنمية</li>
+                            <li>الضوابط الشرعية للمهنة في الإسلام</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <div class="progress-bar">
+                    <div class="progress" style="width: 10%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 3: Unit 1 Introduction -->
+        <div class="slide" id="slide3">
+            <div class="header">
+                <div class="logo-placeholder">
+                    <i class="fas fa-star-of-david"></i>
+                </div>
+                <div class="title">
+                    <h1>الوحدة الأولى: العقيدة الإسلامية</h1>
+                </div>
+                <div class="logo-placeholder">
+                    <i class="fas fa-fist-raised"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h3>الهدف العام للوحدة</h3>
+                <p>تهدف هذه الوحدة إلى ترسيخ أهمية العقيدة الإسلامية ومرتبتها عن غيرها، ومدى أثرها على الفرد والمجتمع، وتصديها للانحرافات العقدية والفكرية بمنهج وسطي معتدل.</p>
+                
+                <h3>الأهداف التفصيلية</h3>
+                <ol>
+                    <li>توضيح معنى العقيدة الصحيحة وأهميتها</li>
+                    <li>ذكر خصائص العقيدة الصحيحة</li>
+                    <li>توضيح أدلة وجود الله ومناقشة المنكرين لوجوده</li>
+                    <li>التمييز بين توحيد الألوهية وتوحيد الربوبية</li>
+                    <li>إثبات أحداث اليوم الآخر بالأدلة</li>
+                    <li>استعراض أهم مظاهر الانحراف في باب القدر</li>
+                    <li>ذكر ما يميز العقيدة الإسلامية عن غيرها وأثرها على الفرد والمجتمع</li>
+                    <li>الفرق بين الغلو والانحلال لإظهار وسطية العقيدة الإسلامية</li>
+                </ol>
+                
+                <h3>الوقت المتوقع</h3>
+                <p>10 ساعات تدريبية</p>
+                
+                <div class="progress-bar">
+                    <div class="progress" style="width: 15%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 4: Concept of Islamic Creed -->
+        <div class="slide" id="slide4">
+            <div class="header">
+                <div class="logo-placeholder">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <div class="title">
+                    <h1>مفهوم العقيدة الإسلامية</h1>
+                </div>
+                <div class="logo-placeholder">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h3>تعريف العقيدة</h3>
+                <p><strong>لغةً:</strong> مأخوذة من العقد وهو يدل على شدّ ووثوق، وما عقده الإنسان عليه قلبه عقدا جازما فهو عقيدة.</p>
+                <p><strong>اصطلاحاً:</strong> الإيمان الجازم الذي ينعقد عليه القلب ولا يتطرق إليه شك، ويتعلق بالأمور القلبية.</p>
+                
+                <h3>أركان الإيمان</h3>
+                <p>أصول العقيدة الإسلامية (أركان الإيمان) ستة:</p>
+                <ol>
+                    <li>الإيمان بالله تعالى</li>
+                    <li>الإيمان بالملائكة</li>
+                    <li>الإيمان بالكتب السماوية</li>
+                    <li>الإيمان بالرسل</li>
+                    <li>الإيمان باليوم الآخر</li>
+                    <li>الإيمان بالقدر خيره وشره</li>
+                </ol>
+                
+                <div class="quiz-container">
+                    <div class="quiz-question">ما هو عدد أركان الإيمان في الإسلام؟</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-correct="true">ستة أركان</div>
+                        <div class="quiz-option">خمسة أركان</div>
+                        <div class="quiz-option">سبعة أركان</div>
+                        <div class="quiz-option">أربعة أركان</div>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                
+                <div class="progress-bar">
+                    <div class="progress" style="width: 20%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 5: Belief in Allah -->
+        <div class="slide" id="slide5">
+            <div class="header">
+                <div class="logo-placeholder">
+                    <i class="fas fa-pray"></i>
+                </div>
+                <div class="title">
+                    <h1>الإيمان بالله تعالى</h1>
+                </div>
+                <div class="logo-placeholder">
+                    <i class="fas fa-hands-praying"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h3>أدلة وجود الله تعالى</h3>
+                <ol>
+                    <li><strong>دلالة الفطرة:</strong> كل مخلوق فطر على الإيمان بخالقه</li>
+                    <li><strong>دلالة العقل:</strong> المخلوقات لا يمكن أن توجد صدفة أو تخلق نفسها</li>
+                    <li><strong>دلالة الشرع:</strong> الكتب السماوية تنطق بوجود الله</li>
+                    <li><strong>دلالة الحس:</strong> إجابة الداعين وغوث المكروبين</li>
+                </ol>
+                
+                <h3>مكونات الإيمان بالله</h3>
+                <ol>
+                    <li><strong>الإيمان بوجود الله تعالى</strong></li>
+                    <li><strong>الإيمان بربوبيته:</strong> بأنه وحده الرب لا شريك له</li>
+                    <li><strong>الإيمان بألوهيته:</strong> بأنه وحده الإله الحق</li>
+                    <li><strong>الإيمان بأسمائه وصفاته:</strong> إثبات ما أثبته الله لنفسه</li>
+                </ol>
+                
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>نوع التوحيد</th>
+                            <th>المعنى</th>
+                            <th>الدليل</th>
+                        </tr>
+                        <tr>
+                            <td>توحيد الربوبية</td>
+                            <td>إفراد الله بأفعاله كالخلق والرزق</td>
+                            <td>أَلا لَهُ الْخَلْقُ وَالأَمْرُ</td>
+                        </tr>
+                        <tr>
+                            <td>توحيد الألوهية</td>
+                            <td>إفراد الله بالعبادة</td>
+                            <td>وَإِلَهُكُمْ إِلَهٌ وَاحِدٌ</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="progress-bar">
+                    <div class="progress" style="width: 25%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 6: Belief in Angels -->
+        <div class="slide" id="slide6">
+            <div class="header">
+                <div class="logo-placeholder">
+                    <i class="fas fa-angel"></i>
+                </div>
+                <div class="title">
+                    <h1>الإيمان بالملائكة</h1>
+                </div>
+                <div class="logo-placeholder">
+                    <i class="fas fa-feather-alt"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h3>مفهوم الإيمان بالملائكة</h3>
+                <p>عالم غيبي مخلوقون عابدون لله تعالى، ليس لهم من خصائص الربوبية والألوهية شيء، خلقهم الله تعالى من نور.</p>
+                
+                <h3>أمور يتضمنها الإيمان بالملائكة</h3>
+                <ol>
+                    <li>الإيمان بوجودهم</li>
+                    <li>الإيمان بمن علمنا اسمه منهم كجبريل، ومن لم نعلم اسمه نؤمن بهم إجمالاً</li>
+                    <li>الإيمان بما علمنا من صفاتهم</li>
+                    <li>الإيمان بما علمنا من أعمالهم التي يقومون بها بأمر الله تعالى</li>
+                </ol>
+                
+                <h3>ثمرات الإيمان بالملائكة</h3>
+                <ol>
+                    <li>العلم بعظمة الله تعالى وقوته وسلطانه</li>
+                    <li>شكر الله تعالى على عنايته ببني آدم</li>
+                    <li>محبة الملائكة على ما قاموا به من عبادة الله تعالى</li>
+                </ol>
+                
+                <div class="quiz-container">
+                    <div class="quiz-question">من هو الملك الموكل بالوحي؟</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-correct="true">جبريل عليه السلام</div>
+                        <div class="quiz-option">ميكائيل عليه السلام</div>
+                        <div class="quiz-option">إسرافيل عليه السلام</div>
+                        <div class="quiz-option">ملك الموت</div>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                
+                <div class="progress-bar">
+                    <div class="progress" style="width: 30%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 7: Characteristics of Islamic Creed -->
+        <div class="slide" id="slide7">
+            <div class="header">
+                <div class="logo-placeholder">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="title">
+                    <h1>خصائص العقيدة الإسلامية</h1>
+                </div>
+                <div class="logo-placeholder">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h3>أبرز خصائص العقيدة الإسلامية</h3>
+                <ol>
+                    <li><strong>عقيدة ثابتة:</strong> لا تقبل الزيادة ولا النقص ولا التحريف</li>
+                    <li><strong>عقيدة فطرية:</strong> متفقة مع الفطرة السوية</li>
+                    <li><strong>عقيدة مبرهنة:</strong> لا يخالفها عقل صحيح ولا يناقضها برهان قاطع</li>
+                    <li><strong>عقيدة واضحة:</strong> لا غموض فيها، سهلة لا عسر فيها</li>
+                    <li><strong>عقيدة وسطية:</strong> توازن بين الأمور المتقابلة</li>
+                </ol>
+                
+                <h3>آثار العقيدة على الفرد</h3>
+                <ol>
+                    <li>التوازن بين الروح والعقل والجسم</li>
+                    <li>طمأنينة البال واستراحة الفكر</li>
+                    <li>ثبات القيم والموازين</li>
+                    <li>عزة النفس</li>
+                    <li>سعة النظر ووضوح الهدف</li>
+                </ol>
+                
+                <h3>آثار العقيدة على المجتمع</h3>
+                <ol>
+                    <li>تحقيق الإخوة الإسلامية والتعارف الإنساني</li>
+                    <li>الانضباط السلوكي والأمني</li>
+                    <li>التكافل والتعاون الاجتماعي</li>
+                    <li>العدالة في الحكم والقضاء</li>
+                </ol>
+                
+                <div class="progress-bar">
+                    <div class="progress" style="width: 35%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 8: Unit 1 Exercises -->
+        <div class="slide" id="slide8">
+            <div class="header">
+                <div class="logo-placeholder">
+                    <i class="fas fa-pencil-alt"></i>
+                </div>
+                <div class="title">
+                    <h1>تمارين الوحدة الأولى</h1>
+                </div>
+                <div class="logo-placeholder">
+                    <i class="fas fa-tasks"></i>
+                </div>
+            </div>
+            <div class="content">
+                <ol>
+                    <li>ما معنى العقيدة الصحيحة؟ واذكر أهميتها.</li>
+                    <li>ما خصائص العقيدة الصحيحة؟</li>
+                    <li>وضح أدلة وجود الله، مع مناقشة المنكرين لوجوده.</li>
+                    <li>ما الفرق بين توحيد الألوهية وتوحيد الربوبية؟</li>
+                    <li>أنكر أهم الأحاداث التي تكون في اليوم الآخر.</li>
+                    <li>ما الانحرافات التي وردت في باب القدر؟</li>
+                    <li>عدد ما يميز العقيدة الإسلامية عن غيرها، وأثرها على الفرد والمجتمع.</li>
+                    <li>ما الفرق بين الغلو والانحلال؟ مع ذكر بعض مظاهرهما.</li>
+                </ol>
+                
+                <div class="quiz-container">
+                    <div class="quiz-question">ما المقصود بالوسطية في العقيدة الإسلامية؟</div>
+                    <textarea placeholder="أجب هنا..." rows="3" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ddd;"></textarea>
+                    <button class="nav-btn" style="margin-top: 10px; background: #2c6e49; color: white;">
+                        <i class="fas fa-check-circle"></i> تحقق من الإجابة
+                    </button>
+                    <div class="feedback">
+                        الوسطية تعني التوازن بين الأمور المتقابلة، والتوسط بين الأطراف المتباعدة على ما تقتضيه النصوص الشرعية، والابتعاد عن الإفراط والتفريط.
+                    </div>
+                </div>
+                
+                <div class="progress-bar">
+                    <div class="progress" style="width: 40%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 9: Unit 2 Introduction -->
+        <div class="slide" id="slide9">
+            <div class="header">
+                <div class="logo-placeholder">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <div class="title">
+                    <h1>الوحدة الثانية: القيم الإسلامية</h1>
+                </div>
+                <div class="logo-placeholder">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h3>الهدف العام للوحدة</h3>
+                <p>تهدف هذه الوحدة إلى معرفة قيم الإسلام وخصائصه السامية، واكتساب ملكة النقد العلمي للقيم الوافدة.</p>
+                
+                <h3>أنواع القيم في الإسلام</h3>
+                <ol>
+                    <li><strong>القيم العليا:</strong> مثل الحق والعدل والإحسان والحكمة</li>
+                    <li><strong>القيم الخلفية:</strong> مثل الصدق والأمانة والوفاء والصبر</li>
+                    <li><strong>القيم الحضارية:</strong> مثل الاستخلاف والسلام والجمال</li>
+                </ol>
+                
+                <h3>معايير القيم في الإسلام</h3>
+                <ol>
+                    <li>الشرع</li>
+                    <li>العقل</li>
+                    <li>الضمير</li>
+                    <li>النية والإرادة</li>
+                </ol>
+                
+                <div style="text-align: center; margin: 20px 0;">
+                    <svg width="200" height="150" viewBox="0 0 200 150">
+                        <rect x="20" y="50" width="160" height="80" rx="10" fill="#e8f5e9" stroke="#2c6e49" stroke-width="2"/>
+                        <circle cx="60" cy="70" r="15" fill="#2c6e49" opacity="0.7"/>
+                        <circle cx="100" cy="70" r="15" fill="#4a7c59" opacity="0.7"/>
+                        <circle cx="140" cy="70" r="15" fill="#81c784" opacity="0.7"/>
+                        <text x="60" y="120" text-anchor="middle" font-size="12" fill="#2c6e49">العليا</text>
+                        <text x="100" y="120" text-anchor="middle" font-size="12" fill="#2c6e49">الخلفية</text>
+                        <text x="140" y="120" text-anchor="middle" font-size="12" fill="#2c6e49">الحضارية</text>
+                    </svg>
+                </div>
+                
+                <div class="progress-bar">
+                    <div class="progress" style="width: 45%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 10: Islamic Values -->
+        <div class="slide" id="slide10">
+            <div class="header">
+                <div class="logo-placeholder">
+                    <i class="fas fa-scale-balanced"></i>
+                </div>
+                <div class="title">
+                    <h1>القيم العليا في الإسلام</h1>
+                </div>
+                <div class="logo-placeholder">
+                    <i class="fas fa-gavel"></i>
+                </div>
+            </div>
+            <div class="content">
+                <div class="value-card">
+                    <div class="value-title">
+                        <i class="fas fa-scale-balanced"></i>
+                        <h3>الحق</h3>
+                    </div>
+                    <p><strong>لغةً:</strong> الثابت الذي لا يتغير، نقيض الباطل</p>
+                    <p><strong>اصطلاحاً:</strong> الثابت الذي لا يتطرق إليه الشك، سواء كان الله تعالى أو فعله أو الاعتقاد الصادق المطابق للواقع</p>
+                    <p><strong>آثاره:</strong> يثمر سائر الأخلاق الفاضلة، وسبب للتخلص من الشهوات والأهواء المنحرفة</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-title">
+                        <i class="fas fa-gavel"></i>
+                        <h3>العدل</h3>
+                    </div>
+                    <p><strong>لغةً:</strong> خلاف الجور، القصد في الأمور</p>
+                    <p><strong>اصطلاحاً:</strong> إعطاء كل ذي حق حقه، الاستقامة على طريق الحق</p>
+                    <p><strong>آثاره:</strong> تحقيق الاستقرار الاجتماعي، وبناء الثقة بين أفراد المجتمع</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-title">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h3>الإحسان</h3>
+                    </div>
+                    <p><strong>لغةً:</strong> الإتقان والجودة في العمل</p>
+                    <p><strong>اصطلاحاً:</strong> أن تعبد الله كأنك تراه، فإن لم تكن تراه فإنه يراك</p>
+                    <p><strong>آثاره:</strong> الارتقاء بالسلوك الفردي، وترسيخ مبدأ الجودة في العمل</p>
+                </div>
+                
+                <div class="quiz-container">
+                    <div class="quiz-question">ما هي أعلى درجات الإحسان؟</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-correct="true">أن تعبد الله كأنك تراه</div>
+                        <div class="quiz-option">أن تؤدي العمل على أكمل وجه</div>
+                        <div class="quiz-option">مساعدة الآخرين دون مقابل</div>
+                        <div class="quiz-option">التصدق على الفقراء</div>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 11: Values Exercises -->
+        <div class="slide" id="slide11">
+            <div class="header">
+                <div class="logo-placeholder">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <div class="title">
+                    <h1>تمارين القيم الإسلامية</h1>
+                </div>
+                <div class="logo-placeholder">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h3>أسئلة الوحدة الثانية</h3>
+                <ol>
+                    <li>عرف مفهوم القيم في الإسلام وأذكر مصادرها.</li>
+                    <li>ما الفرق بين القيم العليا والقيم الخلفية؟</li>
+                    <li>اذكر ثلاثة من معايير القيم في الإسلام مع الشرح.</li>
+                    <li>كيف تؤثر القيم الإسلامية على الفرد والمجتمع؟</li>
+                    <li>ما أثر قيمة الحق على سلوك الفرد؟</li>
+                    <li>كيف يظهر العدل في المعاملات اليومية؟</li>
+                    <li>ما المقصود بالاستخلاف في القيم الحضارية؟</li>
+                    <li>كيف يمكن تطبيق قيمة الجمال في الحياة اليومية؟</li>
+                </ol>
+                
+                <div class="progress-bar">
+                    <div class="progress" style="width: 55%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 12: Contemporary Issues -->
+        <div class="slide" id="slide12">
+            <div class="header">
+                <div class="logo-placeholder">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="title">
+                    <h1>قضايا فكرية معاصرة</h1>
+                </div>
+                <div class="logo-placeholder">
+                    <i class="fas fa-comments"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h3>حقوق الإنسان في الإسلام</h3>
+                <p>يضمن الإسلام حقوق الإنسان الأساسية التي تشمل:</p>
+                <ul>
+                    <li>حق الحياة</li>
+                    <li>حق الحرية</li>
+                    <li>حق الكرامة الإنسانية</li>
+                    <li>حق المساواة</li>
+                    <li>حق العدالة</li>
+                </ul>
+                
+                <h3>الاستشراق</h3>
+                <p><strong>مفهومه:</strong> دراسة الغرب للشرق وحضارته ولغاته وثقافته</p>
+                <p><strong>أهدافه:</strong></p>
+                <ul>
+                    <li>أهداف علمية (في بعض الحالات)</li>
+                    <li>أهداف استعمارية</li>
+                    <li>تشويه صورة الإسلام</li>
+                    <li>تمييع الهوية الإسلامية</li>
+                </ul>
+                
+                <h3>العولمة</h3>
+                <p><strong>مفهومها:</strong> عملية تحويل الظواهر المحلية أو الإقليمية إلى ظواهر عالمية</p>
+                <p><strong>موقف الإسلام منها:</strong></p>
+                <ul>
+                    <li>القبول بالإيجابيات المفيدة</li>
+                    <li>الرفض للسلبيات المخالفة للشريعة</li>
+                    <li>الحفاظ على الهوية الإسلامية</li>
+                </ul>
+                
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 13: Professional Ethics -->
+        <div class="slide" id="slide13">
+            <div class="header">
+                <div class="logo-placeholder">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="title">
+                    <h1>أخلاقيات المهنة</h1>
+                </div>
+                <div class="logo-placeholder">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h3>مفهوم أخلاقيات المهنة</h3>
+                <p>مجموعة القواعد والضوابط الأخلاقية التي تحكم سلوك العاملين في المهنة وتوجههم نحو الأداء الأمثل.</p>
+                
+                <h3>أهمية أخلاقيات المهنة</h3>
+                <ul>
+                    <li>تحقيق الرضا الوظيفي</li>
+                    <li>زيادة الإنتاجية</li>
+                    <li>بناء الثقة مع العملاء</li>
+                    <li>الارتقاء بالمهنة وأهلها</li>
+                    <li>خدمة المجتمع وتنميته</li>
+                </ul>
+                
+                <h3>أخلاقيات المهنة في الإسلام</h3>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>الأخلاق المحمودة</th>
+                            <th>الأخلاق المذمومة</th>
+                        </tr>
+                        <tr>
+                            <td>الإتقان في العمل</td>
+                            <td>الغش والخداع</td>
+                        </tr>
+                        <tr>
+                            <td>الأمانة</td>
+                            <td>الخيانة</td>
+                        </tr>
+                        <tr>
+                            <td>الصدق</td>
+                            <td>الكذب</td>
+                        </tr>
+                        <tr>
+                            <td>العدل</td>
+                            <td>الظلم</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 14: Final Assessment -->
+        <div class="slide" id="slide14">
+            <div class="header">
+                <div class="logo-placeholder">
+                    <i class="fas fa-clipboard-check"></i>
+                </div>
+                <div class="title">
+                    <h1>التقييم النهائي</h1>
+                </div>
+                <div class="logo-placeholder">
+                    <i class="fas fa-award"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h3>اختبار المقرر</h3>
+                <p>أجب عن الأسئلة التالية لتقييم مدى استيعابك لمحتوى المقرر:</p>
+                
+                <div class="quiz-container">
+                    <div class="quiz-question">1. ما الفرق بين توحيد الربوبية وتوحيد الألوهية؟</div>
+                    <textarea placeholder="أجب هنا..." rows="3" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ddd;"></textarea>
+                </div>
+                
+                <div class="quiz-container">
+                    <div class="quiz-question">2. عدد ثلاثة من خصائص العقيدة الإسلامية مع الشرح.</div>
+                    <textarea placeholder="أجب هنا..." rows="3" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ddd;"></textarea>
+                </div>
+                
+                <div class="quiz-container">
+                    <div class="quiz-question">3. ما هي القيم العليا في الإسلام؟ وكيف يمكن تطبيقها في الحياة العملية؟</div>
+                    <textarea placeholder="أجب هنا..." rows="4" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ddd;"></textarea>
+                </div>
+                
+                <button class="nav-btn" style="margin: 20px auto; display: block; background: #2c6e49; color: white;">
+                    <i class="fas fa-paper-plane"></i> تسليم الإجابات
+                </button>
+                
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 15: Goodbye Slide -->
+        <div class="slide" id="slide15">
+            <div class="goodbye-slide">
+                <div class="goodbye-message">نهاية المقرر - بارك الله فيكم</div>
+                
+                <svg class="goodbye-svg" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="90" fill="#2c6e49" opacity="0.1" stroke="#2c6e49" stroke-width="2"/>
+                    <path d="M60,100 C60,70 90,70 100,90 C110,70 140,70 140,100 C140,130 100,150 100,150 C100,150 60,130 60,100 Z" fill="#2c6e49" opacity="0.3"/>
+                    <path d="M80,90 L85,75 L95,80 L100,65 L105,80 L115,75 L120,90 L110,95 L115,110 L105,105 L100,120 L95,105 L85,110 L90,95 Z" fill="#ffd54f"/>
+                    <text x="100" y="40" text-anchor="middle" font-size="20" fill="#2c6e49">تم إكمال المقرر بنجاح</text>
+                    <text x="100" y="180" text-anchor="middle" font-size="16" fill="#2c6e49">بالتوفيق في تطبيق ما تعلمتم</text>
+                </svg>
+                
+                <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px; line-height: 1.8;">
+                    نتمنى لكم الاستفادة من هذا المقرر وتطبيق ما تعلمتموه في حياتكم العملية. 
+                    أسأل الله أن يجعل هذا العلم نافعاً لكم، وسبباً في رفع درجاتكم في الدنيا والآخرة.
+                </p>
+                
+                <button class="restart-btn">
+                    <i class="fas fa-redo"></i> إعادة العرض من البداية
+                </button>
+            </div>
+        </div>
+        
+        <!-- Footer with Navigation -->
+        <div class="footer">
+            <button class="nav-btn" id="prev-btn">
+                <i class="fas fa-arrow-right"></i> السابق
+            </button>
+            <button class="nav-btn" id="next-btn">
+                التالي <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="nav-btn finish-btn" id="finish-btn">
+                <i class="fas fa-flag-checkered"></i> إنهاء
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const finishBtn = document.getElementById('finish-btn');
+            const progressBar = document.querySelector('.progress');
+            let currentSlide = 0;
+            
+            // Initialize first slide as active
+            showSlide(currentSlide);
+            
+            // Next button event
+            nextBtn.addEventListener('click', function() {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+            
+            // Previous button event
+            prevBtn.addEventListener('click', function() {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+            
+            // Finish button event
+            finishBtn.addEventListener('click', function() {
+                currentSlide = slides.length - 1; // Go to goodbye slide
+                showSlide(currentSlide);
+            });
+            
+            // Quiz functionality
+            const quizOptions = document.querySelectorAll('.quiz-option');
+            quizOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    // Remove selected class from all options in this question
+                    const options = this.parentElement.querySelectorAll('.quiz-option');
+                    options.forEach(opt => opt.classList.remove('selected'));
+                    
+                    // Add selected class to clicked option
+                    this.classList.add('selected');
+                    
+                    const feedback = this.parentElement.nextElementSibling;
+                    if (this.dataset.correct === "true") {
+                        feedback.textContent = "إجابة صحيحة! أحسنت!";
+                        feedback.className = "feedback correct";
+                    } else {
+                        feedback.textContent = "إجابة غير صحيحة. حاول مرة أخرى.";
+                        feedback.className = "feedback incorrect";
+                    }
+                    feedback.style.display = 'block';
+                });
+            });
+            
+            // Textarea check buttons
+            const checkBtns = document.querySelectorAll('.content button');
+            checkBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const feedback = this.nextElementSibling;
+                    feedback.style.display = 'block';
+                });
+            });
+            
+            // Restart button
+            const restartBtn = document.querySelector('.restart-btn');
+            if (restartBtn) {
+                restartBtn.addEventListener('click', function() {
+                    currentSlide = 0;
+                    showSlide(currentSlide);
+                });
+            }
+            
+            // Function to show a specific slide
+            function showSlide(index) {
+                // Hide all slides
+                slides.forEach(slide => slide.classList.remove('active'));
+                
+                // Show current slide
+                slides[index].classList.add('active');
+                
+                // Update progress bar
+                const progressPercentage = (index / (slides.length - 1)) * 100;
+                progressBar.style.width = `${progressPercentage}%`;
+                
+                // Update button visibility
+                prevBtn.style.display = index === 0 ? 'none' : 'block';
+                nextBtn.style.display = index === slides.length - 1 ? 'none' : 'block';
+                finishBtn.style.display = index === slides.length - 1 ? 'none' : 'block';
+            }
+        });
+    </script>
+</body>
+</html>

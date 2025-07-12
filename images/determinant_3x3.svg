@@ -1,0 +1,31 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">
+    <title id="title">3x3 Determinant Calculation</title>
+    <desc id="desc">A 3x3 matrix with its first two columns repeated. Diagonal lines show the products to be added and subtracted.</desc>
+    <style>
+        .mono { font-family: 'Courier New', Courier, monospace; font-size: 20px; text-anchor: middle; }
+        .plus-diag { stroke: #28a745; stroke-width: 1.5; stroke-dasharray: 4; }
+        .minus-diag { stroke: #dc3545; stroke-width: 1.5; stroke-dasharray: 4; }
+    </style>
+    
+    <!-- Matrix Text -->
+    <text x="50" y="50" class="mono">a₁</text> <text x="100" y="50" class="mono">b₁</text> <text x="150" y="50" class="mono">c₁</text>
+    <text x="50" y="100" class="mono">a₂</text> <text x="100" y="100" class="mono">b₂</text> <text x="150" y="100" class="mono">c₂</text>
+    <text x="50" y="150" class="mono">a₃</text> <text x="100" y="150" class="mono">b₃</text> <text x="150" y="150" class="mono">c₃</text>
+
+    <!-- Repeated Columns -->
+    <text x="220" y="50" class="mono" fill="#888">a₁</text> <text x="270" y="50" class="mono" fill="#888">b₁</text>
+    <text x="220" y="100" class="mono" fill="#888">a₂</text> <text x="270" y="100" class="mono" fill="#888">b₂</text>
+    <text x="220" y="150" class="mono" fill="#888">a₃</text> <text x="270" y="150" class="mono" fill="#888">b₃</text>
+
+    <!-- Positive Diagonals -->
+    <line x1="30" y1="30" x2="170" y2="170" class="plus-diag"/>
+    <line x1="80" y1="30" x2="240" y2="170" class="plus-diag"/>
+    <line x1="130" y1="30" x2="290" y2="170" class="plus-diag"/>
+
+    <!-- Negative Diagonals -->
+    <line x1="30" y1="170" x2="170" y2="30" class="minus-diag"/>
+    <line x1="80" y1="170" x2="240" y2="30" class="minus-diag"/>
+    <line x1="130" y1="170" x2="290" y2="30" class="minus-diag"/>
+
+    <text x="200" y="220" font-size="18px" text-anchor="middle">(+ Diagonals) - (- Diagonals)</text>
+</svg>

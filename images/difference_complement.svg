@@ -1,0 +1,37 @@
+<svg width="500" height="250" viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">
+    <title id="title">Venn Diagrams for Set Difference and Complement</title>
+    <desc id="desc">Two Venn diagrams. The left one shows A-B, with only the non-overlapping part of circle A colored. The right one shows the complement of A, with the area outside circle A colored.</desc>
+    <style>
+        .set-circle { fill-opacity: 0.1; stroke: #333; stroke-width: 2; }
+        .set-text { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #000; }
+        .main-text { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #000; }
+        .highlight-area { fill: #007bff; fill-opacity: 0.6; }
+    </style>
+
+    <!-- Diagram 1: A - B -->
+    <g transform="translate(0, 0)">
+        <defs>
+            <clipPath id="clip-a-minus-b">
+                <rect x="0" y="0" width="250" height="250" />
+                <circle cx="160" cy="120" r="80" />
+            </clipPath>
+        </defs>
+        <circle cx="80" cy="120" r="80" class="set-circle" fill="#ff6b6b" />
+        <circle cx="160" cy="120" r="80" class="set-circle" fill="#4dabf7" />
+        <circle cx="80" cy="120" r="80" class="highlight-area" clip-path="url(#clip-a-minus-b)" />
+        <text x="50" y="125" class="set-text">A</text>
+        <text x="190" y="125" class="set-text">B</text>
+        <text x="95" y="40" class="main-text">A - B</text>
+    </g>
+
+    <!-- Diagram 2: Complement of A -->
+    <g transform="translate(250, 0)">
+        <rect x="5" y="5" width="240" height="240" rx="10" class="set-circle" fill="#e9ecef" />
+        <path d="M5,15 A10,10 0 0 1 15,5 H235 A10,10 0 0 1 245,15 V235 A10,10 0 0 1 235,245 H15 A10,10 0 0 1 5,235 Z M85,120 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" class="highlight-area"/>
+        <circle cx="125" cy="120" r="80" fill="#fff" />
+        <circle cx="125" cy="120" r="80" class="set-circle" fill-opacity="0.2" fill="#ff6b6b"/>
+        <text x="118" y="125" class="set-text">A</text>
+        <text x="200" y="40" class="set-text">U</text>
+        <text x="80" y="220" class="main-text">Complement A̅</text>
+    </g>
+</svg>

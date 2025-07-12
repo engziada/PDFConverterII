@@ -1,0 +1,5 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <style> .shape { fill: #e9ecef; stroke: #333; stroke-width: 1.5; } </style>
+    <path d="M 40 150 L 100 30 L 160 150" class="shape" fill-opacity="0.7"/>
+    <ellipse cx="100" cy="150" rx="60" ry="20" class="shape"/>
+</svg>

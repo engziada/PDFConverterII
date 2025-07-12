@@ -1,0 +1,24 @@
+<svg width="400" height="350" viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+    <style>.label { font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; }</style>
+    <!-- Equilateral -->
+    <g transform="translate(50, 20)">
+        <path d="M 75 10 L 140 120 L 10 120 Z" fill="#e9ecef" stroke="#333" stroke-width="2"/>
+        <text x="75" y="140" class="label">متساوي الأضلاع</text>
+    </g>
+    <!-- Isosceles -->
+    <g transform="translate(200, 20)">
+        <path d="M 75 10 L 120 120 L 30 120 Z" fill="#e9ecef" stroke="#333" stroke-width="2"/>
+        <text x="75" y="140" class="label">متساوي الساقين</text>
+    </g>
+    <!-- Right-angled -->
+    <g transform="translate(50, 180)">
+        <path d="M 10 10 L 10 120 L 140 120 Z" fill="#e9ecef" stroke="#333" stroke-width="2"/>
+        <rect x="10" y="105" width="15" height="15" fill="none" stroke="#333" stroke-width="1.5"/>
+        <text x="75" y="140" class="label">قائم الزاوية</text>
+    </g>
+    <!-- Scalene -->
+    <g transform="translate(200, 180)">
+        <path d="M 10 120 L 80 10 L 150 100 Z" fill="#e9ecef" stroke="#333" stroke-width="2"/>
+        <text x="75" y="140" class="label">مختلف الأضلاع</text>
+    </g>
+</svg>
