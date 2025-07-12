@@ -161,26 +161,45 @@ input:checked + .slider:before {
     overflow-y: auto;
     padding: 15px;
 }
-.units-nav h3 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding: 0 10px;
+.unit-container {
+    margin-bottom: 10px;
+}
+.unit-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: var(--hover-bg);
+    border-radius: 8px;
+    margin: 0;
     color: var(--primary-color);
     font-size: 1em;
     font-weight: 700;
-    transition: all 0.3s ease;
 }
-.units-nav ul {
+.unit-title:hover {
+    background-color: var(--medium-gray);
+}
+.collapse-icon {
+    transition: transform 0.3s ease;
+}
+.unit-container.collapsed .collapse-icon {
+    transform: rotate(-90deg);
+}
+.lesson-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 5px 0 0 0;
+    overflow: hidden;
+    max-height: 1000px; /* Set a large max-height for open state */
+    transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
-.units-nav li {
-    transition: all 0.3s ease;
+.unit-container.collapsed .lesson-list {
+    max-height: 0;
 }
 .units-nav li a {
     display: block;
-    padding: 10px 15px;
+    padding: 10px 15px 10px 25px; /* Indent lesson links */
     text-decoration: none;
     color: var(--dark-gray);
     border-radius: 8px;

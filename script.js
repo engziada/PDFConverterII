@@ -123,11 +123,18 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             let navHtml = "";
             units.forEach((lessons, unitTitle) => {
-                navHtml += `<h3 data-unit-title>${unitTitle}</h3><ul data-unit-list>`;
+                navHtml += `
+                    <div class="unit-container collapsed">
+                        <h3 class="unit-title">
+                            <span class="unit-title-text">${unitTitle}</span>
+                            <span class="collapse-icon">▼</span>
+                        </h3>
+                        <ul class="lesson-list">
+                `;
                 lessons.forEach(lesson => {
                     navHtml += `<li><a href="#slide-${lesson.id}">${lesson.lesson}</a></li>`;
                 });
-                navHtml += "</ul>";
+                navHtml += "</ul></div>";
             });
             this.elements.unitsNav.innerHTML = navHtml;
         },
@@ -430,10 +437,19 @@ document.addEventListener('DOMContentLoaded', () => {
             this.elements.progressBar.style.width = `${progressPercent}%`;
             this.elements.currentSlideNum.textContent = this.currentSlide >= 0 ? this.currentSlide + 1 : 'C';
             this.elements.totalSlidesNum.textContent = this.slides.length;
+            
             document.querySelectorAll('.units-nav a').forEach(link => link.classList.remove('active'));
+
             if (this.currentSlide >= 0 && this.currentSlide < this.slides.length) {
                 const activeLink = document.querySelector(`.units-nav a[href="#slide-${this.slides[this.currentSlide].id}"]`);
-                if (activeLink) activeLink.classList.add('active');
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                    
+                    const unitContainer = activeLink.closest('.unit-container');
+                    if (unitContainer && unitContainer.classList.contains('collapsed')) {
+                        unitContainer.classList.remove('collapsed');
+                    }
+                }
             }
         },
 
@@ -469,11 +485,19 @@ document.addEventListener('DOMContentLoaded', () => {
             this.elements.finishBtn.addEventListener('click', () => this.goToSlide(this.slides.length));
             
             this.elements.unitsNav.addEventListener('click', (e) => {
-                if (e.target.tagName === 'A') {
+                const link = e.target.closest('a');
+                if (link) {
                     e.preventDefault();
-                    const slideId = parseInt(e.target.getAttribute('href').replace('#slide-', ''), 10);
+                    const slideId = parseInt(link.getAttribute('href').replace('#slide-', ''), 10);
                     const slideIndex = this.slides.findIndex(s => s.id === slideId);
                     if(slideIndex !== -1) this.goToSlide(slideIndex);
+                    return;
+                }
+
+                const unitTitle = e.target.closest('.unit-title');
+                if (unitTitle) {
+                    const container = unitTitle.parentElement;
+                    container.classList.toggle('collapsed');
                 }
             });
 
@@ -527,6 +551,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     this.goToSlide(this.currentSlide + 1);
                 } else if (e.key === 'ArrowLeft') {
                     this.goToSlide(this.currentSlide - 1);
+                }
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!this.elements.resumeBanner.contains(e.target) && this.elements.resumeBanner.classList.contains('visible')) {
+                    this.elements.resumeBanner.classList.remove('visible');
                 }
             });
         }
