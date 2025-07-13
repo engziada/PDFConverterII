@@ -647,6 +647,7 @@ $x = \frac{10}{2} \implies x = 5$
 $ x + y = 5 $  
 $ x - y = 1 $  
 ### Step-by-step:
+### Step-by-step:
 **الخطوة 1: كتابة المعادلة بصيغة مصفوفة AX = B**
 $ A = \begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}, X = \begin{bmatrix} x \\ y \end{bmatrix}, B = \begin{bmatrix} 5 \\ 1 \end{bmatrix} $
 ***

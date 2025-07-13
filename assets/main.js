@@ -19,6 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 config.curriculums.forEach(course => {
                     const card = document.createElement('div');
                     card.className = 'course-card';
+                    
+                    // Apply theme colors
+                    if (course.theme) {
+                        card.style.setProperty('--primary-color', course.theme.primary);
+                        card.style.setProperty('--primary-hover', course.theme.hover);
+                    }
+
                     card.innerHTML = `
                         <h2>${course.title}</h2>
                         <p>${course.description}</p>

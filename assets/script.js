@@ -152,8 +152,11 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         
         render() {
+            const slideHeader = document.getElementById('slide-header');
             let slideHtml = '';
+
             if (this.currentSlide === -1) { // Intro Page
+                slideHeader.innerHTML = ''; // Clear header for special pages
                 slideHtml = `
                     <div class="special-page">
                         <img src="assets/images/logo.png" alt="Institute Logo" class="intro-logo">
@@ -168,6 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 `;
             } else if (this.currentSlide === this.slides.length) { // Closure Page
+                slideHeader.innerHTML = ''; // Clear header for special pages
                 slideHtml = `
                     <div class="special-page">
                         <h1>نهاية العرض</h1>
@@ -181,6 +185,14 @@ document.addEventListener('DOMContentLoaded', () => {
             } else { // Regular Slide
                 const slide = this.slides[this.currentSlide];
                 if (!slide) return;
+
+                // Set the fixed header
+                const slideHeader = document.getElementById('slide-header');
+                slideHeader.innerHTML = `
+                    <div class="unit-name">${slide.unit || ''}</div>
+                    <h2 class="lesson-name">${slide.lesson || ''}</h2>
+                `;
+
                 let mainContentHtml = '';
                 if(slide.content) mainContentHtml += this.parseContent(slide.content);
                 if(slide.example) mainContentHtml += `<div class="example-block">${this.parseContent(slide.example)}</div>`;
@@ -195,10 +207,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 }
                 slideHtml = `
-                    <div class="slide-header">
-                        <h1>${slide.unit || ''}</h1>
-                        <h2>${slide.lesson || ''}</h2>
-                    </div>
                     <div class="slide-body">
                         <div class="slide-content">${mainContentHtml}</div>
                         ${slide.image ? `<div class="illustration"><img src="images/${slide.image.trim()}" alt="${slide.lesson || ''}"></div>` : ''}

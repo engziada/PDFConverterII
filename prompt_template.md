@@ -1,17 +1,10 @@
-### **Master Prompt for PDF to Slideshow Content Conversion**
+**Objective:** To convert a given PDF curriculum (main + activities) into a structured Markdown file (`slideshow_content.md`) that will be used to dynamically generate an interactive web-based slideshow.
 
-**Objective:** To convert a given PDF curriculum into a structured Markdown file (`slideshow_content.md`) that will be used to dynamically generate an interactive web-based slideshow.
-
-**Core Task:** Your role is to act as an expert content creator. You will analyze the provided PDF, understand its structure and content, and then transcribe and reformat it into the specific Markdown schema detailed below. The final output must be clean, accurate, and adhere strictly to all formatting rules, especially for mathematical notations.
+**Core Task:** Your role is to act as an expert content creator. You will analyze the provided PDFs, understand its structure and content, and then transcribe and reformat it into the specific Markdown schema detailed below. The final output must be clean, accurate, and adhere strictly to all formatting rules, especially for mathematical notations. activities from activity book should be inserted in the corresponding place (unit/lesson) while building the md file
 
 ---
 
-### **Input and Output**
 
-*   **Input:** A PDF file containing the curriculum. (e.g., `@[path/to/your/pdf]`)
-*   **Output:** A single, complete Markdown file named `slideshow_content.md`.
-
----
 
 ### **General Methodology**
 
@@ -106,4 +99,8 @@ Use the following tags and structures to organize the content. Each slide is sep
 
 ---
 
-Please begin by analyzing the provided PDF at `@[path/to/your/pdf]` and then generate the `slideshow_content.md` file according to all the rules specified above.
+Please begin by analyzing the provided PDF and then generate the `slideshow_content.md` file according to all the rules specified above.
+
+Don't forget tags 'Unit', 'Slide' should be placed before each slide, and make each slide's content reach with explanation details, even if this will increase the number of slides
+number of slides: number of pages should be around 1:1 or 1:1.25
+'unit' tag should precede every slide, not only at the beginning of a unit

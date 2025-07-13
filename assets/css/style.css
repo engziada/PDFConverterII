@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #3B82F6; /* Adjusted for better contrast */
+    --primary-color: #3B82F6;
     --primary-hover: #2563EB;
     --light-gray: #F3F4F6;
     --medium-gray: #D1D5DB;
@@ -74,7 +74,7 @@ body {
     text-align: center;
 }
 .sidebar-header .logo {
-    width: 150px; /* Adjust size as needed */
+    width: 150px;
     height: auto;
     margin: 0 auto 15px;
 }
@@ -184,7 +184,7 @@ input:checked + .slider:before {
     padding: 0;
     margin: 5px 0 0 0;
     overflow: hidden;
-    max-height: 1000px; /* Set a large max-height for open state */
+    max-height: 1000px;
     transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 .unit-container.collapsed .lesson-list {
@@ -192,7 +192,7 @@ input:checked + .slider:before {
 }
 .units-nav li a {
     display: block;
-    padding: 10px 15px 10px 25px; /* Indent lesson links */
+    padding: 10px 15px 10px 25px;
     text-decoration: none;
     color: var(--dark-gray);
     border-radius: 8px;
@@ -215,30 +215,35 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: column;
     background-color: var(--bg-color);
+    overflow: hidden;
+}
+.slide-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    flex-shrink: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.slide-header .unit-name {
+    font-size: 0.9em;
+    opacity: 0.8;
+    margin-bottom: 2px;
+}
+.slide-header .lesson-name {
+    font-size: 1.6em;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
 }
 .slide-container {
     flex-grow: 1;
     padding: 40px;
-    display: flex;
-    flex-direction: column;
     overflow-y: auto;
-}
-.slide-header {
-    border-bottom: 1px solid var(--medium-gray);
-    padding-bottom: 15px;
-    margin-bottom: 25px;
-}
-.slide-header h1 {
-    margin: 0;
-    font-size: 2.25em;
-    color: var(--text-color);
-    font-weight: 700;
-}
-.slide-header h2 {
-    margin: 5px 0 0;
-    font-size: 1.5em;
-    color: #6c757d;
-    font-weight: 500;
 }
 .slide-body {
     flex-grow: 1;
@@ -267,7 +272,6 @@ input:checked + .slider:before {
     border-radius: 8px;
     box-shadow: var(--box-shadow);
 }
-/* Updated Footer styles */
 .footer {
     display: flex;
     flex-direction: row;
@@ -276,20 +280,6 @@ input:checked + .slider:before {
     padding: 15px 0;
     background-color: #f5f5f5;
     border-top: 1px solid #e0e0e0;
-}
-
-.z-logo-footer {
-    margin-left: 10px;
-}
-
-.z-logo-footer img {
-    height: 24px;
-    vertical-align: middle;
-}
-
-.copyright-footer {
-    font-size: 0.9em;
-    color: #666;
 }
 .footer-buttons button {
     padding: 10px 25px;
@@ -360,7 +350,7 @@ input:checked + .slider:before {
     padding: 15px;
     background-color: var(--hover-bg);
     border-radius: 8px;
-    display: none; /* Initially hidden */
+    display: none;
     animation: fadeIn 0.5s ease-in-out;
 }
 .mcq-options {
@@ -491,8 +481,6 @@ body.dark-mode mark {
     background-color: #FBBF24;
     color: #1F2937;
 }
-
-/* --- Block Styles for Notes, Examples, Reminders --- */
 .note-block, .example-block, .reminder-block {
     padding: 20px;
     margin: 20px 0;
@@ -502,7 +490,6 @@ body.dark-mode mark {
     background-color: var(--white);
     box-shadow: var(--box-shadow);
 }
-
 .note-block::before, .example-block::before, .reminder-block::before {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -514,8 +501,6 @@ body.dark-mode mark {
     font-size: 14px;
     color: var(--white);
 }
-
-/* Note Block - Blue */
 .note-block {
     border-color: #3B82F6;
 }
@@ -523,11 +508,9 @@ body.dark-mode mark {
     content: 'ملاحظة 💡';
     background-color: #3B82F6;
 }
-
-/* Example Block - Green */
 .example-block {
     border-color: #10B981;
-    background-color: #F0FDF4; /* Light green background */
+    background-color: #F0FDF4;
 }
 .example-block::before {
     content: 'مثال 🔍';
@@ -536,8 +519,6 @@ body.dark-mode mark {
 body.dark-mode .example-block {
     background-color: #162a22;
 }
-
-/* Reminder Block - Yellow */
 .reminder-block {
     border-color: #F59E0B;
 }
@@ -545,10 +526,9 @@ body.dark-mode .example-block {
     content: 'تذكير 📌';
     background-color: #F59E0B;
 }
-
 body.dark-mode .note-block, 
 body.dark-mode .example-block, 
 body.dark-mode .reminder-block {
-    background-color: #1F2937; /* Darker background for dark mode */
+    background-color: #1F2937;
     border-right-width: 5px;
 }
