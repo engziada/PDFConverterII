@@ -1,0 +1,26 @@
+<svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .icon { font-size: 20px; text-anchor: middle; }
+        .label { font-size: 10px; text-anchor: middle; font-family: sans-serif; }
+        .plus { font-size: 20px; text-anchor: middle; fill: #9CA3AF; }
+    </style>
+    
+    <g transform="translate(50, 75)">
+        <text class="icon" y="-5">🧩</text>
+        <text class="label" y="10">التحليل</text>
+    </g>
+    
+    <text x="80" y="75" class="plus">+</text>
+    
+    <g transform="translate(110, 75)">
+        <text class="icon" y="-5">🔧</text>
+        <text class="label" y="10">التركيب</text>
+    </g>
+    
+    <text x="140" y="75" class="plus">+</text>
+    
+    <g transform="translate(170, 75)">
+        <text class="icon" y="-5">⚖️</text>
+        <text class="label" y="10">التقويم</text>
+    </g>
+</svg>

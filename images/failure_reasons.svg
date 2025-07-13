@@ -1,0 +1,26 @@
+<svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .icon { font-size: 20px; text-anchor: middle; }
+        .label { font-size: 10px; text-anchor: middle; font-family: sans-serif; }
+    </style>
+    
+    <g transform="translate(50, 40)">
+        <text class="icon" y="-5">🤷</text>
+        <text class="label" y="10">استراتيجية غير واضحة</text>
+    </g>
+    
+    <g transform="translate(150, 40)">
+        <text class="icon" y="-5">❓</text>
+        <text class="label" y="10">نقص المعلومات</text>
+    </g>
+    
+    <g transform="translate(50, 100)">
+        <text class="icon" y="-5">😨</text>
+        <text class="label" y="10">الخوف من الفشل</text>
+    </g>
+    
+    <g transform="translate(150, 100)">
+        <text class="icon" y="-5">🙅</text>
+        <text class="label" y="10">مقاومة التغيير</text>
+    </g>
+</svg>

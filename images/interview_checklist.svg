@@ -1,0 +1,26 @@
+<svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .text { font-size: 12px; font-family: sans-serif; }
+        .icon { fill: #10B981; }
+    </style>
+    
+    <g transform="translate(20, 30)">
+        <text class="icon" x="0" y="0">✅</text>
+        <text class="text" x="20" y="0">بحث عن الشركة</text>
+    </g>
+    
+    <g transform="translate(20, 60)">
+        <text class="icon" x="0" y="0">✅</text>
+        <text class="text" x="20" y="0">ملابس رسمية</text>
+    </g>
+    
+    <g transform="translate(20, 90)">
+        <text class="icon" x="0" y="0">✅</text>
+        <text class="text" x="20" y="0">وصول مبكر</text>
+    </g>
+    
+    <g transform="translate(20, 120)">
+        <text class="icon" x="0" y="0">✅</text>
+        <text class="text" x="20" y="0">رسالة شكر</text>
+    </g>
+</svg>

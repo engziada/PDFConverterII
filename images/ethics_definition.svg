@@ -1,0 +1,9 @@
+<svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .icon { font-size: 40px; text-anchor: middle; }
+        .text { font-size: 12px; text-anchor: middle; font-family: sans-serif; }
+    </style>
+    
+    <text x="100" y="70" class="icon">⚖️</text>
+    <text x="100" y="100" class="text">تمييز الخير من الشر</text>
+</svg>

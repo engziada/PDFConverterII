@@ -1,0 +1,40 @@
+<svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .arrow { stroke: #3B82F6; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+        .box { fill: #F3F4F6; stroke: #D1D5DB; stroke-width: 1; rx: 5; }
+        .text { font-size: 9px; text-anchor: middle; font-family: sans-serif; }
+    </style>
+    <defs>
+        <marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#3B82F6" />
+        </marker>
+    </defs>
+    
+    <g transform="translate(50, 30)">
+        <rect x="-30" y="-15" width="60" height="20" class="box"/>
+        <text class="text" y="0">المرسل</text>
+    </g>
+    
+    <path d="M 80 30 L 120 30" class="arrow"/>
+    
+    <g transform="translate(150, 30)">
+        <rect x="-30" y="-15" width="60" height="20" class="box"/>
+        <text class="text" y="0">الرسالة</text>
+    </g>
+    
+    <path d="M 150 40 L 150 70" class="arrow"/>
+    
+    <g transform="translate(150, 80)">
+        <rect x="-30" y="-10" width="60" height="20" class="box"/>
+        <text class="text" y="5">المستقبل</text>
+    </g>
+    
+    <path d="M 120 80 L 80 80" class="arrow"/>
+    
+    <g transform="translate(50, 80)">
+        <rect x="-30" y="-10" width="60" height="20" class="box"/>
+        <text class="text" y="5">التغذية المرتدة</text>
+    </g>
+    
+    <path d="M 50 70 L 50 40" class="arrow"/>
+</svg>

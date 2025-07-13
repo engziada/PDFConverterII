@@ -32,18 +32,30 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         fetchAllContent() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const curriculumId = urlParams.get('curriculum') || 'math'; // Default to 'math'
+            const curriculumPath = `Markdown/${curriculumId}.md`;
+
             Promise.all([
                 fetch('config.json').then(res => res.json()),
-                fetch('slideshow_content.md').then(res => res.text())
+                fetch(curriculumPath).then(res => {
+                    if (!res.ok) throw new Error(`Cannot fetch ${curriculumPath}`);
+                    return res.text();
+                })
             ]).then(([config, content]) => {
                 this.config = config;
+                const curriculum = this.config.curriculums.find(c => c.id === curriculumId);
+                if (curriculum) {
+                    this.config.courseTitle = curriculum.title;
+                }
+                
                 this.slides = this.parseMarkdown(content);
                 this.populateConfigurableElements();
                 this.generateUnitsNav();
                 this.checkForSavedProgress();
             }).catch(error => {
                 console.error('Error fetching content:', error);
-                this.elements.slideContainer.innerHTML = `<h1>Error</h1><p>Could not load required files (config.json, slideshow_content.md).</p><pre>${error}</pre>`;
+                this.elements.slideContainer.innerHTML = `<h1>Error</h1><p>Could not load curriculum file.</p><pre>${error}</pre>`;
             });
         },
 
@@ -144,10 +156,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (this.currentSlide === -1) { // Intro Page
                 slideHtml = `
                     <div class="special-page">
-                        <div class="logo-placeholder">${this.config.logoText || ''}</div>
+                        <img src="assets/images/logo.png" alt="Institute Logo" class="intro-logo">
                         <h1>${this.config.instituteName || ''}</h1>
                         <h2>${this.config.courseTitle || ''}</h2>
-                        <div class="copyright-footer">${this.config.copyrightText || ''}</div>
+                        <div class="copyright-footer">
+                        © 2025 جميع الحقوق محفوظة لشركة
+                        <img src="assets/images/zlogo.png" alt="شعار المؤسسة" style="height:24px; vertical-align:middle; margin-right:8px;">
+                        </div>
+                        
+
                     </div>
                 `;
             } else if (this.currentSlide === this.slides.length) { // Closure Page
@@ -155,7 +172,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="special-page">
                         <h1>نهاية العرض</h1>
                         <p>نتمنى لكم كل التوفيق والنجاح في رحلتكم التعليمية.</p>
-                        <div class="copyright-footer">${this.config.copyrightText || ''}</div>
+                        <div class="copyright-footer">
+                        ${this.config.copyrightText || ''}
+                        <div class="z-logo-footer"><img src="assets/images/zlogo.png"></div>
+                        </div>
                     </div>
                 `;
             } else { // Regular Slide
@@ -484,6 +504,11 @@ document.addEventListener('DOMContentLoaded', () => {
             this.elements.prevBtn.addEventListener('click', () => this.goToSlide(this.currentSlide - 1));
             this.elements.finishBtn.addEventListener('click', () => this.goToSlide(this.slides.length));
             
+            document.getElementById('logo-link').addEventListener('click', (e) => {
+                e.preventDefault();
+                this.goToSlide(-1);
+            });
+
             this.elements.unitsNav.addEventListener('click', (e) => {
                 const link = e.target.closest('a');
                 if (link) {

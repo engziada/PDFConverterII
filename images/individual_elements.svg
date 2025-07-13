@@ -1,0 +1,40 @@
+<svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .icon { font-size: 20px; text-anchor: middle; }
+        .label { font-size: 10px; text-anchor: middle; font-family: sans-serif; }
+        .line { stroke: #cccccc; stroke-width: 1; }
+    </style>
+    
+    <circle cx="100" cy="75" r="15" fill="#a7c7e7" stroke="#5b92e5" stroke-width="2"/>
+    <text x="100" y="80" class="icon">👤</text>
+    
+    <line x1="100" y1="60" x2="100" y2="30" class="line"/>
+    <g transform="translate(100, 20)">
+        <text class="icon" y="-5">🧠</text>
+        <text class="label" y="10">الإدراك</text>
+    </g>
+    
+    <line x1="115" y1="75" x2="145" y2="75" class="line"/>
+    <g transform="translate(155, 75)">
+        <text class="icon" y="-5">💡</text>
+        <text class="label" y="10">التعلم</text>
+    </g>
+    
+    <line x1="85" y1="75" x2="55" y2="75" class="line"/>
+    <g transform="translate(45, 75)">
+        <text class="icon" y="-5">🔥</text>
+        <text class="label" y="10">الدافعية</text>
+    </g>
+    
+    <line x1="100" y1="90" x2="100" y2="120" class="line"/>
+    <g transform="translate(100, 130)">
+        <text class="icon" y="-5">🎭</text>
+        <text class="label" y="10">الشخصية</text>
+    </g>
+    
+    <line x1="80" y1="95" x2="50" y2="115" class="line"/>
+    <g transform="translate(40, 125)">
+        <text class="icon" y="-5">🧭</text>
+        <text class="label" y="10">الاتجاهات</text>
+    </g>
+</svg>

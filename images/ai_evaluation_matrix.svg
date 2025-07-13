@@ -1,0 +1,32 @@
+<svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .box { fill: #F3F4F6; stroke: #D1D5DB; stroke-width: 1; }
+        .header { fill: #E5E7EB; }
+        .text { font-size: 10px; text-anchor: middle; font-family: sans-serif; }
+    </style>
+    
+    <rect x="10" y="20" width="60" height="20" class="box header"/>
+    <text x="40" y="33" class="text">المعيار</text>
+    <rect x="70" y="20" width="60" height="20" class="box header"/>
+    <text x="100" y="33" class="text">الوصف</text>
+    
+    <rect x="10" y="40" width="60" height="20" class="box"/>
+    <text x="40" y="53" class="text">الوقت</text>
+    <rect x="70" y="40" width="60" height="20" class="box"/>
+    <text x="100" y="53" class="text">الوقت الفعلي / المقدر</text>
+    
+    <rect x="10" y="60" width="60" height="20" class="box"/>
+    <text x="40" y="73" class="text">التكلفة</text>
+    <rect x="70" y="60" width="60" height="20" class="box"/>
+    <text x="100" y="73" class="text">التكلفة / الأرباح</text>
+    
+    <rect x="10" y="80" width="60" height="20" class="box"/>
+    <text x="40" y="93" class="text">الدقة</text>
+    <rect x="70" y="80" width="60" height="20" class="box"/>
+    <text x="100" y="93" class="text">دقة النصائح</text>
+    
+    <rect x="10" y="100" width="60" height="20" class="box"/>
+    <text x="40" y="113" class="text">التعلم</text>
+    <rect x="70" y="100" width="60" height="20" class="box"/>
+    <text x="100" y="113" class="text">معدل التعلم</text>
+</svg>

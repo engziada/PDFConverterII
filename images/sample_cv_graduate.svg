@@ -1,0 +1,18 @@
+<svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .box { fill: #F3F4F6; stroke: #D1D5DB; stroke-width: 1; rx: 5; }
+        .text { font-size: 9px; text-anchor: middle; font-family: sans-serif; }
+    </style>
+    
+    <rect x="10" y="10" width="180" height="20" class="box"/>
+    <text x="100" y="23" class="text">الهدف الوظيفي: إدارة العمليات</text>
+    
+    <rect x="10" y="40" width="180" height="20" class="box"/>
+    <text x="100" y="53" class="text">الدرجة العلمية: بكالوريوس إدارة أعمال</text>
+    
+    <rect x="10" y="70" width="180" height="20" class="box"/>
+    <text x="100" y="83" class="text">المهارات: Excel, Power BI</text>
+    
+    <rect x="10" y="100" width="180" height="20" class="box"/>
+    <text x="100" y="113" class="text">الخبرة التطوعية: منظم فعالية</text>
+</svg>

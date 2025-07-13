@@ -1,0 +1,7 @@
+<svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .icon { font-size: 60px; text-anchor: middle; }
+    </style>
+    
+    <text x="100" y="90" class="icon">🦾</text>
+</svg>

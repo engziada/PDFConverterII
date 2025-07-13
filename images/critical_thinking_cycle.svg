@@ -1,0 +1,40 @@
+<svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .arrow { stroke: #3B82F6; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+        .box { fill: #F3F4F6; stroke: #D1D5DB; stroke-width: 1; rx: 5; }
+        .text { font-size: 9px; text-anchor: middle; font-family: sans-serif; }
+    </style>
+    <defs>
+        <marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#3B82F6" />
+        </marker>
+    </defs>
+    
+    <g transform="translate(100, 30)">
+        <rect x="-30" y="-15" width="60" height="20" class="box"/>
+        <text class="text" y="0">الاستنتاج</text>
+    </g>
+    
+    <path d="M 130 30 Q 150 50 130 70" class="arrow"/>
+    
+    <g transform="translate(130, 80)">
+        <rect x="-30" y="-10" width="60" height="20" class="box"/>
+        <text class="text" y="5">التفسير</text>
+    </g>
+    
+    <path d="M 100 90 Q 80 110 100 130" class="arrow"/>
+    
+    <g transform="translate(100, 130)">
+        <rect x="-30" y="-10" width="60" height="20" class="box"/>
+        <text class="text" y="5">الاستدلال</text>
+    </g>
+    
+    <path d="M 70 130 Q 50 110 70 90" class="arrow"/>
+    
+    <g transform="translate(70, 80)">
+        <rect x="-30" y="-10" width="60" height="20" class="box"/>
+        <text class="text" y="5">التقويم</text>
+    </g>
+    
+    <path d="M 100 70 Q 120 50 100 30" class="arrow"/>
+</svg>
