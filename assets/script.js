@@ -16,6 +16,55 @@ document.addEventListener('DOMContentLoaded', () => {
             themeToggle: document.getElementById('theme-toggle'),
         },
         config: {},
+        lang: 'en',
+        translations: {
+            en: {
+                copyrightText: "© 2025 All rights reserved to",
+                endOfSlideshow: "End of Slideshow",
+                endOfSlideshowMessage: "We wish you the best of luck in your educational journey.",
+                question: "Question:",
+                showAnswer: "Show Answer",
+                hideAnswer: "Hide Answer",
+                chooseCorrectAnswer: "Choose the correct answer:",
+                correct: "Correct!",
+                incorrect: "Incorrect.",
+                incorrectAnswer: "Incorrect. The correct answer is {correctKey}.",
+                trueOrFalse: "True or False:",
+                true: "True",
+                false: "False",
+                fillInTheBlank: "Fill in the blank:",
+                checkAnswer: "Check Answer",
+                allCorrect: "Excellent, all answers are correct!",
+                someIncorrect: "You have some mistakes, the correct answers are shown in green.",
+                stepByStepSolution: "Step-by-step solution:",
+                showFirstStep: "Show first step",
+                showNextStep: "Show next step",
+                reset: "Reset"
+            },
+            ar: {
+                copyrightText: "© 2025 جميع الحقوق محفوظة لشركة",
+                endOfSlideshow: "نهاية العرض",
+                endOfSlideshowMessage: "نتمنى لكم كل التوفيق والنجاح في رحلتكم التعليمية.",
+                question: "سؤال:",
+                showAnswer: "عرض الإجابة",
+                hideAnswer: "إخفاء الإجابة",
+                chooseCorrectAnswer: "اختر الإجابة الصحيحة:",
+                correct: "إجابة صحيحة!",
+                incorrect: "إجابة خاطئة.",
+                incorrectAnswer: "إجابة خاطئة. الصحيح هو {correctKey}.",
+                trueOrFalse: "صواب أم خطأ:",
+                true: "صواب",
+                false: "خطأ",
+                fillInTheBlank: "أكمل الفراغ:",
+                checkAnswer: "تحقق من الإجابة",
+                allCorrect: "ممتاز، كل الإجابات صحيحة!",
+                someIncorrect: "لديك بعض الأخطاء، الإجابات الصحيحة موضحة بالأخضر.",
+                stepByStepSolution: "الحل خطوة بخطوة:",
+                showFirstStep: "عرض الخطوة الأولى",
+                showNextStep: "عرض الخطوة التالية",
+                reset: "إعادة"
+            }
+        },
 
         init() {
             this.applyInitialTheme();
@@ -33,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         fetchAllContent() {
             const urlParams = new URLSearchParams(window.location.search);
-            const curriculumId = urlParams.get('curriculum') || 'math'; // Default to 'math'
+            const curriculumId = urlParams.get('curriculum') || 'english'; // Default to 'english'
             const curriculumPath = `Markdown/${curriculumId}.md`;
 
             Promise.all([
@@ -47,6 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const curriculum = this.config.curriculums.find(c => c.id === curriculumId);
                 if (curriculum) {
                     this.config.courseTitle = curriculum.title;
+                    this.lang = curriculum.lang || 'en';
                 }
                 
                 this.slides = this.parseMarkdown(content);
@@ -135,14 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             let navHtml = "";
             units.forEach((lessons, unitTitle) => {
-                navHtml += `
-                    <div class="unit-container collapsed">
-                        <h3 class="unit-title">
-                            <span class="unit-title-text">${unitTitle}</span>
-                            <span class="collapse-icon">▼</span>
-                        </h3>
-                        <ul class="lesson-list">
-                `;
+                navHtml += `\n                    <div class="unit-container collapsed">\n                        <h3 class="unit-title">\n                            <span class="unit-title-text">${unitTitle}</span>\n                            <span class="collapse-icon">▼</span>\n                        </h3>\n                        <ul class="lesson-list">\n                `;
                 lessons.forEach(lesson => {
                     navHtml += `<li><a href="#slide-${lesson.id}">${lesson.lesson}</a></li>`;
                 });
@@ -154,44 +197,21 @@ document.addEventListener('DOMContentLoaded', () => {
         render() {
             const slideHeader = document.getElementById('slide-header');
             let slideHtml = '';
+            const t = this.translations[this.lang];
 
             if (this.currentSlide === -1) { // Intro Page
                 slideHeader.innerHTML = ''; // Clear header for special pages
-                slideHtml = `
-                    <div class="special-page">
-                        <img src="assets/images/logo.png" alt="Institute Logo" class="intro-logo">
-                        <h1>${this.config.instituteName || ''}</h1>
-                        <h2>${this.config.courseTitle || ''}</h2>
-                        <div class="copyright-footer">
-                        © 2025 جميع الحقوق محفوظة لشركة
-                        <img src="assets/images/zlogo.png" alt="شعار المؤسسة" style="height:24px; vertical-align:middle; margin-right:8px;">
-                        </div>
-                        
-
-                    </div>
-                `;
+                slideHtml = `\n                    <div class="special-page">\n                        <img src="assets/images/logo.png" alt="Institute Logo" class="intro-logo">\n                        <h1>${this.config.instituteName || ''}</h1>\n                        <h2>${this.config.courseTitle || ''}</h2>\n                        <div class="copyright-footer">\n                        ${t.copyrightText}\n                        <img src="assets/images/zlogo.png" alt="شعار المؤسسة" style="height:24px; vertical-align:middle; margin-right:8px;">\n                        </div>\n                    </div>\n                `;
             } else if (this.currentSlide === this.slides.length) { // Closure Page
                 slideHeader.innerHTML = ''; // Clear header for special pages
-                slideHtml = `
-                    <div class="special-page">
-                        <h1>نهاية العرض</h1>
-                        <p>نتمنى لكم كل التوفيق والنجاح في رحلتكم التعليمية.</p>
-                        <div class="copyright-footer">
-                        ${this.config.copyrightText || ''}
-                        <div class="z-logo-footer"><img src="assets/images/zlogo.png"></div>
-                        </div>
-                    </div>
-                `;
+                slideHtml = `\n                    <div class="special-page">\n                        <h1>${t.endOfSlideshow}</h1>\n                        <p>${t.endOfSlideshowMessage}</p>\n                        <div class="copyright-footer">\n                        ${this.config.copyrightText || ''}\n                        <div class="z-logo-footer"><img src="assets/images/zlogo.png"></div>\n                        </div>\n                    </div>\n                `;
             } else { // Regular Slide
                 const slide = this.slides[this.currentSlide];
                 if (!slide) return;
 
                 // Set the fixed header
                 const slideHeader = document.getElementById('slide-header');
-                slideHeader.innerHTML = `
-                    <div class="unit-name">${slide.unit || ''}</div>
-                    <h2 class="lesson-name">${slide.lesson || ''}</h2>
-                `;
+                slideHeader.innerHTML = `\n                    <div class="unit-name">${slide.unit || ''}</div>\n                    <h2 class="lesson-name">${slide.lesson || ''}</h2>\n                `;
 
                 let mainContentHtml = '';
                 if(slide.content) mainContentHtml += this.parseContent(slide.content);
@@ -206,12 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         mainContentHtml += this.renderQuestion(q, index);
                     });
                 }
-                slideHtml = `
-                    <div class="slide-body">
-                        <div class="slide-content">${mainContentHtml}</div>
-                        ${slide.image ? `<div class="illustration"><img src="images/${slide.image.trim()}" alt="${slide.lesson || ''}"></div>` : ''}
-                    </div>
-                `;
+                slideHtml = `\n                    <div class="slide-body">\n                        <div class="slide-content">${mainContentHtml}</div>\n                        ${slide.image ? `<div class="illustration"><img src="images/${slide.image.trim()}" alt="${slide.lesson || ''}"></div>` : ''}\n                    </div>\n                `;
             }
             this.elements.slideContainer.innerHTML = slideHtml;
             this.elements.slideContainer.scrollTop = 0;
@@ -227,26 +242,20 @@ document.addEventListener('DOMContentLoaded', () => {
             const mcqRegex = /<p>a\)/;
             const tfRegex = /صواب أم خطأ/i;
             const completeRegex = /أكمل الفراغ/i;
+            const t = this.translations[this.lang];
 
             if (mcqRegex.test(questionHtml)) {
                 return this.renderMCQ(questionHtml, answerHtml, index);
             }
-            if (tfRegex.test(questionHtml)) {
+            if (tfRegex.test(questionHtml) || /True or False/i.test(questionHtml)) {
                 return this.renderTrueFalse(questionHtml, answerHtml, index);
             }
-            if (completeRegex.test(questionHtml)) {
+            if (completeRegex.test(questionHtml) || /Fill in the blank/i.test(questionHtml)) {
                 return this.renderFillInTheBlank(questionHtml, answerHtml, index);
             }
 
             // Fallback for standard questions
-            return `
-                <div class="interactive-element">
-                    <h4>سؤال:</h4>
-                    <div>${questionHtml}</div>
-                    <button class="show-answer-btn" onclick="App.toggleAnswer(this)">عرض الإجابة</button>
-                    <div class="answer-container" style="display: none;">${answerHtml}</div>
-                </div>
-            `;
+            return `\n                <div class="interactive-element">\n                    <h4>${t.question}</h4>\n                    <div>${questionHtml}</div>\n                    <button class="show-answer-btn" onclick="App.toggleAnswer(this)">${t.showAnswer}</button>\n                    <div class="answer-container" style="display: none;">${answerHtml}</div>\n                </div>\n            `;
         },
 
         renderMCQ(questionHtml, answerHtml, qIndex) {
@@ -256,47 +265,30 @@ document.addEventListener('DOMContentLoaded', () => {
             const answerKeyMatch = answerHtml.match(/\w\)/);
             if (!answerKeyMatch) return `<div>Error: Could not find answer key for MCQ.</div>`;
             const answerKey = answerKeyMatch[0].replace(')','');
+            const t = this.translations[this.lang];
             
             const options = optionsHtml.split(/<p>(?=\w\))/g).map(opt => {
                 const match = opt.match(/<p>(\w\))/);
                 if (!match) return '';
                 const key = match[1];
                 const text = opt.replace(/<p>\w\)/, '').trim();
-                return `<li tabindex="0" role="button" data-option="${key}" onclick="App.checkMCQAnswer(this)">
-                          <span class="option-key">${key}</span>
-                          <span class="option-text">${text}</span>
-                        </li>`;
+                return `<li tabindex="0" role="button" data-option="${key}" onclick="App.checkMCQAnswer(this)">\n                          <span class="option-key">${key}</span>\n                          <span class="option-text">${text}</span>\n                        </li>`;
             }).join('');
 
-            return `
-                <div class="interactive-element mcq-container" id="mcq-${qIndex}" data-answer-key="${answerKey}">
-                    <h4>اختر الإجابة الصحيحة:</h4>
-                    <div class="question-text">${questionText}</div>
-                    <ul class="mcq-options">${options}</ul>
-                    <div class="feedback-container"></div>
-                </div>
-            `;
+            return `\n                <div class="interactive-element mcq-container" id="mcq-${qIndex}" data-answer-key="${answerKey}">\n                    <h4>${t.chooseCorrectAnswer}</h4>\n                    <div class="question-text">${questionText}</div>\n                    <ul class="mcq-options">${options}</ul>\n                    <div class="feedback-container"></div>\n                </div>\n            `;
         },
 
         renderTrueFalse(questionHtml, answerHtml, qIndex) {
-            const questionText = questionHtml.replace(/<h3>.*<\/h3>/, '').replace(/<p>صواب أم خطأ<\/p>/i, '').trim();
-            const correctAnswer = /صواب/i.test(answerHtml); // true for "صواب", false for "خطأ"
-            return `
-                <div class="interactive-element tf-container" id="tf-${qIndex}" data-answer="${correctAnswer}">
-                    <h4>صواب أم خطأ:</h4>
-                    <div class="question-text">${questionText}</div>
-                    <div class="tf-buttons">
-                        <button data-choice="true" onclick="App.checkTFAnswer(this)">صواب</button>
-                        <button data-choice="false" onclick="App.checkTFAnswer(this)">خطأ</button>
-                    </div>
-                    <div class="feedback-container"></div>
-                </div>
-            `;
+            const questionText = questionHtml.replace(/<h3>.*<\/h3>/, '').replace(/<p>صواب أم خطأ<\/p>/i, '').replace(/<p>True or False<\/p>/i, '').trim();
+            const correctAnswer = /صواب/i.test(answerHtml) || /True/i.test(answerHtml);
+            const t = this.translations[this.lang];
+            return `\n                <div class="interactive-element tf-container" id="tf-${qIndex}" data-answer="${correctAnswer}">\n                    <h4>${t.trueOrFalse}</h4>\n                    <div class="question-text">${questionText}</div>\n                    <div class="tf-buttons">\n                        <button data-choice="true" onclick="App.checkTFAnswer(this)">${t.true}</button>\n                        <button data-choice="false" onclick="App.checkTFAnswer(this)">${t.false}</button>\n                    </div>\n                    <div class="feedback-container"></div>\n                </div>\n            `;
         },
 
         renderFillInTheBlank(questionHtml, answerHtml, qIndex) {
-            const questionText = questionHtml.replace(/<h3>.*<\/h3>/, '').replace(/<p>أكمل الفراغ:<\/p>/i, '').trim();
+            const questionText = questionHtml.replace(/<h3>.*<\/h3>/, '').replace(/<p>أكمل الفراغ:<\/p>/i, '').replace(/<p>Fill in the blank:<\/p>/i, '').trim();
             const answers = answerHtml.replace(/<p>/g, '').replace(/<\/p>/g, '').split(',').map(a => a.trim());
+            const t = this.translations[this.lang];
             
             let blankIndex = 0;
             const processedQuestion = questionText.replace(/_{3,}/g, () => {
@@ -304,14 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return `<input type="text" class="blank-input" id="blank-${qIndex}-${blankIndex}" data-blank-index="${blankIndex}">`;
             });
 
-            return `
-                <div class="interactive-element fitb-container" id="fitb-${qIndex}" data-answers='${JSON.stringify(answers)}'>
-                    <h4>أكمل الفراغ:</h4>
-                    <div class="question-text">${processedQuestion}</div>
-                    <button onclick="App.checkFillBlankAnswer(this)">تحقق من الإجابة</button>
-                    <div class="feedback-container"></div>
-                </div>
-            `;
+            return `\n                <div class="interactive-element fitb-container" id="fitb-${qIndex}" data-answers='${JSON.stringify(answers)}'>\n                    <h4>${t.fillInTheBlank}</h4>\n                    <div class="question-text">${processedQuestion}</div>\n                    <button onclick="App.checkFillBlankAnswer(this)">${t.checkAnswer}</button>\n                    <div class="feedback-container"></div>\n                </div>\n            `;
         },
 
         renderStepByStep(content, questionText) {
@@ -320,16 +305,8 @@ document.addEventListener('DOMContentLoaded', () => {
             steps.forEach((step, index) => {
                 stepsHtml += `<div class="step" style="display: none;">${step}</div>`;
             });
-            return `
-                <div class="interactive-element step-by-step-container">
-                    <h4>${questionText ? this.parseContent(questionText) : 'الحل خطوة بخطوة:'}</h4>
-                    <div class="steps-wrapper">${stepsHtml}</div>
-                    <div class="step-controls">
-                        <button class="next-step-btn" onclick="App.revealNextStep(this)">عرض الخطوة الأولى</button>
-                        <button class="reset-step-btn" style="display: none;" onclick="App.resetSteps(this)">إعادة</button>
-                    </div>
-                </div>
-            `;
+            const t = this.translations[this.lang];
+            return `\n                <div class="interactive-element step-by-step-container">\n                    <h4>${questionText ? this.parseContent(questionText) : t.stepByStepSolution}</h4>\n                    <div class="steps-wrapper">${stepsHtml}</div>\n                    <div class="step-controls">\n                        <button class="next-step-btn" onclick="App.revealNextStep(this)">${t.showFirstStep}</button>\n                        <button class="reset-step-btn" style="display: none;" onclick="App.resetSteps(this)">${t.reset}</button>\n                    </div>\n                </div>\n            `;
         },
 
         revealNextStep(button) {
@@ -337,10 +314,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const steps = container.querySelectorAll('.step');
             let currentStep = parseInt(container.dataset.currentStep || '-1', 10);
             currentStep++;
+            const t = this.translations[this.lang];
             if (currentStep < steps.length) {
                 steps[currentStep].style.display = 'block';
                 container.dataset.currentStep = currentStep;
-                button.textContent = `عرض الخطوة التالية`;
+                button.textContent = t.showNextStep;
             }
             if (currentStep === steps.length - 1) {
                 button.style.display = 'none';
@@ -355,7 +333,8 @@ document.addEventListener('DOMContentLoaded', () => {
             container.dataset.currentStep = '-1';
             const nextBtn = container.querySelector('.next-step-btn');
             nextBtn.style.display = 'inline-block';
-            nextBtn.textContent = 'عرض الخطوة الأولى';
+            const t = this.translations[this.lang];
+            nextBtn.textContent = t.showFirstStep;
             button.style.display = 'none';
         },
 
@@ -366,18 +345,19 @@ document.addEventListener('DOMContentLoaded', () => {
             const chosenKey = optionElement.dataset.option;
             const correctKey = container.dataset.answerKey;
             const feedbackContainer = container.querySelector('.feedback-container');
+            const t = this.translations[this.lang];
 
             optionElement.classList.add('selected');
 
             if (chosenKey === correctKey) {
                 optionElement.classList.add('correct');
-                feedbackContainer.textContent = 'إجابة صحيحة!';
+                feedbackContainer.textContent = t.correct;
                 feedbackContainer.className = 'feedback-container correct';
             } else {
                 optionElement.classList.add('incorrect');
                 const correctLi = container.querySelector(`[data-option="${correctKey}"]`);
                 if (correctLi) correctLi.classList.add('correct-highlight');
-                feedbackContainer.textContent = `إجابة خاطئة. الصحيح هو ${correctKey}.`;
+                feedbackContainer.textContent = t.incorrectAnswer.replace('{correctKey}', correctKey);
                 feedbackContainer.className = 'feedback-container incorrect';
             }
             container.classList.add('answered');
@@ -390,14 +370,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const choice = button.dataset.choice === 'true';
             const correctAnswer = container.dataset.answer === 'true';
             const feedbackContainer = container.querySelector('.feedback-container');
+            const t = this.translations[this.lang];
 
             if (choice === correctAnswer) {
                 button.classList.add('correct');
-                feedbackContainer.textContent = 'إجابة صحيحة!';
+                feedbackContainer.textContent = t.correct;
                 feedbackContainer.className = 'feedback-container correct';
             } else {
                 button.classList.add('incorrect');
-                feedbackContainer.textContent = `إجابة خاطئة.`;
+                feedbackContainer.textContent = t.incorrect;
                 feedbackContainer.className = 'feedback-container incorrect';
             }
             container.classList.add('answered');
@@ -413,6 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const answers = JSON.parse(container.dataset.answers);
             const feedbackContainer = container.querySelector('.feedback-container');
             let allCorrect = true;
+            const t = this.translations[this.lang];
 
             inputs.forEach((input, index) => {
                 const userAnswer = input.value.trim();
@@ -429,10 +411,10 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             if (allCorrect) {
-                feedbackContainer.textContent = 'ممتاز، كل الإجابات صحيحة!';
+                feedbackContainer.textContent = t.allCorrect;
                 feedbackContainer.className = 'feedback-container correct';
             } else {
-                feedbackContainer.textContent = 'لديك بعض الأخطاء، الإجابات الصحيحة موضحة بالأخضر.';
+                feedbackContainer.textContent = t.someIncorrect;
                 feedbackContainer.className = 'feedback-container incorrect';
                 // Show correct answers for incorrect inputs
                 inputs.forEach((input, index) => {
@@ -453,7 +435,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const answerDiv = button.nextElementSibling;
             const isHidden = answerDiv.style.display === 'none' || answerDiv.style.display === '';
             answerDiv.style.display = isHidden ? 'block' : 'none';
-            button.textContent = isHidden ? 'إخفاء الإجابة' : 'عرض الإجابة';
+            const t = this.translations[this.lang];
+            button.textContent = isHidden ? t.hideAnswer : t.showAnswer;
         },
 
         updateNavigation() {

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Slideshow</title>
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="print.css" media="print">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +12,8 @@
     <script>
         window.MathJax = {
           tex: {
-            inlineMath: [['$', '$'], ['\\(', '\\)']],
-            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            inlineMath: [[', '], ['\\(', '\\)']],
+            displayMath: [['$', '$'], ['\\[', '\\]']],
             processEnvironments: true,
             processEscapes: true
           },
@@ -53,10 +52,10 @@
 <body>
 <div id="app-container">
     <div id="resume-banner" class="resume-banner" role="alert" aria-live="assertive">
-        <span>مرحباً بعودتك! هل ترغب في المتابعة من حيث توقفت؟</span>
+        <span id="resume-text"></span>
         <div class="resume-buttons">
-            <button id="resume-yes">نعم</button>
-            <button id="resume-no">لا</button>
+            <button id="resume-yes"></button>
+            <button id="resume-no"></button>
         </div>
     </div>
     <div class="sidebar">
@@ -73,10 +72,10 @@
                 </label>
                 <span aria-hidden="true">🌙</span>
             </div>
-            <button id="print-btn" class="print-button" aria-label="Go to Curriculums" onclick="window.location.href='index.html'">المناهج</button>
+            <button id="print-btn" class="print-button" aria-label="Go to Curriculums" onclick="window.location.href='index.html'"></button>
         </div>
         <div class="search-container">
-            <input type="search" id="search-bar" placeholder="ابحث عن درس..." aria-label="Search for a lesson">
+            <input type="search" id="search-bar" aria-label="Search for a lesson">
         </div>
         <nav class="units-nav" aria-label="Course Navigation"></nav>
     </div>
@@ -85,7 +84,7 @@
         <div id="slide-header" class="slide-header"></div>
         <div id="slide-container" class="slide-container" role="main" aria-live="polite"><h1>Loading...</h1></div>
         <div class="footer">
-            <div class="footer-buttons"><button id="finish-btn">إنهاء</button></div>
+            <div class="footer-buttons"><button id="finish-btn"></button></div>
             <div class="progress-container" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-bar">
                     <div id="progress-bar-inner" class="progress-bar-inner"></div>
@@ -95,8 +94,8 @@
                 <span id="current-slide-num">0</span> / <span id="total-slides-num">0</span>
             </div>
             <div class="footer-buttons">
-                <button id="next-btn">التالي</button>
-                <button id="prev-btn">السابق</button>
+                <button id="next-btn"></button>
+                <button id="prev-btn"></button>
             </div>
         </div>
     </main>
@@ -105,19 +104,62 @@
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const urlParams = new URLSearchParams(window.location.search);
-        const curriculumId = urlParams.get('curriculum');
+        const curriculumId = urlParams.get('curriculum') || 'english';
 
-        if (curriculumId) {
-            fetch('config.json')
-                .then(response => response.json())
-                .then(config => {
-                    const curriculum = config.curriculums.find(c => c.id === curriculumId);
-                    if (curriculum && curriculum.theme) {
+        const translations = {
+            en: {
+                resumeText: "Welcome back! Would you like to continue where you left off?",
+                resumeYes: "Yes",
+                resumeNo: "No",
+                curriculums: "Curriculums",
+                searchPlaceholder: "Search for a lesson...",
+                finish: "Finish",
+                next: "Next",
+                previous: "Previous"
+            },
+            ar: {
+                resumeText: "مرحباً بعودتك! هل ترغب في المتابعة من حيث توقفت؟",
+                resumeYes: "نعم",
+                resumeNo: "لا",
+                curriculums: "المناهج",
+                searchPlaceholder: "ابحث عن درس...",
+                finish: "إنهاء",
+                next: "التالي",
+                previous: "السابق"
+            }
+        };
+
+        fetch('config.json')
+            .then(response => response.json())
+            .then(config => {
+                const curriculum = config.curriculums.find(c => c.id === curriculumId);
+                if (curriculum) {
+                    const lang = curriculum.lang || 'en';
+                    document.documentElement.lang = lang;
+                    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+                    const stylesheet = lang === 'ar' ? 'assets/css/style.css' : 'assets/css/style-ltr.css';
+                    const link = document.createElement('link');
+                    link.rel = 'stylesheet';
+                    link.href = stylesheet;
+                    document.head.appendChild(link);
+
+                    if (curriculum.theme) {
                         document.documentElement.style.setProperty('--primary-color', curriculum.theme.primary);
                         document.documentElement.style.setProperty('--primary-hover', curriculum.theme.hover);
                     }
-                });
-        }
+
+                    const t = translations[lang];
+                    document.getElementById('resume-text').textContent = t.resumeText;
+                    document.getElementById('resume-yes').textContent = t.resumeYes;
+                    document.getElementById('resume-no').textContent = t.resumeNo;
+                    document.getElementById('print-btn').textContent = t.curriculums;
+                    document.getElementById('search-bar').placeholder = t.searchPlaceholder;
+                    document.getElementById('finish-btn').textContent = t.finish;
+                    document.getElementById('next-btn').textContent = t.next;
+                    document.getElementById('prev-btn').textContent = t.previous;
+                }
+            });
     });
 </script>
 </body>

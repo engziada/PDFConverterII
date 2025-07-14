@@ -6,7 +6,8 @@
         {
             "id": "math",
             "title": "أساسيات الرياضيات",
-            "description": "منهج شامل يغطي المجموعات، العمليات الحسابية، كثيرات الحدود، والمزيد.",
+            "description": "منهج شامل يغطي المجموعات، العمليات الحسابية، كثير��ت الحدود، والمزيد.",
+            "lang": "ar",
             "theme": {
                 "primary": "#3498db",
                 "hover": "#2980b9"
@@ -16,15 +17,17 @@
             "id": "behave",
             "title": "السلوك الوظيفي ومهارات التواصل",
             "description": "منهج شامل يغطي السلوك الوظيفي، مهارات التواصل، والعمل الجماعي.",
+            "lang": "ar",
             "theme": {
                 "primary": "#2ecc71",
                 "hover": "#27ae60"
             }
         },
         {
-            "id": "kpi",
+            "id": "perf",
             "title": "إدارة الأداء",
             "description": "منهج شامل يغطي كيفية تحديد وقياس مؤشرات الأداء الرئيسية في المؤسسات.",
+            "lang": "ar",
             "theme": {
                 "primary": "#9b59b6",
                 "hover": "#8e44ad"
@@ -34,6 +37,7 @@
             "id": "mgmt",
             "title": "مبادئ إدارة الأعمال",
             "description": "منهج شامل يغطي كيفية إدارة الأعمال بفعالية، بما في ذلك التخطيط والتنظيم والقيادة.",
+            "lang": "ar",
             "theme": {
                 "primary": "#e67e22",
                 "hover": "#d35400"
@@ -41,11 +45,22 @@
         },
         {
             "id": "english",
-            "title": "مبادئ اللغة الإنجليزية",
-            "description": "منهج شامل يغطي قواعد اللغة الإنجليزية، والمفردات، ومهارات التحدث.",
+            "title": "English Language Principles",
+            "description": "A comprehensive curriculum covering English grammar, vocabulary, and speaking skills.",
+            "lang": "en",
             "theme": {
                 "primary": "#e74c3c",
                 "hover": "#c0392b"
+            }
+        },
+        {
+            "id": "islam",
+            "title": "الدراسات الإسلامية",
+            "description": "منهج شامل يغطي المبادئ الأساسية للدراسات الإسلامية، بما في ذلك القرآن والسنة.",
+            "lang": "ar",
+            "theme": {
+                "primary": "#f1c40f",
+                "hover": "#f39c12"
             }
         }
     ]
