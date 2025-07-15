@@ -1,1 +1,27 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">weight_distribution.svg</text></svg>
+<svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .pie-text { font-size: 18px; fill: white; text-anchor: middle; }
+        </style>
+    </defs>
+
+    <rect width="500" height="400" fill="#ffffff"/>
+    <text x="250" y="40" class="title">توزيع الأوزان النسبية للأهداف</text>
+
+    <!-- Pie Chart -->
+    <g transform="translate(250, 220)">
+        <!-- Slice 1: 40% -->
+        <path d="M 0 0 L 150 0 A 150 150 0 0 1 46.35 -142.7 Z" fill="#1abc9c"/>
+        <text x="90" y="-50" class="pie-text">40%</text>
+        <!-- Slice 2: 30% -->
+        <path d="M 0 0 L 46.35 -142.7 A 150 150 0 0 1 -114.9 -92.7 Z" fill="#3498db"/>
+        <text x="-40" y="-110" class="pie-text">30%</text>
+        <!-- Slice 3: 20% -->
+        <path d="M 0 0 L -114.9 -92.7 A 150 150 0 0 1 -114.9 92.7 Z" fill="#e67e22"/>
+        <text x="-130" y="0" class="pie-text">20%</text>
+        <!-- Slice 4: 10% -->
+        <path d="M 0 0 L -114.9 92.7 A 150 150 0 0 1 0 150 Z" fill="#f1c40f" transform="rotate(18, 0, 0)"/>
+        <text x="-50" y="110" class="pie-text">10%</text>
+    </g>
+</svg>

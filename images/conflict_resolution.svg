@@ -1,1 +1,45 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">conflict_resolution.svg</text></svg>
+<svg width="700" height="450" viewBox="0 0 700 450" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .card { fill: #ffffff; stroke: #bdc3c7; stroke-width: 1; rx: 10; }
+            .card-title { font-size: 16px; font-weight: bold; text-anchor: middle; fill: #2980b9; }
+            .icon { stroke: #3498db; stroke-width: 5; fill: none; stroke-linecap: round; }
+        </style>
+    </defs>
+
+    <rect width="700" height="450" fill="#f4f6f7"/>
+    <text x="350" y="40" class="title">أساليب إدارة الصراع</text>
+
+    <!-- Style 1: Force -->
+    <rect x="50" y="80" width="150" height="150" class="card"/>
+    <text x="125" y="110" class="card-title">القوة</text>
+    <g transform="translate(85, 130) scale(0.6)">
+        <path d="M 50 20 V 80" class="icon"/>
+        <path d="M 30 40 L 50 20 L 70 40" class="icon"/>
+    </g>
+
+    <!-- Style 2: Avoidance -->
+    <rect x="220" y="80" width="150" height="150" class="card"/>
+    <text x="295" y="110" class="card-title">التجنب</text>
+    <g transform="translate(255, 130) scale(0.6)">
+        <path d="M 20 80 L 80 20" class="icon"/>
+    </g>
+
+    <!-- Style 3: Compromise -->
+    <rect x="390" y="80" width="150" height="150" class="card"/>
+    <text x="465" y="110" class="card-title">التوفيق</text>
+    <g transform="translate(425, 130) scale(0.6)">
+        <path d="M 20 50 H 80" class="icon"/>
+        <path d="M 50 20 V 80" class="icon"/>
+    </g>
+
+    <!-- Style 4: Collaboration -->
+    <rect x="560" y="80" width="150" height="150" class="card"/>
+    <text x="635" y="110" class="card-title">التعاون</text>
+    <g transform="translate(595, 130) scale(0.6)">
+        <circle cx="50" cy="50" r="30" class="icon"/>
+        <path d="M 50 20 V 80 M 20 50 H 80" class="icon" stroke-dasharray="5,5"/>
+    </g>
+
+</svg>

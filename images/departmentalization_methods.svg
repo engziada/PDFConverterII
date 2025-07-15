@@ -1,0 +1,43 @@
+<svg width="600" height="500" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .center-hub { fill: #3498db; }
+            .spoke-text { font-size: 14px; text-anchor: middle; fill: #34495e; }
+            .line { stroke: #bdc3c7; stroke-width: 2; }
+        </style>
+    </defs>
+
+    <rect width="600" height="500" fill="#ffffff"/>
+    <text x="300" y="40" class="title">طرق التقسيم التنظيمي</text>
+
+    <!-- Center Hub -->
+    <circle cx="300" cy="250" r="60" class="center-hub"/>
+    <text x="300" y="255" font-size="18" fill="white" text-anchor="middle">التقسيم</text>
+
+    <!-- Spokes -->
+    <g>
+        <line x1="300" y1="190" x2="300" y2="120" class="line"/>
+        <text x="300" y="110" class="spoke-text">حسب الوظيفة</text>
+    </g>
+    <g>
+        <line x1="352" y1="225" x2="450" y2="150" class="line"/>
+        <text x="460" y="140" class="spoke-text">حسب المنطقة</text>
+    </g>
+    <g>
+        <line x1="352" y1="275" x2="450" y2="350" class="line"/>
+        <text x="460" y="360" class="spoke-text">حسب السلعة</text>
+    </g>
+    <g>
+        <line x1="300" y1="310" x2="300" y2="380" class="line"/>
+        <text x="300" y="390" class="spoke-text">حسب العملاء</text>
+    </g>
+    <g>
+        <line x1="248" y1="275" x2="150" y2="350" class="line"/>
+        <text x="140" y="360" class="spoke-text">حسب العمليات</text>
+    </g>
+    <g>
+        <line x1="248" y1="225" x2="150" y2="150" class="line"/>
+        <text x="140" y="140" class="spoke-text">التقسيم المركب</text>
+    </g>
+</svg>

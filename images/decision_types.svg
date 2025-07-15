@@ -1,0 +1,29 @@
+<svg width="500" height="450" viewBox="0 0 500 450" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .level-text { font-size: 20px; text-anchor: middle; fill: #ffffff; font-weight: bold; }
+            .level-desc { font-size: 14px; text-anchor: middle; fill: #ffffff; }
+        </style>
+    </defs>
+
+    <rect width="500" height="450" fill="#ffffff"/>
+    <text x="250" y="40" class="title">أنواع القرارات الإدارية</text>
+
+    <!-- Pyramid Levels -->
+    <!-- Level 3: Strategic -->
+    <polygon points="250,70 350,170 150,170" fill="#c0392b"/>
+    <text x="250" y="120" class="level-text">استراتيجية</text>
+    <text x="250" y="145" class="level-desc">(طويلة الأجل)</text>
+
+    <!-- Level 2: Tactical -->
+    <polygon points="150,170 350,170 400,270 100,270" fill="#e67e22"/>
+    <text x="250" y="220" class="level-text">تكتيكية</text>
+    <text x="250" y="245" class="level-desc">(متوسطة التعقيد)</text>
+
+    <!-- Level 1: Operational/Executive -->
+    <polygon points="100,270 400,270 450,370 50,370" fill="#f1c40f"/>
+    <text x="250" y="320" class="level-text">تنفيذية</text>
+    <text x="250" y="345" class="level-desc">(روتينية)</text>
+
+</svg>

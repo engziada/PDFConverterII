@@ -1,1 +1,38 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">six_pillars.svg</text></svg>
+<svg width="700" height="500" viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .pillar { fill: #3498db; stroke: #2980b9; stroke-width: 2; }
+            .pillar-text { font-size: 16px; text-anchor: middle; fill: white; font-weight: bold; }
+        </style>
+    </defs>
+
+    <rect width="700" height="500" fill="#f4f6f7"/>
+    <text x="350" y="40" class="title">أركان الإيمان الستة</text>
+
+    <!-- Pillars -->
+    <g transform="translate(100, 100)">
+        <rect class="pillar" width="150" height="80" rx="10"/>
+        <text class="pillar-text" x="75" y="45">1. الإيمان بالله</text>
+    </g>
+    <g transform="translate(450, 100)">
+        <rect class="pillar" width="150" height="80" rx="10"/>
+        <text class="pillar-text" x="75" y="45">2. الإيمان بالملائكة</text>
+    </g>
+    <g transform="translate(100, 220)">
+        <rect class="pillar" width="150" height="80" rx="10"/>
+        <text class="pillar-text" x="75" y="45">3. الإيمان بالكتب</text>
+    </g>
+    <g transform="translate(450, 220)">
+        <rect class="pillar" width="150" height="80" rx="10"/>
+        <text class="pillar-text" x="75" y="45">4. الإيمان بالرسل</text>
+    </g>
+    <g transform="translate(100, 340)">
+        <rect class="pillar" width="150" height="80" rx="10"/>
+        <text class="pillar-text" x="75" y="45">5. الإيمان باليوم الآخر</text>
+    </g>
+    <g transform="translate(450, 340)">
+        <rect class="pillar" width="150" height="80" rx="10"/>
+        <text class="pillar-text" x="75" y="45">6. الإيمان بالقدر</text>
+    </g>
+</svg>

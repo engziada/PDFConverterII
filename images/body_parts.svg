@@ -1,1 +1,33 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">body_parts.svg</text></svg>
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 22px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .body-part { fill: #ecf0f1; stroke: #bdc3c7; stroke-width: 2; }
+            .label { font-size: 14px; text-anchor: middle; }
+        </style>
+    </defs>
+
+    <rect width="400" height="500" fill="#ffffff"/>
+    <text x="200" y="40" class="title">Parts of the Body</text>
+
+    <!-- Head -->
+    <circle cx="200" cy="100" r="40" class="body-part"/>
+    <text x="200" y="105" class="label">Head</text>
+
+    <!-- Body -->
+    <rect x="150" y="140" width="100" height="150" class="body-part"/>
+    <text x="200" y="215" class="label">Body</text>
+
+    <!-- Arms -->
+    <rect x="80" y="150" width="60" height="15" class="body-part"/>
+    <rect x="260" y="150" width="60" height="15" class="body-part"/>
+    <text x="50" y="160" class="label">Arm</text>
+    <text x="350" y="160" class="label">Arm</text>
+
+    <!-- Legs -->
+    <rect x="150" y="290" width="40" height="100" class="body-part"/>
+    <rect x="210" y="290" width="40" height="100" class="body-part"/>
+    <text x="170" y="410" class="label">Leg</text>
+    <text x="230" y="410" class="label">Leg</text>
+
+</svg>

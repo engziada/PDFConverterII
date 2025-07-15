@@ -1,6 +1,23 @@
-<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="100" cy="100" r="80" fill="#e9ecef" stroke="#333" stroke-width="2"/>
-    <line x1="100" y1="100" x2="180" y2="100" stroke="#333" stroke-width="1.5"/>
-    <circle cx="100" cy="100" r="3" fill="#333"/>
-    <text x="135" y="95" font-family="Arial" font-size="18">r</text>
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .shape { fill: #ecf0f1; stroke: #3498db; stroke-width: 3; }
+            .label { font-size: 20px; text-anchor: middle; fill: #34495e; }
+            .formula { font-size: 18px; fill: #2ecc71; }
+        </style>
+    </defs>
+
+    <rect width="400" height="400" fill="#f4f6f7"/>
+    <text x="200" y="40" class="title">الدائرة</text>
+
+    <!-- Circle -->
+    <circle cx="175" cy="175" r="100" class="shape"/>
+    <line x1="175" y1="175" x2="275" y2="175" stroke="#34495e" stroke-width="1.5"/>
+    <circle cx="175" cy="175" r="3" fill="#34495e"/>
+    <text x="230" y="165" class="label">r</text>
+
+    <!-- Formulas -->
+    <text x="75" y="300" class="formula">المساحة: A = πr²</text>
+    <text x="75" y="330" class="formula">المحيط: C = 2πr</text>
 </svg>

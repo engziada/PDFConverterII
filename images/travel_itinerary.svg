@@ -1,1 +1,33 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">travel_itinerary.svg</text></svg>
+<svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .calendar-bg { fill: #ecf0f1; stroke: #bdc3c7; stroke-width: 2; rx: 10; }
+            .header-bar { fill: #3498db; }
+            .header-text { font-size: 18px; font-weight: bold; text-anchor: middle; fill: white; }
+            .item-text { font-size: 16px; fill: #34495e; }
+            .time-text { font-size: 14px; fill: #7f8c8d; }
+        </style>
+    </defs>
+
+    <rect width="500" height="400" fill="#f4f6f7"/>
+    <text x="250" y="40" class="title">Travel Itinerary</text>
+
+    <g transform="translate(100, 80)">
+        <rect x="0" y="0" width="300" height="280" class="calendar-bg"/>
+        <rect x="0" y="0" width="300" height="40" class="header-bar"/>
+        <text x="150" y="25" class="header-text">Daily Schedule</text>
+
+        <text x="20" y="70" class="time-text">09:30</text>
+        <text x="70" y="70" class="item-text">Depart from Hotel</text>
+
+        <text x="20" y="110" class="time-text">10:00</text>
+        <text x="70" y="110" class="item-text">Guided tour of Ancient Ruins</text>
+
+        <text x="20" y="150" class="time-text">12:30</text>
+        <text x="70" y="150" class="item-text">Lunch at local restaurant</text>
+
+        <text x="20" y="190" class="time-text">14:00</text>
+        <text x="70" y="190" class="item-text">Visit to the National Museum</text>
+    </g>
+</svg>

@@ -1,1 +1,39 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">healthy_habits.svg</text></svg>
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .icon-bg { fill: #ecf0f1; stroke: #bdc3c7; stroke-width: 2; rx: 10; }
+            .icon { fill: #2ecc71; }
+            .text-label { font-size: 14px; text-anchor: middle; fill: #34495e; }
+        </style>
+    </defs>
+
+    <rect width="600" height="400" fill="#f4f6f7"/>
+    <text x="300" y="40" class="title">Healthy Habits</text>
+
+    <!-- Running Person -->
+    <g transform="translate(100, 100)">
+        <rect x="0" y="0" width="100" height="100" class="icon-bg"/>
+        <circle cx="50" cy="30" r="20" fill="#3498db"/>
+        <path d="M 30 80 C 30 50, 70 50, 70 80 Z" fill="#3498db"/>
+        <path d="M 40 60 L 60 60 M 50 60 V 80" stroke="#3498db" stroke-width="3" stroke-linecap="round"/>
+        <text x="50" y="120" class="text-label">Exercise</text>
+    </g>
+
+    <!-- Apple -->
+    <g transform="translate(250, 100)">
+        <rect x="0" y="0" width="100" height="100" class="icon-bg"/>
+        <path d="M 50 10 C 30 10, 10 30, 10 50 C 10 70, 30 90, 50 90 C 70 90, 90 70, 90 50 C 90 30, 70 10, 50 10 Z" class="icon"/>
+        <path d="M 50 10 L 60 0" stroke="#2ecc71" stroke-width="3" stroke-linecap="round"/>
+        <text x="50" y="120" class="text-label">Healthy Food</text>
+    </g>
+
+    <!-- Sleeping Person -->
+    <g transform="translate(400, 100)">
+        <rect x="0" y="0" width="100" height="100" class="icon-bg"/>
+        <rect x="10" y="50" width="80" height="30" fill="#3498db"/>
+        <circle cx="30" cy="40" r="15" fill="#3498db"/>
+        <path d="M 40 30 C 50 20, 60 20, 70 30" stroke="white" stroke-width="2" fill="none"/>
+        <text x="50" y="120" class="text-label">Sleep</text>
+    </g>
+</svg>

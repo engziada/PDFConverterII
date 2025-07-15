@@ -1,1 +1,34 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">unit7_overview.svg</text></svg>
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .subtitle { font-size: 18px; text-anchor: middle; fill: #34495e; }
+            .tech-bg { fill: #eafaf1; }
+            .comm-bg { fill: #d6f5d6; }
+            .computer { fill: #3498db; }
+            .network { fill: #2ecc71; }
+        </style>
+    </defs>
+
+    <rect width="600" height="400" fill="#f4f6f7"/>
+    <text x="300" y="40" class="title">Unit 7: Technology and Innovation Overview</text>
+
+    <!-- Part A: Modern Technology (Computer) -->
+    <g transform="translate(0, 80)">
+        <rect x="0" y="0" width="300" height="320" class="tech-bg"/>
+        <rect x="80" y="100" width="140" height="100" class="computer" rx="5"/>
+        <rect x="90" y="110" width="120" height="70" fill="#ecf0f1"/>
+        <text x="150" y="280" class="subtitle">Part A: Modern Technology</text>
+    </g>
+
+    <!-- Part B: Digital Communication (Network) -->
+    <g transform="translate(300, 80)">
+        <rect x="0" y="0" width="300" height="320" class="comm-bg"/>
+        <circle cx="100" cy="100" r="30" class="network"/>
+        <circle cx="200" cy="150" r="30" class="network"/>
+        <circle cx="100" cy="200" r="30" class="network"/>
+        <line x1="100" y1="100" x2="200" y2="150" stroke="#2ecc71" stroke-width="2"/>
+        <line x1="100" y1="200" x2="200" y2="150" stroke="#2ecc71" stroke-width="2"/>
+        <text x="150" y="280" class="subtitle">Part B: Digital Communication</text>
+    </g>
+</svg>

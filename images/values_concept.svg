@@ -1,0 +1,25 @@
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 22px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .icon { stroke: #3498db; stroke-width: 5; fill: none; }
+            .text { font-size: 16px; text-anchor: middle; }
+        </style>
+    </defs>
+
+    <rect width="500" height="350" fill="#ffffff"/>
+    <text x="250" y="40" class="title">مفهوم القيم</text>
+
+    <!-- Scale Icon -->
+    <g transform="translate(225, 100) scale(1.5)">
+        <line x1="0" y1="25" x2="50" y2="25" stroke="#34495e" stroke-width="4"/>
+        <polygon points="22,25 28,25 25,35" fill="#34495e"/>
+        <path d="M 0 25 V 40 C 0 50, 20 50, 20 40 V 25" stroke="#34495e" stroke-width="2" fill="none"/>
+        <path d="M 30 25 V 40 C 30 50, 50 50, 50 40 V 25" stroke="#34495e" stroke-width="2" fill="none"/>
+    </g>
+    
+    <text x="150" y="250" class="text">حسن</text>
+    <text x="350" y="250" class="text">قبح</text>
+    <text x="250" y="300" class="text" font-weight="bold">مقياس للحكم على الأشياء</text>
+
+</svg>

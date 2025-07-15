@@ -1,0 +1,65 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .card { fill: #ffffff; stroke: #bdc3c7; stroke-width: 1; rx: 10; }
+            .card-title { font-size: 16px; font-weight: bold; text-anchor: middle; fill: #2980b9; }
+            .icon-bg { fill: #ecf0f1; border-radius: 50%; }
+            .icon { stroke: #3498db; stroke-width: 5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+        </style>
+    </defs>
+
+    <rect width="800" height="500" fill="#f4f6f7"/>
+    <text x="400" y="40" class="title">أهداف الإدارة المالية</text>
+
+    <!-- Goal 1: Maximize Wealth -->
+    <rect x="50" y="80" width="200" height="150" class="card"/>
+    <text x="150" y="110" class="card-title">تعظيم الثروة</text>
+    <g transform="translate(100, 130) scale(0.7)">
+        <circle cx="50" cy="50" r="45" class="icon-bg"/>
+        <path d="M 30 60 L 50 40 L 70 60" class="icon"/>
+        <path d="M 50 40 V 20" class="icon"/>
+        <path d="M 20 70 H 80" class="icon"/>
+    </g>
+
+    <!-- Goal 2: Profitability -->
+    <rect x="300" y="80" width="200" height="150" class="card"/>
+    <text x="400" y="110" class="card-title">تحقيق الربحية</text>
+    <g transform="translate(350, 130) scale(0.7)">
+        <circle cx="50" cy="50" r="45" class="icon-bg"/>
+        <path d="M 20 70 L 40 50 L 60 70" class="icon"/>
+        <path d="M 40 50 V 30" class="icon"/>
+        <path d="M 60 70 L 80 50 L 80 30" class="icon"/>
+    </g>
+
+    <!-- Goal 3: Secure Needs -->
+    <rect x="550" y="80" width="200" height="150" class="card"/>
+    <text x="650" y="110" class="card-title">تأمين الاحتياجات</text>
+    <g transform="translate(600, 130) scale(0.7)">
+        <circle cx="50" cy="50" r="45" class="icon-bg"/>
+        <path d="M 20 80 H 80 V 40 C 80 20, 20 20, 20 40 V 80" class="icon"/>
+        <circle cx="50" cy="55" r="10" class="icon"/>
+    </g>
+
+    <!-- Goal 4: Forecast -->
+    <rect x="175" y="280" width="200" height="150" class="card"/>
+    <text x="275" y="310" class="card-title">التنبؤ بالمشكلات</text>
+    <g transform="translate(225, 330) scale(0.7)">
+        <circle cx="50" cy="50" r="45" class="icon-bg"/>
+        <circle cx="50" cy="50" r="30" class="icon"/>
+        <path d="M 50 50 L 75 30" class="icon"/>
+    </g>
+
+    <!-- Goal 5: Distribute Profits -->
+    <rect x="425" y="280" width="200" height="150" class="card"/>
+    <text x="525" y="310" class="card-title">توزيع الأرباح</text>
+    <g transform="translate(475, 330) scale(0.7)">
+        <circle cx="50" cy="50" r="45" class="icon-bg"/>
+        <path d="M 50 20 V 80" class="icon"/>
+        <path d="M 50 50 L 20 35" class="icon"/>
+        <path d="M 50 50 L 80 35" class="icon"/>
+        <path d="M 50 50 L 20 65" class="icon"/>
+        <path d="M 50 50 L 80 65" class="icon"/>
+    </g>
+
+</svg>

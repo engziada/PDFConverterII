@@ -1,0 +1,27 @@
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 22px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .globe { fill: #3498db; }
+            .arrow { stroke: #e74c3c; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+        </style>
+        <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#e74c3c" />
+        </marker>
+    </defs>
+
+    <rect width="500" height="350" fill="#ffffff"/>
+    <text x="250" y="40" class="title">مفهوم العولمة</text>
+
+    <circle cx="250" cy="175" r="100" class="globe"/>
+    
+    <path d="M 150 175 C 200 125, 300 125, 350 175" stroke="white" stroke-width="2" fill="none"/>
+    <path d="M 150 175 C 200 225, 300 225, 350 175" stroke="white" stroke-width="2" fill="none"/>
+    <path d="M 250 75 V 275" stroke="white" stroke-width="2" fill="none"/>
+
+    <path class="arrow" d="M 50 100 C 100 125, 150 150, 200 165"/>
+    <path class="arrow" d="M 450 100 C 400 125, 350 150, 300 165"/>
+    <path class="arrow" d="M 50 250 C 100 225, 150 200, 200 185"/>
+    <path class="arrow" d="M 450 250 C 400 225, 350 200, 300 185"/>
+
+</svg>

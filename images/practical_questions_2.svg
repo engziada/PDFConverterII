@@ -1,1 +1,30 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">practical_questions_2.svg</text></svg>
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 22px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .room-bg { fill: #f8f9fa; stroke: #e9ecef; stroke-width: 2; }
+            .desk { fill: #a0522d; }
+            .computer { fill: #bdc3c7; }
+            .envelope { fill: #3498db; }
+            .question-mark { font-size: 80px; font-weight: bold; fill: #bdc3c7; opacity: 0.5; text-anchor: middle; }
+        </style>
+    </defs>
+
+    <rect width="500" height="350" fill="#ffffff"/>
+    <text x="250" y="40" class="title">Practical Questions</text>
+
+    <!-- Office Room Layout -->
+    <rect x="50" y="80" width="200" height="150" class="room-bg"/>
+    <rect x="70" y="150" width="100" height="15" class="desk"/>
+    <rect x="90" y="100" width="60" height="40" class="computer"/>
+    <text x="150" y="200" font-size="14px" text-anchor="middle" fill="#34495e">Office Layout</text>
+
+    <!-- Envelope Icon -->
+    <g transform="translate(350, 120)">
+        <rect x="0" y="0" width="80" height="50" rx="5" class="envelope"/>
+        <path d="M 0 0 L 40 30 L 80 0 Z" fill="white"/>
+        <text x="40" y="80" font-size="14px" text-anchor="middle" fill="#34495e">Email Directions</text>
+    </g>
+
+    <text x="250" y="280" class="question-mark">?</text>
+</svg>

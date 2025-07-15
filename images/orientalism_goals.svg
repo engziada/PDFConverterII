@@ -1,0 +1,41 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .card { fill: #ffffff; stroke: #bdc3c7; stroke-width: 1; rx: 10; }
+            .card-title { font-size: 16px; font-weight: bold; text-anchor: middle; fill: #c0392b; }
+            .icon { stroke: #e74c3c; stroke-width: 4; fill: none; }
+        </style>
+    </defs>
+
+    <rect width="600" height="400" fill="#f9e7e7"/>
+    <text x="300" y="40" class="title">أهداف الاستشراق</text>
+
+    <!-- Distortion -->
+    <rect x="50" y="80" width="220" height="120" class="card"/>
+    <text x="160" y="110" class="card-title">تشويه صورة الإسلام</text>
+    <g transform="translate(135, 130) scale(0.5)">
+        <path d="M 20 20 L 80 80 M 80 20 L 20 80" class="icon"/>
+    </g>
+
+    <!-- Sowing Doubt -->
+    <rect x="330" y="80" width="220" height="120" class="card"/>
+    <text x="440" y="110" class="card-title">تشكيك المسلمين</text>
+    <g transform="translate(415, 130) scale(0.5)">
+        <text x="50" y="60" font-size="40" text-anchor="middle" fill="#e74c3c">?</text>
+    </g>
+
+    <!-- Division -->
+    <rect x="50" y="230" width="220" height="120" class="card"/>
+    <text x="160" y="260" class="card-title">تفريق الأمة</text>
+    <g transform="translate(135, 280) scale(0.5)">
+        <path d="M 50 20 V 80" class="icon"/>
+    </g>
+
+    <!-- Imposing Western Principles -->
+    <rect x="330" y="230" width="220" height="120" class="card"/>
+    <text x="440" y="260" class="card-title">غرس المبادئ الغربية</text>
+    <g transform="translate(415, 280) scale(0.5)">
+        <path d="M 20 80 L 50 20 L 80 80" class="icon"/>
+    </g>
+</svg>

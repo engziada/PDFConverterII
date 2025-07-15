@@ -1,0 +1,55 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .card { fill: #ffffff; stroke: #bdc3c7; stroke-width: 1; rx: 10; }
+            .card-title { font-size: 14px; font-weight: bold; text-anchor: middle; fill: #2980b9; }
+            .icon { stroke: #3498db; stroke-width: 5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+        </style>
+    </defs>
+
+    <rect width="800" height="500" fill="#f4f6f7"/>
+    <text x="400" y="40" class="title">صور العدل</text>
+
+    <!-- Ruler -->
+    <rect x="50" y="80" width="130" height="180" class="card"/>
+    <text x="115" y="110" class="card-title">عدل الوالي</text>
+    <g transform="translate(75, 130) scale(0.6)">
+        <path d="M 20 80 H 80" class="icon"/>
+        <path d="M 50 20 V 80" class="icon"/>
+    </g>
+
+    <!-- Judge -->
+    <rect x="200" y="80" width="130" height="180" class="card"/>
+    <text x="265" y="110" class="card-title">عدل القاضي</text>
+    <g transform="translate(225, 130) scale(0.6)">
+        <path d="M 20 50 H 80" class="icon"/>
+        <path d="M 30 30 L 50 50 L 30 70" class="icon"/>
+        <path d="M 70 30 L 50 50 L 70 70" class="icon"/>
+    </g>
+
+    <!-- Spouses -->
+    <rect x="350" y="80" width="130" height="180" class="card"/>
+    <text x="415" y="110" class="card-title">العدل بين الزوجات</text>
+    <g transform="translate(375, 130) scale(0.6)">
+        <circle cx="35" cy="50" r="15" class="icon"/>
+        <circle cx="65" cy="50" r="15" class="icon"/>
+    </g>
+
+    <!-- Children -->
+    <rect x="500" y="80" width="130" height="180" class="card"/>
+    <text x="565" y="110" class="card-title">العدل بين الأولاد</text>
+    <g transform="translate(525, 130) scale(0.6)">
+        <circle cx="50" cy="30" r="10" class="icon"/>
+        <path d="M 30 80 C 30 50, 70 50, 70 80 Z" class="icon"/>
+    </g>
+
+    <!-- Weights -->
+    <rect x="650" y="80" width="130" height="180" class="card"/>
+    <text x="715" y="110" class="card-title">العدل في الكيل</text>
+    <g transform="translate(675, 130) scale(0.6)">
+        <path d="M 20 80 H 80" class="icon"/>
+        <path d="M 30 60 L 50 40 L 70 60" class="icon"/>
+    </g>
+
+</svg>

@@ -43,6 +43,7 @@ c) تحقيق أهداف المنظمة
 d) استغلال الموارد  
 ### Answer: b)
 
+### Image: management_importance.svg
 ### Page Reference: 12–13
 
 ---
@@ -75,6 +76,7 @@ d) استغلال الموارد
 ### Answer:
 نظرية X ترى الإنسان كسولًا ويحتاج إلى إكراه، بينما نظرية Y تراه مبدعًا ويحتاج إلى تحفيز.
 
+### Image: theory_x_y.svg
 ### Page Reference: 17–18
 
 ---
@@ -156,6 +158,7 @@ Specific, Measurable, Achievable, Relevant, Time-bound.
 ### Answer:
 الخوف من التغيير أو من تأثيره على مصالحهم.
 
+### Image: planning_obstacles.svg
 ### Page Reference: 34
 
 ---
@@ -186,6 +189,7 @@ c) يتم توثيقه في الدليل التنظيمي
 d) يُدار من قبل الإدارة العليا فقط  
 ### Answer: b)
 
+### Image: organization_types.svg
 ### Page Reference: 43–44
 
 ---
@@ -217,6 +221,7 @@ d) يُدار من قبل الإدارة العليا فقط
 - حسب العمليات.  
 - التقسيم المركب (مزيج من الأساليب السابقة).
 
+### Image: departmentalization_methods.svg
 ### Page Reference: 47–52
 
 ---
@@ -235,6 +240,7 @@ c) المدير يملك سلطة رسمية فقط
 d) لا فرق بينهما  
 ### Answer: b)
 
+### Image: leadership_concept.svg
 ### Page Reference: 65–68
 
 ---
@@ -247,6 +253,7 @@ d) لا فرق بينهما
 - النظريات السلوكية: الأسلوب هو الفيصل (ليكرت: تسلطي، أوتوقراطي، مشارك، ديمقراطي).  
 - النظريات الموقفية: فعالية القائد تعتمد على الموقف.
 
+### Image: leadership_theories.svg
 ### Page Reference: 69–73
 
 ---
@@ -277,6 +284,7 @@ d) لا فرق بينهما
 ### Content:
 الرقابة هي التأكد من أن الأداء الفعلي يتماشى مع الأهداف المخططة، واكتشاف الانحرافات ومعالجتها.
 
+### Image: control_concept.svg
 ### Page Reference: 86–87
 
 ---
@@ -321,6 +329,7 @@ c) لاحقة
 d) داخلية  
 ### Answer: c)
 
+### Image: control_types.svg
 ### Page Reference: 92–94
 
 ---
@@ -345,6 +354,7 @@ d) داخلية
 3. إنتاج المشاريع (مثل بناء السفن).  
 4. الإنتاج الهجين (مزيج من المستمر والمتقطع).
 
+### Image: production_patterns.svg
 ### Page Reference: 104–107
 
 ---
@@ -425,6 +435,7 @@ d) داخلية
 4. التنبؤ بالمشكلات المالية.  
 5. توزيع الأرباح بشكل عادل.
 
+### Image: finance_goals.svg
 ### Page Reference: 126–127
 
 ---
@@ -444,6 +455,7 @@ c) تأمين المبنى
 d) راتب المدير  
 ### Answer: b)
 
+### Image: cost_types.svg
 ### Page Reference: 129–130
 
 ---
@@ -469,6 +481,7 @@ d) راتب المدير
 4. تقييم الأداء.  
 5. تخطيط المسار الوظيفي.
 
+### Image: hr_functions.svg
 ### Page Reference: 135–146
 
 ---
@@ -501,6 +514,7 @@ c) عدم التأكد
 d) الاستقرار  
 ### Answer: c)
 
+### Image: decision_conditions.svg
 ### Page Reference: 150–151
 
 ---
@@ -566,6 +580,7 @@ d) الاستقرار
 - **قرارات حيوية**: غير متكررة، تحتاج تفاعلاً واسعًا.  
 - **قرارات استراتيجية**: طويلة الأجل، ذات أبعاد متعددة.
 
+### Image: decision_types.svg
 ### Page Reference: 154–155
 
 ---

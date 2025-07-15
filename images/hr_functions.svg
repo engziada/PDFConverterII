@@ -1,0 +1,61 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .card { fill: #ffffff; stroke: #bdc3c7; stroke-width: 1; rx: 10; }
+            .card-title { font-size: 14px; font-weight: bold; text-anchor: middle; fill: #8e44ad; }
+            .icon-bg { fill: #f4ecf7; }
+            .icon { stroke: #9b59b6; stroke-width: 5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+        </style>
+    </defs>
+
+    <rect width="800" height="500" fill="#f8f9f9"/>
+    <text x="400" y="40" class="title">وظائف إدارة الموارد البشرية</text>
+
+    <!-- Function 1: Job Analysis -->
+    <rect x="50" y="80" width="130" height="180" class="card"/>
+    <text x="115" y="110" class="card-title">تحليل الوظائف</text>
+    <g transform="translate(75, 130) scale(0.6)">
+        <rect x="0" y="0" width="100" height="100" class="icon-bg"/>
+        <path d="M 20 20 H 80 V 80 H 20 Z" class="icon"/>
+        <path d="M 30 40 H 70 M 30 60 H 70" class="icon" stroke-width="4"/>
+    </g>
+
+    <!-- Function 2: Recruitment -->
+    <rect x="200" y="80" width="130" height="180" class="card"/>
+    <text x="265" y="110" class="card-title">التوظيف</text>
+    <g transform="translate(225, 130) scale(0.6)">
+        <rect x="0" y="0" width="100" height="100" class="icon-bg"/>
+        <circle cx="50" cy="40" r="15" class="icon"/>
+        <path d="M 30 80 C 30 60, 70 60, 70 80 Z" class="icon"/>
+        <path d="M 80 50 L 90 50 M 90 50 L 90 60" class="icon" stroke-width="4"/>
+    </g>
+
+    <!-- Function 3: Training -->
+    <rect x="350" y="80" width="130" height="180" class="card"/>
+    <text x="415" y="110" class="card-title">التدريب والتنمية</text>
+    <g transform="translate(375, 130) scale(0.6)">
+        <rect x="0" y="0" width="100" height="100" class="icon-bg"/>
+        <path d="M 20 80 L 50 20 L 80 80 Z" class="icon"/>
+        <path d="M 35 60 H 65" class="icon"/>
+    </g>
+
+    <!-- Function 4: Appraisal -->
+    <rect x="500" y="80" width="130" height="180" class="card"/>
+    <text x="565" y="110" class="card-title">تقييم الأداء</text>
+    <g transform="translate(525, 130) scale(0.6)">
+        <rect x="0" y="0" width="100" height="100" class="icon-bg"/>
+        <path d="M 20 80 H 80" class="icon"/>
+        <path d="M 30 60 L 40 70 L 55 50 L 70 65" class="icon" stroke-width="6"/>
+    </g>
+
+    <!-- Function 5: Career Planning -->
+    <rect x="650" y="80" width="130" height="180" class="card"/>
+    <text x="715" y="110" class="card-title">تخطيط المسار</text>
+    <g transform="translate(675, 130) scale(0.6)">
+        <rect x="0" y="0" width="100" height="100" class="icon-bg"/>
+        <path d="M 20 80 H 80" class="icon"/>
+        <path d="M 30 80 V 60 H 70 V 40 H 30 V 20" class="icon" stroke-dasharray="5,5"/>
+    </g>
+
+</svg>

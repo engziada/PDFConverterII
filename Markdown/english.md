@@ -1,5 +1,6 @@
 # Unit: 1: New Faces
-## Slide: 7
+## Slide: 1
+### Lesson: Unit Intro
 ### Content:
 This unit is divided into two parts:
 Part A: Introducing yourself
@@ -14,7 +15,7 @@ Learning Objectives:
 ### Page Reference: 7
 ---
 # Unit: 1: New Faces
-## Slide: 8
+## Slide: 2
 ### Lesson: Introducing Yourself
 ### Content:
 In this section, students learn how to introduce themselves in English in both formal and informal situations.
@@ -25,7 +26,7 @@ In this section, students learn how to introduce themselves in English in both f
 ### Page Reference: 8
 ---
 # Unit: 1: New Faces
-## Slide: 9
+## Slide: 3
 ### Lesson: Introducing Others
 ### Content:
 Students learn how to introduce one person to another.
@@ -36,7 +37,7 @@ Students learn how to introduce one person to another.
 ### Page Reference: 9
 ---
 # Unit: 1: New Faces
-## Slide: 10
+## Slide: 4
 ### Lesson: Business Cards
 ### Content:
 Students learn how to read and understand information on business cards.
@@ -50,7 +51,7 @@ ahmed.hassan@techcorp.com
 ### Page Reference: 10
 ---
 # Unit: 1: New Faces
-## Slide: 11
+## Slide: 5
 ### Lesson: Social Titles
 ### Content:
 Students learn about titles used in English and when to use them.
@@ -64,7 +65,7 @@ Students learn about titles used in English and when to use them.
 ### Page Reference: 11
 ---
 # Unit: 1: New Faces
-## Slide: 12
+## Slide: 6
 ### Lesson: Talking about Friends and Jobs
 ### Content:
 Students learn how to describe their jobs and friends using simple sentences.
@@ -75,7 +76,7 @@ Students learn how to describe their jobs and friends using simple sentences.
 ### Page Reference: 12
 ---
 # Unit: 1: New Faces
-## Slide: 13
+## Slide: 7
 ### Lesson: Theoretical Questions
 ### Question:
 What are the four main social titles in English?
@@ -93,7 +94,7 @@ Name, job title, company, and contact information.
 ### Page Reference: 13
 ---
 # Unit: 1: New Faces
-## Slide: 14
+## Slide: 8
 ### Lesson: Practical Questions
 ### Question:
 Introduce yourself to a new colleague at work. Mention your name, job title, and department.
@@ -107,7 +108,7 @@ Introduce your friend Ahmed to your manager Mohammed. Ahmed is a software engine
 ### Page Reference: 14
 ---
 # Unit: 1: New Faces
-## Slide: 15
+## Slide: 9
 ### Lesson: Practical Questions
 ### Question:
 Read the following business card and answer the questions:
@@ -127,7 +128,8 @@ c. Global Solutions Inc.
 ### Page Reference: 15
 ---
 # Unit: 2: Around the Office
-## Slide: 16
+## Slide: 10
+### Lesson: Unit Intro
 ### Content:
 This unit is divided into two parts:
 Part A: In the Office
@@ -146,7 +148,7 @@ Learning Objectives:
 ### Page Reference: 16
 ---
 # Unit: 2: Around the Office
-## Slide: 17
+## Slide: 11
 ### Lesson: Talking about things in the office
 ### Content:
 Students learn vocabulary related to objects found in an office.
@@ -157,7 +159,7 @@ Students learn vocabulary related to objects found in an office.
 ### Page Reference: 17
 ---
 # Unit: 2: Around the Office
-## Slide: 18
+## Slide: 12
 ### Lesson: Identifying office tools
 ### Content:
 Students become familiar with common office tools and learn their names.
@@ -170,7 +172,7 @@ Students become familiar with common office tools and learn their names.
 ### Page Reference: 18
 ---
 # Unit: 2: Around the Office
-## Slide: 19
+## Slide: 13
 ### Lesson: Describing functions of office tools
 ### Content:
 Students learn how to explain the uses of office tools.
@@ -181,7 +183,7 @@ Students learn how to explain the uses of office tools.
 ### Page Reference: 19
 ---
 # Unit: 2: Around the Office
-## Slide: 20
+## Slide: 14
 ### Lesson: Using prepositions to describe locations of objects
 ### Content:
 Students learn to use prepositions like on, in, under, next to, between to describe object locations.
@@ -193,7 +195,7 @@ Students learn to use prepositions like on, in, under, next to, between to descr
 ### Page Reference: 20
 ---
 # Unit: 2: Around the Office
-## Slide: 21
+## Slide: 15
 ### Lesson: Comparing different pictures
 ### Content:
 Students learn how to describe differences between two or more pictures.
@@ -203,7 +205,7 @@ Students learn how to describe differences between two or more pictures.
 ### Page Reference: 21
 ---
 # Unit: 2: Around the Office
-## Slide: 22
+## Slide: 16
 ### Lesson: Describing locations of places
 ### Content:
 Students learn how to describe the location of a specific place in relation to other places.
@@ -213,7 +215,7 @@ Students learn how to describe the location of a specific place in relation to o
 ### Page Reference: 22
 ---
 # Unit: 2: Around the Office
-## Slide: 23
+## Slide: 17
 ### Lesson: Identifying cities and locations on a map
 ### Content:
 Students learn how to identify and explain locations of cities on a map.
@@ -223,7 +225,7 @@ Students learn how to identify and explain locations of cities on a map.
 ### Page Reference: 23
 ---
 # Unit: 2: Around the Office
-## Slide: 24
+## Slide: 18
 ### Lesson: Writing an email explaining locations
 ### Content:
 Students learn how to write an email explaining how to reach a certain location.
@@ -236,7 +238,7 @@ Ahmed
 ### Page Reference: 24
 ---
 # Unit: 2: Around the Office
-## Slide: 25
+## Slide: 19
 ### Lesson: Using "would like to" in questions
 ### Content:
 Students learn how to use "would like to" to ask polite questions.
@@ -246,7 +248,7 @@ Students learn how to use "would like to" to ask polite questions.
 ### Page Reference: 25
 ---
 # Unit: 2: Around the Office
-## Slide: 26
+## Slide: 20
 ### Lesson: Theoretical Questions
 ### Question:
 What are some prepositions used to describe the locations of objects?
@@ -264,7 +266,7 @@ Stapler, printer, paper clip, whiteboard.
 ### Page Reference: 26
 ---
 # Unit: 2: Around the Office
-## Slide: 27
+## Slide: 21
 ### Lesson: Practical Questions
 ### Question:
 Describe the location of three objects in the following picture of an office room.
@@ -290,7 +292,8 @@ Use "would like to" to ask your colleague a question about their desire to see t
 ### Page Reference: 27
 ---
 # Unit: 3: Daily Activities
-## Slide: 28
+## Slide: 22
+### Lesson: Unit Intro
 ### Content:
 This unit is divided into two parts:
 Part A: Daily Routines
@@ -308,7 +311,7 @@ Learning Objectives:
 ### Page Reference: 28
 ---
 # Unit: 3: Daily Activities
-## Slide: 29
+## Slide: 23
 ### Lesson: Describing daily routines
 ### Content:
 Students learn vocabulary and phrases to describe their typical day.
@@ -319,7 +322,7 @@ Students learn vocabulary and phrases to describe their typical day.
 ### Page Reference: 29
 ---
 # Unit: 3: Daily Activities
-## Slide: 30
+## Slide: 24
 ### Lesson: Telling time
 ### Content:
 Students practice telling time in English, including both digital and analog clock readings.
@@ -330,7 +333,7 @@ Students practice telling time in English, including both digital and analog clo
 ### Page Reference: 30
 ---
 # Unit: 3: Daily Activities
-## Slide: 31
+## Slide: 25
 ### Lesson: Using present simple tense for habitual actions
 ### Content:
 Students learn to use the present simple tense to describe regular activities.
@@ -341,7 +344,7 @@ Students learn to use the present simple tense to describe regular activities.
 ### Page Reference: 31
 ---
 # Unit: 3: Daily Activities
-## Slide: 32
+## Slide: 26
 ### Lesson: Talking about frequency of activities
 ### Content:
 Students learn adverbs of frequency and how to use them in sentences.
@@ -353,7 +356,7 @@ Students learn adverbs of frequency and how to use them in sentences.
 ### Page Reference: 32
 ---
 # Unit: 3: Daily Activities
-## Slide: 33
+## Slide: 27
 ### Lesson: Discussing free time activities and hobbies
 ### Content:
 Students learn vocabulary related to leisure activities and how to talk about their hobbies.
@@ -364,7 +367,7 @@ Students learn vocabulary related to leisure activities and how to talk about th
 ### Page Reference: 33
 ---
 # Unit: 3: Daily Activities
-## Slide: 34
+## Slide: 28
 ### Lesson: Using like, love, enjoy, hate with gerunds
 ### Content:
 Students practice expressing preferences using these verbs followed by gerunds.
@@ -376,7 +379,7 @@ Students practice expressing preferences using these verbs followed by gerunds.
 ### Page Reference: 34
 ---
 # Unit: 3: Daily Activities
-## Slide: 35
+## Slide: 29
 ### Lesson: Making and responding to suggestions
 ### Content:
 Students learn how to make suggestions for activities and how to respond to them.
@@ -388,7 +391,7 @@ Students learn how to make suggestions for activities and how to respond to them
 ### Page Reference: 35
 ---
 # Unit: 3: Daily Activities
-## Slide: 36
+## Slide: 30
 ### Lesson: Writing a short paragraph about daily routines
 ### Content:
 Students practice writing a coherent paragraph describing their typical day.
@@ -398,7 +401,7 @@ On weekdays, I usually wake up at 6:30 AM. After taking a shower, I have breakfa
 ### Page Reference: 36
 ---
 # Unit: 3: Daily Activities
-## Slide: 37
+## Slide: 31
 ### Lesson: Theoretical Questions
 ### Question:
 What is the present simple tense used for in English?
@@ -416,7 +419,7 @@ Using phrases like "Why don't we...?" or "How about...?".
 ### Page Reference: 37
 ---
 # Unit: 3: Daily Activities
-## Slide: 38
+## Slide: 32
 ### Lesson: Practical Questions
 ### Question:
 Describe your typical daily routine using at least five present simple tense sentences.
@@ -430,7 +433,7 @@ Write three sentences expressing your likes and dislikes using gerunds (e.g., "I
 ### Page Reference: 38
 ---
 # Unit: 3: Daily Activities
-## Slide: 39
+## Slide: 33
 ### Lesson: Practical Questions
 ### Question:
 Look at the following analog clock image and write the time in two ways: using numbers and words. (Image shows 03:45)
@@ -444,7 +447,8 @@ Make a suggestion to a friend about a weekend activity and write a possible resp
 ### Page Reference: 39
 ---
 # Unit: 4: Food and Drink
-## Slide: 40
+## Slide: 34
+### Lesson: Unit Intro
 ### Content:
 This unit is divided into two parts:
 Part A: Eating Habits
@@ -463,7 +467,7 @@ Learning Objectives:
 ### Page Reference: 40
 ---
 # Unit: 4: Food and Drink
-## Slide: 41
+## Slide: 35
 ### Lesson: Identifying different types of food and drink
 ### Content:
 Students learn vocabulary related to various food groups and beverages.
@@ -476,7 +480,7 @@ Students learn vocabulary related to various food groups and beverages.
 ### Page Reference: 41
 ---
 # Unit: 4: Food and Drink
-## Slide: 42
+## Slide: 36
 ### Lesson: Discussing eating habits and preferences
 ### Content:
 Students practice expressing their food preferences and describing their typical meals.
@@ -487,7 +491,7 @@ Students practice expressing their food preferences and describing their typical
 ### Page Reference: 42
 ---
 # Unit: 4: Food and Drink
-## Slide: 43
+## Slide: 37
 ### Lesson: Using countable and uncountable nouns
 ### Content:
 Students learn to differentiate between countable and uncountable nouns related to food and drink.
@@ -498,7 +502,7 @@ Students learn to differentiate between countable and uncountable nouns related 
 ### Page Reference: 43
 ---
 # Unit: 4: Food and Drink
-## Slide: 44
+## Slide: 38
 ### Lesson: Employing quantifiers
 ### Content:
 Students practice using quantifiers with food-related nouns.
@@ -510,7 +514,7 @@ Students practice using quantifiers with food-related nouns.
 ### Page Reference: 44
 ---
 # Unit: 4: Food and Drink
-## Slide: 45
+## Slide: 39
 ### Lesson: Reading and understanding restaurant menus
 ### Content:
 Students learn common menu vocabulary and practice interpreting menu descriptions.
@@ -520,7 +524,7 @@ Grilled salmon fillet served with roasted vegetables and lemon butter sauce.
 ### Page Reference: 45
 ---
 # Unit: 4: Food and Drink
-## Slide: 46
+## Slide: 40
 ### Lesson: Making reservations at a restaurant
 ### Content:
 Students learn phrases for making restaurant reservations over the phone or online.
@@ -534,7 +538,7 @@ Students learn phrases for making restaurant reservations over the phone or onli
 ### Page Reference: 46
 ---
 # Unit: 4: Food and Drink
-## Slide: 47
+## Slide: 41
 ### Lesson: Ordering food and drinks
 ### Content:
 Students practice dialogues for ordering in a restaurant.
@@ -546,7 +550,7 @@ Students practice dialogues for ordering in a restaurant.
 ### Page Reference: 47
 ---
 # Unit: 4: Food and Drink
-## Slide: 48
+## Slide: 42
 ### Lesson: Asking for the bill and tipping
 ### Content:
 Students learn phrases for requesting the bill and understand tipping customs.
@@ -557,7 +561,7 @@ Students learn phrases for requesting the bill and understand tipping customs.
 ### Page Reference: 48
 ---
 # Unit: 4: Food and Drink
-## Slide: 49
+## Slide: 43
 ### Lesson: Writing a review of a restaurant experience
 ### Content:
 Students practice writing short reviews describing their dining experiences.
@@ -567,7 +571,7 @@ I visited Italian Delights last weekend. The atmosphere was cozy and the service
 ### Page Reference: 49
 ---
 # Unit: 4: Food and Drink
-## Slide: 50
+## Slide: 44
 ### Lesson: Theoretical Questions
 ### Question:
 What is the difference between countable and uncountable nouns? Give two examples of each related to food.
@@ -585,7 +589,7 @@ Number of people, desired date and time, and your name.
 ### Page Reference: 50
 ---
 # Unit: 4: Food and Drink
-## Slide: 51
+## Slide: 45
 ### Lesson: Practical Questions
 ### Question:
 Look at the following menu item and explain what it means: "Pan-seared sea bass with saffron risotto and grilled asparagus"
@@ -604,7 +608,7 @@ Customer: "Excuse me, could we have the bill, please?"
 ### Page Reference: 51
 ---
 # Unit: 4: Food and Drink
-## Slide: 52
+## Slide: 46
 ### Lesson: Practical Questions
 ### Question:
 Using quantifiers, write three sentences describing the contents of your refrigerator (e.g., "There is a lot of milk but not many eggs.").
@@ -618,7 +622,8 @@ Write a short review (3-4 sentences) of your favorite restaurant or café.
 ### Page Reference: 52
 ---
 # Unit: 5: Travel and Transportation
-## Slide: 53
+## Slide: 47
+### Lesson: Unit Intro
 ### Content:
 This unit is divided into two parts:
 Part A: Planning a Trip
@@ -637,7 +642,7 @@ Learning Objectives:
 ### Page Reference: 53
 ---
 # Unit: 5: Travel and Transportation
-## Slide: 54
+## Slide: 48
 ### Lesson: Discussing travel plans and preferences
 ### Content:
 Students learn to express their travel preferences and discuss future trips.
@@ -648,7 +653,7 @@ Students learn to express their travel preferences and discuss future trips.
 ### Page Reference: 54
 ---
 # Unit: 5: Travel and Transportation
-## Slide: 55
+## Slide: 49
 ### Lesson: Using future tense (will and going to)
 ### Content:
 Students practice using 'will' for spontaneous decisions and 'going to' for planned future actions.
@@ -659,7 +664,7 @@ Students practice using 'will' for spontaneous decisions and 'going to' for plan
 ### Page Reference: 55
 ---
 # Unit: 5: Travel and Transportation
-## Slide: 56
+## Slide: 50
 ### Lesson: Vocabulary related to transportation and travel
 ### Content:
 Students learn words and phrases associated with travel and various modes of transportation.
@@ -671,7 +676,7 @@ Students learn words and phrases associated with travel and various modes of tra
 ### Page Reference: 56
 ---
 # Unit: 5: Travel and Transportation
-## Slide: 57
+## Slide: 51
 ### Lesson: Booking flights and accommodations
 ### Content:
 Students practice dialogues and learn phrases for making travel arrangements.
@@ -685,7 +690,7 @@ Students practice dialogues and learn phrases for making travel arrangements.
 ### Page Reference: 57
 ---
 # Unit: 5: Travel and Transportation
-## Slide: 58
+## Slide: 52
 ### Lesson: Reading and understanding travel itineraries
 ### Content:
 Students learn to interpret travel schedules and itineraries.
@@ -698,7 +703,7 @@ Students learn to interpret travel schedules and itineraries.
 ### Page Reference: 58
 ---
 # Unit: 5: Travel and Transportation
-## Slide: 59
+## Slide: 53
 ### Lesson: Asking for and giving directions
 ### Content:
 Students practice asking for and providing directions to various locations.
@@ -709,7 +714,7 @@ Students practice asking for and providing directions to various locations.
 ### Page Reference: 59
 ---
 # Unit: 5: Travel and Transportation
-## Slide: 60
+## Slide: 54
 ### Lesson: Using prepositions of movement
 ### Content:
 Students learn to use prepositions to describe movement and direction.
@@ -721,7 +726,7 @@ Students learn to use prepositions to describe movement and direction.
 ### Page Reference: 60
 ---
 # Unit: 5: Travel and Transportation
-## Slide: 61
+## Slide: 55
 ### Lesson: Describing different modes of transportation
 ### Content:
 Students practice comparing and describing various ways to travel.
@@ -731,7 +736,7 @@ Traveling by train is more comfortable than by bus, but flying is usually faster
 ### Page Reference: 61
 ---
 # Unit: 5: Travel and Transportation
-## Slide: 62
+## Slide: 56
 ### Lesson: Writing a travel blog entry
 ### Content:
 Students learn to write short, descriptive pieces about their travel experiences.
@@ -741,7 +746,7 @@ Today, I explored the bustling streets of Bangkok. The vibrant colors of the mar
 ### Page Reference: 62
 ---
 # Unit: 5: Travel and Transportation
-## Slide: 63
+## Slide: 57
 ### Lesson: Theoretical Questions
 ### Question:
 What is the difference between using 'will' and 'going to' for future actions?
@@ -759,7 +764,7 @@ Departure/arrival times, accommodation details, and planned activities.
 ### Page Reference: 63
 ---
 # Unit: 5: Travel and Transportation
-## Slide: 64
+## Slide: 58
 ### Lesson: Practical Questions
 ### Question:
 Write a dialogue between a travel agent and a customer booking a hotel room. Include details such as dates, room type, and any special requests.
@@ -778,7 +783,7 @@ Look at the following map and write directions from the train station to the mus
 ### Page Reference: 64
 ---
 # Unit: 5: Travel and Transportation
-## Slide: 65
+## Slide: 59
 ### Lesson: Practical Questions
 ### Question:
 Write three sentences about your future travel plans using both 'will' and 'going to'.
@@ -792,7 +797,8 @@ Write a short travel blog entry (4-5 sentences) describing a real or imaginary t
 ### Page Reference: 65
 ---
 # Unit: 6: Health and Wellness
-## Slide: 66
+## Slide: 60
+### Lesson: Unit Intro
 ### Content:
 This unit is divided into two parts:
 Part A: The Body and Health
@@ -811,7 +817,7 @@ Learning Objectives:
 ### Page Reference: 66
 ---
 # Unit: 6: Health and Wellness
-## Slide: 67
+## Slide: 61
 ### Lesson: Learning parts of the body
 ### Content:
 Students learn the names of different body parts in English.
@@ -822,7 +828,7 @@ Students learn the names of different body parts in English.
 ### Page Reference: 67
 ---
 # Unit: 6: Health and Wellness
-## Slide: 68
+## Slide: 62
 ### Lesson: Describing common symptoms and illnesses
 ### Content:
 Students learn how to describe what they feel when they are sick.
@@ -834,7 +840,7 @@ Students learn how to describe what they feel when they are sick.
 ### Page Reference: 68
 ---
 # Unit: 6: Health and Wellness
-## Slide: 69
+## Slide: 63
 ### Lesson: Using modal verbs for advice and obligation
 ### Content:
 Students learn to use should, must, and have to for giving advice and expressing obligations.
@@ -846,7 +852,7 @@ Students learn to use should, must, and have to for giving advice and expressing
 ### Page Reference: 69
 ---
 # Unit: 6: Health and Wellness
-## Slide: 70
+## Slide: 64
 ### Lesson: Talking about healthy habits
 ### Content:
 Students learn how to describe habits that help maintain good health.
@@ -857,7 +863,7 @@ Students learn how to describe habits that help maintain good health.
 ### Page Reference: 70
 ---
 # Unit: 6: Health and Wellness
-## Slide: 71
+## Slide: 65
 ### Lesson: Understanding and following medical instructions
 ### Content:
 Students learn to read and understand simple medical instructions.
@@ -867,7 +873,7 @@ Take one tablet twice daily after meals.
 ### Page Reference: 71
 ---
 # Unit: 6: Health and Wellness
-## Slide: 72
+## Slide: 66
 ### Lesson: Using the first conditional
 ### Content:
 Students learn to use conditional sentences to talk about possible results.
@@ -878,7 +884,7 @@ Students learn to use conditional sentences to talk about possible results.
 ### Page Reference: 72
 ---
 # Unit: 6: Health and Wellness
-## Slide: 73
+## Slide: 67
 ### Lesson: Learning vocabulary related to healthy food and exercise
 ### Content:
 Students learn words and phrases related to nutrition and physical activity.
@@ -889,7 +895,7 @@ Students learn words and phrases related to nutrition and physical activity.
 ### Page Reference: 73
 ---
 # Unit: 6: Health and Wellness
-## Slide: 74
+## Slide: 68
 ### Lesson: Making a doctor's appointment
 ### Content:
 Students learn how to book a medical appointment over the phone.
@@ -903,7 +909,7 @@ Students learn how to book a medical appointment over the phone.
 ### Page Reference: 74
 ---
 # Unit: 6: Health and Wellness
-## Slide: 75
+## Slide: 69
 ### Lesson: Writing an email to request sick leave
 ### Content:
 Students learn how to write a formal email to inform an employer about illness.
@@ -918,7 +924,7 @@ Best regards,
 ### Page Reference: 75
 ---
 # Unit: 6: Health and Wellness
-## Slide: 76
+## Slide: 70
 ### Lesson: Theoretical Questions
 ### Question:
 What is the difference between using "should" and "must" when giving health advice?
@@ -936,7 +942,7 @@ How do we use the first conditional to talk about healthy habits and possible re
 ### Page Reference: 76
 ---
 # Unit: 6: Health and Wellness
-## Slide: 77
+## Slide: 71
 ### Lesson: Practical Questions
 ### Question:
 Write a short dialogue between a patient and a doctor, where the patient describes their symptoms and the doctor gives some advice.
@@ -952,7 +958,7 @@ Look at the following image of a human body and name five different parts in Eng
 ### Page Reference: 77
 ---
 # Unit: 6: Health and Wellness
-## Slide: 78
+## Slide: 72
 ### Lesson: Practical Questions
 ### Question:
 Write three sentences using the first conditional to talk about healthy habits and their results.
@@ -976,7 +982,8 @@ Sincerely,
 ### Page Reference: 78
 ---
 # Unit: 7: Technology and Innovation
-## Slide: 79
+## Slide: 73
+### Lesson: Unit Intro
 ### Content:
 This unit is divided into two parts:
 Part A: Modern Technology
@@ -995,7 +1002,7 @@ Learning Objectives:
 ### Page Reference: 79
 ---
 # Unit: 7: Technology and Innovation
-## Slide: 80
+## Slide: 74
 ### Lesson: Describing various technological devices and their functions
 ### Content:
 Students learn to name and describe common technological devices and their uses.
@@ -1006,7 +1013,7 @@ Students learn to name and describe common technological devices and their uses.
 ### Page Reference: 80
 ---
 # Unit: 7: Technology and Innovation
-## Slide: 81
+## Slide: 75
 ### Lesson: Using comparatives and superlatives to discuss technology
 ### Content:
 Students practice comparing different technologies and expressing preferences.
@@ -1017,7 +1024,7 @@ Students practice comparing different technologies and expressing preferences.
 ### Page Reference: 81
 ---
 # Unit: 7: Technology and Innovation
-## Slide: 82
+## Slide: 76
 ### Lesson: Expressing opinions about technology's impact on society
 ### Content:
 Students learn to articulate their views on how technology affects our lives.
@@ -1028,7 +1035,7 @@ Students learn to articulate their views on how technology affects our lives.
 ### Page Reference: 82
 ---
 # Unit: 7: Technology and Innovation
-## Slide: 83
+## Slide: 77
 ### Lesson: Understanding and using vocabulary related to social media and digital communication
 ### Content:
 Students learn key terms associated with online communication.
@@ -1039,7 +1046,7 @@ Students learn key terms associated with online communication.
 ### Page Reference: 83
 ---
 # Unit: 7: Technology and Innovation
-## Slide: 84
+## Slide: 78
 ### Lesson: Writing formal and informal emails
 ### Content:
 Students practice writing emails in different styles for various purposes.
@@ -1053,7 +1060,7 @@ Alex
 ### Page Reference: 84
 ---
 # Unit: 7: Technology and Innovation
-## Slide: 85
+## Slide: 79
 ### Lesson: Using the present perfect tense to discuss recent technological advancements
 ### Content:
 Students learn to talk about recent developments in technology.
@@ -1064,7 +1071,7 @@ Students learn to talk about recent developments in technology.
 ### Page Reference: 85
 ---
 # Unit: 7: Technology and Innovation
-## Slide: 86
+## Slide: 80
 ### Lesson: Discussing the future of technology using 'will' and 'going to'
 ### Content:
 Students practice making predictions and discussing plans for future technology.
@@ -1075,7 +1082,7 @@ Students practice making predictions and discussing plans for future technology.
 ### Page Reference: 86
 ---
 # Unit: 7: Technology and Innovation
-## Slide: 87
+## Slide: 81
 ### Lesson: Describing problems with technology and offering solutions
 ### Content:
 Students learn to identify common tech issues and suggest ways to resolve them.
@@ -1086,7 +1093,7 @@ Students learn to identify common tech issues and suggest ways to resolve them.
 ### Page Reference: 87
 ---
 # Unit: 7: Technology and Innovation
-## Slide: 88
+## Slide: 82
 ### Lesson: Understanding and explaining simple technical instructions
 ### Content:
 Students practice following and giving basic tech-related instructions.
@@ -1096,7 +1103,7 @@ To reset your password, first click on 'Forgot Password', then enter your email 
 ### Page Reference: 88
 ---
 # Unit: 7: Technology and Innovation
-## Slide: 89
+## Slide: 83
 ### Lesson: Theoretical Questions
 ### Question:
 What are three advantages and three disadvantages of social media?
@@ -1114,7 +1121,7 @@ It has made communication faster and more efficient through tools like email, in
 ### Page Reference: 89
 ---
 # Unit: 7: Technology and Innovation
-## Slide: 90
+## Slide: 84
 ### Lesson: Practical Questions
 ### Question:
 Write a short paragraph comparing smartphones and traditional mobile phones using comparatives and superlatives.
@@ -1138,7 +1145,7 @@ Thank you,
 ### Page Reference: 90
 ---
 # Unit: 7: Technology and Innovation
-## Slide: 91
+## Slide: 85
 ### Lesson: Practical Questions
 ### Question:
 Look at the image of a computer setup and label at least five different components or peripherals.
@@ -1152,7 +1159,8 @@ Write three sentences using the present perfect tense to describe recent technol
 ### Page Reference: 91
 ---
 # Unit: 8: Travel and Cultures
-## Slide: 92
+## Slide: 86
+### Lesson: Unit Intro
 ### Content:
 This unit is divided into two parts:
 Part A: Planning for Travel
@@ -1171,7 +1179,7 @@ Learning Objectives:
 ### Page Reference: 92
 ---
 # Unit: 8: Travel and Cultures
-## Slide: 93
+## Slide: 87
 ### Lesson: Learn vocabulary related to travel and tourism
 ### Content:
 Students learn essential words and phrases related to travel.
@@ -1182,7 +1190,7 @@ Students learn essential words and phrases related to travel.
 ### Page Reference: 93
 ---
 # Unit: 8: Travel and Cultures
-## Slide: 94
+## Slide: 88
 ### Lesson: Use past simple and past continuous to narrate travel experiences
 ### Content:
 Students learn how to use past tenses to describe their trips.
@@ -1193,7 +1201,7 @@ Students learn how to use past tenses to describe their trips.
 ### Page Reference: 94
 ---
 # Unit: 8: Travel and Cultures
-## Slide: 95
+## Slide: 89
 ### Lesson: Understand and use idiomatic expressions related to travel
 ### Content:
 Students are introduced to common expressions used in travel contexts.
@@ -1205,7 +1213,7 @@ Students are introduced to common expressions used in travel contexts.
 ### Page Reference: 95
 ---
 # Unit: 8: Travel and Cultures
-## Slide: 96
+## Slide: 90
 ### Lesson: Recognize different cultures and learn how to describe them
 ### Content:
 Students learn how to describe various customs and traditions.
@@ -1216,7 +1224,7 @@ Students learn how to describe various customs and traditions.
 ### Page Reference: 96
 ---
 # Unit: 8: Travel and Cultures
-## Slide: 97
+## Slide: 91
 ### Lesson: Use conditional forms to talk about hypothetical travel situations
 ### Content:
 Students learn to use conditional sentences to discuss potential scenarios.
@@ -1227,7 +1235,7 @@ Students learn to use conditional sentences to discuss potential scenarios.
 ### Page Reference: 97
 ---
 # Unit: 8: Travel and Cultures
-## Slide: 98
+## Slide: 92
 ### Lesson: Learn how to book hotels and purchase travel tickets
 ### Content:
 Students learn the language necessary for making reservations.
@@ -1242,7 +1250,7 @@ Students learn the language necessary for making reservations.
 ### Page Reference: 98
 ---
 # Unit: 8: Travel and Cultures
-## Slide: 99
+## Slide: 93
 ### Lesson: Understand and use informal language in travel contexts
 ### Content:
 Students learn common colloquial expressions used among travelers.
@@ -1253,7 +1261,7 @@ Students learn common colloquial expressions used among travelers.
 ### Page Reference: 99
 ---
 # Unit: 8: Travel and Cultures
-## Slide: 100
+## Slide: 94
 ### Lesson: Write reviews for hotels, restaurants, and tourist destinations
 ### Content:
 Students learn how to express their opinions about travel experiences.
@@ -1263,7 +1271,7 @@ I had a wonderful stay at the Sunrise Hotel. The rooms were clean and spacious, 
 ### Page Reference: 100
 ---
 # Unit: 8: Travel and Cultures
-## Slide: 101
+## Slide: 95
 ### Lesson: Learn how to deal with common problems while traveling
 ### Content:
 Students learn how to describe problems and ask for help.
@@ -1276,7 +1284,7 @@ Students learn how to describe problems and ask for help.
 ### Page Reference: 101
 ---
 # Unit: 8: Travel and Cultures
-## Slide: 102
+## Slide: 96
 ### Lesson: Theoretical Questions
 ### Question:
 What is the difference between using past simple and past continuous when narrating travel experiences?
@@ -1294,7 +1302,7 @@ Local customs, dress code, and etiquette.
 ### Page Reference: 102
 ---
 # Unit: 8: Travel and Cultures
-## Slide: 103
+## Slide: 97
 ### Lesson: Practical Questions
 ### Question:
 Write a short paragraph describing a trip you took, using both past simple and past continuous tenses.
@@ -1313,7 +1321,7 @@ Me: "Great, I'll take it."
 ### Page Reference: 103
 ---
 # Unit: 8: Travel and Cultures
-## Slide: 104
+## Slide: 98
 ### Lesson: Practical Questions
 ### Question:
 Look at the following image of a tourist destination and write a short review for it.
@@ -1327,7 +1335,8 @@ Write three sentences using conditional forms to talk about hypothetical situati
 ### Page Reference: 104
 ---
 # Unit: 9: Technology and Innovation
-## Slide: 105
+## Slide: 99
+### Lesson: Unit Intro
 ### Content:
 This unit is divided into two parts:
 Part A: The Digital Age
@@ -1346,7 +1355,7 @@ Learning Objectives:
 ### Page Reference: 105
 ---
 # Unit: 9: Technology and Innovation
-## Slide: 106
+## Slide: 100
 ### Lesson: Learn vocabulary related to technology and innovation
 ### Content:
 Students learn essential words and phrases related to modern technology.
@@ -1358,7 +1367,7 @@ Students learn essential words and phrases related to modern technology.
 ### Page Reference: 106
 ---
 # Unit: 9: Technology and Innovation
-## Slide: 107
+## Slide: 101
 ### Lesson: Use present perfect and present perfect continuous to discuss technological advancements
 ### Content:
 Students learn how to use these tenses to talk about recent and ongoing developments in technology.
@@ -1369,7 +1378,7 @@ Students learn how to use these tenses to talk about recent and ongoing developm
 ### Page Reference: 107
 ---
 # Unit: 9: Technology and Innovation
-## Slide: 108
+## Slide: 102
 ### Lesson: Understand and use passive voice to describe technological processes
 ### Content:
 Students learn to use passive constructions commonly found in technical descriptions.
@@ -1380,7 +1389,7 @@ Students learn to use passive constructions commonly found in technical descript
 ### Page Reference: 108
 ---
 # Unit: 9: Technology and Innovation
-## Slide: 109
+## Slide: 103
 ### Lesson: Discuss the impact of technology on society
 ### Content:
 Students learn to articulate the effects of technological advancements on various aspects of life.
@@ -1391,7 +1400,7 @@ Students learn to articulate the effects of technological advancements on variou
 ### Page Reference: 109
 ---
 # Unit: 9: Technology and Innovation
-## Slide: 110
+## Slide: 104
 ### Lesson: Use future tenses to predict technological developments
 ### Content:
 Students practice using different future forms to discuss potential technological advancements.
@@ -1402,7 +1411,7 @@ Students practice using different future forms to discuss potential technologica
 ### Page Reference: 110
 ---
 # Unit: 9: Technology and Innovation
-## Slide: 111
+## Slide: 105
 ### Lesson: Learn how to give instructions for using digital devices
 ### Content:
 Students practice giving clear, step-by-step instructions for technology use.
@@ -1417,7 +1426,7 @@ To set up two-factor authentication on your account, follow these steps:
 ### Page Reference: 111
 ---
 # Unit: 9: Technology and Innovation
-## Slide: 112
+## Slide: 106
 ### Lesson: Understand and use phrasal verbs related to technology
 ### Content:
 Students learn common phrasal verbs used in technological contexts.
@@ -1429,7 +1438,7 @@ Students learn common phrasal verbs used in technological contexts.
 ### Page Reference: 112
 ---
 # Unit: 9: Technology and Innovation
-## Slide: 113
+## Slide: 107
 ### Lesson: Write a formal email about a technological issue
 ### Content:
 Students practice composing professional emails related to tech problems or inquiries.
@@ -1448,7 +1457,7 @@ Sincerely,
 ### Page Reference: 113
 ---
 # Unit: 9: Technology and Innovation
-## Slide: 114
+## Slide: 108
 ### Lesson: Develop critical thinking skills to evaluate the pros and cons of new technologies
 ### Content:
 Students learn to analyze technological advancements from multiple perspectives.
@@ -1460,7 +1469,7 @@ Students learn to analyze technological advancements from multiple perspectives.
 ### Page Reference: 114
 ---
 # Unit: 9: Technology and Innovation
-## Slide: 115
+## Slide: 109
 ### Lesson: Theoretical Questions
 ### Question:
 Explain the difference between present perfect and present perfect continuous tenses when discussing technological advancements.
@@ -1478,7 +1487,7 @@ Ethical implications, economic effects, and potential for social change.
 ### Page Reference: 115
 ---
 # Unit: 9: Technology and Innovation
-## Slide: 116
+## Slide: 110
 ### Lesson: Practical Questions
 ### Question:
 Write a paragraph about a recent technological advancement using present perfect and present perfect continuous tenses.
@@ -1496,7 +1505,7 @@ You are a tech support specialist. Write a set of instructions for a senior citi
 ### Page Reference: 116
 ---
 # Unit: 9: Technology and Innovation
-## Slide: 117
+## Slide: 111
 ### Lesson: Practical Questions
 ### Question:
 Compose a formal email to a software company, reporting a bug you've encountered in their latest application update.
@@ -1522,7 +1531,8 @@ Choose a future technology (e.g., brain-computer interfaces, space tourism) and 
 ### Page Reference: 117
 ---
 # Unit: 10: Global Issues and Sustainability
-## Slide: 118
+## Slide: 112
+### Lesson: Unit Intro
 ### Content:
 This unit is divided into two parts:
 Part A: Environmental Challenges
@@ -1541,7 +1551,7 @@ Learning Objectives:
 ### Page Reference: 118
 ---
 # Unit: 10: Global Issues and Sustainability
-## Slide: 119
+## Slide: 113
 ### Lesson: Learn vocabulary related to global issues and sustainability
 ### Content:
 Students learn essential words and phrases related to environmental and social challenges.
@@ -1553,7 +1563,7 @@ Students learn essential words and phrases related to environmental and social c
 ### Page Reference: 119
 ---
 # Unit: 10: Global Issues and Sustainability
-## Slide: 120
+## Slide: 114
 ### Lesson: Use modals of deduction to discuss environmental problems
 ### Content:
 Students learn to use modals to express degrees of certainty about environmental issues.
@@ -1565,7 +1575,7 @@ Students learn to use modals to express degrees of certainty about environmental
 ### Page Reference: 120
 ---
 # Unit: 10: Global Issues and Sustainability
-## Slide: 121
+## Slide: 115
 ### Lesson: Understand and use the third conditional to discuss hypothetical past situations
 ### Content:
 Students practice using this structure to consider alternative outcomes in environmental contexts.
@@ -1576,7 +1586,7 @@ Students practice using this structure to consider alternative outcomes in envir
 ### Page Reference: 121
 ---
 # Unit: 10: Global Issues and Sustainability
-## Slide: 122
+## Slide: 116
 ### Lesson: Discuss global issues and their impacts
 ### Content:
 Students learn to articulate complex global challenges and their effects on various aspects of life.
@@ -1587,7 +1597,7 @@ Students learn to articulate complex global challenges and their effects on vari
 ### Page Reference: 122
 ---
 # Unit: 10: Global Issues and Sustainability
-## Slide: 123
+## Slide: 117
 ### Lesson: Use persuasive language to advocate for sustainable practices
 ### Content:
 Students practice using rhetorical devices and persuasive techniques to promote sustainability.
@@ -1597,7 +1607,7 @@ By adopting renewable energy sources, we not only reduce our carbon footprint bu
 ### Page Reference: 123
 ---
 # Unit: 10: Global Issues and Sustainability
-## Slide: 124
+## Slide: 118
 ### Lesson: Learn how to interpret and describe data related to environmental trends
 ### Content:
 Students practice analyzing and explaining graphs, charts, and statistics related to environmental issues.
@@ -1607,7 +1617,7 @@ This graph shows global temperature anomalies over the past century. We can see 
 ### Page Reference: 124
 ---
 # Unit: 10: Global Issues and Sustainability
-## Slide: 125
+## Slide: 119
 ### Lesson: Understand and use collocations related to sustainability
 ### Content:
 Students learn common word combinations used in discussions about sustainability.
@@ -1619,7 +1629,7 @@ Students learn common word combinations used in discussions about sustainability
 ### Page Reference: 125
 ---
 # Unit: 10: Global Issues and Sustainability
-## Slide: 126
+## Slide: 120
 ### Lesson: Write a formal proposal for a sustainable initiative
 ### Content:
 Students practice composing structured proposals to address environmental issues.
@@ -1641,7 +1651,7 @@ Title: Implementing a City-Wide Composting Program
 ### Page Reference: 126
 ---
 # Unit: 10: Global Issues and Sustainability
-## Slide: 127
+## Slide: 121
 ### Lesson: Develop critical thinking skills to analyze complex global issues
 ### Content:
 Students learn to approach global challenges from multiple perspectives, considering various stakeholders and long-term impacts.
@@ -1655,7 +1665,7 @@ Students learn to approach global challenges from multiple perspectives, conside
 ### Page Reference: 127
 ---
 # Unit: 10: Global Issues and Sustainability
-## Slide: 128
+## Slide: 122
 ### Lesson: Theoretical Questions
 ### Question:
 Explain the difference between using "must," "could," and "might" when making deductions about environmental problems.
@@ -1673,7 +1683,7 @@ Appeals to emotion, logic, and ethics can be used to persuade people to adopt mo
 ### Page Reference: 128
 ---
 # Unit: 10: Global Issues and Sustainability
-## Slide: 129
+## Slide: 123
 ### Lesson: Practical Questions
 ### Question:
 Write three sentences using modals of deduction to discuss possible causes of bee population decline.
@@ -1687,7 +1697,7 @@ Compose a paragraph using the third conditional to discuss how a major environme
 ### Page Reference: 129
 ---
 # Unit: 10: Global Issues and Sustainability
-## Slide: 130
+## Slide: 124
 ### Lesson: Practical Questions
 ### Question:
 You are an environmental consultant. Write a short proposal (150-200 words) for implementing a plastic reduction program in your local community.
@@ -1702,94 +1712,3 @@ Analyze the following graph showing global CO2 emissions over the past 50 years.
 (Example Answer) The graph shows a steady increase in global CO2 emissions over the past 50 years. This trend is likely due to a combination of factors, including population growth, industrialization, and our reliance on fossil fuels.
 ### Image: practical_questions_10b.svg
 ### Page Reference: 130
----
-# Unit: Summary
-## Slide: 132
-### Unit One: New Faces
-### Summary:
-Self-introduction in a work environment, using business cards, and etiquette for initial professional communication.
-### Key points:
-Presenting name, job, and company; professionally reading and exchanging business cards.
-### Page Reference: 132
----
-# Unit: Summary
-## Slide: 133
-### Unit Two: Time Management
-### Summary:
-Effective techniques for managing time and increasing productivity.
-### Key points:
-Using the Eisenhower Matrix, Pomodoro Technique, creating to-do lists, and avoiding distractions.
-### Page Reference: 133
----
-# Unit: Summary
-## Slide: 134
-### Unit Three: Phone Calls
-### Summary:
-Etiquette and techniques for making and receiving phone calls in a work environment.
-### Key points:
-Answering calls professionally, leaving effective voicemails, handling difficult calls.
-### Page Reference: 134
----
-# Unit: Summary
-## Slide: 135
-### Unit Four: Email Writing
-### Summary:
-Fundamentals of writing professional and effective email messages.
-### Key points:
-Structuring messages, using effective subject lines, appropriate email etiquette.
-### Page Reference: 135
----
-# Unit: Summary
-## Slide: 136
-### Unit Five: Meetings
-### Summary:
-Planning, managing, and attending meetings effectively.
-### Key points:
-Preparing agendas, facilitating discussions, taking notes, and following up on actions.
-### Page Reference: 136
----
-# Unit: Summary
-## Slide: 137
-### Unit Six: Presentations
-### Summary:
-Designing and delivering persuasive and engaging presentations.
-### Key points:
-Structuring the presentation, using visual aids, delivery techniques, and handling questions.
-### Page Reference: 137
----
-# Unit: Summary
-## Slide: 138
-### Unit Seven: Negotiation
-### Summary:
-Strategies and tactics for effective negotiation in the workplace.
-### Key points:
-Understanding parties' interests, persuasion techniques, reaching win-win solutions.
-### Page Reference: 138
----
-# Unit: Summary
-## Slide: 139
-### Unit Eight: Problem Solving
-### Summary:
-Methodologies and tools for identifying and solving problems in the workplace.
-### Key points:
-Root cause analysis, brainstorming solutions, making informed decisions.
-### Page Reference: 139
----
-# Unit: Summary
-## Slide: 140
-### Unit Nine: Teamwork
-### Summary:
-Effective team collaboration skills and building professional relationships.
-### Key points:
-Effective communication, role distribution, conflict resolution, and fostering team spirit.
-### Page Reference: 140
----
-# Unit: Summary
-## Slide: 141
-### Unit Ten: Project Management
-### Summary:
-Fundamentals of project management and successful execution.
-### Key points:
-Project planning, setting objectives, managing resources, tracking progress, and evaluating results.
-### Page Reference: 141
----

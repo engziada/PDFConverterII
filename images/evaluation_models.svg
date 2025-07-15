@@ -1,1 +1,45 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">evaluation_models.svg</text></svg>
+<svg width="700" height="400" viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .card { fill: #ffffff; stroke: #bdc3c7; stroke-width: 1; rx: 10; }
+            .card-title { font-size: 18px; font-weight: bold; text-anchor: middle; fill: #2980b9; }
+            .icon { stroke: #3498db; stroke-width: 5; fill: none; }
+        </style>
+    </defs>
+
+    <rect width="700" height="400" fill="#f4f6f7"/>
+    <text x="350" y="40" class="title">نماذج تقييم الأداء</text>
+
+    <!-- Model 1: Rating Scale -->
+    <rect x="50" y="100" width="180" height="200" class="card"/>
+    <text x="140" y="140" class="card-title">نموذج التصنيف</text>
+    <g transform="translate(90, 170) scale(0.7)">
+        <path d="M 20 80 H 80" class="icon"/>
+        <text x="25" y="70" font-size="20" fill="#34495e">1</text>
+        <text x="75" y="70" font-size="20" fill="#34495e">5</text>
+        <circle cx="50" cy="80" r="5" fill="#e74c3c"/>
+    </g>
+
+    <!-- Model 2: BARS -->
+    <rect x="260" y="100" width="180" height="200" class="card"/>
+    <text x="350" y="140" class="card-title">نموذج السلوك (BARS)</text>
+    <g transform="translate(300, 170) scale(0.7)">
+        <path d="M 20 30 H 80 M 20 50 H 80 M 20 70 H 80" class="icon" stroke-dasharray="5,5"/>
+        <circle cx="30" cy="30" r="5" fill="#2ecc71"/>
+        <circle cx="30" cy="50" r="5" fill="#e74c3c"/>
+        <circle cx="30" cy="70" r="5" fill="#2ecc71"/>
+    </g>
+
+    <!-- Model 3: 360 Degree -->
+    <rect x="470" y="100" width="180" height="200" class="card"/>
+    <text x="560" y="140" class="card-title">نموذج 360 درجة</text>
+    <g transform="translate(510, 170) scale(0.7)">
+        <circle cx="50" cy="50" r="40" class="icon"/>
+        <circle cx="50" cy="10" r="8" fill="#3498db"/>
+        <circle cx="90" cy="50" r="8" fill="#3498db"/>
+        <circle cx="10" cy="50" r="8" fill="#3498db"/>
+        <circle cx="50" cy="90" r="8" fill="#3498db"/>
+    </g>
+
+</svg>

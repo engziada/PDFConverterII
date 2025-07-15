@@ -1,1 +1,36 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">practical_questions_5b.svg</text></svg>
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 22px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .globe { fill: #3498db; }
+            .land { fill: #2ecc71; }
+            .paper { fill: #ffffff; stroke: #bdc3c7; stroke-width: 2; rx: 5; }
+            .pen { fill: #34495e; }
+            .question-mark { font-size: 80px; font-weight: bold; fill: #bdc3c7; opacity: 0.5; text-anchor: middle; }
+            .text-label { font-size: 14px; text-anchor: middle; fill: #34495e; }
+        </style>
+    </defs>
+
+    <rect width="500" height="350" fill="#ffffff"/>
+    <text x="250" y="40" class="title">Practical Questions</text>
+
+    <!-- Globe -->
+    <g transform="translate(120, 150)">
+        <circle cx="0" cy="0" r="80" class="globe"/>
+        <path d="M -50 0 C -30 -60, 30 -60, 50 0 C 30 60, -30 60, -50 0 Z" class="land"/>
+        <text x="0" y="100" class="text-label">Future Travel Plans</text>
+    </g>
+
+    <!-- Pen and Paper -->
+    <g transform="translate(300, 120)">
+        <rect x="0" y="0" width="150" height="100" class="paper"/>
+        <rect x="10" y="10" width="130" height="10" fill="#ecf0f1"/>
+        <rect x="10" y="30" width="100" height="10" fill="#ecf0f1"/>
+        <rect x="10" y="50" width="120" height="10" fill="#ecf0f1"/>
+        <rect x="130" y="-20" width="10" height="40" class="pen"/>
+        <circle cx="135" cy="-20" r="5" fill="#34495e"/>
+        <text x="75" y="130" class="text-label">Travel Blog</text>
+    </g>
+
+    <text x="250" y="280" class="question-mark">?</text>
+</svg>

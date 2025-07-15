@@ -1,0 +1,46 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .card { fill: #ffffff; stroke: #bdc3c7; stroke-width: 1; rx: 10; }
+            .card-title { font-size: 16px; font-weight: bold; text-anchor: middle; fill: #2980b9; }
+            .icon { stroke: #3498db; stroke-width: 4; fill: none; }
+        </style>
+    </defs>
+
+    <rect width="600" height="400" fill="#f4f6f7"/>
+    <text x="300" y="40" class="title">أهمية الإدارة</text>
+
+    <!-- Card 1: Goals -->
+    <rect x="50" y="80" width="220" height="120" class="card"/>
+    <text x="160" y="110" class="card-title">تحقيق أهداف المؤسسة</text>
+    <g transform="translate(135, 130) scale(0.5)">
+        <circle cx="50" cy="50" r="40" class="icon"/>
+        <path d="M 50 50 L 75 25 M 75 25 L 65 25 M 75 25 L 75 35" class="icon" stroke-width="6"/>
+    </g>
+
+    <!-- Card 2: Resources -->
+    <rect x="330" y="80" width="220" height="120" class="card"/>
+    <text x="440" y="110" class="card-title">استغلال الموارد بكفاءة</text>
+    <g transform="translate(415, 130) scale(0.5)">
+        <path d="M 20 80 C 20 40, 80 40, 80 80 Z" class="icon"/>
+        <circle cx="50" cy="45" r="10" class="icon"/>
+    </g>
+
+    <!-- Card 3: Costs -->
+    <rect x="50" y="230" width="220" height="120" class="card"/>
+    <text x="160" y="260" class="card-title">تقليل التكاليف</text>
+    <g transform="translate(135, 280) scale(0.5)">
+        <path d="M 20 80 H 80" class="icon"/>
+        <path d="M 50 80 V 20 L 30 40" class="icon"/>
+    </g>
+
+    <!-- Card 4: Balance -->
+    <rect x="330" y="230" width="220" height="120" class="card"/>
+    <text x="440" y="260" class="card-title">الحفاظ على التوازن</text>
+    <g transform="translate(415, 280) scale(0.5)">
+        <path d="M 10 50 H 90" class="icon"/>
+        <path d="M 30 30 L 50 50 L 30 70" class="icon"/>
+        <path d="M 70 30 L 50 50 L 70 70" class="icon"/>
+    </g>
+</svg>

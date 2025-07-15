@@ -1,0 +1,34 @@
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 22px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .question-mark { font-size: 100px; font-weight: bold; fill: #3498db; opacity: 0.5; text-anchor: middle; }
+            .balance-scale { stroke: #34495e; stroke-width: 4; }
+            .pan { fill: none; stroke: #34495e; stroke-width: 2; }
+            .equal-sign { font-size: 40px; font-weight: bold; fill: #2ecc71; text-anchor: middle; }
+            .text-label { font-size: 14px; text-anchor: middle; fill: #34495e; }
+        </style>
+    </defs>
+
+    <rect width="500" height="350" fill="#ffffff"/>
+    <text x="250" y="40" class="title">تمارين الوحدة الثالثة</text>
+
+    <text x="250" y="180" class="question-mark">?</text>
+
+    <!-- Balance Scale (Justice) -->
+    <g transform="translate(150, 220)">
+        <line x1="0" y1="0" x2="100" y2="0" class="balance-scale"/>
+        <polygon points="45,0 55,0 50,20" fill="#34495e"/>
+        <path d="M 10 0 V 30 M 90 0 V 30" class="pan"/>
+        <path d="M 0 30 C 0 50, 40 50, 40 30" class="pan"/>
+        <path d="M 60 30 C 60 50, 100 50, 100 30" class="pan"/>
+        <text x="50" y="70" class="text-label">العدل</text>
+    </g>
+
+    <!-- Equal Signs (Equality) -->
+    <g transform="translate(350, 220)">
+        <text x="0" y="0" class="equal-sign">=</text>
+        <text x="0" y="30" class="equal-sign">=</text>
+        <text x="0" y="70" class="text-label">المساواة</text>
+    </g>
+</svg>

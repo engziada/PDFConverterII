@@ -1,0 +1,39 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .item { font-size: 16px; }
+            .icon { fill: #2ecc71; }
+        </style>
+    </defs>
+
+    <rect width="600" height="400" fill="#f4f6f7"/>
+    <text x="300" y="40" class="title">الأهداف التفصيلية للحقيبة</text>
+
+    <g transform="translate(50, 80)">
+        <g class="item" transform="translate(0, 20)">
+            <path class="icon" d="M 0 10 L 5 15 L 15 5 L 5 15 Z"/>
+            <text x="25" y="15">معرفة سلوكيات العمل</text>
+        </g>
+        <g class="item" transform="translate(0, 70)">
+            <path class="icon" d="M 0 10 L 5 15 L 15 5 L 5 15 Z"/>
+            <text x="25" y="15">مهارات التفكير وحل المشكلات</text>
+        </g>
+        <g class="item" transform="translate(0, 120)">
+            <path class="icon" d="M 0 10 L 5 15 L 15 5 L 5 15 Z"/>
+            <text x="25" y="15">مهارات البحث العلمي</text>
+        </g>
+        <g class="item" transform="translate(0, 170)">
+            <path class="icon" d="M 0 10 L 5 15 L 15 5 L 5 15 Z"/>
+            <text x="25" y="15">فهم نظم المعلومات والذكاء الاصطناعي</text>
+        </g>
+        <g class="item" transform="translate(0, 220)">
+            <path class="icon" d="M 0 10 L 5 15 L 15 5 L 5 15 Z"/>
+            <text x="25" y="15">إعداد السيرة الذاتية</text>
+        </g>
+        <g class="item" transform="translate(0, 270)">
+            <path class="icon" d="M 0 10 L 5 15 L 15 5 L 5 15 Z"/>
+            <text x="25" y="15">معرفة رؤية السعودية 2030</text>
+        </g>
+    </g>
+</svg>

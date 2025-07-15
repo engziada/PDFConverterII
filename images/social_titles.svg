@@ -1,1 +1,38 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">social_titles.svg</text></svg>
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .card { fill: #ffffff; stroke: #bdc3c7; stroke-width: 1; rx: 10; }
+            .card-title { font-size: 20px; font-weight: bold; text-anchor: middle; }
+        </style>
+    </defs>
+
+    <rect width="600" height="400" fill="#f4f6f7"/>
+    <text x="300" y="40" class="title">Social Titles</text>
+
+    <!-- Mr. -->
+    <rect x="50" y="80" width="120" height="120" class="card"/>
+    <text x="110" y="140" class="card-title" fill="#3498db">Mr.</text>
+    <text x="110" y="170" font-size="14" text-anchor="middle">(for men)</text>
+
+    <!-- Mrs. -->
+    <rect x="190" y="80" width="120" height="120" class="card"/>
+    <text x="250" y="140" class="card-title" fill="#e74c3c">Mrs.</text>
+    <text x="250" y="170" font-size="14" text-anchor="middle">(for married women)</text>
+
+    <!-- Miss -->
+    <rect x="330" y="80" width="120" height="120" class="card"/>
+    <text x="390" y="140" class="card-title" fill="#f1c40f">Miss</text>
+    <text x="390" y="170" font-size="14" text-anchor="middle">(for unmarried women)</text>
+
+    <!-- Ms. -->
+    <rect x="470" y="80" width="120" height="120" class="card"/>
+    <text x="530" y="140" class="card-title" fill="#9b59b6">Ms.</text>
+    <text x="530" y="170" font-size="14" text-anchor="middle">(for any woman)</text>
+    
+    <!-- Dr. -->
+    <rect x="260" y="230" width="120" height="120" class="card"/>
+    <text x="320" y="290" class="card-title" fill="#2ecc71">Dr.</text>
+    <text x="320" y="320" font-size="14" text-anchor="middle">(for doctors)</text>
+
+</svg>

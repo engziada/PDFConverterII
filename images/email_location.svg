@@ -1,1 +1,29 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">email_location.svg</text></svg>
+<svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 22px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .paper { fill: #ffffff; stroke: #bdc3c7; stroke-width: 1; }
+            .header { font-size: 16px; font-weight: bold; fill: #2980b9; }
+            .body-text { font-size: 14px; fill: #34495e; }
+        </style>
+    </defs>
+
+    <rect width="500" height="400" fill="#f4f6f7"/>
+    <text x="250" y="40" class="title">Email Explaining Location</text>
+
+    <g transform="translate(50, 80)">
+        <rect class="paper" width="400" height="280" rx="5"/>
+        
+        <text class="header" x="20" y="40">Subject: Directions to our office</text>
+        <line x1="20" y1="50" x2="380" y2="50" stroke="#bdc3c7"/>
+
+        <text class="body-text" x="20" y="80">Dear John,</text>
+        <text class="body-text" x="20" y="110">Our office is at 123 Main Street.</text>
+        <text class="body-text" x="20" y="130">When you exit the metro, turn right.</text>
+        <text class="body-text" x="20" y="150">Walk for 5 minutes, you'll see a blue building.</text>
+        <text class="body-text" x="20" y="170">We are on the second floor.</text>
+        
+        <text class="body-text" x="20" y="220">Looking forward to your visit,</text>
+        <text class="body-text" x="20" y="240">Ahmed</text>
+    </g>
+</svg>

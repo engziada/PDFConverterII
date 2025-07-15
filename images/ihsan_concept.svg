@@ -1,0 +1,17 @@
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 22px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .text { font-size: 16px; text-anchor: middle; }
+        </style>
+    </defs>
+
+    <rect width="500" height="350" fill="#ffffff"/>
+    <text x="250" y="40" class="title">مفهوم الإحسان</text>
+
+    <g transform="translate(250, 150)">
+        <path d="M -100 0 A 100 80 0 0 1 100 0 A 100 80 0 0 1 -100 0" fill="#ecf0f1"/>
+        <text y="-10" class="text" font-weight="bold">أن تعبد الله كأنك تراه</text>
+        <text y="20" class="text">فإن لم تكن تراه فإنه يراك</text>
+    </g>
+</svg>

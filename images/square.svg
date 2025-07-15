@@ -1,5 +1,22 @@
-<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <rect x="25" y="25" width="150" height="150" fill="#e9ecef" stroke="#333" stroke-width="2"/>
-    <text x="95" y="110" font-family="Arial" font-size="18">x</text>
-    <text x="10" y="105" font-family="Arial" font-size="18">x</text>
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .shape { fill: #ecf0f1; stroke: #3498db; stroke-width: 3; }
+            .label { font-size: 20px; text-anchor: middle; fill: #34495e; }
+            .formula { font-size: 18px; fill: #2ecc71; }
+        </style>
+    </defs>
+
+    <rect width="400" height="400" fill="#f4f6f7"/>
+    <text x="200" y="40" class="title">المربع</text>
+
+    <!-- Square -->
+    <rect x="100" y="100" width="150" height="150" class="shape"/>
+    <text x="175" y="90" class="label">x</text>
+    <text x="90" y="175" class="label">x</text>
+
+    <!-- Formulas -->
+    <text x="100" y="300" class="formula">المساحة: A = x²</text>
+    <text x="100" y="330" class="formula">المحيط: P = 4x</text>
 </svg>

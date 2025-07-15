@@ -1,0 +1,42 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .card { fill: #ffffff; stroke: #bdc3c7; stroke-width: 1; rx: 10; }
+            .card-title { font-size: 16px; font-weight: bold; text-anchor: middle; fill: #27ae60; }
+            .icon { stroke: #2ecc71; stroke-width: 4; fill: none; }
+        </style>
+    </defs>
+
+    <rect width="600" height="400" fill="#eafaf1"/>
+    <text x="300" y="40" class="title">مواجهة الاستشراق</text>
+
+    <!-- Encyclopedias -->
+    <rect x="50" y="80" width="220" height="120" class="card"/>
+    <text x="160" y="110" class="card-title">إصدار موسوعات إسلامية</text>
+    <g transform="translate(135, 130) scale(0.5)">
+        <path d="M 20 10 H 80 V 90 H 20 Z" class="icon"/>
+    </g>
+
+    <!-- Institutions -->
+    <rect x="330" y="80" width="220" height="120" class="card"/>
+    <text x="440" y="110" class="card-title">إنشاء مؤسسات علمية</text>
+    <g transform="translate(415, 130) scale(0.5)">
+        <path d="M 20 80 H 80 V 40 L 50 10 L 20 40 Z" class="icon"/>
+    </g>
+
+    <!-- Translations -->
+    <rect x="50" y="230" width="220" height="120" class="card"/>
+    <text x="160" y="260" class="card-title">ترجمة معاني القرآن</text>
+    <g transform="translate(135, 280) scale(0.5)">
+        <path d="M 20 50 H 80" class="icon"/>
+        <path d="M 50 20 V 80" class="icon"/>
+    </g>
+
+    <!-- Heritage -->
+    <rect x="330" y="230" width="220" height="120" class="card"/>
+    <text x="440" y="260" class="card-title">تنقية التراث</text>
+    <g transform="translate(415, 280) scale(0.5)">
+        <path d="M 20 80 L 80 20" class="icon"/>
+    </g>
+</svg>

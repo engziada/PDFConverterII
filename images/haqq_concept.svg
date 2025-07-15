@@ -1,0 +1,18 @@
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 22px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .text { font-size: 18px; text-anchor: middle; }
+        </style>
+    </defs>
+
+    <rect width="500" height="350" fill="#ffffff"/>
+    <text x="250" y="40" class="title">مفهوم الحق في الشريعة</text>
+
+    <g transform="translate(250, 150)">
+        <circle cx="0" cy="0" r="80" fill="#ecf0f1"/>
+        <text y="-20" class="text" font-weight="bold">الله تعالى</text>
+        <text y="10" class="text">فعل الله</text>
+        <text y="40" class="text">الاعتقاد الصادق</text>
+    </g>
+</svg>

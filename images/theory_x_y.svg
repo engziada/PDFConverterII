@@ -1,0 +1,39 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .theory-title { font-size: 28px; font-weight: bold; text-anchor: middle; }
+            .x-color { fill: #e74c3c; }
+            .y-color { fill: #2ecc71; }
+            .desc-text { font-size: 16px; text-anchor: middle; fill: #34495e; }
+        </style>
+    </defs>
+
+    <rect width="600" height="400" fill="#ffffff"/>
+    <text x="300" y="40" class="title">نظرية X و Y</text>
+
+    <!-- Theory X Side -->
+    <rect x="50" y="80" width="250" height="280" rx="15" fill="#f9e7e7"/>
+    <text x="175" y="120" class="theory-title x-color">X</text>
+    <!-- Lazy Icon -->
+    <g transform="translate(125, 150) scale(0.8)">
+        <circle cx="50" cy="40" r="20" fill="#e74c3c"/>
+        <path d="M 20 100 C 40 80, 60 80, 80 100" stroke="#e74c3c" stroke-width="6" fill="none"/>
+        <path d="M 35 55 L 45 65 M 45 55 L 35 65" stroke="#ffffff" stroke-width="4"/>
+        <path d="M 55 55 L 65 65 M 65 55 L 55 65" stroke="#ffffff" stroke-width="4"/>
+    </g>
+    <text x="175" y="280" class="desc-text">الإنسان كسول ويحتاج لرقابة</text>
+
+    <!-- Theory Y Side -->
+    <rect x="300" y="80" width="250" height="280" rx="15" fill="#eafaf1"/>
+    <text x="425" y="120" class="theory-title y-color">Y</text>
+    <!-- Motivated Icon -->
+    <g transform="translate(375, 150) scale(0.8)">
+        <circle cx="50" cy="40" r="20" fill="#2ecc71"/>
+        <path d="M 20 80 C 40 100, 60 100, 80 80" stroke="#2ecc71" stroke-width="6" fill="none"/>
+        <circle cx="40" cy="60" r="3" fill="#ffffff"/>
+        <circle cx="60" cy="60" r="3" fill="#ffffff"/>
+    </g>
+    <text x="425" y="280" class="desc-text">الإنسان طموح ومبدع</text>
+
+</svg>

@@ -1,1 +1,26 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">comparatives_superlatives.svg</text></svg>
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 22px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .text { font-size: 16px; text-anchor: middle; }
+        </style>
+    </defs>
+
+    <rect width="600" height="400" fill="#ffffff"/>
+    <text x="300" y="40" class="title">Comparatives & Superlatives</text>
+
+    <!-- Good, Better, Best -->
+    <g transform="translate(150, 150)">
+        <circle cx="0" cy="0" r="50" fill="#2ecc71"/>
+        <text fill="white" font-weight="bold">Good</text>
+    </g>
+    <g transform="translate(300, 150)">
+        <circle cx="0" cy="0" r="60" fill="#f1c40f"/>
+        <text fill="white" font-weight="bold">Better</text>
+    </g>
+    <g transform="translate(450, 150)">
+        <circle cx="0" cy="0" r="70" fill="#e74c3c"/>
+        <text fill="white" font-weight="bold">Best</text>
+    </g>
+
+</svg>

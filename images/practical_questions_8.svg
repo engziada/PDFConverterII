@@ -1,1 +1,33 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">practical_questions_8.svg</text></svg>
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 22px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .airplane { fill: #3498db; }
+            .hotel-icon { fill: #2ecc71; }
+            .question-mark { font-size: 80px; font-weight: bold; fill: #bdc3c7; opacity: 0.5; text-anchor: middle; }
+            .text-label { font-size: 14px; text-anchor: middle; fill: #34495e; }
+        </style>
+    </defs>
+
+    <rect width="500" height="350" fill="#f4f6f7"/>
+    <text x="250" y="40" class="title">Practical Questions</text>
+
+    <!-- Airplane Icon -->
+    <g transform="translate(100, 100)">
+        <path d="M 10 50 L 90 50 L 80 40 M 80 60 L 90 50" fill="#3498db"/>
+        <path d="M 20 30 L 80 30 L 90 50 L 10 50 Z" fill="#3498db"/>
+        <text x="50" y="120" class="text-label">Trip Description</text>
+    </g>
+
+    <!-- Hotel Icon -->
+    <g transform="translate(300, 100)">
+        <rect x="0" y="0" width="80" height="100" class="hotel-icon"/>
+        <rect x="10" y="10" width="20" height="20" fill="white"/>
+        <rect x="50" y="10" width="20" height="20" fill="white"/>
+        <rect x="10" y="40" width="20" height="20" fill="white"/>
+        <rect x="50" y="40" width="20" height="20" fill="white"/>
+        <text x="40" y="120" class="text-label">Booking</text>
+    </g>
+
+    <text x="250" y="280" class="question-mark">?</text>
+</svg>

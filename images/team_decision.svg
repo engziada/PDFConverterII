@@ -1,1 +1,53 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">team_decision.svg</text></svg>
+<svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .team-member { fill: #3498db; }
+            .table { fill: #95a5a6; stroke: #7f8c8d; stroke-width: 2; }
+            .lightbulb-glass { fill: #f1c40f; }
+            .lightbulb-base { fill: #bdc3c7; }
+        </style>
+    </defs>
+
+    <rect width="500" height="400" fill="#f4f6f7"/>
+    <text x="250" y="40" class="title">صنع القرار الجماعي</text>
+
+    <!-- Table -->
+    <ellipse cx="250" cy="280" rx="150" ry="50" class="table"/>
+
+    <!-- Team members -->
+    <g class="team-member" transform="translate(100, 150)">
+        <circle cx="0" cy="0" r="20"/>
+        <rect x="-25" y="20" width="50" height="60" rx="10"/>
+    </g>
+    <g class="team-member" transform="translate(200, 100)">
+        <circle cx="0" cy="0" r="20"/>
+        <rect x="-25" y="20" width="50" height="60" rx="10"/>
+    </g>
+    <g class="team-member" transform="translate(300, 100)">
+        <circle cx="0" cy="0" r="20"/>
+        <rect x="-25" y="20" width="50" height="60" rx="10"/>
+    </g>
+    <g class="team-member" transform="translate(400, 150)">
+        <circle cx="0" cy="0" r="20"/>
+        <rect x="-25" y="20" width="50" height="60" rx="10"/>
+    </g>
+     <g class="team-member" transform="translate(350, 250)">
+        <circle cx="0" cy="0" r="20"/>
+        <rect x="-25" y="20" width="50" height="60" rx="10"/>
+    </g>
+     <g class="team-member" transform="translate(150, 250)">
+        <circle cx="0" cy="0" r="20"/>
+        <rect x="-25" y="20" width="50" height="60" rx="10"/>
+    </g>
+
+    <!-- Lightbulb -->
+    <g transform="translate(225, 160)">
+        <path d="M 25 0 C 0 0, 0 30, 15 45 C 20 50, 30 50, 35 45 C 50 30, 50 0, 25 0 Z" class="lightbulb-glass"/>
+        <rect x="15" y="48" width="20" height="10" class="lightbulb-base"/>
+        <!-- Rays -->
+        <line x1="25" y1="-10" x2="25" y2="-20" stroke="#f1c40f" stroke-width="3"/>
+        <line x1="5" y1="10" x2="-5" y2="5" stroke="#f1c40f" stroke-width="3"/>
+        <line x1="45" y1="10" x2="55" y2="5" stroke="#f1c40f" stroke-width="3"/>
+    </g>
+</svg>

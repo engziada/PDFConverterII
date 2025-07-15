@@ -1,1 +1,30 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">map_locations.svg</text></svg>
+<svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 22px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .map-bg { fill: #eafaf1; stroke: #bdc3c7; }
+            .city-dot { fill: #e74c3c; }
+            .city-label { font-size: 14px; }
+        </style>
+    </defs>
+
+    <rect width="500" height="400" fill="#ffffff"/>
+    <text x="250" y="40" class="title">Locations on a Map</text>
+
+    <!-- Map of Saudi Arabia (simplified) -->
+    <g transform="translate(100, 80)">
+        <path class="map-bg" d="M 100 10 C 50 50, 20 150, 100 250 C 150 300, 250 250, 300 150 C 350 50, 250 0, 100 10 Z"/>
+        
+        <!-- Riyadh -->
+        <circle class="city-dot" cx="180" cy="150" r="8"/>
+        <text class="city-label" x="190" y="145">Riyadh</text>
+
+        <!-- Jeddah -->
+        <circle class="city-dot" cx="80" cy="180" r="8"/>
+        <text class="city-label" x="30" y="185">Jeddah</text>
+
+        <!-- Dammam -->
+        <circle class="city-dot" cx="280" cy="120" r="8"/>
+        <text class="city-label" x="290" y="115">Dammam</text>
+    </g>
+</svg>

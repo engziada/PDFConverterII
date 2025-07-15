@@ -1,1 +1,38 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">symptoms.svg</text></svg>
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .icon-bg { fill: #ecf0f1; stroke: #bdc3c7; stroke-width: 2; rx: 10; }
+            .icon { fill: #e74c3c; }
+            .text-label { font-size: 14px; text-anchor: middle; fill: #34495e; }
+        </style>
+    </defs>
+
+    <rect width="600" height="400" fill="#f4f6f7"/>
+    <text x="300" y="40" class="title">Common Symptoms</text>
+
+    <!-- Thermometer for Fever -->
+    <g transform="translate(100, 100)">
+        <rect x="0" y="0" width="100" height="100" class="icon-bg"/>
+        <rect x="45" y="10" width="10" height="60" fill="#e74c3c"/>
+        <circle cx="50" cy="70" r="15" fill="#e74c3c"/>
+        <text x="50" y="120" class="text-label">Fever</text>
+    </g>
+
+    <!-- Band-aid for Pain -->
+    <g transform="translate(250, 100)">
+        <rect x="0" y="0" width="100" height="100" class="icon-bg"/>
+        <rect x="20" y="40" width="60" height="20" fill="#e74c3c"/>
+        <rect x="30" y="30" width="40" height="40" fill="#ffffff"/>
+        <text x="50" y="120" class="text-label">Pain</text>
+    </g>
+
+    <!-- Coughing Person -->
+    <g transform="translate(400, 100)">
+        <rect x="0" y="0" width="100" height="100" class="icon-bg"/>
+        <circle cx="50" cy="30" r="20" fill="#3498db"/>
+        <path d="M 30 80 C 30 50, 70 50, 70 80 Z" fill="#3498db"/>
+        <path d="M 70 30 C 80 20, 90 30, 80 40" stroke="#e74c3c" stroke-width="3" fill="none"/>
+        <text x="50" y="120" class="text-label">Cough</text>
+    </g>
+</svg>

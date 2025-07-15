@@ -1,0 +1,56 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .card { fill: #ffffff; stroke: #bdc3c7; stroke-width: 1; rx: 10; }
+            .card-title { font-size: 14px; font-weight: bold; text-anchor: middle; fill: #2980b9; }
+            .icon { stroke: #3498db; stroke-width: 5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+        </style>
+    </defs>
+
+    <rect width="800" height="500" fill="#f4f6f7"/>
+    <text x="400" y="40" class="title">مبادئ إدارة الأداء الأساسية</text>
+
+    <!-- Principle 1: Strategic Alignment -->
+    <rect x="50" y="80" width="130" height="180" class="card"/>
+    <text x="115" y="110" class="card-title">التوافق الاستراتيجي</text>
+    <g transform="translate(75, 130) scale(0.6)">
+        <path d="M 20 50 H 80" class="icon"/>
+        <path d="M 50 20 V 80" class="icon"/>
+    </g>
+
+    <!-- Principle 2: Clarity -->
+    <rect x="200" y="80" width="130" height="180" class="card"/>
+    <text x="265" y="110" class="card-title">الوضوح</text>
+    <g transform="translate(225, 130) scale(0.6)">
+        <circle cx="50" cy="50" r="30" class="icon"/>
+        <path d="M 35 35 L 65 65" class="icon"/>
+    </g>
+
+    <!-- Principle 3: Participation -->
+    <rect x="350" y="80" width="130" height="180" class="card"/>
+    <text x="415" y="110" class="card-title">المشاركة</text>
+    <g transform="translate(375, 130) scale(0.6)">
+        <circle cx="35" cy="35" r="15" class="icon"/>
+        <circle cx="65" cy="65" r="15" class="icon"/>
+        <path d="M 45 45 L 55 55" class="icon"/>
+    </g>
+
+    <!-- Principle 4: Fairness -->
+    <rect x="500" y="80" width="130" height="180" class="card"/>
+    <text x="565" y="110" class="card-title">العدل والمصداقية</text>
+    <g transform="translate(525, 130) scale(0.6)">
+        <path d="M 20 50 H 80" class="icon"/>
+        <path d="M 30 30 L 50 50 L 30 70" class="icon"/>
+        <path d="M 70 30 L 50 50 L 70 70" class="icon"/>
+    </g>
+
+    <!-- Principle 5: Integration -->
+    <rect x="650" y="80" width="130" height="180" class="card"/>
+    <text x="715" y="110" class="card-title">التكامل</text>
+    <g transform="translate(675, 130) scale(0.6)">
+        <path d="M 20 50 H 80" class="icon"/>
+        <path d="M 50 20 V 80" class="icon" stroke-dasharray="5,5"/>
+    </g>
+
+</svg>

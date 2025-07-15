@@ -1,0 +1,37 @@
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .leader { fill: #e67e22; }
+            .follower { fill: #3498db; }
+            .path { stroke: #2ecc71; stroke-width: 4; fill: none; stroke-dasharray: 10, 5; }
+        </style>
+    </defs>
+
+    <rect width="500" height="350" fill="#f4f6f7"/>
+    <text x="250" y="40" class="title">مفهوم القيادة</text>
+
+    <!-- Path -->
+    <path d="M 50 250 C 150 150, 300 150, 450 250" class="path"/>
+
+    <!-- Leader -->
+    <g class="leader" transform="translate(80, 190)">
+        <circle cx="0" cy="-10" r="15"/>
+        <path d="M -20 10 H 20 L 0 50 Z"/>
+    </g>
+
+    <!-- Followers -->
+    <g class="follower" transform="translate(150, 210) scale(0.8)">
+        <circle cx="0" cy="-10" r="15"/>
+        <path d="M -20 10 H 20 L 0 50 Z"/>
+    </g>
+    <g class="follower" transform="translate(220, 200) scale(0.8)">
+        <circle cx="0" cy="-10" r="15"/>
+        <path d="M -20 10 H 20 L 0 50 Z"/>
+    </g>
+    <g class="follower" transform="translate(290, 215) scale(0.8)">
+        <circle cx="0" cy="-10" r="15"/>
+        <path d="M -20 10 H 20 L 0 50 Z"/>
+    </g>
+
+</svg>

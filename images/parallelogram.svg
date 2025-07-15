@@ -1,6 +1,23 @@
-<svg width="250" height="150" viewBox="0 0 250 150" xmlns="http://www.w3.org/2000/svg">
-    <path d="M 30 125 L 80 25 L 220 25 L 170 125 Z" fill="#e9ecef" stroke="#333" stroke-width="2"/>
-    <line x1="80" y1="25" x2="80" y2="125" stroke-dasharray="4" stroke="#333" stroke-width="1.5"/>
-    <text x="120" y="145" font-family="Arial" font-size="18">b</text>
-    <text x="60" y="80" font-family="Arial" font-size="18">h</text>
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .shape { fill: #ecf0f1; stroke: #3498db; stroke-width: 3; }
+            .label { font-size: 20px; text-anchor: middle; fill: #34495e; }
+            .formula { font-size: 18px; fill: #2ecc71; }
+        </style>
+    </defs>
+
+    <rect width="400" height="400" fill="#f4f6f7"/>
+    <text x="200" y="40" class="title">متوازي الأضلاع</text>
+
+    <!-- Parallelogram -->
+    <path d="M 80 200 L 180 100 L 320 100 L 220 200 Z" class="shape"/>
+    <line x1="180" y1="100" x2="180" y2="200" stroke="#34495e" stroke-width="1.5" stroke-dasharray="5,5"/>
+    <text x="200" y="220" class="label">b</text>
+    <text x="170" y="150" class="label">h</text>
+
+    <!-- Formulas -->
+    <text x="80" y="300" class="formula">المساحة: A = b × h</text>
+    <text x="80" y="330" class="formula">المحيط: P = 2(a + b)</text>
 </svg>

@@ -36,6 +36,7 @@ d) تقليل عدد الإجازات
 ### Answer:
 b)
 
+### Image: performance_importance.svg
 ### Page Reference: 4
 
 ---
@@ -70,6 +71,7 @@ b)
 ### Note:
 غياب أي مبدأ من هذه المبادئ يؤدي إلى **فشل النظام**.
 
+### Image: performance_principles.svg
 ### Page Reference: 7
 
 ---
@@ -215,6 +217,7 @@ b)
 - نتائج التقييم.
 - تغذية راجعة من الزملاء.
 
+### Image: weakness_identification.svg
 ### Page Reference: 18
 
 ---
@@ -300,6 +303,7 @@ $$ \text{عدد المقارنات} = \frac{n(n-1)}{2} = \frac{4 \times 3}{2} = 
 ### Note:
 يجب أن تكون البيانات **دقيقة** و**موضوعية**.
 
+### Image: data_sources.svg
 ### Page Reference: 25
 
 ---
@@ -371,6 +375,7 @@ c)
 ### Note:
 القائد لا يأمر فقط، بل **يشجع ويدعم** أعضاء فريقه.
 
+### Image: leader_skills.svg
 ### Page Reference: 29
 
 ---

@@ -1,1 +1,25 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">practical_questions_1.svg</text></svg>
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 22px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .person { fill: #3498db; }
+            .question-mark { font-size: 80px; font-weight: bold; fill: #bdc3c7; opacity: 0.5; text-anchor: middle; }
+        </style>
+    </defs>
+
+    <rect width="500" height="350" fill="#ffffff"/>
+    <text x="250" y="40" class="title">Practical Questions</text>
+
+    <!-- Two people shaking hands -->
+    <g transform="translate(150, 100)">
+        <circle cx="0" cy="-10" r="20" class="person"/>
+        <path d="M -25 20 H 25 L 0 80 Z" class="person"/>
+        <circle cx="100" cy="-10" r="20" class="person"/>
+        <path d="M 75 20 H 125 L 100 80 Z" class="person"/>
+        <line x1="20" y1="50" x2="80" y2="50" stroke="#3498db" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <text x="250" y="250" class="question-mark">?</text>
+
+    <text x="250" y="300" font-size="16px" text-anchor="middle" fill="#34495e">Introduce Yourself & Others</text>
+</svg>

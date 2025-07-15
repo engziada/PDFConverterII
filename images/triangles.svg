@@ -1,24 +1,37 @@
-<svg width="400" height="350" viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
-    <style>.label { font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; }</style>
-    <!-- Equilateral -->
-    <g transform="translate(50, 20)">
-        <path d="M 75 10 L 140 120 L 10 120 Z" fill="#e9ecef" stroke="#333" stroke-width="2"/>
-        <text x="75" y="140" class="label">متساوي الأضلاع</text>
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .shape { fill: #ecf0f1; stroke: #3498db; stroke-width: 3; }
+            .label { font-size: 16px; text-anchor: middle; fill: #34495e; }
+        </style>
+    </defs>
+
+    <rect width="600" height="400" fill="#f4f6f7"/>
+    <text x="300" y="40" class="title">المثلثات</text>
+
+    <!-- Equilateral Triangle -->
+    <g transform="translate(50, 80)">
+        <path d="M 50 10 L 90 80 L 10 80 Z" class="shape"/>
+        <text x="50" y="100" class="label">متساوي الأضلاع</text>
     </g>
-    <!-- Isosceles -->
-    <g transform="translate(200, 20)">
-        <path d="M 75 10 L 120 120 L 30 120 Z" fill="#e9ecef" stroke="#333" stroke-width="2"/>
-        <text x="75" y="140" class="label">متساوي الساقين</text>
+
+    <!-- Right-angled Triangle -->
+    <g transform="translate(220, 80)">
+        <path d="M 10 10 L 10 80 L 90 80 Z" class="shape"/>
+        <rect x="10" y="70" width="10" height="10" fill="none" stroke="#34495e" stroke-width="1.5"/>
+        <text x="50" y="100" class="label">قائم الزاوية</text>
     </g>
-    <!-- Right-angled -->
-    <g transform="translate(50, 180)">
-        <path d="M 10 10 L 10 120 L 140 120 Z" fill="#e9ecef" stroke="#333" stroke-width="2"/>
-        <rect x="10" y="105" width="15" height="15" fill="none" stroke="#333" stroke-width="1.5"/>
-        <text x="75" y="140" class="label">قائم الزاوية</text>
+
+    <!-- Isosceles Triangle -->
+    <g transform="translate(390, 80)">
+        <path d="M 50 10 L 90 80 L 10 80 Z" class="shape"/>
+        <text x="50" y="100" class="label">متساوي الساقين</text>
     </g>
-    <!-- Scalene -->
-    <g transform="translate(200, 180)">
-        <path d="M 10 120 L 80 10 L 150 100 Z" fill="#e9ecef" stroke="#333" stroke-width="2"/>
-        <text x="75" y="140" class="label">مختلف الأضلاع</text>
+
+    <!-- Scalene Triangle -->
+    <g transform="translate(50, 230)">
+        <path d="M 10 80 L 60 10 L 90 60 Z" class="shape"/>
+        <text x="50" y="100" class="label">مختلف الأضلاع</text>
     </g>
 </svg>

@@ -1,1 +1,35 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dy=".3em">tech_society_impact.svg</text></svg>
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .person { fill: #3498db; }
+            .screen { fill: #ecf0f1; stroke: #bdc3c7; stroke-width: 2; rx: 5; }
+            .positive-icon { fill: #2ecc71; }
+            .negative-icon { fill: #e74c3c; }
+            .text-label { font-size: 14px; text-anchor: middle; fill: #34495e; }
+        </style>
+    </defs>
+
+    <rect width="600" height="400" fill="#f4f6f7"/>
+    <text x="300" y="40" class="title">Technology's Impact on Society</text>
+
+    <!-- Person interacting with screen -->
+    <g transform="translate(150, 100)">
+        <circle cx="0" cy="-10" r="20" class="person"/>
+        <path d="M -25 20 H 25 L 0 80 Z" class="person"/>
+        <rect x="30" y="0" width="120" height="80" class="screen"/>
+        <text x="75" y="100" class="text-label">Interaction</text>
+    </g>
+
+    <!-- Positive and Negative Icons -->
+    <g transform="translate(400, 150)">
+        <circle cx="0" cy="0" r="20" class="positive-icon"/>
+        <path d="M -10 0 L 10 0 M 0 -10 V 10" stroke="white" stroke-width="3"/>
+        <text x="0" y="40" class="text-label">Pros</text>
+    </g>
+    <g transform="translate(480, 150)">
+        <circle cx="0" cy="0" r="20" class="negative-icon"/>
+        <line x1="-10" y1="0" x2="10" y2="0" stroke="white" stroke-width="3"/>
+        <text x="0" y="40" class="text-label">Cons</text>
+    </g>
+</svg>

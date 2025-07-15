@@ -1,0 +1,33 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 22px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .icon-bg { fill: #ecf0f1; }
+            .target { stroke: #34495e; stroke-width: 4; fill: none; }
+            .arrow { stroke: #e74c3c; stroke-width: 6; fill: none; }
+            .magnifier-glass { fill: #a9cce3; fill-opacity: 0.5; }
+            .magnifier-rim { stroke: #5d6d7e; stroke-width: 8; fill: none; }
+        </style>
+    </defs>
+
+    <rect width="400" height="300" fill="#ffffff"/>
+    <text x="200" y="40" class="title">مفهوم الرقابة</text>
+
+    <!-- Target -->
+    <circle cx="150" cy="170" r="80" class="icon-bg"/>
+    <circle cx="150" cy="170" r="60" class="target"/>
+    <circle cx="150" cy="170" r="40" class="target"/>
+    <circle cx="150" cy="170" r="20" class="target" style="fill: #2ecc71;"/>
+    
+    <!-- Actual Performance Arrow -->
+    <path d="M 50 100 Q 100 120, 140 160" class="arrow" stroke-dasharray="10,5"/>
+    <path d="M 140 160 L 130 145 M 140 160 L 155 155" stroke="#e74c3c" stroke-width="6"/>
+
+
+    <!-- Magnifying Glass -->
+    <g transform="translate(150, 80) rotate(30)">
+        <circle cx="100" cy="100" r="50" class="magnifier-glass"/>
+        <circle cx="100" cy="100" r="50" class="magnifier-rim"/>
+        <line x1="145" y1="145" x2="180" y2="180" class="magnifier-rim" style="stroke-width: 15;"/>
+    </g>
+</svg>
