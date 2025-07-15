@@ -27,8 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
 
                     card.innerHTML = `
-                        <h2>${course.title}</h2>
-                        <p>${course.description}</p>
+                        <div class="course-card-content">
+                            <h2>${course.title}</h2>
+                            <p>${course.description}</p>
+                            <img src="assets/images/${course.id}.svg" alt="${course.title} icon" class="course-icon">
+                        </div>
                         <a href="slideshow.html?curriculum=${course.id}">ابدأ الآن</a>
                     `;
                     grid.appendChild(card);

@@ -90,6 +90,26 @@
             text-align: right;
             transition: transform 0.3s, box-shadow 0.3s;
             border-top: 4px solid var(--primary-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .course-card-content {
+            display: flex;
+            flex-direction: row-reverse; /* For RTL, icon on the left */
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .course-card-content h2,
+        .course-card-content p {
+            margin: 0;
+            flex-grow: 1;
+        }
+        .course-icon {
+            width: 80px; /* Adjust size as needed */
+            height: 80px; /* Adjust size as needed */
+            flex-shrink: 0;
         }
         .course-card:hover {
             transform: translateY(-8px);
