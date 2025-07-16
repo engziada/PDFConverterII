@@ -1,0 +1,70 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .label { font-size: 18px; font-weight: bold; text-anchor: middle; }
+      .desc { font-size: 14px; text-anchor: middle; fill: #7f8c8d; }
+      .box { rx: 10; ry: 10; stroke-width: 2; stroke: #bdc3c7; }
+      .client-box { fill: #e9f7ef; stroke: #27ae60; }
+      .server-box { fill: #fef5e7; stroke: #f39c12; }
+      .db-box { fill: #eaf2f8; stroke: #3498db; }
+      .arrow { stroke: #34495e; stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34495e" />
+    </marker>
+  </defs>
+
+  <!-- Titles -->
+  <text x="400" y="50" class="title">Web Stack Overview</text>
+  <text x="400" y="80" class="subtitle">نظرة عامة على مكدس الويب</text>
+
+  <!-- Client-Side -->
+  <rect x="100" y="120" width="600" height="150" class="box client-box" />
+  <text x="400" y="150" class="label" fill="#27ae60">Client-Side (Frontend)</text>
+  <text x="400" y="175" class="desc">واجهة المستخدم (ما يراه المستخدم)</text>
+
+  <g id="html">
+    <rect x="150" y="200" width="150" height="50" class="box" fill="#fdebd0"/>
+    <text x="225" y="225" class="label">HTML</text>
+    <text x="225" y="245" class="desc">Structure / الهيكل</text>
+  </g>
+  <g id="css">
+    <rect x="325" y="200" width="150" height="50" class="box" fill="#eaf2f8"/>
+    <text x="400" y="225" class="label">CSS</text>
+    <text x="400" y="245" class="desc">Style / التنسيق</text>
+  </g>
+  <g id="js">
+    <rect x="500" y="200" width="150" height="50" class="box" fill="#fef9e7"/>
+    <text x="575" y="225" class="label">JavaScript</text>
+    <text x="575" y="245" class="desc">Behavior / السلوك</text>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="400" y1="270" x2="400" y2="320" class="arrow" />
+  <text x="450" y="305">HTTP Request</text>
+  <text x="350" y="305">طلب</text>
+
+  <!-- Server-Side -->
+  <rect x="100" y="320" width="600" height="250" class="box server-box" />
+  <text x="400" y="350" class="label" fill="#f39c12">Server-Side (Backend)</text>
+  <text x="400" y="375" class="desc">الخادم (منطق التطبيق)</text>
+
+  <g id="server-logic">
+    <rect x="250" y="400" width="300" height="60" class="box" fill="#fcf3cf"/>
+    <text x="400" y="425" class="label">Server Application</text>
+    <text x="400" y="445" class="desc">Python, Node.js, PHP, etc.</text>
+  </g>
+
+  <!-- Arrow to DB -->
+  <line x1="400" y1="460" x2="400" y2="490" class="arrow" />
+
+  <g id="database">
+    <rect x="250" y="490" width="300" height="60" class="box db-box"/>
+    <text x="400" y="515" class="label">Database</text>
+    <text x="400" y="535" class="desc">MySQL, MongoDB, etc.</text>
+  </g>
+
+</svg>

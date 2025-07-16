@@ -1,0 +1,61 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .label { font-size: 16px; font-weight: bold; text-anchor: middle; }
+      .label-ar { font-size: 14px; text-anchor: middle; fill: #555; }
+      .box { rx: 8; ry: 8; stroke-width: 2; fill: #f8f9f9; stroke: #bdc3c7; }
+      .file { font-family: 'Courier New', monospace; font-size: 14px; text-anchor: middle; }
+      .arrow { stroke: #34495e; stroke-width: 2.5; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34495e" />
+    </marker>
+  </defs>
+
+  <!-- Titles -->
+  <text x="400" y="40" class="title">Bundling & Minification</text>
+  <text x="400" y="65" class="subtitle">التجميع والتصغير</text>
+
+  <!-- Input Files -->
+  <g id="input-files">
+    <text x="150" y="120" class="label">Source Files</text>
+    <text x="150" y="140" class="label-ar">الملفات المصدرية</text>
+    <rect x="75" y="160" width="150" height="40" class="box"/>
+    <text x="150" y="185" class="file">app.js</text>
+    <rect x="75" y="210" width="150" height="40" class="box"/>
+    <text x="150" y="235" class="file">utils.js</text>
+    <rect x="75" y="260" width="150" height="40" class="box"/>
+    <text x="150" y="285" class="file">styles.css</text>
+  </g>
+
+  <!-- Arrow to Bundler -->
+  <line x1="240" y1="230" x2="340" y2="230" class="arrow"/>
+
+  <!-- Bundler -->
+  <g id="bundler">
+    <rect x="340" y="180" width="120" height="100" class="box" fill="#fef9e7" stroke="#f39c12"/>
+    <text x="400" y="225" class="label">Bundler</text>
+    <text x="400" y="245" class="label-ar">(Vite, etc.)</text>
+  </g>
+
+  <!-- Arrow to Output -->
+  <line x1="460" y1="230" x2="560" y2="230" class="arrow"/>
+
+  <!-- Output Files -->
+  <g id="output-files">
+    <text x="650" y="120" class="label">Output Files</text>
+    <text x="650" y="140" class="label-ar">الملفات الناتجة</text>
+    <rect x="575" y="190" width="150" height="40" class="box" fill="#eafaf1" stroke="#2ecc71"/>
+    <text x="650" y="215" class="file">bundle.min.js</text>
+    <rect x="575" y="240" width="150" height="40" class="box" fill="#eafaf1" stroke="#2ecc71"/>
+    <text x="650" y="265" class="file">bundle.min.css</text>
+  </g>
+
+  <!-- Explanation -->
+  <text x="400" y="400" text-anchor="middle" font-size="16px">Combines multiple files into single, optimized files to reduce server requests.</text>
+  <text x="400" y="425" text-anchor="middle" font-size="16px" fill="#555">دمج عدة ملفات في ملفات قليلة ومحسّنة لتقليل عدد الطلبات للخادم.</text>
+
+</svg>

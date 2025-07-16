@@ -1,0 +1,39 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Central Training Concept -->
+    <rect x="200" y="20" width="200" height="60" rx="10" ry="10" fill="#BBDEFB" stroke="#2196F3" stroke-width="2"/>
+    <text x="300" y="55" font-family="Arial" font-size="18" fill="#1565C0" text-anchor="middle">زيادة التأهيل والتدريب</text>
+
+    <!-- Training Elements -->
+    <!-- New Talents / Upskilling -->
+    <rect x="50" y="120" width="120" height="60" rx="5" ry="5" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+    <text x="110" y="145" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">استقطاب كفاءات</text>
+    <text x="110" y="165" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">أو رفع مهارات</text>
+
+    <!-- ICDL / E-Sales -->
+    <rect x="240" y="120" width="120" height="60" rx="5" ry="5" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+    <text x="300" y="145" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">دورات ICDL</text>
+    <text x="300" y="165" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">وبرامج بيع إلكتروني</text>
+
+    <!-- Self-learning / Digital Catalogs -->
+    <rect x="430" y="120" width="120" height="60" rx="5" ry="5" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+    <text x="490" y="145" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">تدريب على البحث الذاتي</text>
+    <text x="490" y="165" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">وكتالوجات رقمية</text>
+
+    <!-- Continuous Development Platforms -->
+    <rect x="180" y="220" width="240" height="50" rx="5" ry="5" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+    <text x="300" y="250" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">منصات تعليمية للتطوير المستمر</text>
+
+    <!-- Arrows from central concept to elements -->
+    <line x1="300" y1="80" x2="110" y2="120" stroke="#2196F3" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="80" x2="300" y2="120" stroke="#2196F3" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="80" x2="490" y2="120" stroke="#2196F3" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="80" x2="300" y2="220" stroke="#2196F3" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+
+    <defs>
+        <marker id="arrowheadBlue" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#2196F3" />
+        </marker>
+    </defs>
+</svg>

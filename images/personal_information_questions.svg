@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#e6f7ff"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Personal Information Questions</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">أسئلة المعلومات الشخصية</text>
+
+    <g transform="translate(150, 120)">
+      <!-- What is your name? -->
+      <g transform="translate(0, 0)">
+        <circle cx="20" cy="20" r="20" fill="#007bff"/>
+        <text x="20" y="25" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#fff">?</text>
+        <text x="60" y="25" font-family="Arial, sans-serif" font-size="22">What is your name?</text>
+      </g>
+      <!-- Where are you from? -->
+      <g transform="translate(0, 70)">
+        <circle cx="20" cy="20" r="20" fill="#28a745"/>
+        <text x="20" y="25" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#fff">?</text>
+        <text x="60" y="25" font-family="Arial, sans-serif" font-size="22">Where are you from?</text>
+      </g>
+      <!-- How old are you? -->
+      <g transform="translate(0, 140)">
+        <circle cx="20" cy="20" r="20" fill="#ffc107"/>
+        <text x="20" y="25" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#fff">?</text>
+        <text x="60" y="25" font-family="Arial, sans-serif" font-size="22">How old are you?</text>
+      </g>
+      <!-- What is your phone number? -->
+      <g transform="translate(0, 210)">
+        <circle cx="20" cy="20" r="20" fill="#dc3545"/>
+        <text x="20" y="25" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#fff">?</text>
+        <text x="60" y="25" font-family="Arial, sans-serif" font-size="22">What is your phone number?</text>
+      </g>
+      <!-- What is your address? -->
+      <g transform="translate(0, 280)">
+        <circle cx="20" cy="20" r="20" fill="#17a2b8"/>
+        <text x="20" y="25" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#fff">?</text>
+        <text x="60" y="25" font-family="Arial, sans-serif" font-size="22">What is your address?</text>
+      </g>
+    </g>
+
+    <g transform="translate(550, 150)">
+        <path d="M50 0 C-50 100, 150 200, 50 300" stroke="#cccccc" stroke-width="4" fill="none" stroke-dasharray="10,10"/>
+    </g>
+
+  </g>
+</svg>

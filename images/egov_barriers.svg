@@ -1,0 +1,43 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Central E-Gov Icon (Target with X) -->
+    <circle cx="300" cy="80" r="40" fill="#D1C4E9" stroke="#673AB7" stroke-width="2"/>
+    <line x1="280" y1="60" x2="320" y2="100" stroke="#B71C1C" stroke-width="3"/>
+    <line x1="280" y1="100" x2="320" y2="60" stroke="#B71C1C" stroke-width="3"/>
+    <text x="300" y="130" font-family="Arial" font-size="18" fill="#4527A0" text-anchor="middle">عوائق الحكومة الإلكترونية</text>
+
+    <!-- Barriers as surrounding bubbles -->
+    <!-- 1. Weak Infrastructure -->
+    <circle cx="100" cy="150" r="40" fill="#FFCDD2" stroke="#E53935" stroke-width="1"/>
+    <text x="100" y="155" font-family="Arial" font-size="12" fill="#B71C1C" text-anchor="middle">ضعف البنية التحتية</text>
+
+    <!-- 2. Lack of Employee Skills -->
+    <circle cx="200" cy="220" r="40" fill="#FFCDD2" stroke="#E53935" stroke-width="1"/>
+    <text x="200" y="225" font-family="Arial" font-size="12" fill="#B71C1C" text-anchor="middle">نقص مهارات الموظفين</text>
+
+    <!-- 3. Insufficient Funding -->
+    <circle cx="400" cy="220" r="40" fill="#FFCDD2" stroke="#E53935" stroke-width="1"/>
+    <text x="400" y="225" font-family="Arial" font-size="12" fill="#B71C1C" text-anchor="middle">قلة التمويل</text>
+
+    <!-- 4. Absence of Legal Framework -->
+    <circle cx="500" cy="150" r="40" fill="#FFCDD2" stroke="#E53935" stroke-width="1"/>
+    <text x="500" y="155" font-family="Arial" font-size="12" fill="#B71C1C" text-anchor="middle">غياب الإطار القانوني</text>
+
+    <!-- 5. Community Resistance -->
+    <circle cx="300" cy="100" r="40" fill="#FFCDD2" stroke="#E53935" stroke-width="1"/>
+    <text x="300" y="105" font-family="Arial" font-size="12" fill="#B71C1C" text-anchor="middle">مقاومة المجتمع للتغيير</text>
+
+    <!-- Arrows from central icon to barriers -->
+    <line x1="300" y1="120" x2="100" y2="110" stroke="#E53935" stroke-width="1" marker-end="url(#arrowheadRed)"/>
+    <line x1="300" y1="120" x2="200" y2="180" stroke="#E53935" stroke-width="1" marker-end="url(#arrowheadRed)"/>
+    <line x1="300" y1="120" x2="400" y2="180" stroke="#E53935" stroke-width="1" marker-end="url(#arrowheadRed)"/>
+    <line x1="300" y1="120" x2="500" y2="110" stroke="#E53935" stroke-width="1" marker-end="url(#arrowheadRed)"/>
+    <line x1="300" y1="120" x2="300" y2="100" stroke="#E53935" stroke-width="1" marker-end="url(#arrowheadRed)"/>
+
+    <defs>
+        <marker id="arrowheadRed" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#E53935" />
+        </marker>
+    </defs>
+</svg>

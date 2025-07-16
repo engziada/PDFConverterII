@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#fffaf0"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Ordering Food</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">طلب الطعام</text>
+
+    <!-- Customer -->
+    <g transform="translate(50, 120)">
+      <rect x="0" y="0" width="330" height="400" rx="15" fill="#e3f2fd" stroke="#90caf9"/>
+      <text x="165" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#1e88e5">Customer (الزبون)</text>
+      <g transform="translate(20, 90)">
+        <text y="0" font-size="18">- I'd like to see the menu, please. 📜</text>
+        <text y="50" font-size="18">- I'll have the chicken soup. 🍲</text>
+        <text y="100" font-size="18">- Can I get a glass of water? 💧</text>
+        <text y="150" font-size="18">- What do you recommend?</text>
+        <text y="200" font-size="18">- That was delicious, thank you.</text>
+        <text y="250" font-size="18">- Can I have the bill, please? 🧾</text>
+      </g>
+    </g>
+
+    <!-- Waiter -->
+    <g transform="translate(420, 120)">
+      <rect x="0" y="0" width="330" height="400" rx="15" fill="#fce4ec" stroke="#f48fb1"/>
+      <text x="165" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#c2185b">Waiter (النادل)</text>
+      <g transform="translate(20, 90)">
+        <text y="0" font-size="18">- Are you ready to order?</text>
+        <text y="50" font-size="18">- What would you like to drink?</text>
+        <text y="100" font-size="18">- Anything else?</text>
+        <text y="150" font-size="18">- How was everything?</text>
+        <text y="200" font-size="18">- I'll bring the bill right away.</text>
+        <text y="250" font-size="18">- Enjoy your meal!</text>
+      </g>
+    </g>
+
+  </g>
+</svg>

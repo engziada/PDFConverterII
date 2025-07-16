@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#e3f2fd"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Simple Present Tense</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">زمن المضارع البسيط</text>
+
+    <g id="usage-section" transform="translate(50, 100)">
+      <!-- Rule -->
+      <text x="375" y="0" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#1e88e5">Use for habits, facts, and schedules.</text>
+      <text x="375" y="25" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#1e88e5">يستخدم للعادات والحقائق والجداول الزمنية.</text>
+      <text x="375" y="55" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#d32f2f">Remember to add '-s' for he/she/it.</text>
+
+      <!-- Habits/Routines -->
+      <g transform="translate(0, 80)">
+        <rect x="0" y="0" width="220" height="200" rx="10" fill="#fff" stroke="#90caf9"/>
+        <text x="110" y="40" font-size="22" text-anchor="middle" font-weight="bold">Habits / Routines</text>
+        <text x="110" y="65" font-size="18" text-anchor="middle">(العادات / الروتين)</text>
+        <text x="20" y="120" font-size="16">- I <tspan font-weight="bold">drink</tspan> coffee every day.</text>
+        <text x="20" y="160" font-size="16">- He <tspan font-weight="bold">goes</tspan> to the gym.</text>
+      </g>
+
+      <!-- General Facts -->
+      <g transform="translate(240, 80)">
+        <rect x="0" y="0" width="220" height="200" rx="10" fill="#fff" stroke="#90caf9"/>
+        <text x="110" y="40" font-size="22" text-anchor="middle" font-weight="bold">General Facts</text>
+        <text x="110" y="65" font-size="18" text-anchor="middle">(الحقائق العامة)</text>
+        <text x="20" y="120" font-size="16">- The Earth <tspan font-weight="bold">is</tspan> round.</text>
+        <text x="20" y="160" font-size="16">- Water <tspan font-weight="bold">boils</tspan> at 100°C.</text>
+      </g>
+
+      <!-- Schedules -->
+      <g transform="translate(480, 80)">
+        <rect x="0" y="0" width="220" height="200" rx="10" fill="#fff" stroke="#90caf9"/>
+        <text x="110" y="40" font-size="22" text-anchor="middle" font-weight="bold">Schedules</text>
+        <text x="110" y="65" font-size="18" text-anchor="middle">(الجداول الزمنية)</text>
+        <text x="20" y="120" font-size="16">- The train <tspan font-weight="bold">leaves</tspan> at 8 AM.</text>
+        <text x="20" y="160" font-size="16">- The class <tspan font-weight="bold">starts</tspan> soon.</text>
+      </g>
+    </g>
+
+  </g>
+</svg>

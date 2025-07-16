@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="800" height="400">
+  <defs>
+    <style>
+      .bg { fill: #fff0f0; }
+      .text { font-family: 'Arial', sans-serif; font-size: 6px; fill: #333; text-anchor: middle; }
+      .title { font-size: 8px; font-weight: bold; fill: #d00; }
+      .icon { fill: #d9534f; stroke: #333; stroke-width: 0.5; }
+      .line { stroke: #f1c1c1; stroke-width: 0.5; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="100" rx="5"/>
+
+  <text x="100" y="15" class="text title">معوقات الإدارة الإلكترونية (eManagement Disadvantages)</text>
+
+  <!-- Disadvantage 1: High Initial Cost -->
+  <g transform="translate(30, 45)">
+    <circle cx="0" cy="0" r="15" fill="#ffebee"/>
+    <text x="0" y="3" class="icon" style="font-size:12px; font-weight:bold;">$</text>
+    <path class="icon" d="M 0 -8 L 0 -12 L 5 -10 L 0 -8 L -5 -10 L 0 -12"/>
+    <text x="0" y="25" class="text">التكلفة المبدئية العالية</text>
+  </g>
+
+  <!-- Disadvantage 2: Security & Privacy -->
+  <g transform="translate(80, 45)">
+    <circle cx="0" cy="0" r="15" fill="#ffebee"/>
+    <path class="icon" d="M 0 -8 C -5 -8 -7 -5 -7 0 C -7 5 -5 8 0 8 C 5 8 7 5 7 0 C 7 -5 5 -8 0 -8 M 0 -5 L 0 3 M -2 0 L 2 0"/>
+    <line x1="-8" y1="-6" x2="8" y2="6" style="stroke: #d00; stroke-width: 1;"/>
+    <text x="0" y="25" class="text">مخاوف أمنية وخصوصية</text>
+  </g>
+
+  <!-- Disadvantage 3: Resistance to Change -->
+  <g transform="translate(130, 45)">
+    <circle cx="0" cy="0" r="15" fill="#ffebee"/>
+    <path class="icon" d="M -5 -5 L 5 0 L -5 5 Z"/>
+    <line x1="5" y1="0" x2="10" y2="0" style="stroke: #d00; stroke-width: 2;"/>
+    <line x1="-10" y1="-5" x2="-10" y2="5" style="stroke: #333; stroke-width: 2;"/>
+    <text x="0" y="25" class="text">مقاومة التغيير</text>
+  </g>
+
+  <!-- Disadvantage 4: Digital Divide -->
+  <g transform="translate(170, 45)">
+    <circle cx="0" cy="0" r="15" fill="#ffebee"/>
+    <path class="icon" d="M -10 -5 L -2 -5 L -2 5 L -10 5 Z M 2 -5 L 10 -5 L 10 5 L 2 5 Z"/>
+    <line x1="-2" y1="0" x2="2" y2="0" style="stroke: #d00; stroke-width: 1; stroke-dasharray: 2,1;"/>
+    <text x="0" y="25" class="text">الفجوة الرقمية</text>
+  </g>
+
+  <!-- Connecting Lines -->
+  <line class="line" x1="45" y1="45" x2="65" y2="45"/>
+  <line class="line" x1="95" y1="45" x2="115" y2="45"/>
+  <line class="line" x1="145" y1="45" x2="155" y2="45"/>
+
+</svg>

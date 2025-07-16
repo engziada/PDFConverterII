@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#f0fff0"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Articles: a / an</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">أدوات التعريف: a / an</text>
+
+    <!-- 'A' Section -->
+    <g transform="translate(100, 120)">
+      <rect x="0" y="0" width="280" height="300" rx="15" fill="#ffffff" stroke="#28a745" stroke-width="2"/>
+      <text x="140" y="40" font-family="Arial, sans-serif" font-size="48" text-anchor="middle" fill="#28a745">a</text>
+      <text x="140" y="80" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#555">before a consonant sound</text>
+      <text x="140" y="100" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#555">قبل الصوت الساكن</text>
+      <path d="M20 120 H 260" stroke="#cccccc"/>
+      <g transform="translate(40, 150)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="22">- a book</text>
+        <text x="0" y="40" font-family="Arial, sans-serif" font-size="22">- a car</text>
+        <text x="0" y="80" font-family="Arial, sans-serif" font-size="22">- a university</text>
+        <text x="0" y="120" font-family="Arial, sans-serif" font-size="22">- a house</text>
+      </g>
+    </g>
+
+    <!-- 'An' Section -->
+    <g transform="translate(420, 120)">
+      <rect x="0" y="0" width="280" height="300" rx="15" fill="#ffffff" stroke="#ffc107" stroke-width="2"/>
+      <text x="140" y="40" font-family="Arial, sans-serif" font-size="48" text-anchor="middle" fill="#ffc107">an</text>
+      <text x="140" y="80" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#555">before a vowel sound</text>
+      <text x="140" y="100" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#555">قبل الصوت المتحرك</text>
+      <path d="M20 120 H 260" stroke="#cccccc"/>
+      <g transform="translate(40, 150)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="22">- an apple</text>
+        <text x="0" y="40" font-family="Arial, sans-serif" font-size="22">- an elephant</text>
+        <text x="0" y="80" font-family="Arial, sans-serif" font-size="22">- an hour</text>
+        <text x="0" y="120" font-family="Arial, sans-serif" font-size="22">- an orange</text>
+      </g>
+    </g>
+
+    <text x="400" y="500" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#888">* The choice depends on the sound, not the letter.</text>
+  </g>
+</svg>

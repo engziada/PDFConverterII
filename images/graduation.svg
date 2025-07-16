@@ -1,0 +1,30 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .background { fill: #f0f4f8; }
+      .title { font-size: 48px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 28px; text-anchor: middle; fill: #34495e; }
+      .quote { font-size: 20px; font-style: italic; text-anchor: middle; fill: #7f8c8d; }
+      .icon { font-size: 150px; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" class="background"/>
+
+  <!-- Graduation Icon -->
+  <text x="400" y="250" class="icon">🎓</text>
+
+  <!-- Congratulatory Message -->
+  <g id="message">
+    <text x="400" y="350" class="title">Congratulations!</text>
+    <text x="400" y="400" class="subtitle">تهانينا!</text>
+  </g>
+
+  <!-- Final Quote -->
+  <g id="quote-text">
+    <text x="400" y="480" class="quote">“The journey of a thousand miles begins with a single step.”</text>
+    <text x="400" y="510" class="quote">مشوار الألف ميل يبدأ بخطوة</text>
+  </g>
+
+</svg>

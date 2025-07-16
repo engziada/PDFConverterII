@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="800" height="400">
+  <defs>
+    <style>
+      .bg { fill: #fff8e1; } /* Light Amber background */
+      .text { font-family: 'Arial', sans-serif; font-size: 6px; fill: #b71c1c; text-anchor: middle; }
+      .title { font-size: 8px; font-weight: bold; }
+      .icon { fill: #ffc107; }
+      .person { fill: #ffecb3; stroke: #ff8f00; stroke-width: 0.5; }
+      .idea-bubble { fill: #fff; stroke: #ffca28; stroke-width: 0.4; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="100" rx="5"/>
+
+  <text x="100" y="15" class="text title">جلسة عصف ذهني (Brainstorming Session)</text>
+
+  <!-- Central Lightbulb -->
+  <g transform="translate(100, 50)">
+    <path class="icon" d="M 0 -20 C -12 -20 -15 -10 -15 0 C -15 10 15 10 15 0 C 15 -10 12 -20 0 -20 Z"/>
+    <rect x="-5" y="10" width="10" height="5" fill="#ffca28"/>
+    <path d="M -2 15 h 4" stroke="#b71c1c" stroke-width="1"/>
+    <path d="M -2 17 h 4" stroke="#b71c1c" stroke-width="1"/>
+  </g>
+
+  <!-- People/Ideas -->
+  <g transform="translate(50, 40)">
+    <circle class="person" cx="0" cy="0" r="10"/>
+    <path d="M 0 -4 a 2 2 0 1 1 0 4 a 2 2 0 1 1 0 -4 M -4 4 a 5 5 0 0 1 8 0"/>
+    <circle class="idea-bubble" cx="15" cy="-15" r="5"/>
+    <text x="15" y="-14" class="text">فكرة</text>
+  </g>
+  <g transform="translate(150, 40)">
+    <circle class="person" cx="0" cy="0" r="10"/>
+    <path d="M 0 -4 a 2 2 0 1 1 0 4 a 2 2 0 1 1 0 -4 M -4 4 a 5 5 0 0 1 8 0"/>
+    <circle class="idea-bubble" cx="-15" cy="-15" r="5"/>
+    <text x="-15" y="-14" class="text">فكرة</text>
+  </g>
+  <g transform="translate(50, 80)">
+    <circle class="person" cx="0" cy="0" r="10"/>
+    <path d="M 0 -4 a 2 2 0 1 1 0 4 a 2 2 0 1 1 0 -4 M -4 4 a 5 5 0 0 1 8 0"/>
+    <circle class="idea-bubble" cx="15" cy="-10" r="5"/>
+    <text x="15" y="-9" class="text">فكرة</text>
+  </g>
+  <g transform="translate(150, 80)">
+    <circle class="person" cx="0" cy="0" r="10"/>
+    <path d="M 0 -4 a 2 2 0 1 1 0 4 a 2 2 0 1 1 0 -4 M -4 4 a 5 5 0 0 1 8 0"/>
+    <circle class="idea-bubble" cx="-15" cy="-10" r="5"/>
+    <text x="-15" y="-9" class="text">فكرة</text>
+  </g>
+   <g transform="translate(100, 85)">
+    <circle class="person" cx="0" cy="0" r="10"/>
+    <path d="M 0 -4 a 2 2 0 1 1 0 4 a 2 2 0 1 1 0 -4 M -4 4 a 5 5 0 0 1 8 0"/>
+    <circle class="idea-bubble" cx="-15" cy="-10" r="5"/>
+    <text x="-15" y="-9" class="text">فكرة</text>
+  </g>
+
+</svg>

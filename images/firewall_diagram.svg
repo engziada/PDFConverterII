@@ -1,0 +1,34 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Internal Network -->
+    <rect x="50" y="100" width="150" height="100" rx="10" ry="10" fill="#C8E6C9" stroke="#4CAF50" stroke-width="2"/>
+    <text x="125" y="150" font-family="Arial" font-size="16" fill="#2E7D32" text-anchor="middle">شبكة داخلية</text>
+
+    <!-- Firewall -->
+    <rect x="220" y="80" width="60" height="140" rx="5" ry="5" fill="#FFCDD2" stroke="#E53935" stroke-width="3"/>
+    <text x="250" y="150" font-family="Arial" font-size="20" fill="#B71C1C" text-anchor="middle" writing-mode="tb" glyph-orientation-vertical="0">جدار نار</text>
+    <path d="M220 120 L 280 120 M220 180 L 280 180" stroke="#E53935" stroke-width="1"/>
+
+    <!-- External Network (Internet Cloud) -->
+    <path d="M350 80 Q 300 50, 400 50 T 500 50 Q 550 50, 500 100 Q 550 150, 500 200 Q 450 250, 350 250 T 250 250 Q 200 250, 250 200 Z" fill="#E0F2F7" stroke="#81D4FA" stroke-width="2"/>
+    <text x="425" y="150" font-family="Arial" font-size="18" fill="#0288D1" text-anchor="middle">شبكة خارجية (إنترنت)</text>
+
+    <!-- Arrows -->
+    <path d="M200 150 L 220 150" stroke="#4CAF50" stroke-width="2" marker-end="url(#arrowheadGreen)"/>
+    <path d="M280 150 L 350 150" stroke="#E53935" stroke-width="2" marker-end="url(#arrowheadRed)"/>
+
+    <!-- Filtering Icon -->
+    <rect x="230" y="230" width="40" height="40" rx="5" ry="5" fill="#FFF9C4" stroke="#FFD600" stroke-width="1"/>
+    <path d="M240 240 L 260 260 M260 240 L 240 260" stroke="#FFAB00" stroke-width="2"/>
+    <text x="250" y="285" font-family="Arial" font-size="12" fill="#FF8F00" text-anchor="middle">ترشيح الحزم</text>
+
+    <defs>
+        <marker id="arrowheadGreen" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50" />
+        </marker>
+        <marker id="arrowheadRed" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#E53935" />
+        </marker>
+    </defs>
+</svg>

@@ -1,0 +1,33 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Central Internet Economy Globe -->
+    <circle cx="300" cy="150" r="100" fill="#E0F2F7" stroke="#0288D1" stroke-width="3"/>
+    <text x="300" y="155" font-family="Arial" font-size="24" fill="#01579B" text-anchor="middle">اقتصاد الإنترنت</text>
+
+    <!-- Surrounding Concepts (B2B, B2C, Integration) -->
+    <!-- B2B -->
+    <rect x="50" y="50" width="100" height="50" rx="5" ry="5" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1"/>
+    <text x="100" y="80" font-family="Arial" font-size="14" fill="#2E7D32" text-anchor="middle">B2B</text>
+
+    <!-- B2C -->
+    <rect x="450" y="50" width="100" height="50" rx="5" ry="5" fill="#FFECB3" stroke="#FFC107" stroke-width="1"/>
+    <text x="500" y="80" font-family="Arial" font-size="14" fill="#FF8F00" text-anchor="middle">B2C</text>
+
+    <!-- Integration (Internet, Intranet, Extranet) -->
+    <rect x="200" y="220" width="200" height="60" rx="10" ry="10" fill="#D1C4E9" stroke="#673AB7" stroke-width="1"/>
+    <text x="300" y="245" font-family="Arial" font-size="14" fill="#4527A0" text-anchor="middle">تكامل (إنترنت، إنترانت، إكسترانت)</text>
+
+    <!-- Arrows connecting to Internet Economy -->
+    <line x1="150" y1="75" x2="220" y2="120" stroke="#0288D1" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+    <line x1="450" y1="75" x2="380" y2="120" stroke="#0288D1" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="220" x2="300" y2="180" stroke="#0288D1" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+
+    <text x="300" y="20" font-family="Arial" font-size="14" fill="#757575" text-anchor="middle">من 1997 حتى اليوم</text>
+
+    <defs>
+        <marker id="arrowheadBlue" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#0288D1" />
+        </marker>
+    </defs>
+</svg>

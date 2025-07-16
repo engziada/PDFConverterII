@@ -1,0 +1,53 @@
+<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .path-line { stroke: #dfe6e9; stroke-width: 10; stroke-linecap: round; }
+      .milestone { fill: #fff; stroke-width: 3; }
+      .milestone-text { font-size: 18px; font-weight: bold; text-anchor: middle; }
+      .milestone-desc { font-size: 14px; text-anchor: middle; fill: #555; }
+      .start-point { font-size: 20px; font-weight: bold; text-anchor: middle; fill: #fff; }
+    </style>
+  </defs>
+
+  <!-- Titles -->
+  <text x="450" y="50" class="title">Your Learning Roadmap</text>
+  <text x="450" y="80" class="subtitle">خارطة طريق التعلم</text>
+
+  <!-- Roadmap Path -->
+  <path d="M 100 300 C 250 150, 350 450, 800 300" class="path-line" fill="none"/>
+
+  <!-- Start Point -->
+  <g id="start">
+    <circle cx="100" cy="300" r="50" fill="#27ae60"/>
+    <text x="100" y="295" class="start-point">You Are</text>
+    <text x="100" y="320" class="start-point">Here</text>
+  </g>
+
+  <!-- Milestone 1: Frontend Frameworks -->
+  <g id="frontend" transform="translate(300, 200)">
+    <circle r="40" class="milestone" stroke="#3498db"/>
+    <text y="-5" class="milestone-text">Frontend</text>
+    <text y="15" class="milestone-text">Frameworks</text>
+    <text y="70" class="milestone-desc">React, Vue, Angular</text>
+  </g>
+
+  <!-- Milestone 2: Backend -->
+  <g id="backend" transform="translate(550, 400)">
+    <circle r="40" class="milestone" stroke="#8e44ad"/>
+    <text y="-5" class="milestone-text">Backend</text>
+    <text y="15" class="milestone-text">Dev</text>
+    <text y="70" class="milestone-desc">Node.js, Databases</text>
+  </g>
+
+  <!-- Milestone 3: DevOps -->
+  <g id="devops" transform="translate(800, 300)">
+    <circle r="40" class="milestone" stroke="#f39c12"/>
+    <text y="-5" class="milestone-text">DevOps</text>
+    <text y="15" class="milestone-text">& Cloud</text>
+    <text y="70" class="milestone-desc">Docker, CI/CD</text>
+  </g>
+
+</svg>

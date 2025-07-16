@@ -1,0 +1,36 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Chat Room Interface -->
+    <rect x="100" y="50" width="400" height="200" rx="10" ry="10" fill="#FFFFFF" stroke="#BBDEFB" stroke-width="2"/>
+    <rect x="110" y="60" width="380" height="30" fill="#E3F2FD"/>
+    <text x="300" y="80" font-family="Arial" font-size="16" fill="#1565C0" text-anchor="middle">غرفة دردشة (مجموعات تركيز)</text>
+
+    <!-- Moderator Icon -->
+    <circle cx="150" cy="120" r="20" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1"/>
+    <text x="150" y="125" font-family="Arial" font-size="10" fill="#2E7D32" text-anchor="middle">مشرف</text>
+
+    <!-- User 1 Icon -->
+    <circle cx="250" cy="120" r="20" fill="#FFECB3" stroke="#FFC107" stroke-width="1"/>
+    <text x="250" y="125" font-family="Arial" font-size="10" fill="#FF8F00" text-anchor="middle">عضو 1</text>
+
+    <!-- User 2 Icon -->
+    <circle cx="350" cy="120" r="20" fill="#D1C4E9" stroke="#673AB7" stroke-width="1"/>
+    <text x="350" y="125" font-family="Arial" font-size="10" fill="#4527A0" text-anchor="middle">عضو 2</text>
+
+    <!-- User 3 Icon -->
+    <circle cx="450" cy="120" r="20" fill="#E0E0E0" stroke="#757575" stroke-width="1"/>
+    <text x="450" y="125" font-family="Arial" font-size="10" fill="#757575" text-anchor="middle">عضو 3</text>
+
+    <!-- Chat Bubbles -->
+    <path d="M180 150 Q 200 130, 230 150 Q 230 170, 210 170 Q 210 180, 200 170 Q 180 170, 180 150 Z" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
+    <text x="205" y="160" font-family="Arial" font-size="10" fill="#388E3C" text-anchor="middle">نقاش</text>
+
+    <path d="M380 180 Q 400 160, 430 180 Q 430 200, 410 200 Q 410 210, 400 200 Q 380 200, 380 180 Z" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
+    <text x="405" y="190" font-family="Arial" font-size="10" fill="#388E3C" text-anchor="middle">منتجات/خدمات</text>
+
+    <!-- Safe Environment Note -->
+    <rect x="150" y="260" width="300" height="30" rx="5" ry="5" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1"/>
+    <text x="300" y="280" font-family="Arial" font-size="12" fill="#2E7D32" text-anchor="middle">بيئة آمنة لاستطلاع الآراء الحقيقية</text>
+
+</svg>

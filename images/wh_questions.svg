@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#f9fbe7"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">'Wh-' Questions</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">أسئلة 'Wh-'</text>
+
+    <g id="wh-grid" transform="translate(100, 120)">
+      <!-- Who -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="180" height="120" rx="10" fill="#fff9c4" stroke="#fbc02d"/>
+        <text x="90" y="40" font-size="24" text-anchor="middle" font-weight="bold">Who?</text>
+        <text x="90" y="70" font-size="18" text-anchor="middle">(Person)</text>
+        <text x="90" y="95" font-size="18" text-anchor="middle">(شخص)</text>
+      </g>
+
+      <!-- What -->
+      <g transform="translate(210, 0)">
+        <rect x="0" y="0" width="180" height="120" rx="10" fill="#c5cae9" stroke="#3f51b5"/>
+        <text x="90" y="40" font-size="24" text-anchor="middle" font-weight="bold">What?</text>
+        <text x="90" y="70" font-size="18" text-anchor="middle">(Thing/Action)</text>
+        <text x="90" y="95" font-size="18" text-anchor="middle">(شيء/فعل)</text>
+      </g>
+
+      <!-- Where -->
+      <g transform="translate(420, 0)">
+        <rect x="0" y="0" width="180" height="120" rx="10" fill="#b2dfdb" stroke="#00796b"/>
+        <text x="90" y="40" font-size="24" text-anchor="middle" font-weight="bold">Where?</text>
+        <text x="90" y="70" font-size="18" text-anchor="middle">(Place)</text>
+        <text x="90" y="95" font-size="18" text-anchor="middle">(مكان)</text>
+      </g>
+
+      <!-- When -->
+      <g transform="translate(0, 150)">
+        <rect x="0" y="0" width="180" height="120" rx="10" fill="#f8bbd0" stroke="#c2185b"/>
+        <text x="90" y="40" font-size="24" text-anchor="middle" font-weight="bold">When?</text>
+        <text x="90" y="70" font-size="18" text-anchor="middle">(Time)</text>
+        <text x="90" y="95" font-size="18" text-anchor="middle">(وقت)</text>
+      </g>
+
+      <!-- Why -->
+      <g transform="translate(210, 150)">
+        <rect x="0" y="0" width="180" height="120" rx="10" fill="#d1c4e9" stroke="#512da8"/>
+        <text x="90" y="40" font-size="24" text-anchor="middle" font-weight="bold">Why?</text>
+        <text x="90" y="70" font-size="18" text-anchor="middle">(Reason)</text>
+        <text x="90" y="95" font-size="18" text-anchor="middle">(سبب)</text>
+      </g>
+
+      <!-- How -->
+      <g transform="translate(420, 150)">
+        <rect x="0" y="0" width="180" height="120" rx="10" fill="#bbdefb" stroke="#1976d2"/>
+        <text x="90" y="40" font-size="24" text-anchor="middle" font-weight="bold">How?</text>
+        <text x="90" y="70" font-size="18" text-anchor="middle">(Manner)</text>
+        <text x="90" y="95" font-size="18" text-anchor="middle">(طريقة)</text>
+      </g>
+    </g>
+
+    <text x="400" y="450" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">Example: <tspan font-weight="bold">Where</tspan> is the library?</text>
+  </g>
+</svg>

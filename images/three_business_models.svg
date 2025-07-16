@@ -1,0 +1,36 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Model 1: Purely Electronic -->
+    <rect x="50" y="50" width="150" height="100" rx="10" ry="10" fill="#C8E6C9" stroke="#4CAF50" stroke-width="2"/>
+    <text x="125" y="90" font-family="Arial" font-size="14" fill="#2E7D32" text-anchor="middle">1. منظمات إلكترونية فقط</text>
+    <text x="125" y="120" font-family="Arial" font-size="12" fill="#2E7D32" text-anchor="middle">(بُنيت رقمياً)</text>
+    <circle cx="125" cy="170" r="20" fill="#81C784"/>
+    <text x="125" y="175" font-family="Arial" font-size="10" fill="#FFF" text-anchor="middle">E</text>
+
+    <!-- Model 2: Traditional moving to Electronic -->
+    <rect x="225" y="50" width="150" height="100" rx="10" ry="10" fill="#BBDEFB" stroke="#2196F3" stroke-width="2"/>
+    <text x="300" y="90" font-family="Arial" font-size="14" fill="#1565C0" text-anchor="middle">2. تقليدية متجهة للإلكترونية</text>
+    <text x="300" y="120" font-family="Arial" font-size="12" fill="#1565C0" text-anchor="middle">(تجمع بين القنوات)</text>
+    <circle cx="280" cy="170" r="20" fill="#90CAF9"/>
+    <text x="280" y="175" font-family="Arial" font-size="10" fill="#FFF" text-anchor="middle">T</text>
+    <circle cx="320" cy="170" r="20" fill="#90CAF9"/>
+    <text x="320" y="175" font-family="Arial" font-size="10" fill="#FFF" text-anchor="middle">E</text>
+
+    <!-- Model 3: Purely Traditional -->
+    <rect x="400" y="50" width="150" height="100" rx="10" ry="10" fill="#FFCDD2" stroke="#E53935" stroke-width="2"/>
+    <text x="475" y="90" font-family="Arial" font-size="14" fill="#B71C1C" text-anchor="middle">3. منظمات تقليدية محضة</text>
+    <text x="475" y="120" font-family="Arial" font-size="12" fill="#B71C1C" text-anchor="middle">(تواجه خطر التراجع)</text>
+    <circle cx="475" cy="170" r="20" fill="#EF9A9A"/>
+    <text x="475" y="175" font-family="Arial" font-size="10" fill="#FFF" text-anchor="middle">T</text>
+
+    <!-- Arrows indicating progression/risk -->
+    <path d="M200 100 L 225 100" stroke="#757575" stroke-width="2" marker-end="url(#arrowheadGray)"/>
+    <path d="M375 100 L 400 100" stroke="#757575" stroke-width="2" marker-end="url(#arrowheadGray)"/>
+
+    <defs>
+        <marker id="arrowheadGray" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#757575" />
+        </marker>
+    </defs>
+</svg>

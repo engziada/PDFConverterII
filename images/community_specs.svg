@@ -1,0 +1,41 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Central Virtual Community Icon -->
+    <circle cx="300" cy="80" r="40" fill="#C8E6C9" stroke="#4CAF50" stroke-width="2"/>
+    <text x="300" y="85" font-family="Arial" font-size="18" fill="#2E7D32" text-anchor="middle">المجتمع الافتراضي</text>
+
+    <!-- Characteristics as surrounding bubbles -->
+    <!-- 1. Common Goals -->
+    <circle cx="100" cy="150" r="40" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
+    <text x="100" y="155" font-family="Arial" font-size="12" fill="#388E3C" text-anchor="middle">أهداف مشتركة</text>
+
+    <!-- 2. Intensive Interaction -->
+    <circle cx="200" cy="220" r="40" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
+    <text x="200" y="225" font-family="Arial" font-size="12" fill="#388E3C" text-anchor="middle">تفاعل مكثف</text>
+
+    <!-- 3. Shared Resources -->
+    <circle cx="400" cy="220" r="40" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
+    <text x="400" y="225" font-family="Arial" font-size="12" fill="#388E3C" text-anchor="middle">موارد مشتركة</text>
+
+    <!-- 4. Data/Service Exchange -->
+    <circle cx="500" cy="150" r="40" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
+    <text x="500" y="155" font-family="Arial" font-size="12" fill="#388E3C" text-anchor="middle">تبادل بيانات وخدمات</text>
+
+    <!-- 5. Common Framework -->
+    <circle cx="300" cy="100" r="40" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
+    <text x="300" y="105" font-family="Arial" font-size="12" fill="#388E3C" text-anchor="middle">إطار عام مشترك</text>
+
+    <!-- Arrows from central icon to characteristics -->
+    <line x1="300" y1="120" x2="100" y2="110" stroke="#4CAF50" stroke-width="1" marker-end="url(#arrowheadGreen)"/>
+    <line x1="300" y1="120" x2="200" y2="180" stroke="#4CAF50" stroke-width="1" marker-end="url(#arrowheadGreen)"/>
+    <line x1="300" y1="120" x2="400" y2="180" stroke="#4CAF50" stroke-width="1" marker-end="url(#arrowheadGreen)"/>
+    <line x1="300" y1="120" x2="500" y2="110" stroke="#4CAF50" stroke-width="1" marker-end="url(#arrowheadGreen)"/>
+    <line x1="300" y1="120" x2="300" y2="100" stroke="#4CAF50" stroke-width="1" marker-end="url(#arrowheadGreen)"/>
+
+    <defs>
+        <marker id="arrowheadGreen" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50" />
+        </marker>
+    </defs>
+</svg>

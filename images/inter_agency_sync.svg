@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="800" height="400">
+  <defs>
+    <style>
+      .bg { fill: #fce4ec; } /* Light Pink Background */
+      .agency-bg { fill: #f8bbd0; stroke: #c2185b; stroke-width: 0.6; }
+      .text { font-family: 'Arial', sans-serif; font-size: 6px; fill: #880e4f; text-anchor: middle; }
+      .title { font-size: 8px; font-weight: bold; }
+      .icon { fill: #d81b60; }
+      .line { stroke: #f06292; stroke-width: 0.8; marker-end: url(#arrowhead); marker-start: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="5" markerHeight="3.5" refX="0" refY="1.75" orient="auto">
+      <polygon points="0 0, 5 1.75, 0 3.5" fill="#c2185b" />
+    </marker>
+  </defs>
+
+  <rect class="bg" width="200" height="100" rx="5"/>
+
+  <text x="100" y="15" class="text title">المستوى التفاعلي (التزامني بين الوكالات)</text>
+  <text x="100" y="23" class="text">Transactional Level (Inter-Agency Sync)</text>
+
+  <!-- Agency 1: Ministry of Health -->
+  <g transform="translate(40, 50)">
+    <rect class="agency-bg" x="-20" y="-15" width="40" height="30" rx="3"/>
+    <path class="icon" d="M -5 -5 h 10 v -3 h -10 Z M -2 -8 h 4 v -3 h -4 Z M -5 0 h 10 v 8 h -10 Z M -2 3 h 4"/>
+    <text x="0" y="25" class="text">وزارة الصحة</text>
+  </g>
+
+  <!-- Agency 2: Ministry of Education -->
+  <g transform="translate(100, 50)">
+    <rect class="agency-bg" x="-20" y="-15" width="40" height="30" rx="3"/>
+    <path class="icon" d="M -10 -8 L 0 0 L 10 -8 L 0 -16 Z M -12 -5 h 24 v 12 h -24 Z"/>
+    <text x="0" y="25" class="text">وزارة التعليم</text>
+  </g>
+
+  <!-- Agency 3: Ministry of Interior -->
+  <g transform="translate(160, 50)">
+    <rect class="agency-bg" x="-20" y="-15" width="40" height="30" rx="3"/>
+    <path class="icon" d="M 0 -10 L 5 -5 L 5 5 L -5 5 L -5 -5 Z M 0 -10 L -5 -5 M 0 -10 L 5 -5"/>
+    <text x="0" y="25" class="text">وزارة الداخلية</text>
+  </g>
+
+  <!-- Connecting Lines -->
+  <line class="line" x1="65" y1="50" x2="75" y2="50"/>
+  <line class="line" x1="125" y1="50" x2="135" y2="50"/>
+  <path class="line" d="M 55 65 q 45 15 90 0" fill="none"/>
+
+</svg>

@@ -1,0 +1,41 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Central Profitable Customer Icon -->
+    <circle cx="300" cy="80" r="40" fill="#FFF9C4" stroke="#FFD600" stroke-width="2"/>
+    <text x="300" y="85" font-family="Arial" font-size="16" fill="#FFAB00" text-anchor="middle">عملاء مربحون</text>
+
+    <!-- Questions as surrounding bubbles -->
+    <!-- Who? -->
+    <circle cx="100" cy="150" r="40" fill="#FFECB3" stroke="#FFC107" stroke-width="1"/>
+    <text x="100" y="155" font-family="Arial" font-size="12" fill="#FF8F00" text-anchor="middle">من يشتري؟</text>
+
+    <!-- What? -->
+    <circle cx="200" cy="220" r="40" fill="#FFECB3" stroke="#FFC107" stroke-width="1"/>
+    <text x="200" y="225" font-family="Arial" font-size="12" fill="#FF8F00" text-anchor="middle">ماذا يشتري؟</text>
+
+    <!-- When? -->
+    <circle cx="400" cy="220" r="40" fill="#FFECB3" stroke="#FFC107" stroke-width="1"/>
+    <text x="400" y="225" font-family="Arial" font-size="12" fill="#FF8F00" text-anchor="middle">متى؟</text>
+
+    <!-- How much? -->
+    <circle cx="500" cy="150" r="40" fill="#FFECB3" stroke="#FFC107" stroke-width="1"/>
+    <text x="500" y="155" font-family="Arial" font-size="12" fill="#FF8F00" text-anchor="middle">بكمية كم؟</text>
+
+    <!-- Database Icon -->
+    <rect x="250" y="260" width="100" height="30" rx="5" ry="5" fill="#D1C4E9" stroke="#673AB7" stroke-width="1"/>
+    <text x="300" y="280" font-family="Arial" font-size="12" fill="#4527A0" text-anchor="middle">قواعد بيانات مركزية</text>
+
+    <!-- Arrows from central icon to questions -->
+    <line x1="300" y1="120" x2="100" y2="110" stroke="#FFC107" stroke-width="1" marker-end="url(#arrowheadOrange)"/>
+    <line x1="300" y1="120" x2="200" y2="180" stroke="#FFC107" stroke-width="1" marker-end="url(#arrowheadOrange)"/>
+    <line x1="300" y1="120" x2="400" y2="180" stroke="#FFC107" stroke-width="1" marker-end="url(#arrowheadOrange)"/>
+    <line x1="300" y1="120" x2="500" y2="110" stroke="#FFC107" stroke-width="1" marker-end="url(#arrowheadOrange)"/>
+    <line x1="300" y1="120" x2="300" y2="260" stroke="#FFC107" stroke-width="1" marker-end="url(#arrowheadOrange)"/>
+
+    <defs>
+        <marker id="arrowheadOrange" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#FFC107" />
+        </marker>
+    </defs>
+</svg>

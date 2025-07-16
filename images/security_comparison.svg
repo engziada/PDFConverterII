@@ -1,0 +1,40 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Traditional Security -->
+    <rect x="50" y="80" width="200" height="150" rx="10" ry="10" fill="#FFCDD2" stroke="#E53935" stroke-width="2"/>
+    <text x="150" y="110" font-family="Arial" font-size="18" fill="#B71C1C" text-anchor="middle">أمن تقليدي</text>
+    <text x="150" y="140" font-family="Arial" font-size="14" fill="#B71C1C" text-anchor="middle">خطر تسريب بيانات</text>
+    <text x="150" y="165" font-family="Arial" font-size="12" fill="#B71C1C" text-anchor="middle">(هاتف، فاكس)</text>
+    <path d="M150 180 L 150 210" stroke="#E53935" stroke-width="2" marker-end="url(#arrowheadRed)"/>
+    <text x="150" y="225" font-family="Arial" font-size="12" fill="#B71C1C" text-anchor="middle">نفس درجة الخطر</text>
+
+    <!-- Comparison Arrow -->
+    <path d="M250 150 L 350 150" stroke="#757575" stroke-width="3" marker-end="url(#arrowheadGray)" marker-start="url(#arrowheadGray)"/>
+    <text x="300" y="140" font-family="Arial" font-size="16" fill="#757575" text-anchor="middle">مقارنة</text>
+
+    <!-- Electronic Security -->
+    <rect x="350" y="80" width="200" height="150" rx="10" ry="10" fill="#C8E6C9" stroke="#4CAF50" stroke-width="2"/>
+    <text x="450" y="110" font-family="Arial" font-size="18" fill="#2E7D32" text-anchor="middle">أمن إلكتروني</text>
+    <text x="450" y="140" font-family="Arial" font-size="14" fill="#2E7D32" text-anchor="middle">خطر تسريب بيانات</text>
+    <text x="450" y="165" font-family="Arial" font-size="12" fill="#2E7D32" text-anchor="middle">(إنترنت)</text>
+    <path d="M450 180 L 450 210" stroke="#4CAF50" stroke-width="2" marker-end="url(#arrowheadGreen)"/>
+    <text x="450" y="225" font-family="Arial" font-size="12" fill="#4CAF50" text-anchor="middle">تحسن مستمر</text>
+
+    <!-- Encryption Icon -->
+    <rect x="420" y="240" width="60" height="40" rx="5" ry="5" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+    <path d="M430 250 L 470 250 M430 260 L 470 260" stroke="#2196F3" stroke-width="2"/>
+    <text x="450" y="290" font-family="Arial" font-size="10" fill="#1565C0" text-anchor="middle">تشفير ومعايير</text>
+
+    <defs>
+        <marker id="arrowheadRed" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#E53935" />
+        </marker>
+        <marker id="arrowheadGreen" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50" />
+        </marker>
+        <marker id="arrowheadGray" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#757575" />
+        </marker>
+    </defs>
+</svg>

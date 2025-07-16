@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#fffaf0"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Family Relationships</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">العلاقات الأسرية</text>
+
+    <g id="family-tree" transform="translate(400, 80)">
+      <!-- Grandparents -->
+      <g id="grandparents">
+        <g transform="translate(-150, 0)">
+          <rect x="-60" y="0" width="120" height="50" rx="10" fill="#e3f2fd"/>
+          <text x="0" y="25" text-anchor="middle">Grandfather</text>
+          <text x="0" y="45" text-anchor="middle">جد</text>
+        </g>
+        <g transform="translate(150, 0)">
+          <rect x="-60" y="0" width="120" height="50" rx="10" fill="#fce4ec"/>
+          <text x="0" y="25" text-anchor="middle">Grandmother</text>
+          <text x="0" y="45" text-anchor="middle">جدة</text>
+        </g>
+        <line x1="-90" y1="25" x2="90" y2="25" stroke="#ccc" stroke-width="2"/>
+        <line x1="0" y1="25" x2="0" y2="100" stroke="#ccc" stroke-width="2"/>
+      </g>
+
+      <!-- Parents -->
+      <g id="parents" transform="translate(0, 100)">
+        <line x1="-150" y1="0" x2="150" y2="0" stroke="#ccc" stroke-width="2"/>
+        <g transform="translate(-150, 0)">
+          <rect x="-50" y="-25" width="100" height="50" rx="10" fill="#d1e7fd"/>
+          <text x="0" y="0" text-anchor="middle">Father</text>
+          <text x="0" y="20" text-anchor="middle">أب</text>
+        </g>
+        <g transform="translate(150, 0)">
+          <rect x="-50" y="-25" width="100" height="50" rx="10" fill="#f8bbd0"/>
+          <text x="0" y="0" text-anchor="middle">Mother</text>
+          <text x="0" y="20" text-anchor="middle">أم</text>
+        </g>
+        <line x1="0" y1="0" x2="0" y2="75" stroke="#ccc" stroke-width="2"/>
+      </g>
+
+      <!-- Children -->
+      <g id="children" transform="translate(0, 175)">
+        <line x1="-200" y1="0" x2="200" y2="0" stroke="#ccc" stroke-width="2"/>
+        <g transform="translate(-200, 0)">
+          <line x1="0" y1="0" x2="0" y2="25" stroke="#ccc" stroke-width="2"/>
+          <rect x="-50" y="25" width="100" height="50" rx="10" fill="#c5cae9"/>
+          <text x="0" y="50" text-anchor="middle">Brother</text>
+          <text x="0" y="70" text-anchor="middle">أخ</text>
+        </g>
+        <g transform="translate(0, 0)">
+          <line x1="0" y1="0" x2="0" y2="25" stroke="#ccc" stroke-width="2"/>
+          <rect x="-50" y="25" width="100" height="50" rx="10" fill="#e8eaf6"/>
+          <text x="0" y="50" text-anchor="middle">Me</text>
+          <text x="0" y="70" text-anchor="middle">أنا</text>
+        </g>
+        <g transform="translate(200, 0)">
+          <line x1="0" y1="0" x2="0" y2="25" stroke="#ccc" stroke-width="2"/>
+          <rect x="-50" y="25" width="100" height="50" rx="10" fill="#c5cae9"/>
+          <text x="0" y="50" text-anchor="middle">Sister</text>
+          <text x="0" y="70" text-anchor="middle">أخت</text>
+        </g>
+      </g>
+
+    </g>
+  </g>
+</svg>

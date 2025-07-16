@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="800" height="400">
+  <defs>
+    <style>
+      .bg { fill: #e3f2fd; } /* Light Blue background */
+      .text { font-family: 'Arial', sans-serif; font-size: 6px; fill: #0d47a1; text-anchor: middle; }
+      .title { font-size: 8px; font-weight: bold; }
+      .document { fill: #fff; stroke: #1976d2; stroke-width: 0.7; }
+      .seal { fill: #bbdefb; stroke: #1565c0; stroke-width: 0.5; }
+      .icon { fill: #1976d2; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="100" rx="5"/>
+
+  <text x="100" y="15" class="text title">إطار السياسات (Policy Framework)</text>
+
+  <!-- Document -->
+  <g transform="translate(100, 55)">
+    <rect class="document" x="-60" y="-35" width="120" height="70" rx="3"/>
+    
+    <!-- Title on document -->
+    <text x="0" y="-25" class="text title">إطار السياسات والمعايير</text>
+
+    <!-- Content: Standards -->
+    <g transform="translate(-40, 0)">
+        <path class="icon" d="M -10 -10 h 20 v 20 h -20 Z M -5 -5 L -2 -2 L 5 -8 M -5 5 L -2 8 L 5 2"/>
+        <text x="0" y="18" class="text">المعايير</text>
+        <text x="0" y="25" class="text">(Standards)</text>
+    </g>
+
+    <!-- Content: Guidelines -->
+    <g transform="translate(0, 0)">
+        <path class="icon" d="M 0 -10 a 10 10 0 1 1 0 20 a 10 10 0 1 1 0 -20 M 0 -8 L 4 4 L -4 -4 L 0 8 Z"/>
+        <text x="0" y="18" class="text">المبادئ التوجيهية</text>
+        <text x="0" y="25" class="text">(Guidelines)</text>
+    </g>
+
+    <!-- Content: Regulations -->
+    <g transform="translate(40, 0)">
+        <path class="icon" d="M -8 -2 L 8 -2 L 0 -10 Z M -10 0 h 20 v 4 h -20 Z M -8 6 h 16"/>
+        <text x="0" y="18" class="text">اللوائح</text>
+        <text x="0" y="25" class="text">(Regulations)</text>
+    </g>
+
+    <!-- Seal -->
+    <g transform="translate(45, 20)">
+        <circle class="seal" cx="0" cy="0" r="10"/>
+        <path class="icon" d="M 0 -5 L 1.5 -1.5 L 5 -1.5 L 2.5 1 L 3.5 5 L 0 3 L -3.5 5 L -2.5 1 L -5 -1.5 L -1.5 -1.5 Z"/>
+    </g>
+  </g>
+
+</svg>

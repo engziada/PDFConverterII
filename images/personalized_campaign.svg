@@ -1,0 +1,42 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Central Customer Icon -->
+    <circle cx="300" cy="80" r="40" fill="#BBDEFB" stroke="#2196F3" stroke-width="2"/>
+    <text x="300" y="85" font-family="Arial" font-size="18" fill="#1565C0" text-anchor="middle">العميل</text>
+    <text x="300" y="130" font-family="Arial" font-size="14" fill="#1565C0" text-anchor="middle">مركز القوة</text>
+
+    <!-- Customer Control Elements -->
+    <!-- How -->
+    <rect x="50" y="180" width="100" height="50" rx="5" ry="5" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+    <text x="100" y="210" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">الكيفية</text>
+
+    <!-- When -->
+    <rect x="250" y="180" width="100" height="50" rx="5" ry="5" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+    <text x="300" y="210" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">الوقت</text>
+
+    <!-- Channel -->
+    <rect x="450" y="180" width="100" height="50" rx="5" ry="5" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+    <text x="500" y="210" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">القناة</text>
+
+    <!-- eCRM Enables -->
+    <rect x="150" y="240" width="300" height="40" rx="5" ry="5" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1"/>
+    <text x="300" y="265" font-family="Arial" font-size="12" fill="#2E7D32" text-anchor="middle">eCRM يمكّن: حملات مخصصة، بناء نوايا حسنة</text>
+
+    <!-- Arrows from Customer to control elements -->
+    <line x1="300" y1="120" x2="100" y2="180" stroke="#2196F3" stroke-width="1" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="120" x2="300" y2="180" stroke="#2196F3" stroke-width="1" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="120" x2="500" y2="180" stroke="#2196F3" stroke-width="1" marker-end="url(#arrowheadBlue)"/>
+
+    <!-- Arrow from eCRM Enables to Customer -->
+    <line x1="300" y1="240" x2="300" y2="120" stroke="#4CAF50" stroke-width="1" marker-end="url(#arrowheadGreen)"/>
+
+    <defs>
+        <marker id="arrowheadBlue" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#2196F3" />
+        </marker>
+        <marker id="arrowheadGreen" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50" />
+        </marker>
+    </defs>
+</svg>

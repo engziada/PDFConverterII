@@ -1,0 +1,58 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .label { font-size: 20px; font-weight: bold; text-anchor: middle; }
+      .label-ar { font-size: 16px; text-anchor: middle; fill: #555; }
+      .btn-text { font-size: 18px; font-weight: bold; fill: #fff; text-anchor: middle; }
+      .code { font-family: 'Courier New', monospace; font-size: 14px; }
+      .arrow { stroke: #34495e; stroke-width: 3; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34495e" />
+    </marker>
+  </defs>
+
+  <!-- Titles -->
+  <text x="400" y="40" class="title">CSS Transform & Transition</text>
+  <text x="400" y="65" class="subtitle">التحويلات والانتقالات في CSS</text>
+
+  <!-- State 1: Default -->
+  <g id="default-state">
+    <text x="200" y="120" class="label">Default State</text>
+    <text x="200" y="145" class="label-ar">الحالة الافتراضية</text>
+    <rect x="125" y="160" width="150" height="60" rx="8" fill="#3498db"/>
+    <text x="200" y="198" class="btn-text">Click Me</text>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="320" y1="190" x2="480" y2="190" class="arrow"/>
+  <text x="400" y="180" text-anchor="middle">On Hover</text>
+  <text x="400" y="210" text-anchor="middle">(عند المرور)</text>
+
+  <!-- State 2: Hover -->
+  <g id="hover-state">
+    <text x="600" y="120" class="label">Hover State</text>
+    <text x="600" y="145" class="label-ar">حالة المرور</text>
+    <rect x="517.5" y="157" width="165" height="66" rx="8.8" fill="#2980b9"/>
+    <text x="600" y="198" class="btn-text" font-size="19.8px">Click Me</text>
+  </g>
+
+  <!-- Code Snippets -->
+  <g transform="translate(50, 300)">
+    <text x="0" y="0" class="code" font-weight="bold">.btn {</text>
+    <text x="10" y="20" class="code">  background: #3498db;</text>
+    <text x="10" y="40" class="code">  transition: transform 0.3s ease;</text>
+    <text x="0" y="60" class="code">}</text>
+  </g>
+
+  <g transform="translate(450, 300)">
+    <text x="0" y="0" class="code" font-weight="bold">.btn:hover {</text>
+    <text x="10" y="20" class="code">  background: #2980b9;</text>
+    <text x="10" y="40" class="code">  transform: scale(1.1);</text>
+    <text x="0" y="60" class="code">}</text>
+  </g>
+
+</svg>

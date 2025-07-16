@@ -1,0 +1,50 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .label { font-size: 18px; font-weight: bold; }
+      .axis-main { stroke: #c0392b; stroke-width: 3; marker-end: url(#arrow-main); }
+      .axis-cross { stroke: #2980b9; stroke-width: 3; marker-end: url(#arrow-cross); }
+      .container { fill: #ecf0f1; stroke: #bdc3c7; stroke-width: 2; rx: 8; }
+      .item { fill: #3498db; rx: 4; }
+    </style>
+    <marker id="arrow-main" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c0392b" />
+    </marker>
+    <marker id="arrow-cross" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2980b9" />
+    </marker>
+  </defs>
+
+  <!-- Titles -->
+  <text x="400" y="40" class="title">Flexbox Axes</text>
+  <text x="400" y="65" class="subtitle">محاور الفليكس بوكس</text>
+
+  <!-- Flex Container -->
+  <rect x="100" y="120" width="600" height="200" class="container"/>
+  <text x="110" y="110" font-style="italic" fill="#7f8c8d">flex-direction: row (default)</text>
+
+  <!-- Flex Items -->
+  <rect x="120" y="180" width="80" height="80" class="item"/>
+  <rect x="220" y="180" width="80" height="80" class="item"/>
+  <rect x="320" y="180" width="80" height="80" class="item"/>
+
+  <!-- Main Axis -->
+  <line x1="100" y1="220" x2="700" y2="220" class="axis-main"/>
+  <text x="400" y="250" class="label" fill="#c0392b" text-anchor="middle">Main Axis (المحور الرئيسي)</text>
+
+  <!-- Cross Axis -->
+  <line x1="160" y1="320" x2="160" y2="120" class="axis-cross"/>
+  <text x="170" y="170" class="label" fill="#2980b9">Cross Axis</text>
+  <text x="170" y="190" class="label" fill="#2980b9">(المحور الثانوي)</text>
+
+  <text x="100" y="400" font-size="16px" fill="#34495e">
+    - <tspan font-weight="bold">justify-content</tspan> aligns items along the <tspan fill="#c0392b">Main Axis</tspan>.
+  </text>
+  <text x="100" y="425" font-size="16px" fill="#34495e">
+    - <tspan font-weight="bold">align-items</tspan> aligns items along the <tspan fill="#2980b9">Cross Axis</tspan>.
+  </text>
+
+</svg>

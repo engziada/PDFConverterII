@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="800" height="400">
+  <defs>
+    <style>
+      .bg { fill: #f9fbe7; } /* Light lime background */
+      .text { font-family: 'Arial', sans-serif; font-size: 7px; fill: #827717; text-anchor: middle; }
+      .title { font-size: 8px; font-weight: bold; }
+      .arrow { stroke: #afb42b; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+      .shape { fill: #dce775; opacity: 0.7; }
+    </style>
+    <marker id="arrowhead" markerWidth="5" markerHeight="3.5" refX="2.5" refY="1.75" orient="auto">
+      <polygon points="0 0, 5 1.75, 0 3.5" fill="#afb42b" />
+    </marker>
+  </defs>
+
+  <rect class="bg" width="200" height="100" rx="5"/>
+
+  <text x="100" y="15" class="text title">البيئة المتغيرة والتكيف المستمر</text>
+  <text x="100" y="23" class="text">(Dynamic Environment and Continuous Adaptation)</text>
+
+  <!-- Central element representing the organization -->
+  <circle cx="100" cy="60" r="15" fill="#fff" stroke="#827717" stroke-width="1"/>
+  <text x="100" y="62" class="text">المنظمة</text>
+
+  <!-- Swirling arrows and shapes representing change -->
+  <path class="arrow" d="M 40 40 C 60 20, 140 20, 160 40"/>
+  <path class="arrow" d="M 40 80 C 60 100, 140 100, 160 80"/>
+  <path class="arrow" d="M 30 60 C 10 40, 10 80, 30 60" transform="rotate(180 20 60)"/>
+  <path class="arrow" d="M 170 60 C 190 40, 190 80, 170 60"/>
+
+  <circle class="shape" cx="50" cy="30" r="8"/>
+  <rect class="shape" x="140" y="25" width="15" height="15" transform="rotate(45 147.5 32.5)"/>
+  <polygon class="shape" points="45,85 55,75 65,85"/>
+  <path class="shape" d="M 150 80 L 160 90 L 140 90 Z"/>
+
+</svg>

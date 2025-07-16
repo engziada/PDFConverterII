@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#fdf8e1"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Hypothetical Travel Situations</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">مواقف السفر الافتراضية</text>
+
+    <!-- First Conditional -->
+    <g transform="translate(50, 120)">
+      <rect x="0" y="0" width="700" height="180" rx="10" fill="#fff" stroke="#f1c40f"/>
+      <text x="350" y="40" font-size="24" text-anchor="middle" font-weight="bold">Future Possibility (First Conditional)</text>
+      <text x="350" y="70" font-size="18" text-anchor="middle">If + Present, will + Verb (إمكانية مستقبلية)</text>
+      <text x="50" y="120" font-size="22">If I <tspan fill="#c0392b">miss</tspan> my flight, I<tspan fill="#27ae60">'ll have to book</tspan> a new one. ✈️</text>
+    </g>
+
+    <!-- Third Conditional -->
+    <g transform="translate(50, 350)">
+      <rect x="0" y="0" width="700" height="180" rx="10" fill="#fff" stroke="#f1c40f"/>
+      <text x="350" y="40" font-size="24" text-anchor="middle" font-weight="bold">Past Regret (Third Conditional)</text>
+      <text x="350" y="70" font-size="18" text-anchor="middle">If + Past Perfect, would have + P.P. (ندم على الماضي)</text>
+      <text x="50" y="120" font-size="22">If I <tspan fill="#c0392b">had known</tspan> the museum was closed, I <tspan fill="#27ae60">would have planned</tspan> differently. 🏛️</text>
+    </g>
+
+  </g>
+</svg>

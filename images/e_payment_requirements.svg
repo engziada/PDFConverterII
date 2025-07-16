@@ -1,0 +1,41 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Central E-Payment Icon -->
+    <rect x="250" y="20" width="100" height="60" rx="10" ry="10" fill="#BBDEFB" stroke="#2196F3" stroke-width="2"/>
+    <text x="300" y="55" font-family="Arial" font-size="18" fill="#1565C0" text-anchor="middle">تعاملات مالية إلكترونية</text>
+
+    <!-- Requirements as surrounding bubbles -->
+    <!-- 1. Guarantees -->
+    <circle cx="100" cy="150" r="40" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+    <text x="100" y="155" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">ضمانات كافية</text>
+
+    <!-- 2. Technical Infrastructure -->
+    <circle cx="200" cy="220" r="40" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+    <text x="200" y="225" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">بنية تحتية متينة</text>
+
+    <!-- 3. User-friendly Mechanism -->
+    <circle cx="400" cy="220" r="40" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+    <text x="400" y="225" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">آلية سهلة الاستخدام</text>
+
+    <!-- 4. Mutual Trust -->
+    <circle cx="500" cy="150" r="40" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+    <text x="500" y="155" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">ثقة متبادلة</text>
+
+    <!-- 5. Large Volume Handling -->
+    <circle cx="300" cy="100" r="40" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+    <text x="300" y="105" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">التعامل مع حجم كبير</text>
+
+    <!-- Arrows from central icon to requirements -->
+    <line x1="300" y1="80" x2="100" y2="110" stroke="#2196F3" stroke-width="1" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="80" x2="200" y2="180" stroke="#2196F3" stroke-width="1" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="80" x2="400" y2="180" stroke="#2196F3" stroke-width="1" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="80" x2="500" y2="110" stroke="#2196F3" stroke-width="1" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="80" x2="300" y2="100" stroke="#2196F3" stroke-width="1" marker-end="url(#arrowheadBlue)"/>
+
+    <defs>
+        <marker id="arrowheadBlue" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#2196F3" />
+        </marker>
+    </defs>
+</svg>

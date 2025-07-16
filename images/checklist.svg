@@ -1,0 +1,56 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .item-text { font-size: 18px; fill: #34495e; }
+      .item-text-ar { font-size: 16px; fill: #7f8c8d; }
+      .checkbox { stroke: #2980b9; stroke-width: 3; fill: none; }
+      .checkmark { stroke: #27ae60; stroke-width: 4; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <!-- Titles -->
+  <text x="400" y="50" class="title">Self-Assessment Checklist</text>
+  <text x="400" y="80" class="subtitle">قائمة المراجعة للتقييم الذاتي</text>
+
+  <!-- Item 1 -->
+  <g transform="translate(100, 150)">
+    <rect x="0" y="0" width="30" height="30" class="checkbox" rx="4"/>
+    <path d="M 5 15 L 12 22 L 25 8" class="checkmark"/>
+    <text x="50" y="22" class="item-text">Valid HTML (W3C Validator)</text>
+    <text x="50" y="45" class="item-text-ar">HTML صحيح (مدقق W3C)</text>
+  </g>
+
+  <!-- Item 2 -->
+  <g transform="translate(100, 230)">
+    <rect x="0" y="0" width="30" height="30" class="checkbox" rx="4"/>
+    <path d="M 5 15 L 12 22 L 25 8" class="checkmark"/>
+    <text x="50" y="22" class="item-text">No Console Errors</text>
+    <text x="50" y="45" class="item-text-ar">لا توجد أخطاء في وحدة التحكم</text>
+  </g>
+
+  <!-- Item 3 -->
+  <g transform="translate(100, 310)">
+    <rect x="0" y="0" width="30" height="30" class="checkbox" rx="4"/>
+    <path d="M 5 15 L 12 22 L 25 8" class="checkmark"/>
+    <text x="50" y="22" class="item-text">Responsive Design (320px - 1440px)</text>
+    <text x="50" y="45" class="item-text-ar">تصميم متجاوب</text>
+  </g>
+
+  <!-- Item 4 -->
+  <g transform="translate(100, 390)">
+    <rect x="0" y="0" width="30" height="30" class="checkbox" rx="4"/>
+    <text x="50" y="22" class="item-text">Clear README file</text>
+    <text x="50" y="45" class="item-text-ar">ملف README واضح</text>
+  </g>
+
+  <!-- Item 5 -->
+  <g transform="translate(100, 470)">
+    <rect x="0" y="0" width="30" height="30" class="checkbox" rx="4"/>
+    <text x="50" y="22" class="item-text">High Lighthouse Score (>90)</text>
+    <text x="50" y="45" class="item-text-ar">نقاط Lighthouse عالية</text>
+  </g>
+
+</svg>

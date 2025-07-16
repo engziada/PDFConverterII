@@ -1,0 +1,34 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Large Cloud representing the Internet -->
+    <path d="M100 100 Q 50 50, 150 50 T 250 50 T 350 50 T 450 50 Q 550 50, 500 100 Q 550 150, 500 200 Q 450 250, 350 250 T 250 250 T 150 250 Q 50 250, 100 200 Z" fill="#E0F2F7" stroke="#0288D1" stroke-width="3"/>
+    <text x="300" y="150" font-family="Arial" font-size="30" fill="#01579B" text-anchor="middle">الإنترنت</text>
+
+    <!-- Small icons representing connected networks/servers -->
+    <!-- LAN -->
+    <rect x="50" y="220" width="50" height="30" rx="5" ry="5" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1"/>
+    <text x="75" y="265" font-family="Arial" font-size="10" fill="#2E7D32" text-anchor="middle">LAN</text>
+
+    <!-- MAN -->
+    <rect x="500" y="220" width="50" height="30" rx="5" ry="5" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+    <text x="525" y="265" font-family="Arial" font-size="10" fill="#1565C0" text-anchor="middle">MAN</text>
+
+    <!-- Server Rack -->
+    <rect x="275" y="20" width="50" height="60" rx="5" ry="5" fill="#B0BEC5" stroke="#78909C" stroke-width="1"/>
+    <rect x="280" y="25" width="40" height="10" fill="#CFD8DC"/>
+    <rect x="280" y="40" width="40" height="10" fill="#CFD8DC"/>
+    <rect x="280" y="55" width="40" height="10" fill="#CFD8DC"/>
+    <text x="300" y="95" font-family="Arial" font-size="10" fill="#455A64" text-anchor="middle">خوادم</text>
+
+    <!-- Arrows connecting to the cloud -->
+    <line x1="75" y1="220" x2="150" y2="200" stroke="#0288D1" stroke-width="1" marker-end="url(#arrowheadBlue)"/>
+    <line x1="525" y1="220" x2="450" y2="200" stroke="#0288D1" stroke-width="1" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="80" x2="300" y2="100" stroke="#0288D1" stroke-width="1" marker-end="url(#arrowheadBlue)"/>
+
+    <defs>
+        <marker id="arrowheadBlue" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#0288D1" />
+        </marker>
+    </defs>
+</svg>

@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Set copyright with logo and text
             const copyrightEl = document.getElementById('copyright-text');
             copyrightEl.innerHTML = `
-                <img src="assets/images/zlogo.png" alt="شعار المؤسسة" style="height:24px; vertical-align:middle; margin-right:8px;">
+                <a href="mailto:admin@thez.solutions" style="text-decoration: none; color: inherit;">
+                    <img src="assets/images/zlogo.png" alt="شعار المؤسسة" style="height:24px; vertical-align:middle; margin-right:8px;">
+                </a>
                 © 2025 جميع الحقوق محفوظة لشركة
             `;
 
@@ -47,6 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Set fallback for copyright
             const copyrightEl = document.getElementById('copyright-text');
             copyrightEl.innerHTML = `
+                <a href="mailto:admin@thez.solutions" style="text-decoration: none; color: inherit;">
+                    <img src="assets/images/zlogo.png" alt="شعار المؤسسة" style="height:24px; vertical-align:middle; margin-right:8px;">
+                </a>
                 © 2025 جميع الحقوق محفوظة لشركة
                 <img src="assets/images/zlogo.png" alt="شعار المؤسسة" style="height:24px; vertical-align:middle; margin-right:8px;">
             `;

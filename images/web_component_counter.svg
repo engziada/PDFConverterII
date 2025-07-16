@@ -1,0 +1,51 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .code-box { fill: #2d3436; rx: 8; ry: 8; }
+      .code-text { font-family: 'Courier New', monospace; font-size: 13px; fill: #fafafa; }
+      .label { font-size: 16px; font-weight: bold; text-anchor: middle; }
+      .component-box { fill: #f8f9f9; stroke: #bdc3c7; stroke-width: 2; rx: 8; ry: 8; }
+      .button { fill: #3498db; rx: 5; ry: 5; cursor: pointer; }
+      .button-text { fill: #fff; font-size: 18px; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Titles -->
+  <text x="400" y="40" class="title">Web Components</text>
+  <text x="400" y="65" class="subtitle">المكونات الويب</text>
+
+  <!-- Left Side: Component Visual -->
+  <g id="component-visual">
+    <text x="200" y="110" class="label">Live Component</text>
+    <text x="200" y="130" class="label" font-size="14px" fill="#555">المكون المباشر</text>
+    <rect x="50" y="150" width="300" height="150" class="component-box"/>
+    <rect x="100" y="200" width="200" height="50" class="button"/>
+    <text x="200" y="232" class="button-text">Counter: 0</text>
+    <text x="200" y="330" class="label">Shadow DOM</text>
+    <text x="200" y="350" class="label" font-size="14px" fill="#555">(Encapsulated)</text>
+    <path d="M50 150 L200 310 L350 150" stroke="#bdc3c7" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
+  </g>
+
+  <!-- Right Side: Code Snippet -->
+  <g id="code-snippet">
+    <rect x="420" y="100" width="360" height="450" class="code-box"/>
+    <text x="440" y="130" class="code-text">class MyCounter extends HTMLElement {</text>
+    <text x="460" y="150" class="code-text">constructor() {</text>
+    <text x="480" y="170" class="code-text">super();</text>
+    <text x="480" y="190" class="code-text">this.count = 0;</text>
+    <text x="480" y="210" class="code-text">this.attachShadow({ mode: 'open' });</text>
+    <text x="480" y="230" class="code-text">this.shadowRoot.innerHTML = `</text>
+    <text x="500" y="250" class="code-text">&lt;button&gt;Counter: &lt;span id='val'&gt;0&lt;/span&gt;&lt;/button&gt;</text>
+    <text x="480" y="270" class="code-text">`;</text>
+    <text x="480" y="290" class="code-text">this.shadowRoot.querySelector('button').onclick = () => {</text>
+    <text x="500" y="310" class="code-text">this.shadowRoot.getElementById('val').textContent = ++this.count;</text>
+    <text x="480" y="330" class="code-text">};</text>
+    <text x="460" y="350" class="code-text">}</text>
+    <text x="440" y="370" class="code-text">}</text>
+    <text x="440" y="400" class="code-text">customElements.define('my-counter', MyCounter);</text>
+  </g>
+
+</svg>

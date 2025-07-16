@@ -1,0 +1,33 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Levels as a staircase/progression -->
+    <!-- Level 1: Information -->
+    <rect x="50" y="200" width="100" height="50" rx="5" ry="5" fill="#E8EAF6" stroke="#7986CB" stroke-width="1"/>
+    <text x="100" y="230" font-family="Arial" font-size="12" fill="#3F51B5" text-anchor="middle">1. المعلومات</text>
+
+    <!-- Level 2: Interaction -->
+    <rect x="180" y="150" width="100" height="50" rx="5" ry="5" fill="#E8EAF6" stroke="#7986CB" stroke-width="1"/>
+    <text x="230" y="180" font-family="Arial" font-size="12" fill="#3F51B5" text-anchor="middle">2. التفاعل</text>
+
+    <!-- Level 3: Transactions -->
+    <rect x="310" y="100" width="100" height="50" rx="5" ry="5" fill="#E8EAF6" stroke="#7986CB" stroke-width="1"/>
+    <text x="360" y="130" font-family="Arial" font-size="12" fill="#3F51B5" text-anchor="middle">3. المعاملات</text>
+
+    <!-- Level 4: Full Digital Transformation -->
+    <rect x="440" y="50" width="100" height="50" rx="5" ry="5" fill="#E8EAF6" stroke="#7986CB" stroke-width="1"/>
+    <text x="490" y="80" font-family="Arial" font-size="12" fill="#3F51B5" text-anchor="middle">4. التحول الرقمي الكامل</text>
+
+    <!-- Arrows indicating progression -->
+    <path d="M150 225 L 180 175" stroke="#7986CB" stroke-width="2" marker-end="url(#arrowheadIndigo)"/>
+    <path d="M280 175 L 310 125" stroke="#7986CB" stroke-width="2" marker-end="url(#arrowheadIndigo)"/>
+    <path d="M410 125 L 440 75" stroke="#7986CB" stroke-width="2" marker-end="url(#arrowheadIndigo)"/>
+
+    <text x="300" y="20" font-family="Arial" font-size="18" fill="#4527A0" text-anchor="middle">مستويات خدمات الحكومة الإلكترونية</text>
+
+    <defs>
+        <marker id="arrowheadIndigo" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#7986CB" />
+        </marker>
+    </defs>
+</svg>

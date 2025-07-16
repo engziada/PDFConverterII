@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#fce4ec"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Describing People</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">وصف الناس</text>
+
+    <g id="descriptions-grid" transform="translate(50, 100)">
+      <!-- Appearance -->
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="24" fill="#c2185b">Appearance (المظهر)</text>
+      <g transform="translate(0, 30)">
+        <!-- Tall / Short -->
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="150" height="120" rx="10" fill="#fff" stroke="#f8bbd0"/>
+          <text x="75" y="50" font-size="40" text-anchor="middle">📏</text>
+          <text x="75" y="90" font-size="16" text-anchor="middle">Tall / Short</text>
+          <text x="75" y="110" font-size="16" text-anchor="middle">(طويل / قصير)</text>
+        </g>
+        <!-- Young / Old -->
+        <g transform="translate(170, 0)">
+          <rect x="0" y="0" width="150" height="120" rx="10" fill="#fff" stroke="#f8bbd0"/>
+          <text x="75" y="50" font-size="40" text-anchor="middle">👶👵</text>
+          <text x="75" y="90" font-size="16" text-anchor="middle">Young / Old</text>
+          <text x="75" y="110" font-size="16" text-anchor="middle">(شاب / عجوز)</text>
+        </g>
+        <!-- Hair Color -->
+        <g transform="translate(340, 0)">
+          <rect x="0" y="0" width="150" height="120" rx="10" fill="#fff" stroke="#f8bbd0"/>
+          <text x="75" y="50" font-size="40" text-anchor="middle">👱‍♂️ brunette</text>
+          <text x="75" y="90" font-size="16" text-anchor="middle">Hair Color</text>
+          <text x="75" y="110" font-size="16" text-anchor="middle">(لون الشعر)</text>
+        </g>
+      </g>
+
+      <!-- Feelings -->
+      <text x="0" y="200" font-family="Arial, sans-serif" font-size="24" fill="#00796b">Feelings (المشاعر)</text>
+      <g transform="translate(0, 230)">
+        <!-- Happy / Sad -->
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="150" height="120" rx="10" fill="#fff" stroke="#b2dfdb"/>
+          <text x="75" y="50" font-size="40" text-anchor="middle">😊😢</text>
+          <text x="75" y="90" font-size="16" text-anchor="middle">Happy / Sad</text>
+          <text x="75" y="110" font-size="16" text-anchor="middle">(سعيد / حزين)</text>
+        </g>
+        <!-- Angry / Calm -->
+        <g transform="translate(170, 0)">
+          <rect x="0" y="0" width="150" height="120" rx="10" fill="#fff" stroke="#b2dfdb"/>
+          <text x="75" y="50" font-size="40" text-anchor="middle">😠😌</text>
+          <text x="75" y="90" font-size="16" text-anchor="middle">Angry / Calm</text>
+          <text x="75" y="110" font-size="16" text-anchor="middle">(غاضب / هادئ)</text>
+        </g>
+        <!-- Tired / Energetic -->
+        <g transform="translate(340, 0)">
+          <rect x="0" y="0" width="150" height="120" rx="10" fill="#fff" stroke="#b2dfdb"/>
+          <text x="75" y="50" font-size="40" text-anchor="middle">😴⚡</text>
+          <text x="75" y="90" font-size="16" text-anchor="middle">Tired / Energetic</text>
+          <text x="75" y="110" font-size="16" text-anchor="middle">(متعب / نشيط)</text>
+        </g>
+      </g>
+
+    </g>
+
+  </g>
+</svg>

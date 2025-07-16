@@ -1,0 +1,48 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .code-box { fill: #2d3436; rx: 8; ry: 8; }
+      .code-text { font-family: 'Courier New', monospace; font-size: 14px; fill: #fafafa; }
+      .label { font-size: 16px; font-weight: bold; text-anchor: middle; }
+      .switch-bg { fill: #bdc3c7; rx: 15; ry: 15; }
+      .switch-handle { fill: #fff; stroke: #95a5a6; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Titles -->
+  <text x="400" y="40" class="title">Dark Mode Toggle</text>
+  <text x="400" y="65" class="subtitle">زر تبديل الوضع الليلي</text>
+
+  <!-- Left Side: Visual Toggle -->
+  <g id="visual-toggle">
+    <text x="200" y="120" class="label">Visual Switch</text>
+    <text x="200" y="140" class="label" font-size="14px" fill="#555">الزر المرئي</text>
+    <!-- Light mode -->
+    <text x="200" y="180">☀️ Light</text>
+    <rect x="150" y="200" width="100" height="50" class="switch-bg"/>
+    <circle cx="175" cy="225" r="20" class="switch-handle"/>
+    <!-- Dark mode -->
+    <text x="200" y="300">🌙 Dark</text>
+    <rect x="150" y="320" width="100" height="50" class="switch-bg" fill="#34495e"/>
+    <circle cx="225" cy="345" r="20" class="switch-handle"/>
+  </g>
+
+  <!-- Right Side: Code Snippet -->
+  <g id="code-snippet">
+    <rect x="420" y="100" width="360" height="350" class="code-box"/>
+    <text x="440" y="130" class="code-text" font-weight="bold">/* CSS */</text>
+    <text x="440" y="155" class="code-text">:root { --bg: #fff; --text: #000; }</text>
+    <text x="440" y="180" class="code-text">[data-theme="dark"] {</text>
+    <text x="460" y="205" class="code-text">--bg: #121212; --text: #fff;</text>
+    <text x="440" y="230" class="code-text">}</text>
+    <text x="440" y="260" class="code-text" font-weight="bold">/* JavaScript */</text>
+    <text x="440" y="285" class="code-text">toggle.addEventListener('click', () => {</text>
+    <text x="460" y="310" class="code-text">const isDark = doc.dataset.theme === 'dark';</text>
+    <text x="460" y="335" class="code-text">doc.dataset.theme = isDark ? 'light' : 'dark';</text>
+    <text x="440" y="360" class="code-text">});</text>
+  </g>
+
+</svg>

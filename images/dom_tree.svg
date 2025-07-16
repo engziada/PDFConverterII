@@ -1,0 +1,74 @@
+<svg width="800" height="700" viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .node { rx: 8; ry: 8; stroke-width: 2; stroke: #bdc3c7; }
+      .node-text { font-size: 18px; font-weight: bold; text-anchor: middle; }
+      .node-text-ar { font-size: 14px; text-anchor: middle; fill: #555; }
+      .line { stroke: #7f8c8d; stroke-width: 2; }
+      .doc-node { fill: #fbeee6; stroke: #e67e22; }
+      .html-node { fill: #eafaf1; stroke: #2ecc71; }
+      .head-node { fill: #e8daef; stroke: #8e44ad; }
+      .body-node { fill: #d6eaf8; stroke: #3498db; }
+      .el-node { fill: #fef9e7; stroke: #f1c40f; }
+    </style>
+  </defs>
+
+  <!-- Titles -->
+  <text x="400" y="40" class="title">DOM Tree Structure</text>
+  <text x="400" y="65" class="subtitle">بنية شجرة الـ DOM</text>
+
+  <!-- Lines -->
+  <line class="line" x1="400" y1="150" x2="400" y2="200"/>
+  <line class="line" x1="400" y1="250" x2="250" y2="300"/>
+  <line class="line" x1="400" y1="250" x2="550" y2="300"/>
+  <line class="line" x1="250" y1="350" x2="250" y2="400"/>
+  <line class="line" x1="550" y1="350" x2="450" y2="400"/>
+  <line class="line" x1="550" y1="350" x2="650" y2="400"/>
+  <line class="line" x1="650" y1="450" x2="650" y2="500"/>
+
+  <!-- Nodes -->
+  <g id="document">
+    <rect x="325" y="100" width="150" height="50" class="node doc-node"/>
+    <text x="400" y="128" class="node-text">document</text>
+    <text x="400" y="145" class="node-text-ar">المستند</text>
+  </g>
+
+  <g id="html">
+    <rect x="325" y="200" width="150" height="50" class="node html-node"/>
+    <text x="400" y="228" class="node-text">&lt;html&gt;</text>
+  </g>
+
+  <g id="head">
+    <rect x="175" y="300" width="150" height="50" class="node head-node"/>
+    <text x="250" y="328" class="node-text">&lt;head&gt;</text>
+  </g>
+
+  <g id="body">
+    <rect x="475" y="300" width="150" height="50" class="node body-node"/>
+    <text x="550" y="328" class="node-text">&lt;body&gt;</text>
+  </g>
+
+  <g id="title-el">
+    <rect x="175" y="400" width="150" height="50" class="node el-node"/>
+    <text x="250" y="428" class="node-text">&lt;title&gt;</text>
+  </g>
+
+  <g id="h1-el">
+    <rect x="375" y="400" width="150" height="50" class="node el-node"/>
+    <text x="450" y="428" class="node-text">&lt;h1&gt;</text>
+  </g>
+
+  <g id="p-el">
+    <rect x="575" y="400" width="150" height="50" class="node el-node"/>
+    <text x="650" y="428" class="node-text">&lt;p&gt;</text>
+  </g>
+
+  <g id="a-el">
+    <rect x="575" y="500" width="150" height="50" class="node el-node"/>
+    <text x="650" y="528" class="node-text">&lt;a&gt;</text>
+  </g>
+
+</svg>

@@ -1,0 +1,49 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .code { font-family: 'Courier New', monospace; font-size: 16px; fill: #c0392b; }
+      .label { font-size: 18px; font-weight: bold; text-anchor: middle; fill: #fff; }
+      .container { fill: #f2f4f4; stroke: #bdc3c7; stroke-width: 2; rx: 8; }
+      .item1 { fill: #1abc9c; }
+      .item2 { fill: #16a085; }
+      .item3 { fill: #2ecc71; }
+      .item { rx: 4; }
+    </style>
+  </defs>
+
+  <!-- Titles -->
+  <text x="400" y="40" class="title">CSS Grid Layout</text>
+  <text x="400" y="65" class="subtitle">تخطيط الشبكة (3 أعمدة)</text>
+
+  <!-- Code Snippet -->
+  <text x="400" y="110" text-anchor="middle" class="code">.grid { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 20px; }</text>
+
+  <!-- Grid Container -->
+  <rect x="100" y="150" width="600" height="250" class="container"/>
+
+  <!-- Grid Items -->
+  <!-- Column 1 -->
+  <rect x="110" y="160" width="135" height="230" class="item item1"/>
+  <text x="177.5" y="280" class="label">1fr</text>
+
+  <!-- Column 2 -->
+  <rect x="265" y="160" width="270" height="230" class="item item2"/>
+  <text x="400" y="280" class="label">2fr</text>
+
+  <!-- Column 3 -->
+  <rect x="555" y="160" width="135" height="230" class="item item3"/>
+  <text x="622.5" y="280" class="label">1fr</text>
+
+  <!-- Gap Annotation -->
+  <g id="gap-annotation">
+    <path d="M 245 270 L 265 270" stroke="#c0392b" stroke-width="2"/>
+    <path d="M 255 265 L 255 275" stroke="#c0392b" stroke-width="2"/>
+    <path d="M 535 270 L 555 270" stroke="#c0392b" stroke-width="2"/>
+    <path d="M 545 265 L 545 275" stroke="#c0392b" stroke-width="2"/>
+    <text x="400" y="430" text-anchor="middle" font-size="16px" fill="#c0392b">gap: 20px</text>
+  </g>
+
+</svg>

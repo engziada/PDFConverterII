@@ -1,0 +1,45 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Free Service (Facebook Icon) -->
+    <rect x="50" y="50" width="100" height="100" rx="10" ry="10" fill="#BBDEFB" stroke="#2196F3" stroke-width="2"/>
+    <text x="100" y="100" font-family="Arial" font-size="24" fill="#1565C0" text-anchor="middle">f</text>
+    <text x="100" y="130" font-family="Arial" font-size="14" fill="#1565C0" text-anchor="middle">مجاني</text>
+
+    <!-- Data Collection Icon -->
+    <rect x="200" y="70" width="60" height="60" rx="5" ry="5" fill="#FFF9C4" stroke="#FFD600" stroke-width="1"/>
+    <path d="M210 80 L 250 80 M210 90 L 250 90 M210 100 L 250 100" stroke="#FFAB00" stroke-width="2"/>
+    <text x="230" y="145" font-family="Arial" font-size="12" fill="#FF8F00" text-anchor="middle">جمع بيانات</text>
+
+    <!-- Arrow from Free Service to Data Collection -->
+    <path d="M150 100 L 200 100" stroke="#757575" stroke-width="2" marker-end="url(#arrowheadGray)"/>
+
+    <!-- Data Sold to Advertisers -->
+    <rect x="300" y="50" width="100" height="100" rx="10" ry="10" fill="#FFCDD2" stroke="#E53935" stroke-width="2"/>
+    <text x="350" y="100" font-family="Arial" font-size="16" fill="#B71C1C" text-anchor="middle">معلنون</text>
+    <text x="350" y="125" font-family="Arial" font-size="12" fill="#B71C1C" text-anchor="middle">(بيانات تُباع)</text>
+
+    <!-- Arrow from Data Collection to Advertisers -->
+    <path d="M260 100 L 300 100" stroke="#E53935" stroke-width="2" marker-end="url(#arrowheadRed)"/>
+
+    <!-- Metcalfe's Law -->
+    <rect x="150" y="180" width="300" height="80" rx="10" ry="10" fill="#C8E6C9" stroke="#4CAF50" stroke-width="2"/>
+    <text x="300" y="205" font-family="Arial" font-size="16" fill="#2E7D32" text-anchor="middle">قانون ميتكالف:</text>
+    <text x="300" y="230" font-family="Arial" font-size="14" fill="#2E7D32" text-anchor="middle">قيمة الشبكة = مربع عدد المستخدمين</text>
+    <text x="300" y="250" font-family="Arial" font-size="12" fill="#2E7D32" text-anchor="middle">(زيادة المستخدمين ← زيادة قيمة الإعلانات ← أرباح)</text>
+
+    <!-- Arrow from Advertisers to Metcalfe's Law -->
+    <path d="M350 150 L 350 180" stroke="#4CAF50" stroke-width="2" marker-end="url(#arrowheadGreen)"/>
+
+    <defs>
+        <marker id="arrowheadGray" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#757575" />
+        </marker>
+        <marker id="arrowheadRed" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#E53935" />
+        </marker>
+        <marker id="arrowheadGreen" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50" />
+        </marker>
+    </defs>
+</svg>

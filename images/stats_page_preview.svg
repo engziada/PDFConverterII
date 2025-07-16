@@ -1,0 +1,47 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .card { rx: 10; ry: 10; fill: #ffffff; stroke: #dfe6e9; stroke-width: 2; }
+      .card-title { font-size: 20px; font-weight: bold; text-anchor: middle; fill: #2d3436; }
+      .label { font-size: 16px; fill: #636e72; }
+      .button { fill: #e74c3c; rx: 5; ry: 5; cursor: pointer; }
+      .button-text { fill: #fff; font-size: 18px; text-anchor: middle; }
+      .bar { fill: #3498db; }
+    </style>
+  </defs>
+
+  <!-- Titles -->
+  <text x="400" y="50" class="title">Stats Page Preview</text>
+  <text x="400" y="80" class="subtitle">معاينة صفحة الإحصائيات</text>
+
+  <!-- Main container -->
+  <rect x="50" y="100" width="700" height="450" class="card"/>
+
+  <!-- Left Side: Likes Counter -->
+  <g id="likes-counter">
+    <text x="225" y="150" class="card-title">Likes Counter</text>
+    <text x="225" y="170" class="label">(uses LocalStorage)</text>
+    <rect x="100" y="220" width="250" height="100" fill="#f8f9f9" rx="5"/>
+    <text x="225" y="270" font-size="48px" text-anchor="middle" fill="#2d3436">142</text>
+    <rect x="150" y="350" width="150" height="50" class="button"/>
+    <text x="225" y="382" class="button-text">❤️ Like</text>
+  </g>
+
+  <!-- Right Side: Grades Chart -->
+  <g id="grades-chart">
+    <text x="550" y="150" class="card-title">Student Grades</text>
+    <text x="550" y="170" class="label">(Chart.js)</text>
+    <!-- Chart axes -->
+    <line x1="425" y1="450" x2="675" y2="450" stroke="#bdc3c7" stroke-width="2"/>
+    <line x1="425" y1="220" x2="425" y2="450" stroke="#bdc3c7" stroke-width="2"/>
+    <!-- Bars -->
+    <rect x="450" y="300" width="30" height="150" class="bar"/>
+    <rect x="500" y="250" width="30" height="200" class="bar"/>
+    <rect x="550" y="350" width="30" height="100" class="bar"/>
+    <rect x="600" y="280" width="30" height="170" class="bar"/>
+  </g>
+
+</svg>

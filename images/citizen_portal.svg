@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="800" height="400">
+  <defs>
+    <style>
+      .bg { fill: #e0f7fa; } /* Light Cyan Background */
+      .portal-bg { fill: #b2ebf2; }
+      .citizen-bg { fill: #ffffff; }
+      .text { font-family: 'Arial', sans-serif; font-size: 6px; fill: #006064; text-anchor: middle; }
+      .title { font-size: 8px; font-weight: bold; }
+      .icon { fill: #0097a7; }
+      .line { stroke: #4dd0e1; stroke-width: 0.7; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="100" rx="5"/>
+
+  <text x="100" y="15" class="text title">المستوى الخارجي (بوابة المواطن)</text>
+  <text x="100" y="23" class="text">External Level (Citizen Portal)</text>
+
+  <!-- Government Portal -->
+  <g transform="translate(100, 55)">
+    <circle class="portal-bg" cx="0" cy="0" r="25"/>
+    <path class="icon" d="M -15 -10 h 30 v 20 h -30 Z M -12 -7 h 24 v 14 h -24 Z M -10 -5 h 20"/>
+    <text x="0" y="5" class="text" style="font-size:5px;">بوابة الحكومة</text>
+  </g>
+
+  <!-- Citizens -->
+  <g transform="translate(40, 40)">
+    <circle class="citizen-bg" cx="0" cy="0" r="10"/>
+    <path class="icon" d="M 0 -4 a 3 3 0 1 1 0 6 a 3 3 0 1 1 0 -6 M -5 5 a 6 6 0 0 1 10 0"/>
+    <text x="0" y="18" class="text">مواطن</text>
+  </g>
+  <g transform="translate(40, 70)">
+    <circle class="citizen-bg" cx="0" cy="0" r="10"/>
+    <path class="icon" d="M 0 -4 a 3 3 0 1 1 0 6 a 3 3 0 1 1 0 -6 M -5 5 a 6 6 0 0 1 10 0"/>
+    <text x="0" y="18" class="text">مواطن</text>
+  </g>
+  <g transform="translate(160, 40)">
+    <circle class="citizen-bg" cx="0" cy="0" r="10"/>
+    <path class="icon" d="M 0 -4 a 3 3 0 1 1 0 6 a 3 3 0 1 1 0 -6 M -5 5 a 6 6 0 0 1 10 0"/>
+    <text x="0" y="18" class="text">مواطن</text>
+  </g>
+  <g transform="translate(160, 70)">
+    <circle class="citizen-bg" cx="0" cy="0" r="10"/>
+    <path class="icon" d="M 0 -4 a 3 3 0 1 1 0 6 a 3 3 0 1 1 0 -6 M -5 5 a 6 6 0 0 1 10 0"/>
+    <text x="0" y="18" class="text">مواطن</text>
+  </g>
+   <g transform="translate(100, 90)">
+    <circle class="citizen-bg" cx="0" cy="0" r="10"/>
+    <path class="icon" d="M 0 -4 a 3 3 0 1 1 0 6 a 3 3 0 1 1 0 -6 M -5 5 a 6 6 0 0 1 10 0"/>
+    <text x="0" y="18" class="text">مواطن</text>
+  </g>
+
+  <!-- Connecting Lines -->
+  <line class="line" x1="50" y1="42" x2="80" y2="50"/>
+  <line class="line" x1="50" y1="68" x2="80" y2="60"/>
+  <line class="line" x1="150" y1="42" x2="120" y2="50"/>
+  <line class="line" x1="150" y1="68" x2="120" y2="60"/>
+  <line class="line" x1="100" y1="80" x2="100" y2="80"/>
+
+</svg>

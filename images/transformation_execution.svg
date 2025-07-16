@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="800" height="400">
+  <defs>
+    <style>
+      .bg { fill: #fbe9e7; } /* Deep Orange background */
+      .text { font-family: 'Arial', sans-serif; font-size: 6px; fill: #bf360c; text-anchor: middle; }
+      .title { font-size: 8px; font-weight: bold; }
+      .plan-box { fill: #ffccbc; stroke: #f4511e; stroke-width: 0.5; }
+      .gear { fill: #ff7043; stroke: #e64a19; stroke-width: 0.4; }
+      .arrow { stroke: #f4511e; stroke-width: 1.5; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="5" markerHeight="3.5" refX="2.5" refY="1.75" orient="auto">
+      <polygon points="0 0, 5 1.75, 0 3.5" fill="#f4511e" />
+    </marker>
+  </defs>
+
+  <rect class="bg" width="200" height="100" rx="5"/>
+
+  <text x="100" y="15" class="text title">تنفيذ التحول الاستراتيجي (Transformation Execution)</text>
+
+  <!-- Planning Stage -->
+  <g transform="translate(50, 50)">
+    <rect class="plan-box" x="-30" y="-20" width="60" height="40" rx="3"/>
+    <path d="M -20 -10 h 40 M -20 0 h 40 M -20 10 h 20" stroke="#bf360c" stroke-width="1"/>
+    <text x="0" y="28" class="text">مرحلة التخطيط</text>
+  </g>
+
+  <!-- Action Stage (Gears) -->
+  <g transform="translate(140, 50)">
+    <g class="gear" transform="translate(0, 0) rotate(0)">
+      <path d="M 0 -15 L 3 -12 L 3 -6 L -3 -6 L -3 -12 Z M 0 15 L 3 12 L 3 6 L -3 6 L -3 12 Z M 15 0 L 12 -3 L 6 -3 L 6 3 L 12 3 Z M -15 0 L -12 -3 L -6 -3 L -6 3 L -12 3 Z"/>
+      <circle r="8"/>
+    </g>
+    <g class="gear" transform="translate(15, 15) rotate(22.5)">
+      <path d="M 0 -10 L 2 -8 L 2 -4 L -2 -4 L -2 -8 Z M 0 10 L 2 8 L 2 4 L -2 4 L -2 8 Z M 10 0 L 8 -2 L 4 -2 L 4 2 L 8 2 Z M -10 0 L -8 -2 L -4 -2 L -4 2 L -8 2 Z"/>
+      <circle r="5"/>
+    </g>
+     <g class="gear" transform="translate(-15, -15) rotate(22.5)">
+      <path d="M 0 -10 L 2 -8 L 2 -4 L -2 -4 L -2 -8 Z M 0 10 L 2 8 L 2 4 L -2 4 L -2 8 Z M 10 0 L 8 -2 L 4 -2 L 4 2 L 8 2 Z M -10 0 L -8 -2 L -4 -2 L -4 2 L -8 2 Z"/>
+      <circle r="5"/>
+    </g>
+    <text x="0" y="32" class="text">مرحلة التنفيذ</text>
+  </g>
+
+  <!-- Arrow -->
+  <line class="arrow" x1="85" y1="50" x2="110" y2="50"/>
+
+</svg>

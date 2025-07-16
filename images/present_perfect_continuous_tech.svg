@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#e3f2fd"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Present Perfect Continuous in Tech</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">المضارع التام المستمر في التكنولوجيا</text>
+
+    <text x="400" y="90" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#555">
+      For ongoing actions that started in the past and continue to the present.
+    </text>
+    <text x="400" y="115" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#555">
+      (للأحداث المستمرة التي بدأت في الماضي وما زالت حتى الآن)
+    </text>
+
+    <!-- Examples Box -->
+    <g transform="translate(100, 160)">
+      <rect x="0" y="0" width="600" height="350" rx="15" fill="#fff" stroke="#90caf9" stroke-width="2"/>
+      <g transform="translate(50, 60)" font-size="22">
+        <text y="0">Scientists <tspan fill="#1565c0" font-weight="bold">have been working</tspan> on AI for decades. 🤖</text>
+        <text y="60">The team <tspan fill="#1565c0" font-weight="bold">has been developing</tspan> the new app since last year. 👨‍💻</text>
+        <text y="120">I <tspan fill="#1565c0" font-weight="bold">have been learning</tspan> to code online. 💻</text>
+        <text y="180">Companies <tspan fill="#1565c0" font-weight="bold">have been investing</tspan> heavily in cybersecurity. 🔒</text>
+        <text y="240">She <tspan fill="#1565c0" font-weight="bold">has been researching</tspan> blockchain technology. 🔗</text>
+      </g>
+    </g>
+
+  </g>
+</svg>

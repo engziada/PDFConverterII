@@ -1,0 +1,77 @@
+<svg width="1000" height="800" viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .card { rx: 15; ry: 15; fill: #f8f9f9; stroke: #dfe6e9; stroke-width: 2; }
+      .card-title { font-size: 20px; font-weight: bold; fill: #fff; text-anchor: middle; }
+      .card-content { font-size: 14px; fill: #34495e; }
+      .icon { font-size: 40px; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <text x="500" y="50" class="title">Course Summary Infographic</text>
+
+  <!-- Row 1 -->
+  <g transform="translate(50, 100)">
+    <rect class="card" width="280" height="200"/>
+    <rect rx="15" ry="15" width="280" height="50" fill="#e74c3c"/>
+    <text x="140" y="35" class="card-title">HTML5</text>
+    <text x="40" y="80" class="card-content">• Structure & Semantics</text>
+    <text x="40" y="105" class="card-content">• Forms & Input</text>
+    <text x="40" y="130" class="card-content">• Tables & Lists</text>
+    <text x="140" y="180" class="icon">🏗️</text>
+  </g>
+
+  <g transform="translate(360, 100)">
+    <rect class="card" width="280" height="200"/>
+    <rect rx="15" ry="15" width="280" height="50" fill="#3498db"/>
+    <text x="140" y="35" class="card-title">CSS3</text>
+    <text x="40" y="80" class="card-content">• Selectors & Box Model</text>
+    <text x="40" y="105" class="card-content">• Flexbox & Grid</text>
+    <text x="40" y="130" class="card-content">• Animations & Transitions</text>
+    <text x="140" y="180" class="icon">🎨</text>
+  </g>
+
+  <g transform="translate(670, 100)">
+    <rect class="card" width="280" height="200"/>
+    <rect rx="15" ry="15" width="280" height="50" fill="#f1c40f"/>
+    <text x="140" y="35" class="card-title" fill="#333">JavaScript</text>
+    <text x="40" y="80" class="card-content">• DOM & Events</text>
+    <text x="40" y="105" class="card-content">• Fetch API & Promises</text>
+    <text x="40" y="130" class="card-content">• LocalStorage</text>
+    <text x="140" y="180" class="icon">⚡</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(50, 350)">
+    <rect class="card" width="280" height="200"/>
+    <rect rx="15" ry="15" width="280" height="50" fill="#8e44ad"/>
+    <text x="140" y="35" class="card-title">PWA</text>
+    <text x="40" y="80" class="card-content">• Service Worker</text>
+    <text x="40" y="105" class="card-content">• Manifest.json</text>
+    <text x="40" y="130" class="card-content">• Offline First & Caching</text>
+    <text x="140" y="180" class="icon">📱</text>
+  </g>
+
+  <g transform="translate(360, 350)">
+    <rect class="card" width="280" height="200"/>
+    <rect rx="15" ry="15" width="280" height="50" fill="#27ae60"/>
+    <text x="140" y="35" class="card-title">Best Practices</text>
+    <text x="40" y="80" class="card-content">• Performance & Optimization</text>
+    <text x="40" y="105" class="card-content">• Security (HTTPS, CSP)</text>
+    <text x="40" y="130" class="card-content">• Accessibility (A11y)</text>
+    <text x="140" y="180" class="icon">🛡️</text>
+  </g>
+
+  <g transform="translate(670, 350)">
+    <rect class="card" width="280" height="200"/>
+    <rect rx="15" ry="15" width="280" height="50" fill="#d35400"/>
+    <text x="140" y="35" class="card-title">Advanced</text>
+    <text x="40" y="80" class="card-content">• Web Components</text>
+    <text x="40" y="105" class="card-content">• 3rd Party APIs (Maps)</text>
+    <text x="40" y="130" class="card-content">• Charting & Animations</text>
+    <text x="140" y="180" class="icon">🧩</text>
+  </g>
+
+</svg>

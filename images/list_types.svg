@@ -1,0 +1,46 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .list-title { font-size: 22px; font-weight: bold; fill: #2980b9; }
+      .item { font-size: 18px; fill: #34495e; }
+      .item-ar { font-size: 16px; fill: #7f8c8d; }
+      .box { rx: 8; ry: 8; stroke-width: 2; stroke: #bdc3c7; fill: #f8f9f9; }
+    </style>
+  </defs>
+
+  <!-- Titles -->
+  <text x="400" y="50" class="title">HTML List Types</text>
+  <text x="400" y="80" class="subtitle">أنواع القوائم في HTML</text>
+
+  <!-- Unordered List -->
+  <g id="ul-list">
+    <rect x="50" y="120" width="330" height="180" class="box"/>
+    <text x="215" y="160" class="list-title">Unordered List (<ul>)</text>
+    <text x="215" y="185" class="item-ar">(قائمة غير مرتبة)</text>
+    <text x="80" y="230" class="item">• Coffee / قهوة</text>
+    <text x="80" y="260" class="item">• Tea / شاي</text>
+  </g>
+
+  <!-- Ordered List -->
+  <g id="ol-list">
+    <rect x="420" y="120" width="330" height="180" class="box"/>
+    <text x="585" y="160" class="list-title">Ordered List (<ol>)</text>
+    <text x="585" y="185" class="item-ar">(قائمة مرتبة)</text>
+    <text x="450" y="230" class="item">1. First Step / الخطوة الأولى</text>
+    <text x="450" y="260" class="item">2. Second Step / الخطوة الثانية</text>
+  </g>
+
+  <!-- Definition List -->
+  <g id="dl-list">
+    <rect x="50" y="330" width="700" height="220" class="box"/>
+    <text x="400" y="370" class="list-title">Definition List (<dl>)</text>
+    <text x="400" y="395" class="item-ar">(قائمة التعريف)</text>
+    <text x="80" y="440" class="item" font-weight="bold">HTML (<dt>)</text>
+    <text x="100" y="470" class="item">- The standard markup language for documents designed to be displayed in a web browser.</text>
+    <text x="100" y="495" class="item-ar">- لغة الترميز القياسية للمستندات المصممة للعرض في متصفح الويب.</text>
+  </g>
+
+</svg>

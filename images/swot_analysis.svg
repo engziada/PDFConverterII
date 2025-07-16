@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="800" height="400">
+  <defs>
+    <style>
+      .bg { fill: #f5f5f5; }
+      .text { font-family: 'Arial', sans-serif; font-size: 6px; fill: #424242; text-anchor: middle; }
+      .title { font-size: 8px; font-weight: bold; }
+      .header { font-size: 7px; font-weight: bold; }
+      .quadrant { stroke: #bdbdbd; stroke-width: 0.5; }
+      .strengths { fill: #e8f5e9; } /* Green */
+      .weaknesses { fill: #ffebee; } /* Red */
+      .opportunities { fill: #e3f2fd; } /* Blue */
+      .threats { fill: #fffde7; } /* Yellow */
+      .icon { font-size: 12px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="100" rx="5"/>
+
+  <text x="100" y="15" class="text title">تحليل سوات (SWOT Analysis)</text>
+
+  <!-- Grid Lines -->
+  <line x1="100" y1="25" x2="100" y2="95" stroke="#757575" stroke-width="1"/>
+  <line x1="25" y1="60" x2="175" y2="60" stroke="#757575" stroke-width="1"/>
+
+  <!-- Strengths Quadrant -->
+  <g transform="translate(62.5, 42.5)">
+    <rect class="quadrant strengths" x="-35.5" y="-15.5" width="71" height="31" rx="2"/>
+    <text class="icon" x="0" y="-5" fill="#388e3c">+</text>
+    <text class="header" x="0" y="5">نقاط القوة</text>
+    <text x="0" y="12" class="text">(Strengths)</text>
+  </g>
+
+  <!-- Weaknesses Quadrant -->
+  <g transform="translate(137.5, 42.5)">
+    <rect class="quadrant weaknesses" x="-35.5" y="-15.5" width="71" height="31" rx="2"/>
+    <text class="icon" x="0" y="-5" fill="#d32f2f">-</text>
+    <text class="header" x="0" y="5">نقاط الضعف</text>
+    <text x="0" y="12" class="text">(Weaknesses)</text>
+  </g>
+
+  <!-- Opportunities Quadrant -->
+  <g transform="translate(62.5, 77.5)">
+    <rect class="quadrant opportunities" x="-35.5" y="-15.5" width="71" height="31" rx="2"/>
+    <text class="icon" x="0" y="-5" fill="#1976d2">↗</text>
+    <text class="header" x="0" y="5">الفرص</text>
+    <text x="0" y="12" class="text">(Opportunities)</text>
+  </g>
+
+  <!-- Threats Quadrant -->
+  <g transform="translate(137.5, 77.5)">
+    <rect class="quadrant threats" x="-35.5" y="-15.5" width="71" height="31" rx="2"/>
+    <text class="icon" x="0" y="-5" fill="#fbc02d">!</text>
+    <text class="header" x="0" y="5">التهديدات</text>
+    <text x="0" y="12" class="text">(Threats)</text>
+  </g>
+
+  <text x="15" y="45" class="text header" writing-mode="vertical-rl">عوامل داخلية</text>
+  <text x="15" y="80" class="text header" writing-mode="vertical-rl">عوامل خارجية</text>
+
+</svg>

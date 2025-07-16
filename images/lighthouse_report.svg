@@ -1,0 +1,55 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .category-title { font-size: 20px; font-weight: bold; text-anchor: middle; }
+      .category-title-ar { font-size: 16px; text-anchor: middle; fill: #555; }
+      .score-text { font-size: 48px; font-weight: bold; text-anchor: middle; }
+      .gauge-bg { fill: #e0e0e0; }
+      .gauge-fill { fill: #4caf50; stroke-linecap: round; transition: stroke-dashoffset 1s ease-in-out; }
+    </style>
+  </defs>
+
+  <!-- Titles -->
+  <text x="400" y="50" class="title">Lighthouse Report</text>
+  <text x="400" y="80" class="subtitle">تقرير Lighthouse</text>
+
+  <!-- Performance Gauge -->
+  <g transform="translate(200, 200)">
+    <circle r="70" cx="0" cy="0" stroke-width="20" class="gauge-bg"/>
+    <circle r="70" cx="0" cy="0" stroke-width="20" class="gauge-fill" stroke="#f44336" stroke-dasharray="395.84" stroke-dashoffset="83.1264" transform="rotate(-90)"/>
+    <text class="score-text" fill="#f44336">79</text>
+    <text class="category-title" y="100">Performance</text>
+    <text class="category-title-ar" y="125">الأداء</text>
+  </g>
+
+  <!-- Accessibility Gauge -->
+  <g transform="translate(600, 200)">
+    <circle r="70" cx="0" cy="0" stroke-width="20" class="gauge-bg"/>
+    <circle r="70" cx="0" cy="0" stroke-width="20" class="gauge-fill" stroke="#4caf50" stroke-dasharray="395.84" stroke-dashoffset="39.584" transform="rotate(-90)"/>
+    <text class="score-text" fill="#4caf50">91</text>
+    <text class="category-title" y="100">Accessibility</text>
+    <text class="category-title-ar" y="125">إمكانية الوصول</text>
+  </g>
+
+  <!-- Best Practices Gauge -->
+  <g transform="translate(200, 450)">
+    <circle r="70" cx="0" cy="0" stroke-width="20" class="gauge-bg"/>
+    <circle r="70" cx="0" cy="0" stroke-width="20" class="gauge-fill" stroke="#ff9800" stroke-dasharray="395.84" stroke-dashoffset="59.376" transform="rotate(-90)"/>
+    <text class="score-text" fill="#ff9800">85</text>
+    <text class="category-title" y="100">Best Practices</text>
+    <text class="category-title-ar" y="125">أفضل الممارسات</text>
+  </g>
+
+  <!-- SEO Gauge -->
+  <g transform="translate(600, 450)">
+    <circle r="70" cx="0" cy="0" stroke-width="20" class="gauge-bg"/>
+    <circle r="70" cx="0" cy="0" stroke-width="20" class="gauge-fill" stroke="#4caf50" stroke-dasharray="395.84" stroke-dashoffset="0" transform="rotate(-90)"/>
+    <text class="score-text" fill="#4caf50">100</text>
+    <text class="category-title" y="100">SEO</text>
+    <text class="category-title-ar" y="125">تحسين محركات البحث</text>
+  </g>
+
+</svg>

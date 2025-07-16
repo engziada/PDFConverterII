@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="800" height="400">
+  <defs>
+    <style>
+      .bg { fill: #f3e5f5; } /* Light Purple Background */
+      .boundary { fill: #e1bee7; stroke: #8e24aa; stroke-width: 0.7; }
+      .node { fill: #fafafa; stroke: #4a148c; stroke-width: 0.5; }
+      .text { font-family: 'Arial', sans-serif; font-size: 6px; fill: #4a148c; text-anchor: middle; }
+      .title { font-size: 8px; font-weight: bold; }
+      .icon { fill: #9c27b0; }
+      .line { stroke: #ce93d8; stroke-width: 0.6; stroke-dasharray: 2, 1; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="100" rx="5"/>
+
+  <text x="100" y="15" class="text title">المستوى الداخلي (Internal Level)</text>
+  <text x="100" y="23" class="text">ربط ومكاملة الإدارات الحكومية الداخلية</text>
+
+  <rect class="boundary" x="20" y="30" width="160" height="60" rx="10"/>
+
+  <!-- Department 1: HR -->
+  <g transform="translate(50, 50)">
+    <circle class="node" cx="0" cy="0" r="12"/>
+    <path class="icon" d="M -2 -4 a 3 3 0 1 1 4 0 v 4 h -4 Z"/>
+    <text x="0" y="20" class="text">الموارد البشرية</text>
+  </g>
+
+  <!-- Department 2: Finance -->
+  <g transform="translate(100, 50)">
+    <circle class="node" cx="0" cy="0" r="12"/>
+    <text class="icon" style="font-size:10px; font-weight:bold;">$</text>
+    <text x="0" y="20" class="text">المالية</text>
+  </g>
+
+  <!-- Department 3: IT -->
+  <g transform="translate(150, 50)">
+    <circle class="node" cx="0" cy="0" r="12"/>
+    <path class="icon" d="M -6 -4 h 12 v 8 h -12 Z M -2 -2 h 8 M -2 0 h 8 M -2 2 h 4"/>
+    <text x="0" y="20" class="text">تقنية المعلومات</text>
+  </g>
+
+  <!-- Department 4: Operations -->
+  <g transform="translate(75, 75)">
+    <circle class="node" cx="0" cy="0" r="12"/>
+    <path class="icon" d="M -2 -6 l 4 0 l 0 4 l 4 0 l 0 4 l -4 0 l 0 4 l -4 0 l 0 -4 l -4 0 l 0 -4 l 4 0 Z"/>
+    <text x="0" y="20" class="text">العمليات</text>
+  </g>
+
+  <!-- Department 5: Planning -->
+  <g transform="translate(125, 75)">
+    <circle class="node" cx="0" cy="0" r="12"/>
+    <path class="icon" d="M -5 -5 h 10 l -5 10 Z"/>
+    <text x="0" y="20" class="text">التخطيط</text>
+  </g>
+
+  <!-- Connecting Lines -->
+  <line class="line" x1="62" y1="50" x2="88" y2="50"/>
+  <line class="line" x1="112" y1="50" x2="138" y2="50"/>
+  <line class="line" x1="55" y1="58" x2="70" y2="70"/>
+  <line class="line" x1="100" y1="62" x2="100" y2="70"/>
+  <line class="line" x1="145" y1="58" x2="130" y2="70"/>
+  <line class="line" x1="87" y1="75" x2="113" y2="75"/>
+
+</svg>

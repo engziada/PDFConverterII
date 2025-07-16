@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#fffaf0"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Understanding Cultural Customs</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">فهم العادات الثقافية</text>
+
+    <!-- Japanese Bowing -->
+    <g transform="translate(80, 150)">
+      <rect x="0" y="0" width="300" height="350" rx="15" fill="#fff" stroke="#ffcdd2" stroke-width="2"/>
+      <text x="150" y="60" font-size="100" text-anchor="middle">🙇‍♂️🙇‍♀️</text>
+      <text x="150" y="200" font-size="22" text-anchor="middle" font-weight="bold">Bowing in Japan</text>
+      <text x="150" y="230" font-size="20" text-anchor="middle">(الانحناء في اليابان)</text>
+      <text x="150" y="280" text-anchor="middle" font-size="16">
+        <tspan x="150" dy="0">A common greeting and</tspan>
+        <tspan x="150" dy="20">sign of respect.</tspan>
+      </text>
+    </g>
+
+    <!-- Mediterranean Siesta -->
+    <g transform="translate(420, 150)">
+      <rect x="0" y="0" width="300" height="350" rx="15" fill="#fff" stroke="#cce5ff" stroke-width="2"/>
+      <text x="150" y="60" font-size="100" text-anchor="middle">😴☀️</text>
+      <text x="150" y="200" font-size="22" text-anchor="middle" font-weight="bold">Siesta / Afternoon Rest</text>
+      <text x="150" y="230" font-size="20" text-anchor="middle">(القيلولة / راحة بعد الظهر)</text>
+      <text x="150" y="280" text-anchor="middle" font-size="16">
+        <tspan x="150" dy="0">Common in Mediterranean</tspan>
+        <tspan x="150" dy="20">and warm climates.</tspan>
+      </text>
+    </g>
+
+  </g>
+</svg>

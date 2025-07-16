@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="800" height="400">
+  <defs>
+    <style>
+      .bg { fill: #e8f5e9; } /* Light Green Background */
+      .text { font-family: 'Arial', sans-serif; font-size: 6px; fill: #1b5e20; text-anchor: middle; }
+      .title { font-size: 8px; font-weight: bold; fill: #2e7d32; }
+      .icon { fill: #4caf50; stroke: #2e7d32; stroke-width: 0.5; }
+      .line { stroke: #a5d6a7; stroke-width: 0.7; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="100" rx="5"/>
+
+  <text x="100" y="15" class="text title">أهداف الإدارة الإلكترونية المفصلة (Detailed eManagement Goals)</text>
+
+  <!-- Goal 1: Improving Efficiency -->
+  <g transform="translate(30, 50)">
+    <circle cx="0" cy="-5" r="15" fill="#c8e6c9"/>
+    <path class="icon" d="M 0 -12 a 7 7 0 1 1 -7 7 h -2 l 3 -4 l 3 4 h -2 a 5 5 0 1 0 5 -5 Z"/>
+    <text x="0" y="20" class="text">تحسين الكفاءة</text>
+    <text x="0" y="27" class="text">(Improving Efficiency)</text>
+  </g>
+
+  <!-- Goal 2: Enhancing Transparency -->
+  <g transform="translate(80, 50)">
+    <circle cx="0" cy="-5" r="15" fill="#c8e6c9"/>
+    <path class="icon" d="M -10 -5 Q 0 -15 10 -5 Q 0 5 -10 -5 Z M 0 -7 a 2 2 0 1 1 0 4 a 2 2 0 1 1 0 -4 Z"/>
+    <text x="0" y="20" class="text">تعزيز الشفافية</text>
+    <text x="0" y="27" class="text">(Enhancing Transparency)</text>
+  </g>
+
+  <!-- Goal 3: Increasing Citizen Participation -->
+  <g transform="translate(130, 50)">
+    <circle cx="0" cy="-5" r="15" fill="#c8e6c9"/>
+    <path class="icon" d="M -5 -12 a 4 4 0 1 1 8 0 v 5 h -8 Z M 5 -12 a 4 4 0 1 0 -8 0"/>
+    <path class="icon" d="M 0 -2 a 4 4 0 1 1 0 -8 a 4 4 0 1 1 0 8"/>
+    <text x="0" y="20" class="text">زيادة مشاركة المواطنين</text>
+    <text x="0" y="27" class="text">(Increasing Participation)</text>
+  </g>
+
+  <!-- Goal 4: Fostering Economic Development -->
+  <g transform="translate(170, 50)">
+    <circle cx="0" cy="-5" r="15" fill="#c8e6c9"/>
+    <path class="icon" d="M -8 5 L -8 -5 L 0 -12 L 8 -5 L 8 5 Z M -4 5 L -4 0 L 4 0 L 4 5 Z"/>
+    <text x="0" y="20" class="text">دعم التنمية الاقتصادية</text>
+    <text x="0" y="27" class="text">(Fostering Economy)</text>
+  </g>
+
+  <!-- Connecting Lines -->
+  <line class="line" x1="45" y1="45" x2="65" y2="45"/>
+  <line class="line" x1="95" y1="45" x2="115" y2="45"/>
+  <line class="line" x1="145" y1="45" x2="155" y2="45"/>
+
+</svg>

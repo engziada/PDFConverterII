@@ -1,0 +1,44 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .label { font-size: 24px; font-weight: bold; text-anchor: middle; }
+      .label-ar { font-size: 18px; text-anchor: middle; fill: #555; }
+    </style>
+  </defs>
+
+  <!-- Titles -->
+  <text x="300" y="50" class="title">CSS Box Model</text>
+  <text x="300" y="80" class="subtitle">نموذج الصندوق في CSS</text>
+
+  <!-- Margin -->
+  <g id="margin-layer">
+    <rect x="50" y="100" width="500" height="450" fill="#f4f6f7" stroke="#bdc3c7" stroke-dasharray="10,5"/>
+    <text x="300" y="130" class="label" fill="#95a5a6">Margin</text>
+    <text x="300" y="155" class="label-ar">الهامش الخارجي</text>
+  </g>
+
+  <!-- Border -->
+  <g id="border-layer">
+    <rect x="100" y="170" width="400" height="350" fill="#e5e8e8" stroke="#7f8c8d" stroke-width="2"/>
+    <text x="300" y="200" class="label" fill="#7f8c8d">Border</text>
+    <text x="300" y="225" class="label-ar">الإطار</text>
+  </g>
+
+  <!-- Padding -->
+  <g id="padding-layer">
+    <rect x="150" y="240" width="300" height="250" fill="#d6eaf8"/>
+    <text x="300" y="270" class="label" fill="#2980b9">Padding</text>
+    <text x="300" y="295" class="label-ar">الحشوة الداخلية</text>
+  </g>
+
+  <!-- Content -->
+  <g id="content-layer">
+    <rect x="200" y="310" width="200" height="150" fill="#fff"/>
+    <text x="300" y="380" class="label" fill="#2c3e50">Content</text>
+    <text x="300" y="405" class="label-ar">المحتوى</text>
+  </g>
+
+</svg>

@@ -1,0 +1,29 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Central Legislation Icon (Scroll/Law Book) -->
+    <rect x="250" y="50" width="100" height="120" rx="10" ry="10" fill="#BBDEFB" stroke="#2196F3" stroke-width="2"/>
+    <path d="M260 60 L 340 60 M260 70 L 340 70 M260 80 L 340 80" stroke="#1565C0" stroke-width="2"/>
+    <text x="300" y="190" font-family="Arial" font-size="18" fill="#1565C0" text-anchor="middle">الأنظمة والقوانين</text>
+
+    <!-- Requirements as surrounding bubbles -->
+    <!-- 1. E-commerce & Digital Signature Legislation -->
+    <circle cx="100" cy="220" r="40" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+    <text x="100" y="225" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">تشريعات التجارة الإلكترونية</text>
+    <text x="100" y="245" font-family="Arial" font-size="10" fill="#42A5F5" text-anchor="middle">(توقيع رقمي)</text>
+
+    <!-- 2. Cybercrime Laws -->
+    <circle cx="500" cy="220" r="40" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+    <text x="500" y="225" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">قوانين مكافحة جرائم المعلوماتية</text>
+    <text x="500" y="245" font-family="Arial" font-size="10" fill="#42A5F5" text-anchor="middle">(اختراق، تزوير، سرقة)</text>
+
+    <!-- Arrows from central icon to requirements -->
+    <line x1="300" y1="170" x2="100" y2="180" stroke="#2196F3" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="170" x2="500" y2="180" stroke="#2196F3" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+
+    <defs>
+        <marker id="arrowheadBlue" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#2196F3" />
+        </marker>
+    </defs>
+</svg>

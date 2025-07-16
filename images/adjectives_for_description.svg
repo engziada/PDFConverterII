@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#f3e5f5"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Adjectives for Description</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">صفات للوصف</text>
+
+    <g id="adjective-categories" transform="translate(50, 100)">
+
+      <!-- Size -->
+      <g id="size-category">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="22" fill="#6a1b9a">Size (الحجم)</text>
+        <g transform="translate(0, 20)">
+          <rect x="0" y="0" width="150" height="80" rx="10" fill="#fff" stroke="#ce93d8"/>
+          <text x="75" y="40" text-anchor="middle">Big / Large</text>
+          <text x="75" y="65" text-anchor="middle">(كبير)</text>
+        </g>
+        <g transform="translate(170, 20)">
+          <rect x="0" y="0" width="150" height="80" rx="10" fill="#fff" stroke="#ce93d8"/>
+          <text x="75" y="40" text-anchor="middle">Small / Little</text>
+          <text x="75" y="65" text-anchor="middle">(صغير)</text>
+        </g>
+      </g>
+
+      <!-- Shape -->
+      <g id="shape-category" transform="translate(0, 140)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="22" fill="#4a148c">Shape (الشكل)</text>
+        <g transform="translate(0, 20)">
+          <rect x="0" y="0" width="150" height="80" rx="10" fill="#fff" stroke="#b39ddb"/>
+          <text x="75" y="40" text-anchor="middle">Round</text>
+          <text x="75" y="65" text-anchor="middle">(دائري)</text>
+        </g>
+        <g transform="translate(170, 20)">
+          <rect x="0" y="0" width="150" height="80" rx="10" fill="#fff" stroke="#b39ddb"/>
+          <text x="75" y="40" text-anchor="middle">Square</text>
+          <text x="75" y="65" text-anchor="middle">(مربع)</text>
+        </g>
+      </g>
+
+      <!-- Color -->
+      <g id="color-category" transform="translate(0, 280)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="22" fill="#311b92">Color (اللون)</text>
+        <g transform="translate(0, 20)">
+          <rect x="0" y="0" width="100" height="80" rx="10" fill="#e57373"/>
+          <text x="50" y="45" text-anchor="middle" fill="#fff">Red</text>
+        </g>
+        <g transform="translate(120, 20)">
+          <rect x="0" y="0" width="100" height="80" rx="10" fill="#64b5f6"/>
+          <text x="50" y="45" text-anchor="middle" fill="#fff">Blue</text>
+        </g>
+        <g transform="translate(240, 20)">
+          <rect x="0" y="0" width="100" height="80" rx="10" fill="#81c784"/>
+          <text x="50" y="45" text-anchor="middle" fill="#fff">Green</text>
+        </g>
+      </g>
+
+      <!-- Quality -->
+       <g id="quality-category" transform="translate(400, 0)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="22" fill="#d81b60">Quality (الجودة)</text>
+        <g transform="translate(0, 20)">
+          <rect x="0" y="0" width="150" height="80" rx="10" fill="#fff" stroke="#f48fb1"/>
+          <text x="75" y="40" text-anchor="middle">Good</text>
+          <text x="75" y="65" text-anchor="middle">(جيد)</text>
+        </g>
+        <g transform="translate(170, 20)">
+          <rect x="0" y="0" width="150" height="80" rx="10" fill="#fff" stroke="#f48fb1"/>
+          <text x="75" y="40" text-anchor="middle">Bad</text>
+          <text x="75" y="65" text-anchor="middle">(سيء)</text>
+        </g>
+         <g transform="translate(0, 120)">
+          <rect x="0" y="0" width="150" height="80" rx="10" fill="#fff" stroke="#f48fb1"/>
+          <text x="75" y="40" text-anchor="middle">Beautiful</text>
+          <text x="75" y="65" text-anchor="middle">(جميل)</text>
+        </g>
+        <g transform="translate(170, 120)">
+          <rect x="0" y="0" width="150" height="80" rx="10" fill="#fff" stroke="#f48fb1"/>
+          <text x="75" y="40" text-anchor="middle">Ugly</text>
+          <text x="75" y="65" text-anchor="middle">(قبيح)</text>
+        </g>
+      </g>
+
+    </g>
+  </g>
+</svg>

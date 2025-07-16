@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#f4f4f9"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Classroom Language</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">لغة الفصل الدراسي</text>
+
+    <!-- Student Phrases -->
+    <g transform="translate(50, 100)">
+      <rect x="0" y="0" width="330" height="400" rx="15" fill="#e7f3fe" stroke="#007bff" stroke-width="2"/>
+      <text x="165" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#0056b3">Student Phrases</text>
+      <text x="165" y="65" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#0056b3">عبارات الطالب</text>
+      <g transform="translate(20, 100)">
+        <text y="0" font-size="18">- May I come in?</text>
+        <text y="40" font-size="18">- Can you repeat that, please?</text>
+        <text y="80" font-size="18">- I have a question.</text>
+        <text y="120" font-size="18">- How do you say... in English?</text>
+        <text y="160" font-size="18">- What does... mean?</text>
+        <text y="200" font-size="18">- I don't understand.</text>
+        <text y="240" font-size="18">- May I go to the restroom?</text>
+        <text y="280" font-size="18">- Sorry, I'm late.</text>
+      </g>
+    </g>
+
+    <!-- Teacher Phrases -->
+    <g transform="translate(420, 100)">
+      <rect x="0" y="0" width="330" height="400" rx="15" fill="#e8f5e9" stroke="#28a745" stroke-width="2"/>
+      <text x="165" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#155724">Teacher Phrases</text>
+      <text x="165" y="65" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#155724">عبارات المعلم</text>
+       <g transform="translate(20, 100)">
+        <text y="0" font-size="18">- Open your books to page...</text>
+        <text y="40" font-size="18">- Work in pairs/groups.</text>
+        <text y="80" font-size="18">- Listen carefully.</text>
+        <text y="120" font-size="18">- Do you have any questions?</text>
+        <text y="160" font-size="18">- That's correct. / Good job!</text>
+        <text y="200" font-size="18">- Pay attention, please.</text>
+        <text y="240" font-size="18">- Time's up.</text>
+        <text y="280" font-size="18">- See you next class.</text>
+      </g>
+    </g>
+  </g>
+</svg>

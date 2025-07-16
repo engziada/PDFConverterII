@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#f0fff0"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Expressing Likes &amp; Dislikes</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">التعبير عن الإعجاب وعدم الإعجاب</text>
+
+    <!-- Likes Section -->
+    <g transform="translate(100, 120)">
+      <rect x="0" y="0" width="280" height="350" rx="15" fill="#e8f5e9" stroke="#28a745" stroke-width="2"/>
+      <text x="140" y="40" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#155724">Likes 👍</text>
+      <text x="140" y="70" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#155724">(الإعجاب)</text>
+      <path d="M20 90 H 260" stroke="#a5d6a7"/>
+      <g transform="translate(20, 120)">
+        <text y="0" font-size="20">I <tspan fill="#2e7d32" font-weight="bold">like</tspan> apples. 🍎</text>
+        <text y="60" font-size="20">I <tspan fill="#2e7d32" font-weight="bold">love</tspan> pizza. 🍕</text>
+        <text y="120" font-size="20">I <tspan fill="#2e7d32" font-weight="bold">enjoy</tspan> reading. 📚</text>
+        <text y="180" font-size="20">She <tspan fill="#2e7d32" font-weight="bold">likes</tspan> cats. 🐈</text>
+      </g>
+    </g>
+
+    <!-- Dislikes Section -->
+    <g transform="translate(420, 120)">
+      <rect x="0" y="0" width="280" height="350" rx="15" fill="#ffebee" stroke="#dc3545" stroke-width="2"/>
+      <text x="140" y="40" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#b71c1c">Dislikes 👎</text>
+      <text x="140" y="70" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#b71c1c">(عدم الإعجاب)</text>
+      <path d="M20 90 H 260" stroke="#ef9a9a"/>
+      <g transform="translate(20, 120)">
+        <text y="0" font-size="20">I <tspan fill="#c62828" font-weight="bold">don't like</tspan> spiders. 🕷️</text>
+        <text y="60" font-size="20">I <tspan fill="#c62828" font-weight="bold">hate</tspan> waking up early. ⏰</text>
+        <text y="120" font-size="20">He <tspan fill="#c62828" font-weight="bold">doesn't like</tspan> coffee. ☕</text>
+        <text y="180" font-size="20">They <tspan fill="#c62828" font-weight="bold">hate</tspan> noise. 🔊</text>
+      </g>
+    </g>
+
+  </g>
+</svg>

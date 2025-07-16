@@ -1,0 +1,55 @@
+<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .card { rx: 15; ry: 15; fill: #f8f9f9; stroke: #dfe6e9; stroke-width: 2; transition: all 0.3s; }
+      .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+      .card-title { font-size: 20px; font-weight: bold; text-anchor: middle; fill: #2d3436; }
+      .card-desc { font-size: 14px; text-anchor: middle; fill: #636e72; }
+      .icon { font-size: 60px; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Titles -->
+  <text x="450" y="60" class="title">Featured Student Projects</text>
+  <text x="450" y="90" class="subtitle">مشاريع طلابية مميزة</text>
+
+  <!-- Project 1: E-commerce Store -->
+  <g transform="translate(50, 150)">
+    <rect class="card" width="250" height="350"/>
+    <text x="125" y="80" class="icon">🛒</text>
+    <text x="125" y="150" class="card-title">E-commerce Site</text>
+    <text x="125" y="175" class="card-desc">متجر إلكتروني صغير</text>
+    <text x="125" y="220" class="card-desc">- Uses LocalStorage for cart</text>
+    <text x="125" y="240" class="card-desc">- Responsive product grid</text>
+    <text x="125" y="280" class="card-desc">يستخدم LocalStorage للسلة</text>
+    <text x="125" y="300" class="card-desc">شبكة منتجات متجاوبة</text>
+  </g>
+
+  <!-- Project 2: Blog with AJAX -->
+  <g transform="translate(325, 150)">
+    <rect class="card" width="250" height="350"/>
+    <text x="125" y="80" class="icon">📝</text>
+    <text x="125" y="150" class="card-title">AJAX Blog</text>
+    <text x="125" y="175" class="card-desc">مدونة بتعليقات AJAX</text>
+    <text x="125" y="220" class="card-desc">- Real-time comments</text>
+    <text x="125" y="240" class="card-desc">- Dynamic content loading</text>
+    <text x="125" y="280" class="card-desc">تعليقات في الوقت الفعلي</text>
+    <text x="125" y="300" class="card-desc">تحميل محتوى ديناميكي</text>
+  </g>
+
+  <!-- Project 3: COVID-19 Dashboard -->
+  <g transform="translate(600, 150)">
+    <rect class="card" width="250" height="350"/>
+    <text x="125" y="80" class="icon">📊</text>
+    <text x="125" y="150" class="card-title">Data Dashboard</text>
+    <text x="125" y="175" class="card-desc">لوحة بيانات كورونا</text>
+    <text x="125" y="220" class="card-desc">- Fetches from public API</text>
+    <text x="125" y="240" class="card-desc">- Interactive charts</text>
+    <text x="125" y="280" class="card-desc">يجلب البيانات من API عام</text>
+    <text x="125" y="300" class="card-desc">رسوم بيانية تفاعلية</text>
+  </g>
+
+</svg>

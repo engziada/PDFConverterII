@@ -1,0 +1,63 @@
+<svg width="800" height="550" viewBox="0 0 800 550" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .step { rx: 10; ry: 10; stroke-width: 2; }
+      .step-text { font-size: 18px; font-weight: bold; text-anchor: middle; }
+      .step-text-ar { font-size: 14px; text-anchor: middle; fill: #555; }
+      .arrow { stroke: #34495e; stroke-width: 2.5; marker-end: url(#arrowhead); }
+      .success-arrow { stroke: #27ae60; }
+      .error-arrow { stroke: #c0392b; }
+      .code { font-family: 'Courier New', monospace; font-size: 16px; fill: #e74c3c; }
+    </style>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34495e" />
+    </marker>
+  </defs>
+
+  <!-- Titles -->
+  <text x="400" y="40" class="title">Fetch API Flow</text>
+  <text x="400" y="65" class="subtitle">آلية عمل Fetch API</text>
+
+  <!-- Step 1: Initial Call -->
+  <g id="step1">
+    <rect x="275" y="100" width="250" height="80" class="step" stroke="#8e44ad" fill="#f4ecf7"/>
+    <text x="400" y="135" class="step-text">1. Call <tspan class="code">fetch()</tspan></text>
+    <text x="400" y="155" class="step-text-ar">إرسال الطلب</text>
+  </g>
+
+  <!-- Arrow to Promise -->
+  <line x1="400" y1="180" x2="400" y2="230" class="arrow"/>
+
+  <!-- Step 2: Promise Returned -->
+  <g id="step2">
+    <rect x="275" y="230" width="250" height="80" class="step" stroke="#2980b9" fill="#eaf2f8"/>
+    <text x="400" y="265" class="step-text">2. Promise Pending</text>
+    <text x="400" y="285" class="step-text-ar">وعد في حالة الانتظار</text>
+  </g>
+
+  <!-- Arrows to Success/Error -->
+  <line x1="350" y1="310" x2="200" y2="360" class="arrow success-arrow"/>
+  <text x="250" y="345" fill="#27ae60">Success</text>
+  <line x1="450" y1="310" x2="600" y2="360" class="arrow error-arrow"/>
+  <text x="550" y="345" fill="#c0392b">Error</text>
+
+  <!-- Step 3a: Success Path -->
+  <g id="step3a">
+    <rect x="50" y="360" width="300" height="150" class="step" stroke="#27ae60" fill="#e9f7ef"/>
+    <text x="200" y="390" class="step-text">3a. <tspan class="code">.then(res => res.json())</tspan></text>
+    <text x="200" y="410" class="step-text-ar">معالجة الاستجابة</text>
+    <text x="200" y="445" class="step-text">4a. <tspan class="code">.then(data => ...)</tspan></text>
+    <text x="200" y="465" class="step-text-ar">استخدام البيانات</text>
+  </g>
+
+  <!-- Step 3b: Error Path -->
+  <g id="step3b">
+    <rect x="450" y="360" width="300" height="100" class="step" stroke="#c0392b" fill="#fdedec"/>
+    <text x="600" y="400" class="step-text">3b. <tspan class="code">.catch(err => ...)</tspan></text>
+    <text x="600" y="420" class="step-text-ar">معالجة الخطأ</text>
+  </g>
+
+</svg>

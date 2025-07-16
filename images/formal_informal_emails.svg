@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#f5f5f5"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Formal vs. Informal Emails</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">البريد الإلكتروني الرسمي وغير الرسمي</text>
+
+    <!-- Formal Email -->
+    <g transform="translate(50, 100)">
+      <rect x="0" y="0" width="330" height="400" rx="10" fill="#e3f2fd" stroke="#90caf9"/>
+      <text x="165" y="40" font-size="24" text-anchor="middle" font-weight="bold">Formal (رسمي)</text>
+      <g transform="translate(20, 80)" font-size="16">
+        <text y="0"><tspan font-weight="bold">Salutation:</tspan> Dear Mr. Smith,</text>
+        <text y="40"><tspan font-weight="bold">Body:</tspan> I am writing to inquire about...</text>
+        <text y="80"><tspan font-weight="bold">Closing:</tspan> Sincerely,</text>
+        <text y="120"><tspan font-weight="bold">Language:</tspan> Complete sentences, no slang.</text>
+        <text y="160"><tspan font-weight="bold">Purpose:</tspan> Professional, business, academic.</text>
+      </g>
+    </g>
+
+    <!-- Informal Email -->
+    <g transform="translate(420, 100)">
+      <rect x="0" y="0" width="330" height="400" rx="10" fill="#fff3e0" stroke="#ffcc80"/>
+      <text x="165" y="40" font-size="24" text-anchor="middle" font-weight="bold">Informal (غير رسمي)</text>
+      <g transform="translate(20, 80)" font-size="16">
+        <text y="0"><tspan font-weight="bold">Salutation:</tspan> Hey Tom,</text>
+        <text y="40"><tspan font-weight="bold">Body:</tspan> Just wanted to ask if you're free...</text>
+        <text y="80"><tspan font-weight="bold">Closing:</tspan> Cheers,</text>
+        <text y="120"><tspan font-weight="bold">Language:</tspan> Casual, contractions, slang.</text>
+        <text y="160"><tspan font-weight="bold">Purpose:</tspan> Friends, family, close colleagues.</text>
+      </g>
+    </g>
+
+  </g>
+</svg>

@@ -46,7 +46,7 @@
         {
             "id": "english",
             "title": "English Language Principles",
-            "description": "A comprehensive curriculum covering English grammar, vocabulary, and speaking skills.",
+            "description": "Comprehensive curriculum covering English grammar, vocabulary, and speaking skills.",
             "lang": "en",
             "theme": {
                 "primary": "#e74c3c",
@@ -61,6 +61,26 @@
             "theme": {
                 "primary": "#f1c40f",
                 "hover": "#f39c12"
+            }
+        },
+        {
+            "id": "crm",
+            "title": "إستراتيجيات الأعمال",
+            "description": "منهج شامل يغطي استراتيجيات إدارة الأعمال، بما في ذلك التخطيط والتنفيذ والقياس.",
+            "lang": "ar",
+            "theme": {
+                "primary": "#3400d1",
+                "hover": "#2980b9"
+            }
+        },
+        {
+            "id": "prog",
+            "title": "برمجة الويب",
+            "description": "منهج شامل يغطي أساسيات البرمجة الويب، بما في ذلك HTML، CSS، و JavaScript.",
+            "lang": "ar",
+            "theme": {
+                "primary": "#16a085",
+                "hover": "#1abc9c"
             }
         }
     ]

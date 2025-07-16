@@ -1,0 +1,32 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Gear Icon (Engine) -->
+    <circle cx="300" cy="150" r="80" fill="#BBDEFB" stroke="#2196F3" stroke-width="3"/>
+    <path d="M300 70 L 300 230 M220 150 L 380 150 M240 90 L 360 210 M240 210 L 360 90" stroke="#2196F3" stroke-width="2"/>
+    <text x="300" y="155" font-family="Arial" font-size="24" fill="#1565C0" text-anchor="middle">الحكومة الإلكترونية</text>
+
+    <!-- Outputs/Impacts -->
+    <!-- Public Demand -->
+    <rect x="50" y="50" width="120" height="50" rx="5" ry="5" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+    <text x="110" y="80" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">طلب عام</text>
+
+    <!-- Suitable Operating Environment -->
+    <rect x="430" y="50" width="120" height="50" rx="5" ry="5" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+    <text x="490" y="80" font-family="Arial" font-size="12" fill="#42A5F5" text-anchor="middle">بيئة تشغيل مناسبة</text>
+
+    <!-- New Business Applications -->
+    <rect x="200" y="220" width="200" height="50" rx="5" ry="5" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1"/>
+    <text x="300" y="250" font-family="Arial" font-size="14" fill="#2E7D32" text-anchor="middle">تطبيقات أعمال جديدة</text>
+
+    <!-- Arrows from e-Gov engine to outputs -->
+    <line x1="300" y1="150" x2="110" y2="100" stroke="#2196F3" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="150" x2="490" y2="100" stroke="#2196F3" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="150" x2="300" y2="220" stroke="#2196F3" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+
+    <defs>
+        <marker id="arrowheadBlue" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#2196F3" />
+        </marker>
+    </defs>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#ivory"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Daily Routines</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">الروتين اليومي</text>
+
+    <g id="timeline" transform="translate(50, 150)">
+        <path d="M 0 100 H 700" stroke="#aaa" stroke-width="2" stroke-dasharray="5,5"/>
+
+        <!-- Wake up -->
+        <g transform="translate(0, 0)">
+            <circle cx="50" cy="100" r="20" fill="#ffc107"/>
+            <text x="50" y="50" font-size="40" text-anchor="middle">☀️</text>
+            <text x="50" y="150" text-anchor="middle">Wake up</text>
+            <text x="50" y="170" text-anchor="middle">(استيقظ)</text>
+        </g>
+
+        <!-- Breakfast -->
+        <g transform="translate(150, 0)">
+            <circle cx="50" cy="100" r="20" fill="#28a745"/>
+            <text x="50" y="50" font-size="40" text-anchor="middle">☕</text>
+            <text x="50" y="150" text-anchor="middle">Eat Breakfast</text>
+            <text x="50" y="170" text-anchor="middle">(أتناول الفطور)</text>
+        </g>
+
+        <!-- Work/Study -->
+        <g transform="translate(300, 0)">
+            <circle cx="50" cy="100" r="20" fill="#007bff"/>
+            <text x="50" y="50" font-size="40" text-anchor="middle">💻</text>
+            <text x="50" y="150" text-anchor="middle">Work/Study</text>
+            <text x="50" y="170" text-anchor="middle">(أعمل/أدرس)</text>
+        </g>
+
+        <!-- Lunch -->
+        <g transform="translate(450, 0)">
+            <circle cx="50" cy="100" r="20" fill="#dc3545"/>
+            <text x="50" y="50" font-size="40" text-anchor="middle">🥪</text>
+            <text x="50" y="150" text-anchor="middle">Have Lunch</text>
+            <text x="50" y="170" text-anchor="middle">(أتناول الغداء)</text>
+        </g>
+
+        <!-- Go Home -->
+        <g transform="translate(600, 0)">
+            <circle cx="50" cy="100" r="20" fill="#6f42c1"/>
+            <text x="50" y="50" font-size="40" text-anchor="middle">🏠</text>
+            <text x="50" y="150" text-anchor="middle">Go Home</text>
+            <text x="50" y="170" text-anchor="middle">(أعود للمنزل)</text>
+        </g>
+
+        <!-- Sleep -->
+         <g transform="translate(300, 200)">
+            <circle cx="50" cy="100" r="20" fill="#343a40"/>
+            <text x="50" y="50" font-size="40" text-anchor="middle">🌙</text>
+            <text x="50" y="150" text-anchor="middle">Go to Sleep</text>
+            <text x="50" y="170" text-anchor="middle">(أذهب للنوم)</text>
+        </g>
+
+    </g>
+  </g>
+</svg>

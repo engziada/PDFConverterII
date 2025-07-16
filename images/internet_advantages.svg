@@ -1,0 +1,46 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Central Internet Icon -->
+    <circle cx="300" cy="80" r="40" fill="#E0F2F7" stroke="#0288D1" stroke-width="2"/>
+    <text x="300" y="85" font-family="Arial" font-size="18" fill="#01579B" text-anchor="middle">الإنترنت</text>
+
+    <!-- Advantages as surrounding bubbles -->
+    <!-- 1. 24/7 Interactivity -->
+    <circle cx="100" cy="150" r="40" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+    <text x="100" y="155" font-family="Arial" font-size="12" fill="#1565C0" text-anchor="middle">تفاعلية 24/7</text>
+
+    <!-- 2. Multimedia Promotional Channel -->
+    <circle cx="250" cy="220" r="40" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+    <text x="250" y="225" font-family="Arial" font-size="12" fill="#1565C0" text-anchor="middle">��ناة ترويجية</text>
+
+    <!-- 3. User Anonymity -->
+    <circle cx="400" cy="220" r="40" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+    <text x="400" y="225" font-family="Arial" font-size="12" fill="#1565C0" text-anchor="middle">مجهولية المستخدمين</text>
+
+    <!-- 4. Distance Elimination -->
+    <circle cx="500" cy="150" r="40" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+    <text x="500" y="155" font-family="Arial" font-size="12" fill="#1565C0" text-anchor="middle">إلغاء المسافات</text>
+
+    <!-- 5. Reduced Search Time -->
+    <circle cx="400" cy="50" r="40" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+    <text x="400" y="55" font-family="Arial" font-size="12" fill="#1565C0" text-anchor="middle">تقليل زمن البحث</text>
+
+    <!-- 6. Effective Marketing Tool -->
+    <circle cx="200" cy="50" r="40" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+    <text x="200" y="55" font-family="Arial" font-size="12" fill="#1565C0" text-anchor="middle">وسيلة تسويقية فعّال��</text>
+
+    <!-- Arrows from Internet to advantages -->
+    <line x1="300" y1="120" x2="100" y2="110" stroke="#2196F3" stroke-width="1" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="120" x2="250" y2="180" stroke="#2196F3" stroke-width="1" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="120" x2="400" y2="180" stroke="#2196F3" stroke-width="1" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="120" x2="500" y2="110" stroke="#2196F3" stroke-width="1" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="120" x2="400" y2="90" stroke="#2196F3" stroke-width="1" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="120" x2="200" y2="90" stroke="#2196F3" stroke-width="1" marker-end="url(#arrowheadBlue)"/>
+
+    <defs>
+        <marker id="arrowheadBlue" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#2196F3" />
+        </marker>
+    </defs>
+</svg>

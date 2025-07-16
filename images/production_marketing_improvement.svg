@@ -1,0 +1,37 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Computer Icon -->
+    <rect x="250" y="30" width="100" height="70" rx="10" ry="10" fill="#424242"/>
+    <rect x="260" y="40" width="80" height="40" fill="#B0BEC5"/>
+    <circle cx="300" cy="110" r="10" fill="#424242"/>
+    <text x="300" y="90" font-family="Arial" font-size="14" fill="#FFFFFF" text-anchor="middle">حاسوب</text>
+
+    <!-- Arrows pointing to benefits -->
+    <path d="M300 120 L 150 170" stroke="#2196F3" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+    <path d="M300 120 L 300 170" stroke="#2196F3" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+    <path d="M300 120 L 450 170" stroke="#2196F3" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+
+    <!-- Benefit 1: Resource Optimization -->
+    <rect x="80" y="180" width="140" height="50" rx="5" ry="5" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+    <text x="150" y="210" font-family="Arial" font-size="12" fill="#1565C0" text-anchor="middle">استغلال أمثل للموارد</text>
+
+    <!-- Benefit 2: Increased Productivity -->
+    <rect x="230" y="180" width="140" height="50" rx="5" ry="5" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+    <text x="300" y="210" font-family="Arial" font-size="12" fill="#1565C0" text-anchor="middle">رفع الإنتاجية</text>
+    <text x="300" y="230" font-family="Arial" font-size="10" fill="#1565C0" text-anchor="middle">(أقل مدخلات ← أكثر مخرجات)</text>
+
+    <!-- Benefit 3: Real-time Monitoring -->
+    <rect x="380" y="180" width="140" height="50" rx="5" ry="5" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+    <text x="450" y="210" font-family="Arial" font-size="12" fill="#1565C0" text-anchor="middle">مراقبة لحظية</text>
+
+    <!-- Note for ERP/CRM -->
+    <rect x="150" y="250" width="300" height="30" rx="5" ry="5" fill="#FFF9C4" stroke="#FFD600" stroke-width="1"/>
+    <text x="300" y="270" font-family="Arial" font-size="12" fill="#FFAB00" text-anchor="middle">تُستخدم أنظمة ERP وCRM</text>
+
+    <defs>
+        <marker id="arrowheadBlue" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#2196F3" />
+        </marker>
+    </defs>
+</svg>

@@ -1,0 +1,39 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Central Monitoring & Security Concept -->
+    <rect x="180" y="20" width="240" height="60" rx="10" ry="10" fill="#C8E6C9" stroke="#4CAF50" stroke-width="2"/>
+    <text x="300" y="55" font-family="Arial" font-size="18" fill="#2E7D32" text-anchor="middle">رفع المتابعة والرقابة</text>
+
+    <!-- Elements -->
+    <!-- Integrated Software System -->
+    <rect x="50" y="120" width="150" height="60" rx="5" ry="5" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
+    <text x="125" y="145" font-family="Arial" font-size="12" fill="#388E3C" text-anchor="middle">منظومة برمجية متكاملة</text>
+    <text x="125" y="165" font-family="Arial" font-size="10" fill="#388E3C" text-anchor="middle">(تسجيل دخول/خروج، بيانات)</text>
+
+    <!-- Remote Monitoring -->
+    <rect x="225" y="120" width="150" height="60" rx="5" ry="5" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
+    <text x="300" y="145" font-family="Arial" font-size="12" fill="#388E3C" text-anchor="middle">برامج مراقبة الأداء عن بعد</text>
+    <text x="300" y="165" font-family="Arial" font-size="10" fill="#388E3C" text-anchor="middle">(حتى من قارات أخرى)</text>
+
+    <!-- Strong Passwords / Biometrics / 2FA -->
+    <rect x="400" y="120" width="150" height="60" rx="5" ry="5" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
+    <text x="475" y="145" font-family="Arial" font-size="12" fill="#388E3C" text-anchor="middle">كلمات مرور قوية</text>
+    <text x="475" y="165" font-family="Arial" font-size="10" fill="#388E3C" text-anchor="middle">(بصمات، مصادقة ثنائية)</text>
+
+    <!-- Remote Employee Evaluation -->
+    <rect x="180" y="220" width="240" height="50" rx="5" ry="5" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
+    <text x="300" y="250" font-family="Arial" font-size="12" fill="#388E3C" text-anchor="middle">تقييم أداء الموظفين عن بُعد</text>
+
+    <!-- Arrows from central concept to elements -->
+    <line x1="300" y1="80" x2="125" y2="120" stroke="#4CAF50" stroke-width="2" marker-end="url(#arrowheadGreen)"/>
+    <line x1="300" y1="80" x2="300" y2="120" stroke="#4CAF50" stroke-width="2" marker-end="url(#arrowheadGreen)"/>
+    <line x1="300" y1="80" x2="475" y2="120" stroke="#4CAF50" stroke-width="2" marker-end="url(#arrowheadGreen)"/>
+    <line x1="300" y1="80" x2="300" y2="220" stroke="#4CAF50" stroke-width="2" marker-end="url(#arrowheadGreen)"/>
+
+    <defs>
+        <marker id="arrowheadGreen" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50" />
+        </marker>
+    </defs>
+</svg>

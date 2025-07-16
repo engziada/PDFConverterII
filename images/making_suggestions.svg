@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#e3f2fd"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Making Suggestions</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">تقديم الاقتراحات</text>
+
+    <!-- Phrases for Suggesting -->
+    <g transform="translate(50, 100)">
+      <rect x="0" y="0" width="330" height="380" rx="15" fill="#fff" stroke="#90caf9"/>
+      <text x="165" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#1e88e5">Phrases to Suggest</text>
+      <text x="165" y="65" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#1e88e5">(عبارات للاقتراح)</text>
+      <g transform="translate(20, 110)">
+        <text y="0" font-size="20">- Let's go to the cinema. 🎬</text>
+        <text y="50" font-size="20">- Why don't we eat pizza? 🍕</text>
+        <text y="100" font-size="20">- How about playing football? ⚽</text>
+        <text y="150" font-size="20">- We could visit the museum. 🏛️</text>
+        <text y="200" font-size="20">- Shall we start the project? 🚀</text>
+      </g>
+    </g>
+
+    <!-- Phrases for Responding -->
+    <g transform="translate(420, 100)">
+      <rect x="0" y="0" width="330" height="380" rx="15" fill="#fff" stroke="#90caf9"/>
+      <text x="165" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#1e88e5">Responding</text>
+      <text x="165" y="65" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#1e88e5">(الرد على الاقتراح)</text>
+      
+      <!-- Accepting -->
+      <g transform="translate(20, 110)">
+        <text y="0" font-size="20" fill="#2e7d32">- That's a great idea! 👍</text>
+        <text y="50" font-size="20" fill="#2e7d32">- I'd love to.</text>
+        <text y="100" font-size="20" fill="#2e7d32">- Good idea.</text>
+      </g>
+
+      <path d="M 20 230 H 310" stroke="#ccc"/>
+
+      <!-- Declining -->
+      <g transform="translate(20, 260)">
+        <text y="0" font-size="20" fill="#c62828">- I'm not sure about that. 🤔</text>
+        <text y="50" font-size="20" fill="#c62828">- I'd rather not.</text>
+        <text y="100" font-size="20" fill="#c62828">- Maybe another time.</text>
+      </g>
+    </g>
+
+  </g>
+</svg>

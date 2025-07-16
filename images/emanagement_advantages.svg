@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="800" height="400">
+  <defs>
+    <style>
+      .bg { fill: #f0f4f8; }
+      .text { font-family: 'Arial', sans-serif; font-size: 6px; fill: #333; text-anchor: middle; }
+      .title { font-size: 8px; font-weight: bold; }
+      .icon { fill: #4a90e2; stroke: #333; stroke-width: 0.5; }
+      .line { stroke: #a9cce3; stroke-width: 0.5; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="100" rx="5"/>
+
+  <text x="100" y="15" class="text title">Mزايا الإدارة الإلكترونية (eManagement Advantages)</text>
+
+  <!-- Advantage 1: Communication Channels -->
+  <g transform="translate(30, 45)">
+    <circle cx="0" cy="0" r="15" fill="#e9f5ff"/>
+    <path class="icon" d="M -7 -5 L 7 -5 L 7 5 L -7 5 Z M -7 -5 L 0 0 L 7 -5"/>
+    <text x="0" y="25" class="text">قنوات اتصال إضافية</text>
+  </g>
+
+  <!-- Advantage 2: Cost Reduction -->
+  <g transform="translate(80, 45)">
+    <circle cx="0" cy="0" r="15" fill="#e9f5ff"/>
+    <path class="icon" d="M 0 -8 L 5 0 L 0 8 L -5 0 Z M 0 -3 L 0 3 M -2 0 L 2 0"/>
+    <text x="0" y="25" class="text">تقليل تكلفة الخدمات</text>
+  </g>
+
+  <!-- Advantage 3: Simplified Procedures -->
+  <g transform="translate(130, 45)">
+    <circle cx="0" cy="0" r="15" fill="#e9f5ff"/>
+    <path class="icon" d="M -8 -6 h 16 v 12 h -16 Z M -5 -3 h 10 M -5 0 h 10 M -5 3 h 5"/>
+    <text x="0" y="25" class="text">تبسيط الإجراءات</text>
+  </g>
+
+  <!-- Advantage 4: Bridging Digital Divide -->
+  <g transform="translate(180, 45)" style="display:none;">
+    <circle cx="0" cy="0" r="15" fill="#e9f5ff"/>
+    <path class="icon" d="M -10 0 h 20 M -5 -5 l 10 10 M -5 5 l 10 -10"/>
+    <text x="0" y="25" class="text">سد الفجوة الرقمية</text>
+  </g>
+  
+   <g transform="translate(170, 45)">
+    <circle cx="0" cy="0" r="15" fill="#e9f5ff"/>
+    <path class="icon" d="M -10 -5 h 5 v -5 h 10 v 10 h -5 v 5 h -10 Z"/>
+    <text x="0" y="25" class="text">سد الفجوة الرقمية</text>
+  </g>
+
+  <!-- Connecting Lines -->
+  <line class="line" x1="45" y1="45" x2="65" y2="45"/>
+  <line class="line" x1="95" y1="45" x2="115" y2="45"/>
+  <line class="line" x1="145" y1="45" x2="155" y2="45"/>
+
+</svg>

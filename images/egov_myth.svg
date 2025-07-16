@@ -1,0 +1,29 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Myth Box -->
+    <rect x="100" y="50" width="400" height="80" rx="10" ry="10" fill="#FFCDD2" stroke="#E53935" stroke-width="2"/>
+    <text x="300" y="80" font-family="Arial" font-size="18" fill="#B71C1C" text-anchor="middle">مفهوم خاطئ:</text>
+    <text x="300" y="105" font-family="Arial" font-size="14" fill="#B71C1C" text-anchor="middle">الحكومة تقوم بكل أعمالها عبر الإنترنت</text>
+
+    <!-- Reality Box -->
+    <rect x="100" y="170" width="400" height="80" rx="10" ry="10" fill="#C8E6C9" stroke="#4CAF50" stroke-width="2"/>
+    <text x="300" y="200" font-family="Arial" font-size="18" fill="#2E7D32" text-anchor="middle">الحقيقة:</text>
+    <text x="300" y="225" font-family="Arial" font-size="14" fill="#2E7D32" text-anchor="middle">تتحول تدريجياً، لا يمكن إدارة كل الموارد رقمياً</text>
+
+    <!-- X mark for myth -->
+    <line x1="480" y1="60" x2="420" y2="120" stroke="#E53935" stroke-width="3"/>
+    <line x1="420" y1="60" x2="480" y2="120" stroke="#E53935" stroke-width="3"/>
+
+    <!-- Check mark for reality -->
+    <path d="M420 190 L 440 210 L 470 180" fill="none" stroke="#4CAF50" stroke-width="3"/>
+
+    <!-- Arrow from myth to reality -->
+    <path d="M300 130 L 300 170" stroke="#757575" stroke-width="2" marker-end="url(#arrowheadGray)"/>
+
+    <defs>
+        <marker id="arrowheadGray" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#757575" />
+        </marker>
+    </defs>
+</svg>

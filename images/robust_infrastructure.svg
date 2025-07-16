@@ -1,0 +1,41 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Central Infrastructure Hub -->
+    <rect x="200" y="20" width="200" height="60" rx="10" ry="10" fill="#607D8B" stroke="#455A64" stroke-width="2"/>
+    <text x="300" y="55" font-family="Arial" font-size="18" fill="#FFFFFF" text-anchor="middle">بنية تحتية قوية</text>
+
+    <!-- Components -->
+    <!-- Computers -->
+    <rect x="50" y="120" width="80" height="60" rx="5" ry="5" fill="#B0BEC5" stroke="#78909C" stroke-width="1"/>
+    <text x="90" y="160" font-family="Arial" font-size="12" fill="#455A64" text-anchor="middle">حواسيب</text>
+
+    <!-- Networks (LAN/WAN) -->
+    <rect x="180" y="120" width="80" height="60" rx="5" ry="5" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+    <text x="220" y="160" font-family="Arial" font-size="12" fill="#1565C0" text-anchor="middle">شبكات (LAN/WAN)</text>
+
+    <!-- Software/Databases -->
+    <rect x="310" y="120" width="80" height="60" rx="5" ry="5" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1"/>
+    <text x="350" y="160" font-family="Arial" font-size="12" fill="#2E7D32" text-anchor="middle">برمجيات وقواعد بيانات</text>
+
+    <!-- Security -->
+    <rect x="440" y="120" width="80" height="60" rx="5" ry="5" fill="#FFCDD2" stroke="#E53935" stroke-width="1"/>
+    <text x="480" y="160" font-family="Arial" font-size="12" fill="#B71C1C" text-anchor="middle">أنظمة حماية</text>
+
+    <!-- Maintenance -->
+    <rect x="250" y="220" width="100" height="50" rx="5" ry="5" fill="#FFF9C4" stroke="#FFD600" stroke-width="1"/>
+    <text x="300" y="250" font-family="Arial" font-size="12" fill="#FFAB00" text-anchor="middle">عقود صيانة</text>
+
+    <!-- Arrows from hub to components -->
+    <line x1="300" y1="80" x2="90" y2="120" stroke="#455A64" stroke-width="2" marker-end="url(#arrowheadGray)"/>
+    <line x1="300" y1="80" x2="220" y2="120" stroke="#455A64" stroke-width="2" marker-end="url(#arrowheadGray)"/>
+    <line x1="300" y1="80" x2="350" y2="120" stroke="#455A64" stroke-width="2" marker-end="url(#arrowheadGray)"/>
+    <line x1="300" y1="80" x2="480" y2="120" stroke="#455A64" stroke-width="2" marker-end="url(#arrowheadGray)"/>
+    <line x1="300" y1="80" x2="300" y2="220" stroke="#455A64" stroke-width="2" marker-end="url(#arrowheadGray)"/>
+
+    <defs>
+        <marker id="arrowheadGray" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#455A64" />
+        </marker>
+    </defs>
+</svg>

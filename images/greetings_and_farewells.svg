@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#f0f8ff"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Greetings &amp; Farewells</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">التحيات والوداع</text>
+
+    <!-- Greetings -->
+    <g transform="translate(100, 100)">
+      <rect x="0" y="0" width="250" height="350" rx="15" fill="#ffffff" stroke="#cccccc" stroke-width="2"/>
+      <text x="125" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#007bff">Greetings</text>
+      <text x="125" y="70" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#007bff">التحيات</text>
+      
+      <!-- Hello -->
+      <g transform="translate(20, 110)">
+        <path d="M10 0 L20 10 L10 20 Z" fill="#28a745"/>
+        <text x="30" y="15" font-family="Arial, sans-serif" font-size="20">Hello / Hi</text>
+      </g>
+      <!-- Good morning -->
+      <g transform="translate(20, 160)">
+        <path d="M10 0 L20 10 L10 20 Z" fill="#28a745"/>
+        <text x="30" y="15" font-family="Arial, sans-serif" font-size="20">Good morning</text>
+      </g>
+      <!-- Good afternoon -->
+      <g transform="translate(20, 210)">
+        <path d="M10 0 L20 10 L10 20 Z" fill="#28a745"/>
+        <text x="30" y="15" font-family="Arial, sans-serif" font-size="20">Good afternoon</text>
+      </g>
+      <!-- Good evening -->
+      <g transform="translate(20, 260)">
+        <path d="M10 0 L20 10 L10 20 Z" fill="#28a745"/>
+        <text x="30" y="15" font-family="Arial, sans-serif" font-size="20">Good evening</text>
+      </g>
+       <!-- How are you? -->
+      <g transform="translate(20, 310)">
+        <path d="M10 0 L20 10 L10 20 Z" fill="#28a745"/>
+        <text x="30" y="15" font-family="Arial, sans-serif" font-size="20">How are you?</text>
+      </g>
+    </g>
+
+    <!-- Farewells -->
+    <g transform="translate(450, 100)">
+      <rect x="0" y="0" width="250" height="350" rx="15" fill="#ffffff" stroke="#cccccc" stroke-width="2"/>
+      <text x="125" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#dc3545">Farewells</text>
+      <text x="125" y="70" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#dc3545">الوداع</text>
+      
+      <!-- Goodbye -->
+      <g transform="translate(20, 110)">
+        <path d="M10 0 L20 10 L10 20 Z" fill="#ffc107"/>
+        <text x="30" y="15" font-family="Arial, sans-serif" font-size="20">Goodbye / Bye</text>
+      </g>
+      <!-- See you later -->
+      <g transform="translate(20, 160)">
+        <path d="M10 0 L20 10 L10 20 Z" fill="#ffc107"/>
+        <text x="30" y="15" font-family="Arial, sans-serif" font-size="20">See you later</text>
+      </g>
+      <!-- See you soon -->
+      <g transform="translate(20, 210)">
+        <path d="M10 0 L20 10 L10 20 Z" fill="#ffc107"/>
+        <text x="30" y="15" font-family="Arial, sans-serif" font-size="20">See you soon</text>
+      </g>
+      <!-- Take care -->
+      <g transform="translate(20, 260)">
+        <path d="M10 0 L20 10 L10 20 Z" fill="#ffc107"/>
+        <text x="30" y="15" font-family="Arial, sans-serif" font-size="20">Take care</text>
+      </g>
+      <!-- Have a nice day -->
+      <g transform="translate(20, 310)">
+        <path d="M10 0 L20 10 L10 20 Z" fill="#ffc107"/>
+        <text x="30" y="15" font-family="Arial, sans-serif" font-size="20">Have a nice day</text>
+      </g>
+    </g>
+  </g>
+</svg>

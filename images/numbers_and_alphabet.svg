@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#fff8e1"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Numbers &amp; Alphabet</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">الأرقام والحروف الأبجدية</text>
+
+    <!-- Numbers -->
+    <g id="numbers-section" transform="translate(50, 100)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="24" fill="#e65100">Numbers (1-10)</text>
+      <text x="0" y="25" font-family="Arial, sans-serif" font-size="24" fill="#e65100">الأرقام (١-١٠)</text>
+      <text x="20" y="60" font-family="Courier, monospace" font-size="22">1  2  3  4  5  6  7  8  9  10</text>
+      <text x="20" y="90" font-family="Arial, sans-serif" font-size="18">One Two Three Four Five Six Seven Eight Nine Ten</text>
+    </g>
+
+    <!-- Alphabet -->
+    <g id="alphabet-section" transform="translate(50, 220)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="24" fill="#0d47a1">The Alphabet</text>
+      <text x="0" y="25" font-family="Arial, sans-serif" font-size="24" fill="#0d47a1">الحروف الأبجدية</text>
+      <g transform="translate(20, 60)">
+        <text x="0" y="0" font-family="Courier, monospace" font-size="28" letter-spacing="8">A B C D E F G H I J K L M</text>
+        <text x="0" y="50" font-family="Courier, monospace" font-size="28" letter-spacing="8">N O P Q R S T U V W X Y Z</text>
+      </g>
+    </g>
+
+    <!-- Example with both -->
+    <g id="example-section" transform="translate(50, 420)">
+        <rect x="0" y="0" width="700" height="100" rx="10" fill="#e3f2fd" stroke="#90caf9" stroke-width="1"/>
+        <text x="350" y="40" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">Example: The word 'Apple' starts with the 1st letter 'A'.</text>
+        <text x="350" y="70" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">مثال: كلمة 'Apple' تبدأ بالحرف الأول 'A'.</text>
+    </g>
+
+  </g>
+</svg>

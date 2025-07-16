@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="800" height="400">
+  <defs>
+    <style>
+      .bg { fill: #f9fbe7; } /* Light lime background */
+      .text { font-family: 'Arial', sans-serif; font-size: 6px; fill: #3e2723; text-anchor: middle; }
+      .title { font-size: 8px; font-weight: bold; }
+      .path { stroke: #a1887f; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+      .node-box { fill: #d7ccc8; stroke: #5d4037; stroke-width: 0.5; }
+    </style>
+    <marker id="arrowhead" markerWidth="5" markerHeight="3.5" refX="2.5" refY="1.75" orient="auto">
+      <polygon points="0 0, 5 1.75, 0 3.5" fill="#5d4037" />
+    </marker>
+  </defs>
+
+  <rect class="bg" width="200" height="100" rx="5"/>
+
+  <text x="100" y="15" class="text title">البدائل الاستراتيجية (Strategic Alternatives)</text>
+
+  <!-- Starting Point -->
+  <g transform="translate(30, 50)">
+    <rect class="node-box" x="-20" y="-10" width="40" height="20" rx="3"/>
+    <text x="0" y="2" class="text">نقطة القرار</text>
+  </g>
+
+  <!-- Path 1: Growth -->
+  <g>
+    <path class="path" d="M 55 50 C 80 30, 120 30, 145 40"/>
+    <rect class="node-box" x="150" y="30" width="40" height="20" rx="3"/>
+    <text x="170" y="42" class="text">النمو (Growth)</text>
+  </g>
+
+  <!-- Path 2: Stability -->
+  <g>
+    <path class="path" d="M 55 50 H 145"/>
+    <rect class="node-box" x="150" y="40" width="40" height="20" rx="3"/>
+    <text x="170" y="52" class="text">الاستقرار (Stability)</text>
+  </g>
+
+  <!-- Path 3: Retrenchment -->
+  <g>
+    <path class="path" d="M 55 50 C 80 70, 120 70, 145 60"/>
+    <rect class="node-box" x="150" y="50" width="40" height="20" rx="3"/>
+    <text x="170" y="62" class="text">الانكماش (Retrenchment)</text>
+  </g>
+
+</svg>

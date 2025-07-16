@@ -1,0 +1,30 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Central eCRM Icon -->
+    <rect x="250" y="20" width="100" height="60" rx="10" ry="10" fill="#D1C4E9" stroke="#673AB7" stroke-width="2"/>
+    <text x="300" y="55" font-family="Arial" font-size="18" fill="#4527A0" text-anchor="middle">eCRM</text>
+
+    <!-- Long-term Relationship -->
+    <rect x="100" y="100" width="120" height="50" rx="5" ry="5" fill="#E8EAF6" stroke="#7986CB" stroke-width="1"/>
+    <text x="160" y="130" font-family="Arial" font-size="12" fill="#3F51B5" text-anchor="middle">علاقات طويلة الأمد</text>
+
+    <!-- Coordination -->
+    <rect x="380" y="100" width="120" height="50" rx="5" ry="5" fill="#E8EAF6" stroke="#7986CB" stroke-width="1"/>
+    <text x="440" y="130" font-family="Arial" font-size="12" fill="#3F51B5" text-anchor="middle">تنسيق (تسويق، إنتاج، إلخ)</text>
+
+    <!-- Internet Impact -->
+    <rect x="200" y="200" width="200" height="60" rx="10" ry="10" fill="#E0F2F7" stroke="#81D4FA" stroke-width="1"/>
+    <text x="300" y="230" font-family="Arial" font-size="14" fill="#0288D1" text-anchor="middle">الإنترنت: علاقة أعمق، تكلفة أقل، فعالية أكبر</text>
+
+    <!-- Arrows -->
+    <line x1="300" y1="80" x2="160" y2="100" stroke="#673AB7" stroke-width="2" marker-end="url(#arrowheadPurple)"/>
+    <line x1="300" y1="80" x2="440" y2="100" stroke="#673AB7" stroke-width="2" marker-end="url(#arrowheadPurple)"/>
+    <line x1="300" y1="80" x2="300" y2="200" stroke="#673AB7" stroke-width="2" marker-end="url(#arrowheadPurple)"/>
+
+    <defs>
+        <marker id="arrowheadPurple" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#673AB7" />
+        </marker>
+    </defs>
+</svg>

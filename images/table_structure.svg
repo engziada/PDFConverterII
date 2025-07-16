@@ -1,0 +1,66 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .tag { font-family: 'Courier New', monospace; font-size: 18px; fill: #c0392b; }
+      .label { font-size: 16px; fill: #2980b9; font-weight: bold; }
+      .label-ar { font-size: 14px; fill: #7f8c8d; }
+      .table-border { stroke: #34495e; stroke-width: 2; fill: none; }
+      .header-bg { fill: #ecf0f1; }
+      .cell-border { stroke: #bdc3c7; stroke-width: 1; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Titles -->
+  <text x="400" y="40" class="title">HTML Table Structure</text>
+  <text x="400" y="65" class="subtitle">بنية الجداول في HTML</text>
+
+  <!-- Table Representation -->
+  <g id="table-visual">
+    <!-- Cells -->
+    <rect x="250" y="150" width="300" height="50" class="header-bg"/>
+    <rect x="250" y="150" width="150" height="100" class="cell-border"/>
+    <rect x="400" y="150" width="150" height="100" class="cell-border"/>
+    <rect x="250" y="200" width="300" height="50" fill="#fdfefe"/>
+    
+    <!-- Cell Text -->
+    <text x="325" y="180" text-anchor="middle" font-weight="bold">Name (<th>)</text>
+    <text x="475" y="180" text-anchor="middle" font-weight="bold">Age (<th>)</text>
+    <text x="325" y="230" text-anchor="middle">Sarah (<td>)</text>
+    <text x="475" y="230" text-anchor="middle">25 (<td>)</text>
+  </g>
+
+  <!-- Annotations -->
+  <!-- <table> -->
+  <line x1="240" y1="140" x2="240" y2="260" stroke="#e74c3c" stroke-width="2"/>
+  <text x="200" y="200" class="tag">&lt;table&gt;</text>
+
+  <!-- <thead> -->
+  <line x1="560" y1="150" x2="580" y2="150" stroke="#27ae60" stroke-width="2"/>
+  <line x1="560" y1="200" x2="580" y2="200" stroke="#27ae60" stroke-width="2"/>
+  <line x1="580" y1="150" x2="580" y2="200" stroke="#27ae60" stroke-width="2"/>
+  <text x="590" y="175" class="tag">&lt;thead&gt;</text>
+  
+  <!-- <tbody> -->
+  <line x1="560" y1="200" x2="580" y2="200" stroke="#f39c12" stroke-width="2"/>
+  <line x1="560" y1="250" x2="580" y2="250" stroke="#f39c12" stroke-width="2"/>
+  <line x1="580" y1="200" x2="580" y2="250" stroke="#f39c12" stroke-width="2"/>
+  <text x="590" y="225" class="tag">&lt;tbody&gt;</text>
+
+  <!-- <tr> -->
+  <line x1="250" y1="140" x2="550" y2="140" stroke="#8e44ad" stroke-width="2"/>
+  <text x="400" y="130" text-anchor="middle" class="tag">&lt;tr&gt; (Table Row)</text>
+
+  <!-- Legend -->
+  <g transform="translate(200, 350)">
+    <text x="0" y="0" class="label"><th>: Table Header</text>
+    <text x="0" y="20" class="label-ar">رأس الجدول</text>
+    <text x="0" y="50" class="label"><td>: Table Data</text>
+    <text x="0" y="70" class="label-ar">بيانات الجدول</text>
+    <text x="250" y="0" class="label"><tr>: Table Row</text>
+    <text x="250" y="20" class="label-ar">صف الجدول</text>
+  </g>
+
+</svg>

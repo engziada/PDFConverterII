@@ -1,0 +1,32 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Central Personal Data Icon -->
+    <rect x="250" y="50" width="100" height="60" rx="10" ry="10" fill="#FFF9C4" stroke="#FFD600" stroke-width="2"/>
+    <text x="300" y="85" font-family="Arial" font-size="18" fill="#FFAB00" text-anchor="middle">بيانات شخصية</text>
+
+    <!-- Concerns -->
+    <!-- 1. Customer Concerns -->
+    <rect x="50" y="150" width="150" height="50" rx="5" ry="5" fill="#FFCDD2" stroke="#E53935" stroke-width="1"/>
+    <text x="125" y="180" font-family="Arial" font-size="12" fill="#B71C1C" text-anchor="middle">مخاوف العملاء</text>
+
+    <!-- 2. Data Selling -->
+    <rect x="225" y="150" width="150" height="50" rx="5" ry="5" fill="#FFCDD2" stroke="#E53935" stroke-width="1"/>
+    <text x="300" y="180" font-family="Arial" font-size="12" fill="#B71C1C" text-anchor="middle">��يع البيانات</text>
+
+    <!-- 3. Strict Legislation -->
+    <rect x="400" y="150" width="150" height="50" rx="5" ry="5" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+    <text x="475" y="180" font-family="Arial" font-size="12" fill="#1565C0" text-anchor="middle">تشريعات صارمة</text>
+    <text x="475" y="200" font-family="Arial" font-size="10" fill="#1565C0" text-anchor="middle">(أوروبا وأمريكا)</text>
+
+    <!-- Arrows from data to concerns -->
+    <line x1="300" y1="110" x2="125" y2="150" stroke="#FFC107" stroke-width="2" marker-end="url(#arrowheadOrange)"/>
+    <line x1="300" y1="110" x2="300" y2="150" stroke="#FFC107" stroke-width="2" marker-end="url(#arrowheadOrange)"/>
+    <line x1="300" y1="110" x2="475" y2="150" stroke="#FFC107" stroke-width="2" marker-end="url(#arrowheadOrange)"/>
+
+    <defs>
+        <marker id="arrowheadOrange" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#FFC107" />
+        </marker>
+    </defs>
+</svg>

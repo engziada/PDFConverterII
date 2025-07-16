@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#fefefe"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Jobs &amp; Occupations</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">الوظائف والمهن</text>
+
+    <g id="professions-grid" transform="translate(100, 100)">
+      <!-- Doctor -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="180" height="150" rx="10" fill="#e7f3fe" stroke="#b3d7ff"/>
+        <text x="90" y="100" font-family="Arial, sans-serif" font-size="60" text-anchor="middle">⚕️</text>
+        <text x="90" y="135" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">Doctor (طبيب)</text>
+      </g>
+
+      <!-- Engineer -->
+      <g transform="translate(210, 0)">
+        <rect x="0" y="0" width="180" height="150" rx="10" fill="#e8f5e9" stroke="#c8e6c9"/>
+        <text x="90" y="100" font-family="Arial, sans-serif" font-size="60" text-anchor="middle">⚙️</text>
+        <text x="90" y="135" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">Engineer (مهندس)</text>
+      </g>
+
+      <!-- Teacher -->
+      <g transform="translate(420, 0)">
+        <rect x="0" y="0" width="180" height="150" rx="10" fill="#fff8e1" stroke="#ffecb3"/>
+        <text x="90" y="100" font-family="Arial, sans-serif" font-size="60" text-anchor="middle">👩‍🏫</text>
+        <text x="90" y="135" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">Teacher (معلم)</text>
+      </g>
+
+      <!-- Artist -->
+      <g transform="translate(0, 180)">
+        <rect x="0" y="0" width="180" height="150" rx="10" fill="#f3e5f5" stroke="#e1bee7"/>
+        <text x="90" y="100" font-family="Arial, sans-serif" font-size="60" text-anchor="middle">🎨</text>
+        <text x="90" y="135" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">Artist (فنان)</text>
+      </g>
+
+      <!-- Chef -->
+      <g transform="translate(210, 180)">
+        <rect x="0" y="0" width="180" height="150" rx="10" fill="#ffebee" stroke="#ffcdd2"/>
+        <text x="90" y="100" font-family="Arial, sans-serif" font-size="60" text-anchor="middle">👨‍🍳</text>
+        <text x="90" y="135" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">Chef (طاه)</text>
+      </g>
+
+      <!-- Pilot -->
+      <g transform="translate(420, 180)">
+        <rect x="0" y="0" width="180" height="150" rx="10" fill="#e0f7fa" stroke="#b2ebf2"/>
+        <text x="90" y="100" font-family="Arial, sans-serif" font-size="60" text-anchor="middle">✈️</text>
+        <text x="90" y="135" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">Pilot (طيار)</text>
+      </g>
+    </g>
+  </g>
+</svg>

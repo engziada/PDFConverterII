@@ -1,4 +1,4 @@
-**Objective:** To convert a given PDF curriculum (main + activities) into a structured Markdown file (`slideshow_content.md`) that will be used to dynamically generate an interactive web-based slideshow.
+**Objective:** To convert the contents of the curriculum in the URL listed below into a structured Markdown file (`slideshow_content.md`) that will be used to dynamically generate an interactive web-based slideshow.
 
 **Core Task:** Your role is to act as an expert content creator. You will analyze the provided PDFs, understand its structure and content, and then transcribe and reformat it into the specific Markdown schema detailed below. The final output must be clean, accurate, and adhere strictly to all formatting rules, especially for mathematical notations. activities from activity book should be inserted in the corresponding place (unit/lesson) while building the md file
 
@@ -99,8 +99,14 @@ Use the following tags and structures to organize the content. Each slide is sep
 
 ---
 
-Please begin by analyzing the provided PDF and then generate the `slideshow_content.md` file according to all the rules specified above.
+Please begin by analyzing the provided URL and then generate the `slideshow_content.md` file according to all the rules specified above.
 
-Don't forget tags 'Unit', 'Slide' should be placed before each slide, and make each slide's content reach with explanation details, even if this will increase the number of slides
-number of slides: number of pages should be around 1:1 or 1:1.25
-'unit' tag should precede every slide, not only at the beginning of a unit
+'Unit' tag should be placed before each slide, and should has the corresponding unit name from the original curriculum, and should precede every slide, not only at the beginning of a unit
+
+Slide' tag should be placed before each slide, with number in sequence started with Slide 1.
+
+Slide's content should be reach with explanation details, even if this will increase the number of slides
+
+Number of slides : Number of pages should be >= 1:1 or 1:1.25
+
+https://institute.aol.edu.sa/wp-content/plugins/pdf-poster/pdfjs-new/web/viewer.html?file=https://institute.aol.edu.sa/wp-content/uploads/2024/08/%D9%85%D8%A8%D8%A7%D8%AF%D8%A6-%D8%A8%D8%B1%D9%85%D8%AC%D8%A9-%D8%B5%D9%81%D8%AD%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%B1%D9%86%D8%AA.pdf&nobaki=false&z=0&stdono=&onlypdf=&raw=&fullscreen=1&sidebarOpen=false&side=false&open=false&hrscroll= 

@@ -1,0 +1,39 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Central OBI Standard Box -->
+    <rect x="180" y="50" width="240" height="80" rx="10" ry="10" fill="#BBDEFB" stroke="#2196F3" stroke-width="2"/>
+    <text x="300" y="85" font-family="Arial" font-size="20" fill="#1565C0" text-anchor="middle">معيار الشراء المفتوح (OBI)</text>
+    <text x="300" y="110" font-family="Arial" font-size="14" fill="#1565C0" text-anchor="middle">(Open Buying on the Internet)</text>
+
+    <!-- B2B Transaction Icon -->
+    <rect x="100" y="180" width="100" height="60" rx="5" ry="5" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1"/>
+    <text x="150" y="210" font-family="Arial" font-size="14" fill="#2E7D32" text-anchor="middle">B2B</text>
+    <text x="150" y="230" font-family="Arial" font-size="10" fill="#2E7D32" text-anchor="middle">(معاملات)</text>
+
+    <!-- Security Icon -->
+    <rect x="250" y="180" width="100" height="60" rx="5" ry="5" fill="#FFCDD2" stroke="#E53935" stroke-width="1"/>
+    <path d="M270 190 L 330 190 M270 200 L 330 200 M270 210 L 330 210" stroke="#B71C1C" stroke-width="2"/>
+    <text x="300" y="245" font-family="Arial" font-size="12" fill="#B71C1C" text-anchor="middle">أمان</text>
+
+    <!-- Confidentiality Icon -->
+    <rect x="400" y="180" width="100" height="60" rx="5" ry="5" fill="#FFF9C4" stroke="#FFD600" stroke-width="1"/>
+    <path d="M420 190 L 480 190 M420 200 L 480 200 M420 210 L 480 210" stroke="#FFAB00" stroke-width="2"/>
+    <text x="450" y="245" font-family="Arial" font-size="12" fill="#FF8F00" text-anchor="middle">سرية</text>
+
+    <!-- Financial Organizations -->
+    <rect x="250" y="250" width="100" height="30" rx="5" ry="5" fill="#D1C4E9" stroke="#673AB7" stroke-width="1"/>
+    <text x="300" y="270" font-family="Arial" font-size="12" fill="#4527A0" text-anchor="middle">منظمات مالية</text>
+
+    <!-- Arrows from OBI to elements -->
+    <line x1="300" y1="130" x2="150" y2="180" stroke="#2196F3" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="130" x2="300" y2="180" stroke="#2196F3" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="130" x2="450" y2="180" stroke="#2196F3" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+    <line x1="300" y1="130" x2="300" y2="250" stroke="#2196F3" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+
+    <defs>
+        <marker id="arrowheadBlue" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#2196F3" />
+        </marker>
+    </defs>
+</svg>

@@ -1,0 +1,52 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .code-box { fill: #2d3436; rx: 8; ry: 8; }
+      .code-text { font-family: 'Courier New', monospace; font-size: 14px; fill: #fafafa; }
+      .label { font-size: 16px; font-weight: bold; text-anchor: middle; }
+      .box { fill: #e74c3c; stroke: #c0392b; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Titles -->
+  <text x="400" y="40" class="title">Web Animations API</text>
+  <text x="400" y="65" class="subtitle">واجهة برمجة تطبيقات الأنيميشن</text>
+
+  <!-- Left Side: Animation Visual -->
+  <g id="animation-visual">
+    <text x="200" y="120" class="label">Animation</text>
+    <text x="200" y="140" class="label" font-size="14px" fill="#555">الحركة</text>
+    <!-- Start Position -->
+    <rect x="100" y="200" width="80" height="80" class="box" rx="5"/>
+    <text x="140" y="310">Start</text>
+    
+    <!-- End Position -->
+    <rect x="320" y="200" width="80" height="80" class="box" rx="5" opacity="0.3"/>
+    <text x="360" y="310">End</text>
+
+    <!-- Arrow -->
+    <line x1="185" y1="240" x2="315" y2="240" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <defs>
+      <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#34495e" />
+      </marker>
+    </defs>
+  </g>
+
+  <!-- Right Side: Code Snippet -->
+  <g id="code-snippet">
+    <rect x="450" y="100" width="320" height="300" class="code-box"/>
+    <text x="470" y="130" class="code-text">box.animate([</text>
+    <text x="490" y="155" class="code-text">{ transform: 'translateX(0px)', opacity: 1 },</text>
+    <text x="490" y="180" class="code-text">{ transform: 'translateX(200px)', opacity: 0.3 }</text>
+    <text x="470" y="205" class="code-text">], {</text>
+    <text x="490" y="230" class="code-text">duration: 800,</text>
+    <text x="490" y="255" class="code-text">iterations: Infinity,</text>
+    <text x="490" y="280" class="code-text">direction: 'alternate'</text>
+    <text x="470" y="305" class="code-text">});</text>
+  </g>
+
+</svg>

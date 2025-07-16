@@ -1,0 +1,35 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Hacker Icon (Hooded Figure) -->
+    <path d="M300 50 C 250 0, 350 0, 300 50 Z" fill="#424242"/>
+    <circle cx="300" cy="80" r="30" fill="#424242"/>
+    <rect x="280" y="100" width="40" height="60" fill="#424242"/>
+    <rect x="260" y="120" width="20" height="40" fill="#424242"/>
+    <rect x="320" y="120" width="20" height="40" fill="#424242"/>
+    <text x="300" y="180" font-family="Arial" font-size="18" fill="#424242" text-anchor="middle">القراصنة (Hackers)</text>
+
+    <!-- Threats as surrounding elements -->
+    <!-- 1. Intercepting Transactions / Stealing Money -->
+    <rect x="50" y="200" width="150" height="50" rx="5" ry="5" fill="#FFCDD2" stroke="#E53935" stroke-width="1"/>
+    <text x="125" y="230" font-family="Arial" font-size="12" fill="#B71C1C" text-anchor="middle">اعتراض صفقات وسرقة أموال</text>
+
+    <!-- 2. Email Hacking -->
+    <rect x="225" y="200" width="150" height="50" rx="5" ry="5" fill="#FFCDD2" stroke="#E53935" stroke-width="1"/>
+    <text x="300" y="230" font-family="Arial" font-size="12" fill="#B71C1C" text-anchor="middle">اختراق البريد الإلكتروني</text>
+
+    <!-- 3. Website Destruction / Service Disruption -->
+    <rect x="400" y="200" width="150" height="50" rx="5" ry="5" fill="#FFCDD2" stroke="#E53935" stroke-width="1"/>
+    <text x="475" y="230" font-family="Arial" font-size="12" fill="#B71C1C" text-anchor="middle">تدمير المواقع وتعطيل الخدمات</text>
+
+    <!-- Arrows from hacker to threats -->
+    <line x1="300" y1="160" x2="125" y2="200" stroke="#E53935" stroke-width="2" marker-end="url(#arrowheadRed)"/>
+    <line x1="300" y1="160" x2="300" y2="200" stroke="#E53935" stroke-width="2" marker-end="url(#arrowheadRed)"/>
+    <line x1="300" y1="160" x2="475" y2="200" stroke="#E53935" stroke-width="2" marker-end="url(#arrowheadRed)"/>
+
+    <defs>
+        <marker id="arrowheadRed" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#E53935" />
+        </marker>
+    </defs>
+</svg>

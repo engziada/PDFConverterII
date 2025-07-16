@@ -1,0 +1,39 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- City Outline -->
+    <path d="M50 250 L100 200 L150 250 L200 200 L250 250 L300 200 L350 250 L400 200 L450 250 L500 200 L550 250 Z" fill="#BDBDBD" stroke="#757575" stroke-width="2"/>
+    <rect x="70" y="150" width="40" height="100" fill="#9E9E9E"/>
+    <rect x="170" y="120" width="40" height="130" fill="#9E9E9E"/>
+    <rect x="270" y="100" width="40" height="150" fill="#9E9E9E"/>
+    <rect x="370" y="130" width="40" height="120" fill="#9E9E9E"/>
+    <rect x="470" y="160" width="40" height="90" fill="#9E9E9E"/>
+
+    <!-- Fiber Optic Cable (Wavy Line) -->
+    <path d="M50 100 Q 150 50, 250 100 T 450 100 Q 550 50, 550 100" fill="none" stroke="#FFC107" stroke-width="4" stroke-dasharray="5,5"/>
+    <text x="300" y="80" font-family="Arial" font-size="14" fill="#FF8F00" text-anchor="middle">ألياف ضوئية</text>
+
+    <!-- University Campus (LAN 1) -->
+    <rect x="100" y="20" width="80" height="40" rx="5" ry="5" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1"/>
+    <text x="140" y="45" font-family="Arial" font-size="12" fill="#2E7D32" text-anchor="middle">حرم جامعي</text>
+
+    <!-- Hospital (LAN 2) -->
+    <rect x="420" y="20" width="80" height="40" rx="5" ry="5" fill="#FFCDD2" stroke="#E53935" stroke-width="1"/>
+    <text x="460" y="45" font-family="Arial" font-size="12" fill="#B71C1C" text-anchor="middle">مستشفى</text>
+
+    <!-- Connections to Fiber -->
+    <line x1="140" y1="60" x2="140" y2="100" stroke="#4CAF50" stroke-width="2" marker-end="url(#arrowheadGreen)"/>
+    <line x1="460" y1="60" x2="460" y2="100" stroke="#E53935" stroke-width="2" marker-end="url(#arrowheadRed)"/>
+
+    <text x="300" y="280" font-family="Arial" font-size="18" fill="#1565C0" text-anchor="middle">شبكة المدينة (MAN)</text>
+    <text x="300" y="260" font-family="Arial" font-size="14" fill="#757575" text-anchor="middle">(20-200 كم)</text>
+
+    <defs>
+        <marker id="arrowheadGreen" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50" />
+        </marker>
+        <marker id="arrowheadRed" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#E53935" />
+        </marker>
+    </defs>
+</svg>

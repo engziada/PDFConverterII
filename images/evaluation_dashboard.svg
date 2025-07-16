@@ -1,0 +1,42 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Dashboard Icon -->
+    <rect x="150" y="50" width="300" height="180" rx="10" ry="10" fill="#B0BEC5" stroke="#78909C" stroke-width="2"/>
+    <rect x="160" y="60" width="280" height="160" fill="#CFD8DC"/>
+    <circle cx="250" cy="120" r="30" fill="#81C784"/>
+    <path d="M250 100 L 250 140 M230 120 L 270 120" stroke="#2E7D32" stroke-width="2"/>
+    <rect x="320" y="90" width="100" height="20" fill="#FFCDD2"/>
+    <rect x="320" y="130" width="100" height="20" fill="#BBDEFB"/>
+    <rect x="320" y="170" width="100" height="20" fill="#FFF9C4"/>
+    <text x="300" y="250" font-family="Arial" font-size="18" fill="#455A64" text-anchor="middle">لوحة تحكم التقييم</text>
+
+    <!-- Evaluation Steps -->
+    <!-- 1. Compare Results -->
+    <rect x="50" y="200" width="100" height="50" rx="5" ry="5" fill="#E8EAF6" stroke="#7986CB" stroke-width="1"/>
+    <text x="100" y="230" font-family="Arial" font-size="12" fill="#3F51B5" text-anchor="middle">مقارنة النتائج</text>
+
+    <!-- 2. Measure Effectiveness -->
+    <rect x="250" y="200" width="100" height="50" rx="5" ry="5" fill="#E8EAF6" stroke="#7986CB" stroke-width="1"/>
+    <text x="300" y="230" font-family="Arial" font-size="12" fill="#3F51B5" text-anchor="middle">قياس فاعلية التفاعل</text>
+
+    <!-- 3. Analyze Behavior Change -->
+    <rect x="450" y="200" width="100" height="50" rx="5" ry="5" fill="#E8EAF6" stroke="#7986CB" stroke-width="1"/>
+    <text x="500" y="230" font-family="Arial" font-size="12" fill="#3F51B5" text-anchor="middle">تحليل سلوك العميل</text>
+
+    <!-- 4. Readjust Strategy -->
+    <rect x="200" y="260" width="200" height="30" rx="5" ry="5" fill="#E8EAF6" stroke="#7986CB" stroke-width="1"/>
+    <text x="300" y="280" font-family="Arial" font-size="12" fill="#3F51B5" text-anchor="middle">إعادة ضبط الاستراتيجية</text>
+
+    <!-- Arrows from dashboard to steps -->
+    <line x1="300" y1="230" x2="100" y2="200" stroke="#7986CB" stroke-width="1" marker-end="url(#arrowheadIndigo)"/>
+    <line x1="300" y1="230" x2="300" y2="200" stroke="#7986CB" stroke-width="1" marker-end="url(#arrowheadIndigo)"/>
+    <line x1="300" y1="230" x2="500" y2="200" stroke="#7986CB" stroke-width="1" marker-end="url(#arrowheadIndigo)"/>
+    <line x1="300" y1="230" x2="300" y2="260" stroke="#7986CB" stroke-width="1" marker-end="url(#arrowheadIndigo)"/>
+
+    <defs>
+        <marker id="arrowheadIndigo" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#7986CB" />
+        </marker>
+    </defs>
+</svg>

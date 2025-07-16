@@ -1,0 +1,31 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Central Human Capital Icon (Person with Gear) -->
+    <circle cx="300" cy="80" r="40" fill="#FFF9C4" stroke="#FFD600" stroke-width="2"/>
+    <path d="M280 90 A20 20 0 0 1 320 90 L 320 110 L 280 110 Z" fill="#FFAB00"/>
+    <circle cx="330" cy="60" r="15" fill="#B0BEC5" stroke="#78909C" stroke-width="1"/>
+    <path d="M330 45 L 330 75 M315 60 L 345 60" stroke="#455A64" stroke-width="1"/>
+    <text x="300" y="130" font-family="Arial" font-size="18" fill="#FFAB00" text-anchor="middle">الموارد البشرية</text>
+
+    <!-- Requirements as surrounding bubbles -->
+    <!-- 1. Develop Technical & Administrative Skills -->
+    <circle cx="100" cy="220" r="40" fill="#FFECB3" stroke="#FFC107" stroke-width="1"/>
+    <text x="100" y="225" font-family="Arial" font-size="12" fill="#FF8F00" text-anchor="middle">تطوير مهارات الموظفين</text>
+    <text x="100" y="245" font-family="Arial" font-size="10" fill="#FF8F00" text-anchor="middle">(تقنياً وإدارياً)</text>
+
+    <!-- 2. Foreign Language & Digital Communication Training -->
+    <circle cx="500" cy="220" r="40" fill="#FFECB3" stroke="#FFC107" stroke-width="1"/>
+    <text x="500" y="225" font-family="Arial" font-size="12" fill="#FF8F00" text-anchor="middle">برامج تدريب</text>
+    <text x="500" y="245" font-family="Arial" font-size="10" fill="#FF8F00" text-anchor="middle">(لغات، تواصل رقمي)</text>
+
+    <!-- Arrows from central icon to requirements -->
+    <line x1="300" y1="120" x2="100" y2="180" stroke="#FFC107" stroke-width="2" marker-end="url(#arrowheadOrange)"/>
+    <line x1="300" y1="120" x2="500" y2="180" stroke="#FFC107" stroke-width="2" marker-end="url(#arrowheadOrange)"/>
+
+    <defs>
+        <marker id="arrowheadOrange" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#FFC107" />
+        </marker>
+    </defs>
+</svg>

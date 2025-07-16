@@ -1,0 +1,37 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Central Definition Box -->
+    <rect x="50" y="50" width="500" height="180" rx="10" ry="10" fill="#E8EAF6" stroke="#7986CB" stroke-width="2"/>
+    <text x="300" y="80" font-family="Arial" font-size="20" fill="#3F51B5" text-anchor="middle">تعريف الإدارة الإلكترونية</text>
+
+    <foreignObject x="70" y="100" width="460" height="100">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial; font-size: 16px; color: #3F51B5; text-align: center;">
+            “الإدارة الإلكترونية هي منظومة متكاملة تعتمد على تكنولوجيا الاتصالات والمعلومات لتحويل العمل الإداري اليدوي إلى عمل رقمي بدقة وسرعة”
+        </div>
+    </foreignObject>
+
+    <!-- Key Elements -->
+    <!-- ICT -->
+    <rect x="100" y="240" width="80" height="40" rx="5" ry="5" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+    <text x="140" y="265" font-family="Arial" font-size="12" fill="#1565C0" text-anchor="middle">تكنولوجيا المعلومات والاتصالات</text>
+
+    <!-- Manual to Digital -->
+    <rect x="260" y="240" width="80" height="40" rx="5" ry="5" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1"/>
+    <text x="300" y="265" font-family="Arial" font-size="12" fill="#2E7D32" text-anchor="middle">تحويل يدوي إلى رقمي</text>
+
+    <!-- Accuracy & Speed -->
+    <rect x="420" y="240" width="80" height="40" rx="5" ry="5" fill="#FFF9C4" stroke="#FFD600" stroke-width="1"/>
+    <text x="460" y="265" font-family="Arial" font-size="12" fill="#FFAB00" text-anchor="middle">دقة وسرعة</text>
+
+    <!-- Arrows from definition to elements -->
+    <line x1="300" y1="230" x2="140" y2="240" stroke="#7986CB" stroke-width="1" marker-end="url(#arrowheadIndigo)"/>
+    <line x1="300" y1="230" x2="300" y2="240" stroke="#7986CB" stroke-width="1" marker-end="url(#arrowheadIndigo)"/>
+    <line x1="300" y1="230" x2="460" y2="240" stroke="#7986CB" stroke-width="1" marker-end="url(#arrowheadIndigo)"/>
+
+    <defs>
+        <marker id="arrowheadIndigo" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#7986CB" />
+        </marker>
+    </defs>
+</svg>

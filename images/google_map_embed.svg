@@ -1,0 +1,46 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 20px; text-anchor: middle; fill: #34495e; }
+      .code-box { fill: #2d3436; rx: 8; ry: 8; }
+      .code-text { font-family: 'Courier New', monospace; font-size: 14px; fill: #f1c40f; }
+      .map-box { fill: #e0e0e0; stroke: #bdc3c7; stroke-width: 2; rx: 8; ry: 8; }
+      .map-pin { fill: #e74c3c; }
+      .label { font-size: 16px; font-weight: bold; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Titles -->
+  <text x="400" y="40" class="title">Embedding Google Maps</text>
+  <text x="400" y="65" class="subtitle">تضمين خرائط جوجل</text>
+
+  <!-- Left Side: Code Snippet -->
+  <g id="code-snippet">
+    <rect x="50" y="120" width="350" height="260" class="code-box"/>
+    <text x="70" y="150" class="code-text">&lt;div id="map"&gt;&lt;/div&gt;</text>
+    <text x="70" y="180" class="code-text">&lt;script src="...maps.googleapis.com/...</text>
+    <text x="70" y="200" class="code-text">?key=YOUR_KEY&callback=initMap"&gt;</text>
+    <text x="70" y="220" class="code-text">&lt;/script&gt;</text>
+    <text x="70" y="250" class="code-text">function initMap() {</text>
+    <text x="90" y="270" class="code-text">new google.maps.Map(</text>
+    <text x="110" y="290" class="code-text">document.getElementById('map'),</text>
+    <text x="110" y="310" class="code-text">{ center: {lat, lng}, zoom: 12 }</text>
+    <text x="90" y="330" class="code-text">);</text>
+    <text x="70" y="350" class="code-text">}</text>
+  </g>
+
+  <!-- Right Side: Map Visual -->
+  <g id="map-visual">
+    <rect x="450" y="120" width="300" height="260" class="map-box"/>
+    <path d="M 480 220 L 690 150 L 660 350 L 480 320 Z" fill="#a2d2ff" opacity="0.5"/>
+    <path d="M 500 180 L 650 240" stroke="#f1faee" stroke-width="4"/>
+    <path d="M 600 140 L 550 360" stroke="#f1faee" stroke-width="4"/>
+    <circle cx="600" cy="250" r="10" class="map-pin"/>
+    <path d="M 600 250 Q 600 220 580 220 A 20 20 0 1 1 620 220 Q 600 220 600 250 Z" class="map-pin"/>
+    <text x="600" y="410" class="label">Interactive Map</text>
+    <text x="600" y="430" class="label" font-size="14px" fill="#555">خريطة تفاعلية</text>
+  </g>
+
+</svg>

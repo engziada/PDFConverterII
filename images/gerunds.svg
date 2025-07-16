@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#fef9e7"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Using Gerunds with Verbs of Preference</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">استخدام المصادر مع أفعال التفضيل</text>
+
+    <text x="400" y="90" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#555">
+      A gerund is a verb that ends in '-ing' and functions as a noun.
+    </text>
+    <text x="400" y="115" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#555">
+      (المصدر هو فعل ينتهي بـ '-ing' ويعمل عمل الاسم)
+    </text>
+
+    <!-- Examples Box -->
+    <g transform="translate(100, 160)">
+      <rect x="0" y="0" width="600" height="350" rx="15" fill="#fff" stroke="#f1c40f" stroke-width="2"/>
+      <g transform="translate(50, 60)">
+        <text y="0" font-size="22">She <tspan fill="#c0392b" font-weight="bold">enjoys</tspan> <tspan fill="#27ae60" font-weight="bold">cooking</tspan> Italian food. 🍝</text>
+        <text y="60" font-size="22">I <tspan fill="#c0392b" font-weight="bold">love</tspan> <tspan fill="#27ae60" font-weight="bold">swimming</tspan> in the ocean. 🏊</text>
+        <text y="120" font-size="22">They <tspan fill="#c0392b" font-weight="bold">hate</tspan> <tspan fill="#27ae60" font-weight="bold">waiting</tspan> in long queues. 🚶‍♂️🚶‍♀️</text>
+        <text y="180" font-size="22">He <tspan fill="#c0392b" font-weight="bold">likes</tspan> <tspan fill="#27ae60" font-weight="bold">playing</tspan> video games. 🎮</text>
+        <text y="240" font-size="22">We <tspan fill="#c0392b" font-weight="bold">don't mind</tspan> <tspan fill="#27ae60" font-weight="bold">helping</tspan> with the chores. 🧹</text>
+      </g>
+    </g>
+
+  </g>
+</svg>

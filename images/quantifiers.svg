@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#f9fbe7"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Quantifiers</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">أدوات الكمية</text>
+
+    <!-- With Countable Nouns -->
+    <g transform="translate(50, 120)">
+      <rect x="0" y="0" width="330" height="380" rx="15" fill="#e8f5e9" stroke="#28a745" stroke-width="2"/>
+      <text x="165" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#155724">With Countable Nouns</text>
+      <text x="165" y="65" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#155724">(مع الأسماء المعدودة)</text>
+      <g transform="translate(20, 110)">
+        <text y="0" font-size="20">- <tspan font-weight="bold">many</tspan> books 📚</text>
+        <text y="50" font-size="20">- <tspan font-weight="bold">a few</tspan> apples 🍎</text>
+        <text y="100" font-size="20">- <tspan font-weight="bold">some</tspan> chairs 🪑</text>
+        <text y="150" font-size="20">- <tspan font-weight="bold">any</tspan> pens? 🖊️</text>
+        <text y="200" font-size="20">- <tspan font-weight="bold">a lot of</tspan> friends 😊</text>
+      </g>
+    </g>
+
+    <!-- With Uncountable Nouns -->
+    <g transform="translate(420, 120)">
+      <rect x="0" y="0" width="330" height="380" rx="15" fill="#fff8e1" stroke="#ffc107" stroke-width="2"/>
+      <text x="165" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#856404">With Uncountable Nouns</text>
+      <text x="165" y="65" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#856404">(مع الأسماء غير المعدودة)</text>
+      <g transform="translate(20, 110)">
+        <text y="0" font-size="20">- <tspan font-weight="bold">much</tspan> water 💧</text>
+        <text y="50" font-size="20">- <tspan font-weight="bold">a little</tspan> sugar 🍬</text>
+        <text y="100" font-size="20">- <tspan font-weight="bold">some</tspan> rice 🍚</text>
+        <text y="150" font-size="20">- <tspan font-weight="bold">any</tspan> money? 💰</text>
+        <text y="200" font-size="20">- <tspan font-weight="bold">a lot of</tspan> time ⏰</text>
+      </g>
+    </g>
+
+  </g>
+</svg>

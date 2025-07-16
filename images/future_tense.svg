@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#f5f5f5"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Future Tense</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">زمن المستقبل</text>
+
+    <!-- 'Will' Section -->
+    <g transform="translate(50, 120)">
+      <rect x="0" y="0" width="330" height="380" rx="15" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+      <text x="165" y="40" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#1565c0">will</text>
+      <text x="165" y="70" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#1565c0">(Spontaneous Decisions, Predictions)</text>
+      <text x="165" y="90" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#1565c0">(قرارات عفوية، تنبؤات)</text>
+      <path d="M20 110 H 310" stroke="#90caf9"/>
+      <g transform="translate(20, 140)">
+        <text y="0" font-size="20">- I think it <tspan font-weight="bold">will</tspan> rain tomorrow. 🌧️</text>
+        <text y="60" font-size="20">- I'm tired. I <tspan font-weight="bold">will</tspan> go to bed. 😴</text>
+        <text y="120" font-size="20">- She <tspan font-weight="bold">will</tspan> probably be late. ⏰</text>
+        <text y="180" font-size="20">- The phone is ringing, I <tspan font-weight="bold">will</tspan> get it. 📞</text>
+      </g>
+    </g>
+
+    <!-- 'Be going to' Section -->
+    <g transform="translate(420, 120)">
+      <rect x="0" y="0" width="330" height="380" rx="15" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+      <text x="165" y="40" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#1b5e20">be going to</text>
+      <text x="165" y="70" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#1b5e20">(Plans, Intentions)</text>
+      <text x="165" y="90" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#1b5e20">(خطط، نوايا)</text>
+      <path d="M20 110 H 310" stroke="#a5d6a7"/>
+      <g transform="translate(20, 140)">
+        <text y="0" font-size="20">- I <tspan font-weight="bold">am going to</tspan> travel next year. ✈️</text>
+        <text y="60" font-size="20">- We <tspan font-weight="bold">are going to</tspan> see a movie. 🍿</text>
+        <text y="120" font-size="20">- He <tspan font-weight="bold">is going to</tspan> start a new job. 💼</text>
+        <text y="180" font-size="20">- Look at the clouds! It<tspan font-weight="bold">'s going to</tspan> rain. ☁️</text>
+      </g>
+    </g>
+
+  </g>
+</svg>

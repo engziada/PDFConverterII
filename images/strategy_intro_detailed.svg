@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="800" height="400">
+  <defs>
+    <style>
+      .bg { fill: #f3e5f5; } /* Light Purple background */
+      .text { font-family: 'Arial', sans-serif; font-size: 6px; fill: #4a148c; text-anchor: middle; }
+      .title { font-size: 8px; font-weight: bold; }
+      .path-bg { fill: #e1bee7; }
+      .path-line { stroke: #8e24aa; stroke-width: 1; stroke-dasharray: 3, 2; }
+      .node { fill: #fafafa; stroke: #6a1b9a; stroke-width: 0.7; }
+      .icon { fill: #7b1fa2; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="100" rx="5"/>
+
+  <text x="100" y="15" class="text title">مقدمة في استراتيجية الحكومة الإلكترونية</text>
+  <text x="100" y="23" class="text">(Intro to e-Government Strategy)</text>
+
+  <!-- Path Background -->
+  <path class="path-bg" d="M 20 60 C 60 80, 140 40, 180 60" fill="none" stroke="#e1bee7" stroke-width="20"/>
+
+  <!-- Current Reality -->
+  <g transform="translate(20, 60)">
+    <circle class="node" cx="0" cy="0" r="12"/>
+    <path class="icon" d="M -5 -5 h 10 v 10 h -10 Z"/>
+    <text x="0" y="20" class="text">الواقع الحالي</text>
+  </g>
+
+  <!-- Future Vision -->
+  <g transform="translate(180, 60)">
+    <circle class="node" cx="0" cy="0" r="12"/>
+    <path class="icon" d="M 0 -8 L 2.5 -2.5 L 8 -2.5 L 4 1.5 L 5 7 L 0 4 L -5 7 L -4 1.5 L -8 -2.5 L -2.5 -2.5 Z"/>
+    <text x="0" y="20" class="text">الرؤية المستقبلية</text>
+  </g>
+
+  <!-- Milestones -->
+  <g transform="translate(70, 65)">
+    <circle class="node" cx="0" cy="0" r="5"/>
+  </g>
+  <g transform="translate(100, 55)">
+    <circle class="node" cx="0" cy="0" r="5"/>
+  </g>
+  <g transform="translate(130, 50)">
+    <circle class="node" cx="0" cy="0" r="5"/>
+  </g>
+
+  <text x="100" y="85" class="text">الاستراتيجية هي خارطة الطريق التي تربط الواقع بالرؤية</text>
+
+</svg>

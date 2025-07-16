@@ -1,0 +1,54 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <style>
+      .title { font-size: 28px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .subtitle { font-size: 18px; text-anchor: middle; fill: #34495e; }
+      .year { font-size: 20px; font-weight: bold; text-anchor: middle; fill: #c0392b; }
+      .event { font-size: 16px; text-anchor: middle; }
+      .event-ar { font-size: 14px; text-anchor: middle; fill: #7f8c8d; }
+      .line { stroke: #34495e; stroke-width: 3; }
+      .circle { fill: #c0392b; stroke: #fff; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <!-- Titles -->
+  <text x="400" y="40" class="title">A Brief History of the Web</text>
+  <text x="400" y="65" class="subtitle">تاريخ موجز لتقنيات الويب</text>
+
+  <!-- Timeline Axis -->
+  <line x1="50" y1="200" x2="750" y2="200" class="line"/>
+
+  <!-- Event 1: HTML -->
+  <g id="event1">
+    <circle cx="150" cy="200" r="8" class="circle"/>
+    <text x="150" y="160" class="year">1991</text>
+    <text x="150" y="240" class="event">First HTML Page</text>
+    <text x="150" y="260" class="event-ar">إطلاق أول صفحة HTML</text>
+  </g>
+
+  <!-- Event 2: JavaScript -->
+  <g id="event2">
+    <circle cx="300" cy="200" r="8" class="circle"/>
+    <text x="300" y="160" class="year">1995</text>
+    <text x="300" y="240" class="event">JavaScript Created</text>
+    <text x="300" y="260" class="event-ar">ابتكار لغة JavaScript</text>
+  </g>
+
+  <!-- Event 3: CSS -->
+  <g id="event3">
+    <circle cx="450" cy="200" r="8" class="circle"/>
+    <text x="450" y="160" class="year">1996</text>
+    <text x="450" y="240" class="event">CSS Emerged</text>
+    <text x="450" y="260" class="event-ar">ظهور تقنية CSS</text>
+  </g>
+
+  <!-- Event 4: HTML5 -->
+  <g id="event4">
+    <circle cx="600" cy="200" r="8" class="circle"/>
+    <text x="600" y="160" class="year">2008</text>
+    <text x="600" y="240" class="event">HTML5 Arrived</text>
+    <text x="600" y="260" class="event-ar">وصول HTML5 بمميزات جديدة</text>
+  </g>
+
+</svg>

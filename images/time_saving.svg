@@ -1,0 +1,42 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Traditional Process (Long Time) -->
+    <rect x="80" y="100" width="180" height="80" rx="10" ry="10" fill="#FFCDD2" stroke="#E53935" stroke-width="2"/>
+    <text x="170" y="135" font-family="Arial" font-size="16" fill="#B71C1C" text-anchor="middle">عملية تقليدية</text>
+    <text x="170" y="165" font-family="Arial" font-size="14" fill="#B71C1C" text-anchor="middle">أيام</text>
+    <path d="M170 190 L 170 220" stroke="#E53935" stroke-width="2" marker-end="url(#arrowheadRed)"/>
+    <text x="170" y="235" font-family="Arial" font-size="12" fill="#E53935" text-anchor="middle">طلب شراء ورقي</text>
+
+    <!-- Arrow indicating time reduction -->
+    <path d="M280 140 L 320 140" stroke="#4CAF50" stroke-width="3" marker-end="url(#arrowheadGreen)"/>
+    <text x="300" y="130" font-family="Arial" font-size="14" fill="#4CAF50" text-anchor="middle">تقليل الزمن</text>
+
+    <!-- E-Business Process (Short Time) -->
+    <rect x="340" y="100" width="180" height="80" rx="10" ry="10" fill="#C8E6C9" stroke="#4CAF50" stroke-width="2"/>
+    <text x="430" y="135" font-family="Arial" font-size="16" fill="#2E7D32" text-anchor="middle">عملية إلكترونية</text>
+    <text x="430" y="165" font-family="Arial" font-size="14" fill="#2E7D32" text-anchor="middle">دقائق</text>
+    <path d="M430 190 L 430 220" stroke="#4CAF50" stroke-width="2" marker-end="url(#arrowheadGreen)"/>
+    <text x="430" y="235" font-family="Arial" font-size="12" fill="#4CAF50" text-anchor="middle">طلب شراء إلكتروني</text>
+
+    <!-- Clock Icon for Traditional -->
+    <circle cx="170" cy="60" r="25" fill="#FFF" stroke="#E53935" stroke-width="2"/>
+    <line x1="170" y1="60" x2="170" y2="45" stroke="#E53935" stroke-width="2"/>
+    <line x1="170" y1="60" x2="185" y2="60" stroke="#E53935" stroke-width="2"/>
+
+    <!-- Stopwatch Icon for E-Business -->
+    <circle cx="430" cy="60" r="25" fill="#FFF" stroke="#4CAF50" stroke-width="2"/>
+    <rect x="425" y="30" width="10" height="10" fill="#4CAF50"/>
+    <rect x="445" y="30" width="10" height="10" fill="#4CAF50"/>
+    <line x1="430" y1="60" x2="430" y2="45" stroke="#4CAF50" stroke-width="2"/>
+    <line x1="430" y1="60" x2="445" y2="60" stroke="#4CAF50" stroke-width="2"/>
+
+    <defs>
+        <marker id="arrowheadRed" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#E53935" />
+        </marker>
+        <marker id="arrowheadGreen" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50" />
+        </marker>
+    </defs>
+</svg>

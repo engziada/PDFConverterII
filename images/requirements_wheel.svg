@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="800" height="400">
+  <defs>
+    <style>
+      .bg { fill: #fffde7; } /* Light Yellow background */
+      .text { font-family: 'Arial', sans-serif; font-size: 6px; fill: #f57f17; text-anchor: middle; }
+      .title { font-size: 8px; font-weight: bold; }
+      .wheel-segment { stroke: #fbc02d; stroke-width: 0.5; }
+      .icon { fill: #f9a825; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="100" rx="5"/>
+
+  <text x="100" y="15" class="text title">متطلبات نجاح الحكومة الإلكترونية (e-Gov Success Requirements)</text>
+
+  <g transform="translate(100, 55)">
+    <!-- Segment 1: Infrastructure -->
+    <path class="wheel-segment" d="M 0 0 L -35 0 A 35 35 0 0 1 0 -35 Z" fill="#fff9c4"/>
+    <g transform="translate(-17.5, -17.5)">
+      <path class="icon" d="M -5 -5 h 10 v 10 h -10 Z M 0 -5 v -3 M 0 5 v 3 M -5 0 h -3 M 5 0 h 3"/>
+      <text x="0" y="15" class="text">بنية تحتية</text>
+    </g>
+
+    <!-- Segment 2: Legislation -->
+    <path class="wheel-segment" d="M 0 0 L 0 -35 A 35 35 0 0 1 35 0 Z" fill="#fff59d"/>
+    <g transform="translate(17.5, -17.5)">
+      <path class="icon" d="M -8 -8 h 16 v 16 h -16 Z M -5 -5 h 10 M -5 -2 h 10 M -5 1 h 5"/>
+      <text x="0" y="15" class="text">تشريعات وقوانين</text>
+    </g>
+
+    <!-- Segment 3: Human Capital -->
+    <path class="wheel-segment" d="M 0 0 L 35 0 A 35 35 0 0 1 0 35 Z" fill="#fff176"/>
+    <g transform="translate(17.5, 17.5)">
+      <path class="icon" d="M 0 -6 a 3 3 0 1 1 0 6 a 3 3 0 1 1 0 -6 M -6 6 a 7 7 0 0 1 12 0"/>
+      <text x="0" y="15" class="text">كوادر بشرية</text>
+    </g>
+
+    <!-- Segment 4: Institutional Reform -->
+    <path class="wheel-segment" d="M 0 0 L 0 35 A 35 35 0 0 1 -35 0 Z" fill="#ffee58"/>
+    <g transform="translate(-17.5, 17.5)">
+      <path class="icon" d="M -8 -8 h 16 l -4 8 l 4 8 h -16 l 4 -8 Z"/>
+      <text x="0" y="15" class="text">إصلاح إداري</text>
+    </g>
+
+    <circle cx="0" cy="0" r="8" fill="#fffde7" stroke="#fbc02d" stroke-width="0.5"/>
+  </g>
+
+</svg>

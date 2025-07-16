@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#fdf5e6"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Verb 'to be' (am, is, are)</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">فعل 'الكينونة' (am, is, are)</text>
+
+    <!-- AM -->
+    <g transform="translate(100, 120)">
+      <rect x="0" y="0" width="150" height="200" rx="15" fill="#cce5ff" stroke="#007bff" stroke-width="2"/>
+      <text x="75" y="40" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#0056b3">am</text>
+      <path d="M25 70 H 125" stroke="#007bff" stroke-width="1"/>
+      <text x="75" y="120" font-family="Arial, sans-serif" font-size="40" text-anchor="middle" fill="#0056b3">I</text>
+    </g>
+
+    <!-- IS -->
+    <g transform="translate(325, 120)">
+      <rect x="0" y="0" width="150" height="200" rx="15" fill="#d4edda" stroke="#28a745" stroke-width="2"/>
+      <text x="75" y="40" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#155724">is</text>
+      <path d="M25 70 H 125" stroke="#28a745" stroke-width="1"/>
+      <text x="75" y="110" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#155724">He</text>
+      <text x="75" y="140" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#155724">She</text>
+      <text x="75" y="170" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#155724">It</text>
+    </g>
+
+    <!-- ARE -->
+    <g transform="translate(550, 120)">
+      <rect x="0" y="0" width="150" height="200" rx="15" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+      <text x="75" y="40" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#856404">are</text>
+      <path d="M25 70 H 125" stroke="#ffc107" stroke-width="1"/>
+      <text x="75" y="110" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#856404">We</text>
+      <text x="75" y="140" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#856404">You</text>
+      <text x="75" y="170" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#856404">They</text>
+    </g>
+
+    <!-- Example Sentences -->
+    <g transform="translate(50, 400)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="20"><tspan font-weight="bold">I am</tspan> a student.</text>
+        <text x="0" y="30" font-family="Arial, sans-serif" font-size="20"><tspan font-weight="bold">He is</tspan> a doctor.</text>
+        <text x="0" y="60" font-family="Arial, sans-serif" font-size="20"><tspan font-weight="bold">They are</tspan> friends.</text>
+    </g>
+
+  </g>
+</svg>

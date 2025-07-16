@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#f3e5f5"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Present Perfect for Tech Advancements</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">المضارع التام للتطورات التقنية</text>
+
+    <text x="400" y="90" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#555">
+      Use Present Perfect (have/has + past participle) for recent, unspecified past events.
+    </text>
+    <text x="400" y="115" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#555">
+      (يستخدم المضارع التام للأحداث الأخيرة غير محددة الزمن في الماضي)
+    </text>
+
+    <!-- Examples Box -->
+    <g transform="translate(100, 160)">
+      <rect x="0" y="0" width="600" height="350" rx="15" fill="#fff" stroke="#ce93d8" stroke-width="2"/>
+      <g transform="translate(50, 60)" font-size="22">
+        <text y="0">Scientists <tspan fill="#8e44ad" font-weight="bold">have developed</tspan> a new AI model. 🤖</text>
+        <text y="60">The company <tspan fill="#8e44ad" font-weight="bold">has launched</tspan> its latest smartphone. 📱</text>
+        <text y="120">Engineers <tspan fill="#8e44ad" font-weight="bold">have improved</tspan> battery technology. 🔋</text>
+        <text y="180">Social media <tspan fill="#8e44ad" font-weight="bold">has changed</tspan> how we communicate. 💬</text>
+        <text y="240">She <tspan fill="#8e44ad" font-weight="bold">has created</tspan> a very popular app. 📈</text>
+      </g>
+    </g>
+
+  </g>
+</svg>

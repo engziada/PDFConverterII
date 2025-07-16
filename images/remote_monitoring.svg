@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="800" height="400">
+  <defs>
+    <style>
+      .bg { fill: #f1f8e9; } /* Light Green background */
+      .text { font-family: 'Arial', sans-serif; font-size: 6px; fill: #33691e; text-anchor: middle; }
+      .title { font-size: 8px; font-weight: bold; }
+      .dashboard-bg { fill: #dcedc8; stroke: #558b2f; stroke-width: 0.7; }
+      .remote-bg { fill: #fff; stroke: #7cb342; stroke-width: 0.5; }
+      .icon { fill: #689f38; }
+      .line { stroke: #aed581; stroke-width: 0.6; stroke-dasharray: 2, 2; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="100" rx="5"/>
+
+  <text x="100" y="15" class="text title">المتابعة والرقابة عن بعد (Remote Monitoring)</text>
+
+  <!-- Central Dashboard -->
+  <g transform="translate(100, 60)">
+    <rect class="dashboard-bg" x="-40" y="-25" width="80" height="40" rx="5"/>
+    <path class="icon" d="M -30 -15 h 20 v 20 h -20 Z M -5 -15 h 30 v 10 h -30 Z M -5 0 h 15 v 5 h -15 Z M 15 0 h 10 v 5 h -10 Z"/>
+    <text x="0" y="25" class="text">لوحة التحكم المركزية</text>
+  </g>
+
+  <!-- Remote Locations -->
+  <g transform="translate(30, 30)">
+    <circle class="remote-bg" cx="0" cy="0" r="10"/>
+    <path class="icon" d="M -4 -4 h 8 v 8 h -8 Z"/>
+    <text x="0" y="18" class="text">موقع 1</text>
+  </g>
+  <g transform="translate(170, 30)">
+    <circle class="remote-bg" cx="0" cy="0" r="10"/>
+    <path class="icon" d="M -4 0 L 0 -4 L 4 0 L 0 4 Z"/>
+    <text x="0" y="18" class="text">موقع 2</text>
+  </g>
+  <g transform="translate(30, 85)">
+    <circle class="remote-bg" cx="0" cy="0" r="10"/>
+    <path class="icon" d="M -4 -4 L 4 4 M -4 4 L 4 -4"/>
+    <text x="0" y="18" class="text">موقع 3</text>
+  </g>
+    <g transform="translate(170, 85)">
+    <circle class="remote-bg" cx="0" cy="0" r="10"/>
+    <path class="icon" d="M 0 0 L 0 -4 L 4 0 L 0 4 L -4 0 L 0 -4"/>
+    <text x="0" y="18" class="text">موقع 4</text>
+  </g>
+
+
+  <!-- Connecting Lines -->
+  <line class="line" x1="40" y1="35" x2="70" y2="50"/>
+  <line class="line" x1="160" y1="35" x2="130" y2="50"/>
+  <line class="line" x1="40" y1="80" x2="70" y2="65"/>
+  <line class="line" x1="160" y1="80" x2="130" y2="65"/>
+
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#eef7f6"/>
+  <g transform="translate(0, 50)">
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">Past Tenses for Travel Stories</text>
+    <text x="400" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#333">أزمنة الماضي لسرد قصص السفر</text>
+
+    <!-- Past Simple -->
+    <g transform="translate(50, 120)">
+      <rect x="0" y="0" width="700" height="150" rx="10" fill="#fff" stroke="#a2d5c6"/>
+      <text x="350" y="40" font-size="24" text-anchor="middle" font-weight="bold">Past Simple (الماضي البسيط)</text>
+      <text x="350" y="70" font-size="18" text-anchor="middle">For completed actions in the past. (لأحداث مكتملة في الماضي)</text>
+      <text x="50" y="120" font-size="20">Last year, I <tspan fill="#d35400" font-weight="bold">visited</tspan> Japan. 🇯🇵</text>
+    </g>
+
+    <!-- Past Continuous -->
+    <g transform="translate(50, 320)">
+      <rect x="0" y="0" width="700" height="200" rx="10" fill="#fff" stroke="#a2d5c6"/>
+      <text x="350" y="40" font-size="24" text-anchor="middle" font-weight="bold">Past Continuous & Simple (الماضي المستمر والبسيط)</text>
+      <text x="350" y="70" font-size="18" text-anchor="middle">An ongoing action interrupted by another. (حدث مستمر قطعه حدث آخر)</text>
+      <text x="50" y="120" font-size="20">While I <tspan fill="#2980b9" font-weight="bold">was walking</tspan> by the river, I <tspan fill="#d35400" font-weight="bold">saw</tspan> a beautiful sunset. 🌅</text>
+      <text x="50" y="160" font-size="20">We <tspan fill="#2980b9" font-weight="bold">were exploring</tspan> the market when it <tspan fill="#d35400" font-weight="bold">started</tspan> to rain. ☔</text>
+    </g>
+
+  </g>
+</svg>

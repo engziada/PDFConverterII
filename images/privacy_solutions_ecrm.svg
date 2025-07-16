@@ -1,0 +1,31 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+    <!-- Central Privacy Solutions Icon (Shield) -->
+    <path d="M300 20 L 200 100 L 200 200 L 300 280 L 400 200 L 400 100 Z" fill="#C8E6C9" stroke="#4CAF50" stroke-width="2"/>
+    <text x="300" y="150" font-family="Arial" font-size="20" fill="#2E7D32" text-anchor="middle">حلول الخصوصية</text>
+
+    <!-- Solutions as surrounding bubbles -->
+    <!-- 1. Flexible Privacy Policies -->
+    <circle cx="100" cy="100" r="40" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
+    <text x="100" y="105" font-family="Arial" font-size="12" fill="#388E3C" text-anchor="middle">سياسات خصوصية مرنة</text>
+
+    <!-- 2. Clear Notifications -->
+    <circle cx="500" cy="100" r="40" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
+    <text x="500" y="105" font-family="Arial" font-size="12" fill="#388E3C" text-anchor="middle">إ��عارات واضحة</text>
+
+    <!-- 3. No Third-Party Sharing -->
+    <circle cx="300" cy="250" r="40" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
+    <text x="300" y="255" font-family="Arial" font-size="12" fill="#388E3C" text-anchor="middle">عدم مشاركة البيانات</text>
+
+    <!-- Arrows from shield to solutions -->
+    <line x1="300" y1="100" x2="100" y2="100" stroke="#4CAF50" stroke-width="1" marker-end="url(#arrowheadGreen)"/>
+    <line x1="300" y1="100" x2="500" y2="100" stroke="#4CAF50" stroke-width="1" marker-end="url(#arrowheadGreen)"/>
+    <line x1="300" y1="180" x2="300" y2="210" stroke="#4CAF50" stroke-width="1" marker-end="url(#arrowheadGreen)"/>
+
+    <defs>
+        <marker id="arrowheadGreen" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50" />
+        </marker>
+    </defs>
+</svg>
